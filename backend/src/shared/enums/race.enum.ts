@@ -1,0 +1,31 @@
+export enum Race {
+  HUMAN = 1,
+  ORC = 2,
+  DWARF = 3,
+  NIGHT_ELF = 4,
+  UNDEAD = 5,
+  TAUREN = 6,
+  GNOME = 7,
+  TROLL = 8,
+  GOBLIN = 9,
+  BLOOD_ELF = 10,
+  DRAENEI = 11,
+  WORGEN = 22,
+  PANDAREN = 24,
+}
+
+export const RACE_NAMES: Record<number, string> = {
+  [Race.HUMAN]: '人类',
+  [Race.ORC]: '兽人',
+  [Race.DWARF]: '矮人',
+  [Race.NIGHT_ELF]: '暗夜精灵',
+  [Race.UNDEAD]: '亡灵',
+  [Race.TAUREN]: '牛头人',
+  [Race.GNOME]: '侏儒',
+  [Race.TROLL]: '巨魔',
+  [Race.GOBLIN]: '地精',
+  [Race.BLOOD_ELF]: '血精灵',
+  [Race.DRAENEI]: '德莱尼',
+  [Race.WORGEN]: '狼人',
+  [Race.PANDAREN]: '熊猫人',
+};

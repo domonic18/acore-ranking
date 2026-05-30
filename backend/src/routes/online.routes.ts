@@ -1,15 +1,17 @@
 import { Router } from 'express';
+import { OnlineService } from '../services/online.service';
 
 const router = Router();
+const service = new OnlineService();
 
 router.get('/count', async (_req, res) => {
-  // TODO: implement online count
-  res.jsonSuccess({ total_count: 0, alliance_count: 0, horde_count: 0 });
+  const data = await service.getOnlineCount();
+  res.jsonSuccess(data);
 });
 
 router.get('/players', async (_req, res) => {
-  // TODO: implement online players list
-  res.jsonSuccess([]);
+  const data = await service.getOnlinePlayers();
+  res.jsonSuccess(data);
 });
 
 export default router;

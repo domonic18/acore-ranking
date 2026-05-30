@@ -6,10 +6,10 @@ interface Tab {
 }
 
 const tabs: Tab[] = [
-  { key: 'completed60', label: '完成 60 级' },
-  { key: 'completed70', label: '完成 70 级' },
-  { key: 'fail', label: '挑战失败' },
-  { key: 'incomplete', label: '进行中' },
+  { key: 'completed60', label: '硬核达成(60级)霸者榜' },
+  { key: 'completed70', label: '硬核达成(70级)霸者榜' },
+  { key: 'fail', label: '硬核失败阵亡榜' },
+  { key: 'incomplete', label: '硬核实时奋进榜' },
 ];
 
 interface HardcoreTabsProps {

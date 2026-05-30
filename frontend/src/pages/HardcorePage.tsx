@@ -12,7 +12,7 @@ import { LoadingState } from '@/shared/components/LoadingState';
 import { ErrorState } from '@/shared/components/ErrorState';
 
 export default function HardcorePage() {
-  const [activeTab, setActiveTab] = useState<TabKey>('completed60');
+  const [activeTab, setActiveTab] = useState<TabKey>('fail');
 
   const completed60 = useHardcoreCompleted(60);
   const completed70 = useHardcoreCompleted(70);
@@ -24,8 +24,6 @@ export default function HardcorePage() {
 
   return (
     <main className="mx-auto w-full min-w-[320px] max-w-6xl p-4">
-      <h1 className="mb-4 text-2xl font-bold">硬核挑战</h1>
-
       <HardcoreTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
       {current.isLoading ? (
@@ -34,10 +32,10 @@ export default function HardcorePage() {
         <ErrorState message={current.error.message} />
       ) : current.data ? (
         <>
-          {activeTab === 'completed60' && <CompletedTable data={current.data} />}
-          {activeTab === 'completed70' && <CompletedTable data={current.data} />}
-          {activeTab === 'fail' && <FailedTable data={current.data} />}
-          {activeTab === 'incomplete' && <IncompleteTable data={current.data} />}
+          {activeTab === 'completed60' && <CompletedTable data={current.data} levelHeader="硬核达成级别" />}
+          {activeTab === 'completed70' && <CompletedTable data={current.data} levelHeader="硬核达成级别" />}
+          {activeTab === 'fail' && <FailedTable data={current.data} levelHeader="阵亡级别" />}
+          {activeTab === 'incomplete' && <IncompleteTable data={current.data} levelHeader="当前级别" />}
         </>
       ) : null}
     </main>

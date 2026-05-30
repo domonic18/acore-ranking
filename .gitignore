@@ -51,3 +51,6 @@ data/spell.csv
 .cache/
 temp/
 tmp/
+
+# Claude Code / AI 助手配置
+.claude/

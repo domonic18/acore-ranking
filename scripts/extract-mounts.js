@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 
 const INPUT_PATH = process.argv[2];
-const OUTPUT_PATH = path.resolve(__dirname, '../src/shared/constants/mount-spell-ids.ts');
+const OUTPUT_PATH = path.resolve(__dirname, '../backend/src/shared/constants/mount-spell-ids.ts');
 
 if (!INPUT_PATH) {
   console.error('Usage: node extract-mounts.js <path/to/spell.csv>');

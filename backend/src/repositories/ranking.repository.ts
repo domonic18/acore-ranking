@@ -53,6 +53,9 @@ export class RankingRepository extends BaseRepository {
   }
 
   async findTopMountPlayers(mountIds: number[], limit = 100): Promise<unknown[]> {
+    if (mountIds.length === 0) {
+      return [];
+    }
     const ids = mountIds.join(',');
     return this.rawQuery(`
       SELECT

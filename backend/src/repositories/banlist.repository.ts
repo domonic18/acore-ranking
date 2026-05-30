@@ -1,9 +1,13 @@
 import { authDataSource } from '../config/database';
+import { BaseRepository } from './base.repository';
 
-export class BanlistRepository {
+export class BanlistRepository extends BaseRepository {
+  constructor() {
+    super(authDataSource);
+  }
+
   async findRecent(limit = 200): Promise<unknown[]> {
-    const repo = authDataSource.getRepository('account_banned');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         account.username,
         account.last_ip,

@@ -1,9 +1,10 @@
 import { Request, Response, NextFunction } from 'express';
 import pino from 'pino';
+import { env, isDevelopment } from '../config/env';
 
 export const logger = pino({
-  level: process.env.LOG_LEVEL || 'info',
-  transport: process.env.NODE_ENV === 'development'
+  level: env.LOG_LEVEL,
+  transport: isDevelopment
     ? { target: 'pino-pretty', options: { colorize: true } }
     : undefined,
 });

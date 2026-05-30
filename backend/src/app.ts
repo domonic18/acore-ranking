@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import path from 'path';
+import { env } from './config/env';
 
 import { requestLogger } from './middleware/request-logger';
 import { errorHandler } from './middleware/error-handler';
@@ -23,22 +24,21 @@ export function createApp(): Application {
   app.use(helmet({ frameguard: false }));
   app.use(iframeCors);
   app.use(cors({
-    origin: process.env.ALLOWED_ORIGINS?.split(',') || '*',
+    origin: env.ALLOWED_ORIGINS.split(',') || '*',
     credentials: true,
   }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(requestLogger);
   app.use(responseFormatter);
-  app.use(apiKeyAuth);
 
-  app.use('/api/online', onlineRoutes);
-  app.use('/api/ranking', rankingRoutes);
-  app.use('/api/hardcore', hardcoreRoutes);
-  app.use('/api/achievement', achievementRoutes);
-  app.use('/api/banlist', banlistRoutes);
-  app.use('/api/character', characterRoutes);
-  app.use('/api/health', healthRoutes);
+  app.use('/api/online', apiKeyAuth, onlineRoutes);
+  app.use('/api/ranking', apiKeyAuth, rankingRoutes);
+  app.use('/api/hardcore', apiKeyAuth, hardcoreRoutes);
+  app.use('/api/achievement', apiKeyAuth, achievementRoutes);
+  app.use('/api/banlist', apiKeyAuth, banlistRoutes);
+  app.use('/api/character', apiKeyAuth, characterRoutes);
+  app.use('/api/health', apiKeyAuth, healthRoutes);
 
   app.use(express.static(path.join(__dirname, 'public')));
 

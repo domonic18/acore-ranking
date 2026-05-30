@@ -2,8 +2,9 @@ import 'dotenv/config';
 import { createApp } from './app';
 import { initializeDataSources } from './config/database';
 import { logger } from './middleware/request-logger';
+import { env } from './config/env';
 
-const PORT = process.env.PORT || 9000;
+const PORT = env.PORT;
 
 async function start(): Promise<void> {
   try {

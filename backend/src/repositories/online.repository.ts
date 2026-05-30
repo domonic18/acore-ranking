@@ -1,9 +1,13 @@
 import { charactersDataSource } from '../config/database';
+import { BaseRepository } from './base.repository';
 
-export class OnlineRepository {
+export class OnlineRepository extends BaseRepository {
+  constructor() {
+    super(charactersDataSource);
+  }
+
   async findOnlinePlayers(): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT guid, name, race, class, level, gender, totaltime
       FROM characters
       WHERE online = 1 AND NOT extra_flags & 16
@@ -12,8 +16,7 @@ export class OnlineRepository {
   }
 
   async countOnlinePlayers(): Promise<unknown> {
-    const repo = charactersDataSource.getRepository('characters');
-    const result = await repo.query(`
+    const result = await this.rawQuery(`
       SELECT
         COUNT(*) as total_count,
         SUM(CASE WHEN race IN (1, 3, 4, 7, 11) THEN 1 ELSE 0 END) AS alliance_count,

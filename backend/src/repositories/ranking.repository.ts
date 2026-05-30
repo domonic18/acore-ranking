@@ -1,9 +1,13 @@
 import { charactersDataSource } from '../config/database';
+import { BaseRepository } from './base.repository';
 
-export class RankingRepository {
+export class RankingRepository extends BaseRepository {
+  constructor() {
+    super(charactersDataSource);
+  }
+
   async findTopGoldPlayers(limit = 200): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT guid, name, race, class, level, gender, money
       FROM characters
       ORDER BY money DESC
@@ -12,8 +16,7 @@ export class RankingRepository {
   }
 
   async findTopPlaytimePlayers(limit = 200): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT guid, name, race, class, level, gender, totaltime
       FROM characters
       ORDER BY totaltime DESC
@@ -22,8 +25,7 @@ export class RankingRepository {
   }
 
   async findTopHonorPlayers(limit = 200): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT guid, name, race, class, level, gender, totaltime, totalHonorPoints
       FROM characters
       ORDER BY totalHonorPoints DESC
@@ -32,8 +34,7 @@ export class RankingRepository {
   }
 
   async findTopAchievementPlayers(limit = 200): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         c.guid,
         c.name,
@@ -52,9 +53,8 @@ export class RankingRepository {
   }
 
   async findTopMountPlayers(mountIds: number[], limit = 100): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
     const ids = mountIds.join(',');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         c.guid,
         c.name,

@@ -1,40 +1,41 @@
 import { DataSource } from 'typeorm';
 import { join } from 'path';
+import { env } from './env';
 
 export const authDataSource = new DataSource({
   type: 'mysql',
-  host: process.env.DB_HOST,
-  port: +(process.env.DB_PORT || 3306),
-  username: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_AUTH,
+  host: env.DB_HOST,
+  port: env.DB_PORT,
+  username: env.DB_USER,
+  password: env.DB_PASS,
+  database: env.DB_AUTH,
   entities: [join(__dirname, '..', 'entities', 'auth', '*.entity.{js,ts}')],
   synchronize: false,
-  logging: process.env.NODE_ENV === 'development',
+  logging: env.NODE_ENV === 'development',
 });
 
 export const charactersDataSource = new DataSource({
   type: 'mysql',
-  host: process.env.DB_HOST,
-  port: +(process.env.DB_PORT || 3306),
-  username: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_CHARACTERS,
+  host: env.DB_HOST,
+  port: env.DB_PORT,
+  username: env.DB_USER,
+  password: env.DB_PASS,
+  database: env.DB_CHARACTERS,
   entities: [join(__dirname, '..', 'entities', 'characters', '*.entity.{js,ts}')],
   synchronize: false,
-  logging: process.env.NODE_ENV === 'development',
+  logging: env.NODE_ENV === 'development',
 });
 
 export const worldDataSource = new DataSource({
   type: 'mysql',
-  host: process.env.DB_HOST,
-  port: +(process.env.DB_PORT || 3306),
-  username: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_WORLD,
+  host: env.DB_HOST,
+  port: env.DB_PORT,
+  username: env.DB_USER,
+  password: env.DB_PASS,
+  database: env.DB_WORLD,
   entities: [join(__dirname, '..', 'entities', 'world', '*.entity.{js,ts}')],
   synchronize: false,
-  logging: process.env.NODE_ENV === 'development',
+  logging: env.NODE_ENV === 'development',
 });
 
 export async function initializeDataSources(): Promise<void> {

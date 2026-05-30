@@ -1,9 +1,13 @@
 import { charactersDataSource } from '../config/database';
+import { BaseRepository } from './base.repository';
 
-export class CharacterRepository {
+export class CharacterRepository extends BaseRepository {
+  constructor() {
+    super(charactersDataSource);
+  }
+
   async findByName(name: string): Promise<unknown | null> {
-    const repo = charactersDataSource.getRepository('characters');
-    const result = await repo.query(`
+    const result = await this.rawQuery(`
       SELECT
         guid, power1, power2, power4, power7,
         class, name, level, race, gender,
@@ -17,8 +21,7 @@ export class CharacterRepository {
   }
 
   async countQuests(guid: number): Promise<number> {
-    const repo = charactersDataSource.getRepository('characters');
-    const result = await repo.query(`
+    const result = await this.rawQuery<{ count: number }>(`
       SELECT COUNT(*) as count
       FROM character_queststatus_rewarded
       WHERE guid = ?
@@ -27,8 +30,7 @@ export class CharacterRepository {
   }
 
   async countAchievements(guid: number): Promise<number> {
-    const repo = charactersDataSource.getRepository('characters');
-    const result = await repo.query(`
+    const result = await this.rawQuery<{ count: number }>(`
       SELECT COUNT(*) as count
       FROM character_achievement
       WHERE guid = ?
@@ -37,8 +39,7 @@ export class CharacterRepository {
   }
 
   async findInventory(name: string): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         ci.item,
         ci.slot,

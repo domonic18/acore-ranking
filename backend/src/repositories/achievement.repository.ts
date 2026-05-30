@@ -1,9 +1,13 @@
 import { charactersDataSource } from '../config/database';
+import { BaseRepository } from './base.repository';
 
-export class AchievementRepository {
+export class AchievementRepository extends BaseRepository {
+  constructor() {
+    super(charactersDataSource);
+  }
+
   async findRecent(limit = 50): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         c.guid,
         c.name,

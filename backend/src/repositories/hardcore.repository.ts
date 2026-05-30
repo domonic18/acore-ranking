@@ -1,9 +1,13 @@
 import { charactersDataSource } from '../config/database';
+import { BaseRepository } from './base.repository';
 
-export class HardcoreRepository {
+export class HardcoreRepository extends BaseRepository {
+  constructor() {
+    super(charactersDataSource);
+  }
+
   async findCompletedByLevel(level: number): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         c.guid,
         c.name,
@@ -19,8 +23,7 @@ export class HardcoreRepository {
   }
 
   async findFailed(): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         c.guid,
         c.name,
@@ -37,8 +40,7 @@ export class HardcoreRepository {
   }
 
   async findIncomplete(): Promise<unknown[]> {
-    const repo = charactersDataSource.getRepository('characters');
-    return repo.query(`
+    return this.rawQuery(`
       SELECT
         c.guid,
         c.name,

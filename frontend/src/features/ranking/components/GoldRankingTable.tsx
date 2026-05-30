@@ -42,7 +42,7 @@ const columns: ColumnDef<GoldRankPlayer>[] = [
   {
     accessorKey: 'money',
     header: '金币',
-    cell: ({ row }) => <GoldDisplay copper={row.original.money} />,
+    cell: ({ row }) => <GoldDisplay copper={row.original.total_gold} />,
   },
 ];
 

@@ -1,12 +1,10 @@
-import { Badge } from '@/shared/components/ui/badge';
-
 interface FactionBadgeProps {
   side: number;
 }
 
 export function FactionBadge({ side }: FactionBadgeProps) {
   if (side === 1) {
-    return <Badge variant="horde">部落</Badge>;
+    return <img src="/assets/icons/horde.gif" width={16} height={16} alt="部落" className="inline-block" />;
   }
-  return <Badge variant="alliance">联盟</Badge>;
+  return <img src="/assets/icons/alliance.gif" width={16} height={16} alt="联盟" className="inline-block" />;
 }

@@ -4,13 +4,22 @@ import {
   flexRender,
   type ColumnDef,
 } from '@tanstack/react-table';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/shared/components/ui/table';
 
 interface DataTableProps<T> {
   data: T[];
   columns: ColumnDef<T, unknown>[];
+  loading?: boolean;
 }
 
-export function DataTable<T>({ data, columns }: DataTableProps<T>) {
+export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
   const table = useReactTable({
     data,
     columns,
@@ -19,38 +28,40 @@ export function DataTable<T>({ data, columns }: DataTableProps<T>) {
 
   return (
     <div className="overflow-x-auto rounded-lg border border-border">
-      <table className="w-full text-sm">
-        <thead className="bg-secondary">
-          {table.getHeaderGroups().map((hg) => (
-            <tr key={hg.id}>
-              {hg.headers.map((h) => (
-                <th
-                  key={h.id}
-                  className="px-3 py-2 text-left font-semibold text-muted-foreground"
-                >
-                  {h.isPlaceholder
+      <Table className="min-w-[600px]">
+        <TableHeader>
+          {table.getHeaderGroups().map((headerGroup) => (
+            <TableRow key={headerGroup.id}>
+              {headerGroup.headers.map((header) => (
+                <TableHead key={header.id}>
+                  {header.isPlaceholder
                     ? null
-                    : flexRender(h.column.columnDef.header, h.getContext())}
-                </th>
+                    : flexRender(header.column.columnDef.header, header.getContext())}
+                </TableHead>
               ))}
-            </tr>
+            </TableRow>
           ))}
-        </thead>
-        <tbody>
-          {table.getRowModel().rows.map((row) => (
-            <tr
-              key={row.id}
-              className="border-t border-border transition-colors hover:bg-secondary/50"
-            >
-              {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className="px-3 py-2 whitespace-nowrap">
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+        </TableHeader>
+        <TableBody>
+          {loading ? (
+            <TableRow>
+              <TableCell colSpan={columns.length} className="h-24 text-center">
+                数据加载中...
+              </TableCell>
+            </TableRow>
+          ) : (
+            table.getRowModel().rows.map((row) => (
+              <TableRow key={row.id}>
+                {row.getVisibleCells().map((cell) => (
+                  <TableCell key={cell.id} className="whitespace-nowrap">
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))
+          )}
+        </TableBody>
+      </Table>
     </div>
   );
 }

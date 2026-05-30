@@ -38,7 +38,7 @@ export function createApp(): Application {
   app.use('/api/achievement', apiKeyAuth, achievementRoutes);
   app.use('/api/banlist', apiKeyAuth, banlistRoutes);
   app.use('/api/character', apiKeyAuth, characterRoutes);
-  app.use('/api/health', apiKeyAuth, healthRoutes);
+  app.use('/api/health', healthRoutes);
 
   app.use(express.static(path.join(__dirname, 'public')));
 

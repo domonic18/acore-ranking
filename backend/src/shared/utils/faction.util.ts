@@ -1,4 +1,5 @@
 import { Faction } from '../enums/faction.enum';
+export { Faction };
 
 // Alliance races: Human(1), Dwarf(3), NightElf(4), Gnome(7), Draenei(11)
 // Horde races: Orc(2), Undead(5), Tauren(6), Troll(8), BloodElf(10)

@@ -1,11 +1,7 @@
 import { Card, CardContent } from '@/shared/components/ui/card';
 import { FactionBadge } from '@/shared/components/FactionBadge';
-import {
-  RACE_NAMES,
-  CLASS_NAMES,
-  CLASS_COLORS,
-  GENDER_NAMES,
-} from '@/shared/constants/game';
+import { RaceIcon, ClassIcon } from '@/shared/components/RaceClassIcons';
+import { GENDER_NAMES } from '@/shared/constants/game';
 import type { CharacterInfo } from '../types';
 
 interface CharacterProfileProps {
@@ -24,11 +20,9 @@ export function CharacterProfile({ info }: CharacterProfileProps) {
       <Card>
         <CardContent className="p-3">
           <div className="text-xs text-muted-foreground">种族 / 职业</div>
-          <div className="text-lg font-semibold">
-            {RACE_NAMES[info.race]} /{' '}
-            <span style={{ color: CLASS_COLORS[info.class] ?? '#fff' }}>
-              {CLASS_NAMES[info.class]}
-            </span>
+          <div className="flex items-center gap-1 text-lg font-semibold">
+            <RaceIcon race={info.race} gender={info.gender} size={28} />
+            <ClassIcon class={info.class} size={28} />
           </div>
         </CardContent>
       </Card>

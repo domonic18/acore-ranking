@@ -9,10 +9,25 @@ export function GoldDisplay({ copper, className }: GoldDisplayProps) {
   const c = copper % 100;
 
   return (
-    <span className={className}>
-      {gold > 0 && <span className="text-yellow-400">{gold}金</span>}
-      {silver > 0 && <span className="text-gray-300">{silver}银</span>}
-      {c > 0 && <span className="text-amber-600">{c}铜</span>}
+    <span className={`inline-flex items-center gap-0.5 ${className || ''}`}>
+      {gold > 0 && (
+        <>
+          <span>{gold}</span>
+          <img src="/assets/icons/money-gold.gif" width={13} height={13} alt="" className="inline-block" />
+        </>
+      )}
+      {silver > 0 && (
+        <>
+          <span>{silver}</span>
+          <img src="/assets/icons/money-silver.gif" width={13} height={13} alt="" className="inline-block" />
+        </>
+      )}
+      {c > 0 && (
+        <>
+          <span>{c}</span>
+          <img src="/assets/icons/money-copper.gif" width={13} height={13} alt="" className="inline-block" />
+        </>
+      )}
       {copper === 0 && <span className="text-muted-foreground">0</span>}
     </span>
   );

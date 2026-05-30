@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useOnlineCount, useOnlinePlayers } from '@/features/online/api/queries';
 import { DataTable } from '@/shared/components/DataTable';
 import { LoadingSpinner } from '@/shared/components/LoadingSpinner';
@@ -8,7 +9,18 @@ import type { ColumnDef } from '@tanstack/react-table';
 import type { OnlinePlayer } from '@/features/online/types';
 
 const playerColumns: ColumnDef<OnlinePlayer>[] = [
-  { accessorKey: 'name', header: '角色名' },
+  {
+    accessorKey: 'name',
+    header: '角色名',
+    cell: ({ row }) => (
+      <Link
+        to={`/character/${encodeURIComponent(row.original.name)}`}
+        className="text-primary hover:underline"
+      >
+        {row.original.name}
+      </Link>
+    ),
+  },
   {
     accessorKey: 'race',
     header: '种族',

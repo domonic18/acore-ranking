@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   useGoldRanking,
   usePlaytimeRanking,
@@ -16,7 +17,18 @@ import type { ColumnDef } from '@tanstack/react-table';
 type TabKey = 'gold' | 'playtime' | 'honor' | 'achievement' | 'mount';
 
 const baseColumns: ColumnDef<any>[] = [
-  { accessorKey: 'name', header: '角色名' },
+  {
+    accessorKey: 'name',
+    header: '角色名',
+    cell: ({ row }) => (
+      <Link
+        to={`/character/${encodeURIComponent(row.original.name)}`}
+        className="text-primary hover:underline"
+      >
+        {row.original.name}
+      </Link>
+    ),
+  },
   {
     accessorKey: 'race',
     header: '种族',

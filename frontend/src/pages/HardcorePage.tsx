@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   useHardcoreCompleted,
   useHardcoreFail,
@@ -15,7 +16,18 @@ import type { HardcorePlayer } from '@/features/hardcore/types';
 type TabKey = 'completed60' | 'completed70' | 'fail' | 'incomplete';
 
 const columns: ColumnDef<HardcorePlayer>[] = [
-  { accessorKey: 'name', header: '角色名' },
+  {
+    accessorKey: 'name',
+    header: '角色名',
+    cell: ({ row }) => (
+      <Link
+        to={`/character/${encodeURIComponent(row.original.name)}`}
+        className="text-primary hover:underline"
+      >
+        {row.original.name}
+      </Link>
+    ),
+  },
   {
     accessorKey: 'race',
     header: '种族',

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useRecentAchievements } from '@/features/achievement/api/queries';
 import { DataTable } from '@/shared/components/DataTable';
 import { LoadingSpinner } from '@/shared/components/LoadingSpinner';
@@ -7,7 +8,18 @@ import type { ColumnDef } from '@tanstack/react-table';
 import type { RecentAchievement } from '@/features/achievement/types';
 
 const columns: ColumnDef<RecentAchievement>[] = [
-  { accessorKey: 'name', header: '角色名' },
+  {
+    accessorKey: 'name',
+    header: '角色名',
+    cell: ({ row }) => (
+      <Link
+        to={`/character/${encodeURIComponent(row.original.name)}`}
+        className="text-primary hover:underline"
+      >
+        {row.original.name}
+      </Link>
+    ),
+  },
   {
     accessorKey: 'race',
     header: '种族',

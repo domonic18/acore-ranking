@@ -7,7 +7,6 @@ import { env } from './config/env';
 import { requestLogger } from './middleware/request-logger';
 import { errorHandler } from './middleware/error-handler';
 import { responseFormatter } from './middleware/response-formatter';
-import { apiKeyAuth } from './middleware/api-key-auth';
 import { iframeCors } from './middleware/iframe-cors';
 
 import onlineRoutes from './routes/online.routes';
@@ -32,12 +31,12 @@ export function createApp(): Application {
   app.use(requestLogger);
   app.use(responseFormatter);
 
-  app.use('/api/online', apiKeyAuth, onlineRoutes);
-  app.use('/api/ranking', apiKeyAuth, rankingRoutes);
-  app.use('/api/hardcore', apiKeyAuth, hardcoreRoutes);
-  app.use('/api/achievement', apiKeyAuth, achievementRoutes);
-  app.use('/api/banlist', apiKeyAuth, banlistRoutes);
-  app.use('/api/character', apiKeyAuth, characterRoutes);
+  app.use('/api/online', onlineRoutes);
+  app.use('/api/ranking', rankingRoutes);
+  app.use('/api/hardcore', hardcoreRoutes);
+  app.use('/api/achievement', achievementRoutes);
+  app.use('/api/banlist', banlistRoutes);
+  app.use('/api/character', characterRoutes);
   app.use('/api/health', healthRoutes);
 
   app.use(express.static(path.join(__dirname, 'public')));

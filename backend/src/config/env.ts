@@ -29,7 +29,6 @@ export const env = {
   // Application
   NODE_ENV: getEnv('NODE_ENV', 'production'),
   PORT: getEnvInt('PORT', 9000),
-  API_KEY: getEnv('API_KEY', ''),
   LOG_LEVEL: getEnv('LOG_LEVEL', 'info'),
 
   // Database

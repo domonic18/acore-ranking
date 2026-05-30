@@ -4,9 +4,6 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  define: {
-    'import.meta.env.VITE_API_KEY': JSON.stringify(process.env.API_KEY || ''),
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

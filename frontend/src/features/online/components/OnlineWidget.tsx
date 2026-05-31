@@ -1,0 +1,101 @@
+import { useOnlineCount, useWidgetConfig } from '@/features/online/api/queries';
+
+export function OnlineWidget() {
+  const { data: config } = useWidgetConfig();
+  const { data: count, isLoading, error } = useOnlineCount();
+
+  const detailUrl = config?.detailUrl || 'http://lokta.cn/?page_id=135';
+  const onlineUrl = config?.onlineUrl || 'http://lokta.cn/?page_id=1897';
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center p-4 text-xs text-gray-400">
+        加载中...
+      </div>
+    );
+  }
+
+  if (error || !count) {
+    return (
+      <div className="flex items-center justify-center p-4 text-xs text-red-400">
+        加载失败
+      </div>
+    );
+  }
+
+  const total = count.total_count || 1;
+  const alliancePct = total > 0 ? (count.alliance_count / total) * 100 : 0;
+  const hordePct = total > 0 ? (count.horde_count / total) * 100 : 0;
+
+  return (
+    <div className="w-full p-3 text-xs" style={{ fontSize: 12, minWidth: 240 }}>
+      {/* 标题行 */}
+      <div className="mb-1.5 flex items-center gap-2">
+        <span className="text-base font-bold" style={{ color: '#F1B132' }}>
+          阿拉希
+        </span>
+        <a
+          href={detailUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-blue-400 underline underline-offset-2 hover:text-blue-300"
+        >
+          设置详情
+        </a>
+        <span className="text-green-500">● 运行中</span>
+      </div>
+
+      {/* 联盟 */}
+      <div className="mb-1 flex items-center gap-1">
+        <span className="inline-block w-12 text-left text-white">联盟：</span>
+        <span className="inline-block w-8 text-right text-white">{count.alliance_count}</span>
+        <div
+          className="inline-block overflow-hidden rounded-full"
+          style={{ width: 120, height: 8, backgroundColor: 'rgba(0,0,0,0.2)' }}
+        >
+          <div
+            className="h-full rounded-full transition-all duration-500 ease-in-out"
+            style={{
+              width: `${alliancePct}%`,
+              backgroundColor: '#69a2ff',
+            }}
+          />
+        </div>
+      </div>
+
+      {/* 部落 */}
+      <div className="mb-1.5 flex items-center gap-1">
+        <span className="inline-block w-12 text-left text-white">部落：</span>
+        <span className="inline-block w-8 text-right text-white">{count.horde_count}</span>
+        <div
+          className="inline-block overflow-hidden rounded-full"
+          style={{ width: 120, height: 8, backgroundColor: 'rgba(0,0,0,0.2)' }}
+        >
+          <div
+            className="h-full rounded-full transition-all duration-500 ease-in-out"
+            style={{
+              width: `${hordePct}%`,
+              backgroundColor: '#ff6961',
+            }}
+          />
+        </div>
+      </div>
+
+      {/* 总数 */}
+      <div className="mt-2">
+        <span className="text-white">
+          共计{' '}
+          <a
+            href={onlineUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-yellow-400 underline underline-offset-2 hover:text-yellow-300"
+          >
+            {count.total_count}
+          </a>{' '}
+          人在线
+        </span>
+      </div>
+    </div>
+  );
+}

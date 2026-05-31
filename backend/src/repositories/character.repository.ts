@@ -9,12 +9,17 @@ export class CharacterRepository extends BaseRepository {
   async findByName(name: string): Promise<unknown | null> {
     const result = await this.rawQuery(`
       SELECT
-        guid, power1, power2, power4, power7,
-        class, name, level, race, gender,
-        health, totaltime, totalHonorPoints,
-        arenaPoints, totalKills
-      FROM characters
-      WHERE name = ?
+        c.guid, c.power1, c.power2, c.power4, c.power7,
+        c.class, c.name, c.level, c.race, c.gender,
+        c.health, c.totaltime, c.totalHonorPoints,
+        c.arenaPoints, c.totalKills,
+        c.creation_date,
+        c.logout_time,
+        g.name as guild_name
+      FROM characters c
+      LEFT JOIN guild_member gm ON c.guid = gm.guid
+      LEFT JOIN guild g ON gm.guildid = g.guildid
+      WHERE c.name = ?
       LIMIT 1
     `, [name]);
     return result[0] || null;
@@ -26,7 +31,7 @@ export class CharacterRepository extends BaseRepository {
       FROM character_queststatus_rewarded
       WHERE guid = ?
     `, [guid]);
-    return result[0]?.count || 0;
+    return Number(result[0]?.count || 0);
   }
 
   async countAchievements(guid: number): Promise<number> {
@@ -35,7 +40,7 @@ export class CharacterRepository extends BaseRepository {
       FROM character_achievement
       WHERE guid = ?
     `, [guid]);
-    return result[0]?.count || 0;
+    return Number(result[0]?.count || 0);
   }
 
   async findInventory(name: string): Promise<unknown[]> {
@@ -53,5 +58,29 @@ export class CharacterRepository extends BaseRepository {
       INNER JOIN acore_world.item_template it ON ii.itemEntry = it.entry
       WHERE c.name = ? AND ci.slot BETWEEN 0 AND 19 AND ci.bag = 0
     `, [name]);
+  }
+
+  async findTalents(guid: number): Promise<{ spell: number; specMask: number }[]> {
+    return this.rawQuery(`
+      SELECT spell, specMask
+      FROM character_talent
+      WHERE guid = ?
+    `, [guid]) as Promise<{ spell: number; specMask: number }[]>;
+  }
+
+  async findGlyphs(guid: number): Promise<{ talentGroup: number; glyph1: number; glyph2: number; glyph3: number; glyph4: number; glyph5: number; glyph6: number }[]> {
+    return this.rawQuery(`
+      SELECT talentGroup, glyph1, glyph2, glyph3, glyph4, glyph5, glyph6
+      FROM character_glyphs
+      WHERE guid = ?
+    `, [guid]) as Promise<{ talentGroup: number; glyph1: number; glyph2: number; glyph3: number; glyph4: number; glyph5: number; glyph6: number }[]>;
+  }
+
+  async findAchievements(guid: number): Promise<{ achievement: number; date: number }[]> {
+    return this.rawQuery(`
+      SELECT achievement, date
+      FROM character_achievement
+      WHERE guid = ?
+    `, [guid]) as Promise<{ achievement: number; date: number }[]>;
   }
 }

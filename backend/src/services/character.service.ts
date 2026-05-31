@@ -2,6 +2,10 @@ import { CacheService, CacheTTL } from './cache.service';
 import { CharacterRepository } from '../repositories/character.repository';
 import { getFactionByRace } from '../shared/utils/faction.util';
 import { formatTotalTime } from '../shared/utils/time.util';
+import { ITEM_DISPLAY_INFO } from '../generated/itemDisplayInfo';
+import { SPELL_ICON } from '../generated/spellIcon';
+import { TALENT_TABS, TALENTS } from '../generated/talents';
+import { ACHIEVEMENTS, ACHIEVEMENT_CATEGORIES } from '../generated/achievements';
 
 export class CharacterService {
   private cache = new CacheService();
@@ -34,6 +38,11 @@ export class CharacterService {
       total_kills: char.totalKills,
       quest_count: questCount,
       achievement_count: achieveCount,
+      guild: char.guild_name || null,
+      creation_date: char.creation_date,
+      last_login: char.logout_time
+        ? new Date(char.logout_time * 1000).toISOString()
+        : null,
     };
 
     await this.cache.set(cacheKey, result, CacheTTL.short);
@@ -53,7 +62,117 @@ export class CharacterService {
       display_id: item.displayid,
       name: item.item_name,
       quality: item.Quality,
+      icon: ITEM_DISPLAY_INFO[item.displayid] || null,
     }));
+
+    await this.cache.set(cacheKey, result, CacheTTL.short);
+    return result;
+  }
+
+  async getCharacterTalents(name: string): Promise<unknown | null> {
+    const cacheKey = `character:talents:${name}`;
+    const cached = await this.cache.get<unknown>(cacheKey);
+    if (cached) return cached;
+
+    const char = await this.repo.findByName(name) as any;
+    if (!char) return null;
+
+    const dbTalents = await this.repo.findTalents(char.guid);
+    const dbGlyphs = await this.repo.findGlyphs(char.guid);
+
+    const classMask = 1 << (char.class - 1);
+    const tabs = TALENT_TABS.filter((t) => t.classMask === classMask);
+
+    const specs: number[][] = [[], []];
+    for (const row of dbTalents) {
+      if (row.specMask === 1 || row.specMask === 3) specs[0].push(row.spell);
+      if (row.specMask === 2 || row.specMask === 3) specs[1].push(row.spell);
+    }
+
+    const trees = tabs.map((tab) => {
+      const spells = TALENTS.filter((t) => t.tabId === tab.id).map((t) => ({
+        id: t.id,
+        tierId: t.tierId,
+        columnIndex: t.columnIndex,
+        spellRank0: t.spellRank0,
+        spellRank1: t.spellRank1,
+        spellRank2: t.spellRank2,
+        spellRank3: t.spellRank3,
+        spellRank4: t.spellRank4,
+        prereqTalent0: t.prereqTalent0,
+        icon: SPELL_ICON[tab.iconId] || null,
+      }));
+      return {
+        name: tab.name,
+        iconId: tab.iconId,
+        icon: SPELL_ICON[tab.iconId] || null,
+        spells,
+      };
+    });
+
+    const glyphs: number[][] = [[], []];
+    for (const row of dbGlyphs) {
+      const ids = [row.glyph1, row.glyph2, row.glyph3, row.glyph4, row.glyph5, row.glyph6].filter((id: number) => id !== 0);
+      if (row.talentGroup >= 0 && row.talentGroup < 2) {
+        glyphs[row.talentGroup].push(...ids);
+      }
+    }
+
+    const result = {
+      trees,
+      talents: specs,
+      glyphs,
+    };
+
+    await this.cache.set(cacheKey, result, CacheTTL.short);
+    return result;
+  }
+
+  async getCharacterAchievements(name: string): Promise<unknown | null> {
+    const cacheKey = `character:achievements:${name}`;
+    const cached = await this.cache.get<unknown>(cacheKey);
+    if (cached) return cached;
+
+    const char = await this.repo.findByName(name) as any;
+    if (!char) return null;
+
+    const earnedRows = await this.repo.findAchievements(char.guid);
+    const earned: Record<number, number> = {};
+    for (const row of earnedRows) {
+      earned[row.achievement] = row.date;
+    }
+
+    const faction = getFactionByRace(char.race);
+    const achievements = ACHIEVEMENTS
+      .filter((a) => a.faction === -1 || a.faction === faction)
+      .map((a) => ({
+        id: a.id,
+        category: a.category,
+        title: a.title,
+        description: a.description,
+        points: a.points,
+        icon: SPELL_ICON[a.iconId] || null,
+      }));
+
+    const categories = ACHIEVEMENT_CATEGORIES.map((c) => ({
+      id: c.id,
+      parent: c.parent,
+      name: c.name,
+    }));
+
+    let totalPoints = 0;
+    for (const ach of achievements) {
+      if (earned[ach.id]) {
+        totalPoints += ach.points;
+      }
+    }
+
+    const result = {
+      achievements,
+      categories,
+      earned,
+      totalPoints,
+    };
 
     await this.cache.set(cacheKey, result, CacheTTL.short);
     return result;

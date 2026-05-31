@@ -5,7 +5,7 @@ const redis = new Redis({
   host: env.REDIS_HOST,
   port: env.REDIS_PORT,
   password: env.REDIS_PASSWORD || undefined,
-  db: 0,
+  db: env.REDIS_DB,
   lazyConnect: true,
   enableOfflineQueue: false,
   maxRetriesPerRequest: 0,

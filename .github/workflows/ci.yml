@@ -76,6 +76,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          file: docker/Dockerfile
           push: false
           tags: acore-ranking:test
           cache-from: type=gha

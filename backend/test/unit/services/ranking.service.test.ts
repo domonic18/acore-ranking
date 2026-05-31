@@ -1,6 +1,7 @@
 import { RankingService } from '../../../src/services/ranking.service';
 import { RankingRepository } from '../../../src/repositories/ranking.repository';
 import { CacheService, CacheKeys, CacheTTL } from '../../../src/services/cache.service';
+import { MOUNT_SPELL_IDS } from '../../../src/shared/constants/mount-spell-ids';
 
 jest.mock('../../../src/repositories/ranking.repository');
 jest.mock('../../../src/services/cache.service');
@@ -97,15 +98,23 @@ describe('RankingService', () => {
   });
 
   describe('getMountRanking', () => {
-    it('returns empty array when no mount IDs configured', async () => {
+    it('returns mapped results with configured mount IDs', async () => {
       const cache = mockCacheMiss();
       const repo = mockRepo();
-      repo.findTopMountPlayers.mockResolvedValue([]);
+      repo.findTopMountPlayers.mockResolvedValue([
+        { guid: 1, name: 'Rider', race: 1, class: 1, gender: 0, level: 80, mount_count: 5, mount_ids: '458,459' },
+      ]);
 
       const result = await service.getMountRanking();
 
-      expect(result).toEqual([]);
-      expect(repo.findTopMountPlayers).toHaveBeenCalledWith([]);
+      expect((result as any)[0]).toMatchObject({
+        guid: 1,
+        name: 'Rider',
+        total_mount_counts: 5,
+        mount_ids: '458,459',
+      });
+      expect(repo.findTopMountPlayers).toHaveBeenCalledWith(MOUNT_SPELL_IDS);
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topMount, expect.any(Array), CacheTTL.short);
     });
   });
 });

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import type { RecentAchievement } from '../types';
 
 interface RecentAchievementTimelineProps {
@@ -46,12 +45,7 @@ export function RecentAchievementTimeline({ data }: RecentAchievementTimelinePro
                   className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm"
                 >
                   <span className="text-muted-foreground shrink-0">{formatTime(a.achievement_date)}</span>
-                  <Link
-                    to={`/character/${encodeURIComponent(a.name)}`}
-                    className="font-bold text-blue-400 hover:underline shrink-0"
-                  >
-                    {a.name}
-                  </Link>
+                  <span className="font-bold text-sky-400 shrink-0">{a.name}</span>
                   <span className="text-muted-foreground shrink-0">({a.level}级)</span>
                   <span className="text-muted-foreground shrink-0">获得成就</span>
                   <span className="font-bold text-yellow-400 shrink-0">[{a.achievement_description}]</span>

@@ -1,4 +1,5 @@
 import { charactersDataSource } from '../config/database';
+import { env } from '../config/env';
 import { BaseRepository } from './base.repository';
 
 export class AchievementRepository extends BaseRepository {
@@ -6,7 +7,7 @@ export class AchievementRepository extends BaseRepository {
     super(charactersDataSource);
   }
 
-  async findRecent(limit = 50): Promise<unknown[]> {
+  async findRecent(limit = env.RECENT_ACHIEVEMENT_LIMIT): Promise<unknown[]> {
     return this.rawQuery(`
       SELECT
         c.guid,
@@ -16,7 +17,7 @@ export class AchievementRepository extends BaseRepository {
         c.gender,
         c.level,
         ad.Title_Lang_deDE AS achievement_description,
-        FROM_UNIXTIME(ca.date) AS achievement_date
+        DATE_FORMAT(CONVERT_TZ(FROM_UNIXTIME(ca.date), '+00:00', '+08:00'), '%Y-%m-%d %H:%i:%s') AS achievement_date
       FROM character_achievement AS ca
       INNER JOIN characters AS c ON ca.guid = c.guid
       INNER JOIN acore_world.achievement_dbc AS ad ON ca.achievement = ad.ID

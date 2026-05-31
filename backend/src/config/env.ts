@@ -102,6 +102,9 @@ export const env = {
   // Widget links
   WIDGET_DETAIL_URL: getEnv('WIDGET_DETAIL_URL', 'http://lokta.cn/?page_id=135'),
   WIDGET_ONLINE_URL: getEnv('WIDGET_ONLINE_URL', 'http://lokta.cn/?page_id=1897'),
+
+  // Achievement
+  RECENT_ACHIEVEMENT_LIMIT: getEnvInt('RECENT_ACHIEVEMENT_LIMIT', 50),
 } as const;
 
 export const isDevelopment = env.NODE_ENV === 'development';

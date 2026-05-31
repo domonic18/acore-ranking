@@ -1,4 +1,7 @@
 export const Endpoints = {
+  config: {
+    widget: '/api/config/widget',
+  },
   online: {
     count: '/api/online/count',
     players: '/api/online/players',

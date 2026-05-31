@@ -1,7 +1,11 @@
-import { useOnlineCount } from '@/features/online/api/queries';
+import { useOnlineCount, useWidgetConfig } from '@/features/online/api/queries';
 
 export function OnlineWidget() {
+  const { data: config } = useWidgetConfig();
   const { data: count, isLoading, error } = useOnlineCount();
+
+  const detailUrl = config?.detailUrl || 'http://lokta.cn/?page_id=135';
+  const onlineUrl = config?.onlineUrl || 'http://lokta.cn/?page_id=1897';
 
   if (isLoading) {
     return (
@@ -31,10 +35,10 @@ export function OnlineWidget() {
           阿拉希
         </span>
         <a
-          href="http://lokta.cn/?page_id=135"
+          href={detailUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:underline"
+          className="text-white underline hover:text-blue-300"
         >
           设置详情
         </a>
@@ -82,10 +86,10 @@ export function OnlineWidget() {
         <span className="text-white">
           共计{' '}
           <a
-            href="http://lokta.cn/?page_id=1897"
+            href={onlineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer text-white hover:underline"
+            className="text-white underline hover:text-blue-300"
           >
             {count.total_count}
           </a>{' '}

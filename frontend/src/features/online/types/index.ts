@@ -13,3 +13,8 @@ export interface OnlinePlayer {
   level: number;
   side: number;
 }
+
+export interface WidgetConfig {
+  detailUrl: string;
+  onlineUrl: string;
+}

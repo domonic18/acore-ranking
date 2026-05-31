@@ -148,22 +148,40 @@ export class CharacterService {
       earned[row.achievement] = row.date;
     }
 
+    const [achLocales, catLocales] = await Promise.all([
+      this.repo.findAchievementLocales().catch(() => [] as { id: number; titleZh: string | null; descriptionZh: string | null }[]),
+      this.repo.findAchievementCategoryLocales().catch(() => [] as { id: number; nameZh: string | null }[]),
+    ]);
+
+    const achLocaleMap = new Map<number, { titleZh: string | null; descriptionZh: string | null }>();
+    for (const loc of achLocales) {
+      achLocaleMap.set(loc.id, { titleZh: loc.titleZh, descriptionZh: loc.descriptionZh });
+    }
+
+    const catLocaleMap = new Map<number, string | null>();
+    for (const loc of catLocales) {
+      catLocaleMap.set(loc.id, loc.nameZh);
+    }
+
     const faction = getFactionByRace(char.race);
     const achievements = ACHIEVEMENTS
       .filter((a) => a.faction === -1 || a.faction === faction)
-      .map((a) => ({
-        id: a.id,
-        category: a.category,
-        title: a.title,
-        description: a.description,
-        points: a.points,
-        icon: SPELL_ICON[a.iconId] || null,
-      }));
+      .map((a) => {
+        const loc = achLocaleMap.get(a.id);
+        return {
+          id: a.id,
+          category: a.category,
+          title: loc?.titleZh || (a as any).titleZh || a.title,
+          description: loc?.descriptionZh || (a as any).descriptionZh || a.description,
+          points: a.points,
+          icon: SPELL_ICON[a.iconId] || null,
+        };
+      });
 
     const categories = ACHIEVEMENT_CATEGORIES.map((c) => ({
       id: c.id,
       parent: c.parent,
-      name: c.name,
+      name: catLocaleMap.get(c.id) || (c as any).nameZh || c.name,
     }));
 
     let totalPoints = 0;

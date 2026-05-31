@@ -84,4 +84,20 @@ export class CharacterRepository extends BaseRepository {
       WHERE guid = ?
     `, [guid]) as Promise<{ achievement: number; date: number }[]>;
   }
+
+  async findAchievementLocales(): Promise<{ id: number; titleZh: string | null; descriptionZh: string | null }[]> {
+    return this.rawQuery(`
+      SELECT ID as id, Title_Lang_zhCN as titleZh, Description_Lang_zhCN as descriptionZh
+      FROM acore_world.achievement_dbc
+      WHERE Title_Lang_zhCN IS NOT NULL AND Title_Lang_zhCN != ''
+    `) as Promise<{ id: number; titleZh: string | null; descriptionZh: string | null }[]>;
+  }
+
+  async findAchievementCategoryLocales(): Promise<{ id: number; nameZh: string | null }[]> {
+    return this.rawQuery(`
+      SELECT ID as id, Name_Lang_zhCN as nameZh
+      FROM acore_world.achievement_category_dbc
+      WHERE Name_Lang_zhCN IS NOT NULL AND Name_Lang_zhCN != ''
+    `) as Promise<{ id: number; nameZh: string | null }[]>;
+  }
 }

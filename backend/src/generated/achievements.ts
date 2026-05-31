@@ -3,7 +3,9 @@ export const ACHIEVEMENTS = [
     "id": 6,
     "faction": -1,
     "title": "Level 10",
+    "titleZh": null,
     "description": "Reach level 10.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3268
@@ -12,7 +14,9 @@ export const ACHIEVEMENTS = [
     "id": 33,
     "faction": 1,
     "title": "Nothing Boring About Borean",
+    "titleZh": null,
     "description": "Complete 130 quests in Borean Tundra.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3336
@@ -21,7 +25,9 @@ export const ACHIEVEMENTS = [
     "id": 42,
     "faction": -1,
     "title": "Explore Eastern Kingdoms",
+    "titleZh": null,
     "description": "Explore the regions of Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 97,
     "points": 25,
     "iconId": 3490
@@ -30,7 +36,9 @@ export const ACHIEVEMENTS = [
     "id": 57,
     "faction": -1,
     "title": "Deaths in Alterac Valley",
+    "titleZh": null,
     "description": "Deaths in Alterac Valley",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -39,7 +47,9 @@ export const ACHIEVEMENTS = [
     "id": 60,
     "faction": -1,
     "title": "Total deaths",
+    "titleZh": null,
     "description": "Total deaths",
+    "descriptionZh": null,
     "category": 122,
     "points": 0,
     "iconId": 1
@@ -48,7 +58,9 @@ export const ACHIEVEMENTS = [
     "id": 98,
     "faction": -1,
     "title": "Quests completed",
+    "titleZh": null,
     "description": "Quests completed",
+    "descriptionZh": null,
     "category": 133,
     "points": 0,
     "iconId": 0
@@ -57,7 +69,9 @@ export const ACHIEVEMENTS = [
     "id": 107,
     "faction": -1,
     "title": "Creatures killed",
+    "titleZh": null,
     "description": "Creatures killed",
+    "descriptionZh": null,
     "category": 135,
     "points": 0,
     "iconId": 4
@@ -66,7 +80,9 @@ export const ACHIEVEMENTS = [
     "id": 112,
     "faction": -1,
     "title": "Deaths from drowning",
+    "titleZh": null,
     "description": "Deaths from drowning",
+    "descriptionZh": null,
     "category": 126,
     "points": 0,
     "iconId": 4
@@ -75,7 +91,9 @@ export const ACHIEVEMENTS = [
     "id": 116,
     "faction": -1,
     "title": "Professional Journeyman",
+    "titleZh": null,
     "description": "Become a Journeyman in a profession.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 2846
@@ -84,7 +102,9 @@ export const ACHIEVEMENTS = [
     "id": 121,
     "faction": -1,
     "title": "Journeyman Cook",
+    "titleZh": null,
     "description": "Become a Journeyman Cook.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1467
@@ -93,7 +113,9 @@ export const ACHIEVEMENTS = [
     "id": 126,
     "faction": -1,
     "title": "Journeyman Fisherman",
+    "titleZh": null,
     "description": "Become a Journeyman Fisherman.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 580
@@ -102,7 +124,9 @@ export const ACHIEVEMENTS = [
     "id": 131,
     "faction": -1,
     "title": "Journeyman in First Aid",
+    "titleZh": null,
     "description": "Become a Journeyman in first aid.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 504
@@ -111,7 +135,9 @@ export const ACHIEVEMENTS = [
     "id": 154,
     "faction": -1,
     "title": "Arathi Basin Victory",
+    "titleZh": null,
     "description": "Win Arathi Basin.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3381
@@ -120,7 +146,9 @@ export const ACHIEVEMENTS = [
     "id": 166,
     "faction": -1,
     "title": "Warsong Gulch Victory",
+    "titleZh": null,
     "description": "Win Warsong Gulch.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3387
@@ -129,7 +157,9 @@ export const ACHIEVEMENTS = [
     "id": 193,
     "faction": -1,
     "title": "Largest hit dealt",
+    "titleZh": null,
     "description": "Largest hit dealt",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 4
@@ -138,7 +168,9 @@ export const ACHIEVEMENTS = [
     "id": 208,
     "faction": -1,
     "title": "Eye of the Storm Victory",
+    "titleZh": null,
     "description": "Win Eye of the Storm.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3384
@@ -147,7 +179,9 @@ export const ACHIEVEMENTS = [
     "id": 218,
     "faction": -1,
     "title": "Alterac Valley Victory",
+    "titleZh": null,
     "description": "Win Alterac Valley.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3377
@@ -156,7 +190,9 @@ export const ACHIEVEMENTS = [
     "id": 238,
     "faction": -1,
     "title": "An Honorable Kill",
+    "titleZh": null,
     "description": "Achieve an honorable kill.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3454
@@ -165,7 +201,9 @@ export const ACHIEVEMENTS = [
     "id": 263,
     "faction": -1,
     "title": "Ice the Frost Lord",
+    "titleZh": null,
     "description": "Slay Ahune in the Slave Pens.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 94
@@ -174,7 +212,9 @@ export const ACHIEVEMENTS = [
     "id": 273,
     "faction": -1,
     "title": "On Metzen!",
+    "titleZh": null,
     "description": "Save Metzen the Reindeer.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 3703
@@ -183,7 +223,9 @@ export const ACHIEVEMENTS = [
     "id": 319,
     "faction": -1,
     "title": "Duels won",
+    "titleZh": null,
     "description": "Duels won",
+    "descriptionZh": null,
     "category": 154,
     "points": 0,
     "iconId": 4
@@ -192,7 +234,9 @@ export const ACHIEVEMENTS = [
     "id": 321,
     "faction": -1,
     "title": "Total raid and dungeon deaths",
+    "titleZh": null,
     "description": "Total raid and dungeon deaths",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 4
@@ -201,7 +245,9 @@ export const ACHIEVEMENTS = [
     "id": 328,
     "faction": -1,
     "title": "Total gold acquired",
+    "titleZh": null,
     "description": "Total gold acquired",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -210,7 +256,9 @@ export const ACHIEVEMENTS = [
     "id": 344,
     "faction": -1,
     "title": "Bandages used",
+    "titleZh": null,
     "description": "Bandages used",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 4
@@ -219,7 +267,9 @@ export const ACHIEVEMENTS = [
     "id": 349,
     "faction": -1,
     "title": "Flight paths taken",
+    "titleZh": null,
     "description": "Flight paths taken",
+    "descriptionZh": null,
     "category": 134,
     "points": 0,
     "iconId": 4
@@ -228,7 +278,9 @@ export const ACHIEVEMENTS = [
     "id": 377,
     "faction": -1,
     "title": "Most factions at Exalted",
+    "titleZh": null,
     "description": "Most factions at Exalted",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 4
@@ -237,7 +289,9 @@ export const ACHIEVEMENTS = [
     "id": 397,
     "faction": -1,
     "title": "Step Into The Arena",
+    "titleZh": null,
     "description": "Win a ranked arena match at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3601
@@ -246,7 +300,9 @@ export const ACHIEVEMENTS = [
     "id": 457,
     "faction": -1,
     "title": "Realm First! Level 80",
+    "titleZh": null,
     "description": "First person on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3275
@@ -255,7 +311,9 @@ export const ACHIEVEMENTS = [
     "id": 477,
     "faction": -1,
     "title": "Utgarde Keep",
+    "titleZh": null,
     "description": "Defeat the bosses in Utgarde Keep.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3226
@@ -264,7 +322,9 @@ export const ACHIEVEMENTS = [
     "id": 489,
     "faction": -1,
     "title": "Heroic: Utgarde Keep",
+    "titleZh": null,
     "description": "Defeat the Utgarde Keep bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3225
@@ -273,7 +333,9 @@ export const ACHIEVEMENTS = [
     "id": 503,
     "faction": -1,
     "title": "50 Quests Completed",
+    "titleZh": null,
     "description": "Complete 50 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3421
@@ -282,7 +344,9 @@ export const ACHIEVEMENTS = [
     "id": 522,
     "faction": -1,
     "title": "Somebody Likes Me",
+    "titleZh": null,
     "description": "Raise a reputation to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3609
@@ -291,7 +355,9 @@ export const ACHIEVEMENTS = [
     "id": 588,
     "faction": -1,
     "title": "Total Honorable Kills",
+    "titleZh": null,
     "description": "Total Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -300,7 +366,9 @@ export const ACHIEVEMENTS = [
     "id": 605,
     "faction": -1,
     "title": "A Coin of Ancestry",
+    "titleZh": null,
     "description": "Receive a Coin of Ancestry.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2717
@@ -309,7 +377,9 @@ export const ACHIEVEMENTS = [
     "id": 625,
     "faction": -1,
     "title": "Besting the Black Dragonflight (25 player)",
+    "titleZh": null,
     "description": "Defeat Sartharion the Onyx Guardian in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 25,
     "iconId": 3255
@@ -318,7 +388,9 @@ export const ACHIEVEMENTS = [
     "id": 629,
     "faction": -1,
     "title": "Ragefire Chasm",
+    "titleZh": null,
     "description": "Defeat Taragaman the Hungerer.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 1983
@@ -327,7 +399,9 @@ export const ACHIEVEMENTS = [
     "id": 647,
     "faction": -1,
     "title": "Hellfire Ramparts",
+    "titleZh": null,
     "description": "Defeat Omor the Unscarred.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3680
@@ -336,7 +410,9 @@ export const ACHIEVEMENTS = [
     "id": 728,
     "faction": -1,
     "title": "Explore Durotar",
+    "titleZh": null,
     "description": "Explore Durotar, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3532
@@ -345,7 +421,9 @@ export const ACHIEVEMENTS = [
     "id": 763,
     "faction": 0,
     "title": "The Burning Crusader",
+    "titleZh": null,
     "description": "Raise all of The Burning Crusade dungeon reputations to exalted.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 20,
     "iconId": 2365
@@ -354,7 +432,9 @@ export const ACHIEVEMENTS = [
     "id": 776,
     "faction": -1,
     "title": "Explore Elwynn Forest",
+    "titleZh": null,
     "description": "Explore Elwynn Forest, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3536
@@ -363,7 +443,9 @@ export const ACHIEVEMENTS = [
     "id": 796,
     "faction": -1,
     "title": "Resurrected by priests",
+    "titleZh": null,
     "description": "Resurrected by priests",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 1
@@ -372,7 +454,9 @@ export const ACHIEVEMENTS = [
     "id": 837,
     "faction": -1,
     "title": "Arenas won",
+    "titleZh": null,
     "description": "Arenas won",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 1
@@ -381,7 +465,9 @@ export const ACHIEVEMENTS = [
     "id": 839,
     "faction": -1,
     "title": "Battlegrounds played",
+    "titleZh": null,
     "description": "Battlegrounds played",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -390,7 +476,9 @@ export const ACHIEVEMENTS = [
     "id": 862,
     "faction": -1,
     "title": "Explore Hellfire Peninsula",
+    "titleZh": null,
     "description": "Explore  Hellfire Peninsula, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3554
@@ -399,7 +487,9 @@ export const ACHIEVEMENTS = [
     "id": 913,
     "faction": -1,
     "title": "To Honor One's Elders",
+    "titleZh": null,
     "description": "Complete the Lunar Festival achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 30,
     "iconId": 3698
@@ -408,7 +498,9 @@ export const ACHIEVEMENTS = [
     "id": 927,
     "faction": -1,
     "title": "Equipped epic items in item slots",
+    "titleZh": null,
     "description": "Equipped epic items in item slots",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 1
@@ -417,7 +509,9 @@ export const ACHIEVEMENTS = [
     "id": 932,
     "faction": -1,
     "title": "Total 5-player dungeons entered",
+    "titleZh": null,
     "description": "Total 5-player dungeons entered",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -426,7 +520,9 @@ export const ACHIEVEMENTS = [
     "id": 939,
     "faction": -1,
     "title": "Hills Like White Elekk",
+    "titleZh": null,
     "description": "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 2165
@@ -435,7 +531,9 @@ export const ACHIEVEMENTS = [
     "id": 940,
     "faction": -1,
     "title": "The Green Hills of Stranglethorn",
+    "titleZh": null,
     "description": "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
+    "descriptionZh": null,
     "category": 14861,
     "points": 10,
     "iconId": 916
@@ -444,7 +542,9 @@ export const ACHIEVEMENTS = [
     "id": 946,
     "faction": -1,
     "title": "The Argent Dawn",
+    "titleZh": null,
     "description": "Earn exalted status with the Argent Dawn.",
+    "descriptionZh": null,
     "category": 14864,
     "points": 15,
     "iconId": 1608
@@ -453,7 +553,9 @@ export const ACHIEVEMENTS = [
     "id": 947,
     "faction": -1,
     "title": "The Argent Crusade",
+    "titleZh": null,
     "description": "Earn exalted status with the Argent Crusade.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 15,
     "iconId": 1672
@@ -462,7 +564,9 @@ export const ACHIEVEMENTS = [
     "id": 972,
     "faction": -1,
     "title": "Trick or Treat!",
+    "titleZh": null,
     "description": "Receive a handful of a candy from one of the Candy Buckets located in an inn.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2652
@@ -471,7 +575,9 @@ export const ACHIEVEMENTS = [
     "id": 1042,
     "faction": -1,
     "title": "Number of hugs",
+    "titleZh": null,
     "description": "Number of hugs",
+    "descriptionZh": null,
     "category": 131,
     "points": 0,
     "iconId": 1
@@ -480,7 +586,9 @@ export const ACHIEVEMENTS = [
     "id": 1057,
     "faction": -1,
     "title": "Deaths in 2v2",
+    "titleZh": null,
     "description": "Deaths in 2v2",
+    "descriptionZh": null,
     "category": 123,
     "points": 0,
     "iconId": 1
@@ -489,7 +597,9 @@ export const ACHIEVEMENTS = [
     "id": 1068,
     "faction": -1,
     "title": "Keli'dan the Breaker kills (The Blood Furnace)",
+    "titleZh": null,
     "description": "Keli'dan the Breaker kills (The Blood Furnace)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 541
@@ -498,7 +608,9 @@ export const ACHIEVEMENTS = [
     "id": 1091,
     "faction": -1,
     "title": "Edwin VanCleef kills (Deadmines)",
+    "titleZh": null,
     "description": "Edwin VanCleef kills (Deadmines)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2692
@@ -507,7 +619,9 @@ export const ACHIEVEMENTS = [
     "id": 1149,
     "faction": -1,
     "title": "Talent tree respecs",
+    "titleZh": null,
     "description": "Talent tree respecs",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -516,7 +630,9 @@ export const ACHIEVEMENTS = [
     "id": 1184,
     "faction": 1,
     "title": "Strange Brew",
+    "titleZh": null,
     "description": "Drink the Brewfest beers listed below.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 1780
@@ -525,7 +641,9 @@ export const ACHIEVEMENTS = [
     "id": 1197,
     "faction": -1,
     "title": "Total kills",
+    "titleZh": null,
     "description": "Total kills",
+    "descriptionZh": null,
     "category": 128,
     "points": 0,
     "iconId": 1
@@ -534,7 +652,9 @@ export const ACHIEVEMENTS = [
     "id": 1199,
     "faction": -1,
     "title": "Professions learned",
+    "titleZh": null,
     "description": "Professions learned",
+    "descriptionZh": null,
     "category": 132,
     "points": 0,
     "iconId": 1
@@ -543,7 +663,9 @@ export const ACHIEVEMENTS = [
     "id": 1242,
     "faction": -1,
     "title": "Ingvar the Plunderer kills (Utgarde Keep)",
+    "titleZh": null,
     "description": "Ingvar the Plunderer kills (Utgarde Keep)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2813
@@ -552,7 +674,9 @@ export const ACHIEVEMENTS = [
     "id": 1264,
     "faction": -1,
     "title": "Explore Borean Tundra",
+    "titleZh": null,
     "description": "Explore Borean Tundra, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3330
@@ -561,7 +685,9 @@ export const ACHIEVEMENTS = [
     "id": 1283,
     "faction": -1,
     "title": "Classic Dungeonmaster",
+    "titleZh": null,
     "description": "Complete the classic dungeon achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1949
@@ -570,7 +696,9 @@ export const ACHIEVEMENTS = [
     "id": 1308,
     "faction": -1,
     "title": "Strand of the Ancients Victory",
+    "titleZh": null,
     "description": "Win Strand of the Ancients.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 3402
@@ -579,7 +707,9 @@ export const ACHIEVEMENTS = [
     "id": 1487,
     "faction": -1,
     "title": "Total Killing Blows",
+    "titleZh": null,
     "description": "Total Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -588,7 +718,9 @@ export const ACHIEVEMENTS = [
     "id": 1501,
     "faction": -1,
     "title": "Total deaths from other players",
+    "titleZh": null,
     "description": "Total deaths from other players",
+    "descriptionZh": null,
     "category": 21,
     "points": 0,
     "iconId": 1
@@ -597,7 +729,9 @@ export const ACHIEVEMENTS = [
     "id": 1524,
     "faction": -1,
     "title": "Cooking skill",
+    "titleZh": null,
     "description": "Cooking skill",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 1
@@ -606,7 +740,9 @@ export const ACHIEVEMENTS = [
     "id": 1527,
     "faction": -1,
     "title": "Highest Alchemy skill",
+    "titleZh": null,
     "description": "Highest Alchemy skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -615,7 +751,9 @@ export const ACHIEVEMENTS = [
     "id": 1701,
     "faction": -1,
     "title": "Be Mine!",
+    "titleZh": null,
     "description": "Eat the eight \"Bag of Candies\" heart candies listed below.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 3196
@@ -624,7 +762,9 @@ export const ACHIEVEMENTS = [
     "id": 1717,
     "faction": -1,
     "title": "Wintergrasp Victory",
+    "titleZh": null,
     "description": "Win the battle for Wintergrasp.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 187
@@ -633,7 +773,9 @@ export const ACHIEVEMENTS = [
     "id": 1791,
     "faction": -1,
     "title": "Home Alone",
+    "titleZh": null,
     "description": "Use your Hearthstone while your orphan is with you.",
+    "descriptionZh": null,
     "category": 163,
     "points": 10,
     "iconId": 776
@@ -642,7 +784,9 @@ export const ACHIEVEMENTS = [
     "id": 1876,
     "faction": -1,
     "title": "Besting the Black Dragonflight (10 player)",
+    "titleZh": null,
     "description": "Defeat Sartharion the Onyx Guardian in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3254
@@ -651,7 +795,9 @@ export const ACHIEVEMENTS = [
     "id": 2676,
     "faction": -1,
     "title": "I Found One!",
+    "titleZh": null,
     "description": "Find a Brightly Colored Egg.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3202
@@ -660,7 +806,9 @@ export const ACHIEVEMENTS = [
     "id": 2756,
     "faction": -1,
     "title": "Argent Aspiration",
+    "titleZh": null,
     "description": "Train to compete in the Argent Tournament by becoming an Aspirant for your race's faction.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3805
@@ -669,7 +817,9 @@ export const ACHIEVEMENTS = [
     "id": 2856,
     "faction": -1,
     "title": "Flame Leviathan kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Flame Leviathan kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -678,7 +828,9 @@ export const ACHIEVEMENTS = [
     "id": 2886,
     "faction": -1,
     "title": "The Siege of Ulduar (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Siege area of Ulduar in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3844
@@ -687,7 +839,9 @@ export const ACHIEVEMENTS = [
     "id": 2887,
     "faction": -1,
     "title": "The Siege of Ulduar (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Siege area of Ulduar in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3844
@@ -696,7 +850,9 @@ export const ACHIEVEMENTS = [
     "id": 3579,
     "faction": -1,
     "title": "\"FOOD FIGHT!\"",
+    "titleZh": null,
     "description": "Bounce food off a fellow feaster's head at a Bountiful Table.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 456
@@ -705,7 +861,9 @@ export const ACHIEVEMENTS = [
     "id": 3776,
     "faction": -1,
     "title": "Isle of Conquest Victory",
+    "titleZh": null,
     "description": "Win Isle of Conquest.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 4002
@@ -714,7 +872,9 @@ export const ACHIEVEMENTS = [
     "id": 3916,
     "faction": -1,
     "title": "Call of the Crusade (25 player)",
+    "titleZh": null,
     "description": "Defeat every boss in the Trial of the Crusader in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 3744
@@ -723,7 +883,9 @@ export const ACHIEVEMENTS = [
     "id": 3917,
     "faction": -1,
     "title": "Call of the Crusade (10 player)",
+    "titleZh": null,
     "description": "Defeat every boss in the Trial of the Crusader in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 3744
@@ -732,7 +894,9 @@ export const ACHIEVEMENTS = [
     "id": 4018,
     "faction": -1,
     "title": "Victories over Hunter Champion (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Hunter Champion (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -741,7 +905,9 @@ export const ACHIEVEMENTS = [
     "id": 4531,
     "faction": -1,
     "title": "Storming the Citadel (10 player)",
+    "titleZh": null,
     "description": "Defeat the first four bosses in Icecrown Citadel in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4167
@@ -750,7 +916,9 @@ export const ACHIEVEMENTS = [
     "id": 4604,
     "faction": -1,
     "title": "Storming the Citadel (25 player)",
+    "titleZh": null,
     "description": "Defeat the first four bosses in Icecrown Citadel in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4167
@@ -759,7 +927,9 @@ export const ACHIEVEMENTS = [
     "id": 4713,
     "faction": -1,
     "title": "Bronjahm kills (Forge of Souls)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -768,7 +938,9 @@ export const ACHIEVEMENTS = [
     "id": 7,
     "faction": -1,
     "title": "Level 20",
+    "titleZh": null,
     "description": "Reach level 20.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3269
@@ -777,7 +949,9 @@ export const ACHIEVEMENTS = [
     "id": 43,
     "faction": -1,
     "title": "Explore Kalimdor",
+    "titleZh": null,
     "description": "Explore the regions of Kalimdor.",
+    "descriptionZh": null,
     "category": 97,
     "points": 25,
     "iconId": 3491
@@ -786,7 +960,9 @@ export const ACHIEVEMENTS = [
     "id": 59,
     "faction": -1,
     "title": "Deaths in Arathi Basin",
+    "titleZh": null,
     "description": "Deaths in Arathi Basin",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -795,7 +971,9 @@ export const ACHIEVEMENTS = [
     "id": 95,
     "faction": -1,
     "title": "Average quests completed per day",
+    "titleZh": null,
     "description": "Average quests completed per day",
+    "descriptionZh": null,
     "category": 133,
     "points": 0,
     "iconId": 0
@@ -804,7 +982,9 @@ export const ACHIEVEMENTS = [
     "id": 122,
     "faction": -1,
     "title": "Expert Cook",
+    "titleZh": null,
     "description": "Become an Expert Cook.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1467
@@ -813,7 +993,9 @@ export const ACHIEVEMENTS = [
     "id": 127,
     "faction": -1,
     "title": "Expert Fisherman",
+    "titleZh": null,
     "description": "Become an Expert Fisherman.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 580
@@ -822,7 +1004,9 @@ export const ACHIEVEMENTS = [
     "id": 132,
     "faction": -1,
     "title": "Expert in First Aid",
+    "titleZh": null,
     "description": "Become an Expert in first aid.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 504
@@ -831,7 +1015,9 @@ export const ACHIEVEMENTS = [
     "id": 155,
     "faction": -1,
     "title": "Arathi Basin Veteran",
+    "titleZh": null,
     "description": "Complete 100 victories in Arathi Basin.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3382
@@ -840,7 +1026,9 @@ export const ACHIEVEMENTS = [
     "id": 167,
     "faction": -1,
     "title": "Warsong Gulch Veteran",
+    "titleZh": null,
     "description": "Complete 100 victories in Warsong Gulch.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3388
@@ -849,7 +1037,9 @@ export const ACHIEVEMENTS = [
     "id": 209,
     "faction": -1,
     "title": "Eye of the Storm Veteran",
+    "titleZh": null,
     "description": "Complete 100 victories in Eye of the Storm.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3385
@@ -858,7 +1048,9 @@ export const ACHIEVEMENTS = [
     "id": 219,
     "faction": -1,
     "title": "Alterac Valley Veteran",
+    "titleZh": null,
     "description": "Complete 100 victories in Alterac Valley.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3378
@@ -867,7 +1059,9 @@ export const ACHIEVEMENTS = [
     "id": 252,
     "faction": -1,
     "title": "With a Little Helper from My Friends",
+    "titleZh": null,
     "description": "Earn 50 honorable kills as a Little Helper from the Winter Wondervolt machine.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 3679
@@ -876,7 +1070,9 @@ export const ACHIEVEMENTS = [
     "id": 260,
     "faction": -1,
     "title": "Charming",
+    "titleZh": null,
     "description": "Create 12 Lovely Charm Bracelets.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 4134
@@ -885,7 +1081,9 @@ export const ACHIEVEMENTS = [
     "id": 271,
     "faction": -1,
     "title": "Burning Hot Pole Dance",
+    "titleZh": null,
     "description": "Dance at the ribbon pole for 60 seconds while wearing completed Midsummer set.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 3262
@@ -894,7 +1092,9 @@ export const ACHIEVEMENTS = [
     "id": 288,
     "faction": -1,
     "title": "Out With It",
+    "titleZh": null,
     "description": "Eat so many Tricky Treats that you get an upset tummy.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 97
@@ -903,7 +1103,9 @@ export const ACHIEVEMENTS = [
     "id": 318,
     "faction": -1,
     "title": "Total deaths from opposite faction",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 21,
     "points": 0,
     "iconId": 4
@@ -912,7 +1114,9 @@ export const ACHIEVEMENTS = [
     "id": 320,
     "faction": -1,
     "title": "Duels lost",
+    "titleZh": null,
     "description": "Duels lost",
+    "descriptionZh": null,
     "category": 154,
     "points": 0,
     "iconId": 4
@@ -921,7 +1125,9 @@ export const ACHIEVEMENTS = [
     "id": 342,
     "faction": -1,
     "title": "Epic items acquired",
+    "titleZh": null,
     "description": "Epic items acquired",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 4
@@ -930,7 +1136,9 @@ export const ACHIEVEMENTS = [
     "id": 378,
     "faction": -1,
     "title": "Most factions at Revered or higher",
+    "titleZh": null,
     "description": "Most factions at Revered or higher",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 4
@@ -939,7 +1147,9 @@ export const ACHIEVEMENTS = [
     "id": 381,
     "faction": -1,
     "title": "World Honorable Kills",
+    "titleZh": null,
     "description": "World Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 4
@@ -948,7 +1158,9 @@ export const ACHIEVEMENTS = [
     "id": 398,
     "faction": -1,
     "title": "Mercilessly Dedicated",
+    "titleZh": null,
     "description": "Win 100 ranked arena matches at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3593
@@ -957,7 +1169,9 @@ export const ACHIEVEMENTS = [
     "id": 467,
     "faction": -1,
     "title": "Realm First! Level 80 Shaman",
+    "titleZh": null,
     "description": "First shaman on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 38
@@ -966,7 +1180,9 @@ export const ACHIEVEMENTS = [
     "id": 478,
     "faction": -1,
     "title": "The Nexus",
+    "titleZh": null,
     "description": "Defeat the bosses in The Nexus.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3227
@@ -975,7 +1191,9 @@ export const ACHIEVEMENTS = [
     "id": 490,
     "faction": -1,
     "title": "Heroic: The Nexus",
+    "titleZh": null,
     "description": "Defeat The Nexus bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3228
@@ -984,7 +1202,9 @@ export const ACHIEVEMENTS = [
     "id": 504,
     "faction": -1,
     "title": "100 Quests Completed",
+    "titleZh": null,
     "description": "Complete 100 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3420
@@ -993,7 +1213,9 @@ export const ACHIEVEMENTS = [
     "id": 513,
     "faction": -1,
     "title": "100 Honorable Kills",
+    "titleZh": null,
     "description": "Get 100 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3455
@@ -1002,7 +1224,9 @@ export const ACHIEVEMENTS = [
     "id": 523,
     "faction": -1,
     "title": "5 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 5 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3609
@@ -1011,7 +1235,9 @@ export const ACHIEVEMENTS = [
     "id": 527,
     "faction": -1,
     "title": "Largest hit received",
+    "titleZh": null,
     "description": "Largest hit received",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 1
@@ -1020,7 +1246,9 @@ export const ACHIEVEMENTS = [
     "id": 594,
     "faction": -1,
     "title": "Deaths from Hogger",
+    "titleZh": null,
     "description": "Deaths from Hogger",
+    "descriptionZh": null,
     "category": 126,
     "points": 0,
     "iconId": 1
@@ -1029,7 +1257,9 @@ export const ACHIEVEMENTS = [
     "id": 606,
     "faction": -1,
     "title": "5 Coins of Ancestry",
+    "titleZh": null,
     "description": "Receive 5 Coins of Ancestry.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2717
@@ -1038,7 +1268,9 @@ export const ACHIEVEMENTS = [
     "id": 624,
     "faction": -1,
     "title": "Less Is More (10 player)",
+    "titleZh": null,
     "description": "Defeat Sartharion the Onyx Guardian and the Twilight Drakes with fewer than 9 players in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3253
@@ -1047,7 +1279,9 @@ export const ACHIEVEMENTS = [
     "id": 627,
     "faction": -1,
     "title": "Explore Dun Morogh",
+    "titleZh": null,
     "description": "Explore Dun Morogh, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3531
@@ -1056,7 +1290,9 @@ export const ACHIEVEMENTS = [
     "id": 628,
     "faction": -1,
     "title": "Deadmines",
+    "titleZh": null,
     "description": "Defeat Edwin VanCleef.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3627
@@ -1065,7 +1301,9 @@ export const ACHIEVEMENTS = [
     "id": 648,
     "faction": -1,
     "title": "The Blood Furnace",
+    "titleZh": null,
     "description": "Defeat Keli'dan the Breaker.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3629
@@ -1074,7 +1312,9 @@ export const ACHIEVEMENTS = [
     "id": 731,
     "faction": -1,
     "title": "Professional Expert",
+    "titleZh": null,
     "description": "Become an Expert in a profession.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 2846
@@ -1083,7 +1323,9 @@ export const ACHIEVEMENTS = [
     "id": 736,
     "faction": -1,
     "title": "Explore Mulgore",
+    "titleZh": null,
     "description": "Explore Mulgore, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3562
@@ -1092,7 +1334,9 @@ export const ACHIEVEMENTS = [
     "id": 753,
     "faction": -1,
     "title": "Average gold earned per day",
+    "titleZh": null,
     "description": "Average gold earned per day",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -1101,7 +1345,9 @@ export const ACHIEVEMENTS = [
     "id": 764,
     "faction": 1,
     "title": "The Burning Crusader",
+    "titleZh": null,
     "description": "Raise all of The Burning Crusade dungeon reputations to exalted.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 20,
     "iconId": 2365
@@ -1110,7 +1356,9 @@ export const ACHIEVEMENTS = [
     "id": 798,
     "faction": -1,
     "title": "Rebirthed by druids",
+    "titleZh": null,
     "description": "Rebirthed by druids",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 1
@@ -1119,7 +1367,9 @@ export const ACHIEVEMENTS = [
     "id": 838,
     "faction": -1,
     "title": "Arenas played",
+    "titleZh": null,
     "description": "Arenas played",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 1
@@ -1128,7 +1378,9 @@ export const ACHIEVEMENTS = [
     "id": 863,
     "faction": -1,
     "title": "Explore Zangarmarsh",
+    "titleZh": null,
     "description": "Explore Zangarmarsh, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3585
@@ -1137,7 +1389,9 @@ export const ACHIEVEMENTS = [
     "id": 918,
     "faction": -1,
     "title": "Total deaths in 5-player dungeons",
+    "titleZh": null,
     "description": "Total deaths in 5-player dungeons",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -1146,7 +1400,9 @@ export const ACHIEVEMENTS = [
     "id": 944,
     "faction": -1,
     "title": "They Love Me In That Tunnel",
+    "titleZh": null,
     "description": "Earn exalted status with Timbermaw Hold.",
+    "descriptionZh": null,
     "category": 14864,
     "points": 15,
     "iconId": 3685
@@ -1155,7 +1411,9 @@ export const ACHIEVEMENTS = [
     "id": 949,
     "faction": -1,
     "title": "Tuskarrmageddon",
+    "titleZh": null,
     "description": "Earn exalted status with The Kalu'ak .",
+    "descriptionZh": null,
     "category": 14866,
     "points": 15,
     "iconId": 3702
@@ -1164,7 +1422,9 @@ export const ACHIEVEMENTS = [
     "id": 1047,
     "faction": -1,
     "title": "Total facepalms",
+    "titleZh": null,
     "description": "Total facepalms",
+    "descriptionZh": null,
     "category": 131,
     "points": 0,
     "iconId": 1
@@ -1173,7 +1433,9 @@ export const ACHIEVEMENTS = [
     "id": 1069,
     "faction": -1,
     "title": "Nexus-Prince Shaffar kills (Mana Tombs)",
+    "titleZh": null,
     "description": "Nexus-Prince Shaffar kills (Mana Tombs)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 1677
@@ -1182,7 +1444,9 @@ export const ACHIEVEMENTS = [
     "id": 1092,
     "faction": -1,
     "title": "Archmage Arugal kills (Shadowfang Keep)",
+    "titleZh": null,
     "description": "Archmage Arugal kills (Shadowfang Keep)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2126
@@ -1191,7 +1455,9 @@ export const ACHIEVEMENTS = [
     "id": 1107,
     "faction": -1,
     "title": "Deaths in 3v3",
+    "titleZh": null,
     "description": "Deaths in 3v3",
+    "descriptionZh": null,
     "category": 123,
     "points": 0,
     "iconId": 1
@@ -1200,7 +1466,9 @@ export const ACHIEVEMENTS = [
     "id": 1125,
     "faction": -1,
     "title": "Bandage used most",
+    "titleZh": null,
     "description": "Bandage used most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 4
@@ -1209,7 +1477,9 @@ export const ACHIEVEMENTS = [
     "id": 1189,
     "faction": 1,
     "title": "To Hellfire and Back",
+    "titleZh": null,
     "description": "Complete 80 quests in Hellfire Peninsula.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3554
@@ -1218,7 +1488,9 @@ export const ACHIEVEMENTS = [
     "id": 1198,
     "faction": -1,
     "title": "Total kills that grant experience or honor",
+    "titleZh": null,
     "description": "Total kills that grant experience or honor",
+    "descriptionZh": null,
     "category": 128,
     "points": 0,
     "iconId": 1
@@ -1227,7 +1499,9 @@ export const ACHIEVEMENTS = [
     "id": 1201,
     "faction": -1,
     "title": "Professions at maximum skill",
+    "titleZh": null,
     "description": "Professions at maximum skill",
+    "descriptionZh": null,
     "category": 132,
     "points": 0,
     "iconId": 1
@@ -1236,7 +1510,9 @@ export const ACHIEVEMENTS = [
     "id": 1203,
     "faction": 0,
     "title": "Strange Brew",
+    "titleZh": null,
     "description": "Drink the Brewfest beers listed below.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 1780
@@ -1245,7 +1521,9 @@ export const ACHIEVEMENTS = [
     "id": 1263,
     "faction": -1,
     "title": "Explore Howling Fjord",
+    "titleZh": null,
     "description": "Explore Howling Fjord, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3331
@@ -1254,7 +1532,9 @@ export const ACHIEVEMENTS = [
     "id": 1285,
     "faction": -1,
     "title": "Classic Raider",
+    "titleZh": null,
     "description": "Complete the classic raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 20,
     "iconId": 3203
@@ -1263,7 +1543,9 @@ export const ACHIEVEMENTS = [
     "id": 1309,
     "faction": -1,
     "title": "Strand of the Ancients Veteran",
+    "titleZh": null,
     "description": "Complete 100 victories in Strand of the Ancients.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 3402
@@ -1272,7 +1554,9 @@ export const ACHIEVEMENTS = [
     "id": 1337,
     "faction": -1,
     "title": "Different creature types killed",
+    "titleZh": null,
     "description": "Different creature types killed",
+    "descriptionZh": null,
     "category": 135,
     "points": 0,
     "iconId": 1
@@ -1281,7 +1565,9 @@ export const ACHIEVEMENTS = [
     "id": 1358,
     "faction": 0,
     "title": "Nothing Boring About Borean",
+    "titleZh": null,
     "description": "Complete 150 quests in Borean Tundra.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3336
@@ -1290,7 +1576,9 @@ export const ACHIEVEMENTS = [
     "id": 1462,
     "faction": -1,
     "title": "Badges of Justice acquired",
+    "titleZh": null,
     "description": "Badges of Justice acquired",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -1299,7 +1587,9 @@ export const ACHIEVEMENTS = [
     "id": 1488,
     "faction": -1,
     "title": "World Killing Blows",
+    "titleZh": null,
     "description": "Cumulative for Azeroth, Northrend etc.",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 4
@@ -1308,7 +1598,9 @@ export const ACHIEVEMENTS = [
     "id": 1504,
     "faction": -1,
     "title": "Ingvar the Plunderer kills (Heroic Utgarde Keep)",
+    "titleZh": null,
     "description": "Ingvar the Plunderer kills (Heroic Utgarde Keep)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2813
@@ -1317,7 +1609,9 @@ export const ACHIEVEMENTS = [
     "id": 1525,
     "faction": -1,
     "title": "Cooking daily quests completed",
+    "titleZh": null,
     "description": "Cooking daily quests completed",
+    "descriptionZh": null,
     "category": 178,
     "points": 10,
     "iconId": 2923
@@ -1326,7 +1620,9 @@ export const ACHIEVEMENTS = [
     "id": 1676,
     "faction": 1,
     "title": "Loremaster of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Complete 700 quests in Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 14861,
     "points": 10,
     "iconId": 3490
@@ -1335,7 +1631,9 @@ export const ACHIEVEMENTS = [
     "id": 1693,
     "faction": 0,
     "title": "Fool For Love",
+    "titleZh": null,
     "description": "Complete the Love is in the Air achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3699
@@ -1344,7 +1642,9 @@ export const ACHIEVEMENTS = [
     "id": 1718,
     "faction": -1,
     "title": "Wintergrasp Veteran",
+    "titleZh": null,
     "description": "Win 100 battles for Wintergrasp.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 187
@@ -1353,7 +1653,9 @@ export const ACHIEVEMENTS = [
     "id": 1729,
     "faction": -1,
     "title": "Alchemy Recipes learned",
+    "titleZh": null,
     "description": "Alchemy Recipes learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -1362,7 +1664,9 @@ export const ACHIEVEMENTS = [
     "id": 1788,
     "faction": -1,
     "title": "Bad Example",
+    "titleZh": null,
     "description": "Eat the sweets listed below while your orphan is watching.",
+    "descriptionZh": null,
     "category": 163,
     "points": 10,
     "iconId": 1519
@@ -1371,7 +1675,9 @@ export const ACHIEVEMENTS = [
     "id": 1877,
     "faction": -1,
     "title": "Less Is More (25 player)",
+    "titleZh": null,
     "description": "Defeat Sartharion the Onyx Guardian and the Twilight Drakes with fewer than 21 players in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3308
@@ -1380,7 +1686,9 @@ export const ACHIEVEMENTS = [
     "id": 2277,
     "faction": -1,
     "title": "Summons accepted",
+    "titleZh": null,
     "description": "Summons accepted",
+    "descriptionZh": null,
     "category": 134,
     "points": 0,
     "iconId": 1
@@ -1389,7 +1697,9 @@ export const ACHIEVEMENTS = [
     "id": 2396,
     "faction": -1,
     "title": "Battleground played the most",
+    "titleZh": null,
     "description": "Battleground played the most",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -1398,7 +1708,9 @@ export const ACHIEVEMENTS = [
     "id": 2417,
     "faction": -1,
     "title": "Chocolate Lover",
+    "titleZh": null,
     "description": "Eat 25 Noblegarden Chocolates during the Noblegarden celebration.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3706
@@ -1407,7 +1719,9 @@ export const ACHIEVEMENTS = [
     "id": 2758,
     "faction": -1,
     "title": "Argent Valor",
+    "titleZh": null,
     "description": "Train to compete in the Argent Tournament by becoming a Valiant for your race's faction.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3744
@@ -1416,7 +1730,9 @@ export const ACHIEVEMENTS = [
     "id": 2857,
     "faction": -1,
     "title": "Razorscale kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Razorscale kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -1425,7 +1741,9 @@ export const ACHIEVEMENTS = [
     "id": 2888,
     "faction": -1,
     "title": "The Antechamber of Ulduar (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Antechamber area of Ulduar in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3846
@@ -1434,7 +1752,9 @@ export const ACHIEVEMENTS = [
     "id": 2889,
     "faction": -1,
     "title": "The Antechamber of Ulduar (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Antechamber area of Ulduar in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3846
@@ -1443,7 +1763,9 @@ export const ACHIEVEMENTS = [
     "id": 3576,
     "faction": 1,
     "title": "Now We're Cookin'",
+    "titleZh": null,
     "description": "Cook up one of every Pilgrim's Bounty dish.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3678
@@ -1452,7 +1774,9 @@ export const ACHIEVEMENTS = [
     "id": 3777,
     "faction": -1,
     "title": "Isle of Conquest Veteran",
+    "titleZh": null,
     "description": "Complete 100 victories in Isle of Conquest.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 3378
@@ -1461,7 +1785,9 @@ export const ACHIEVEMENTS = [
     "id": 3812,
     "faction": -1,
     "title": "Call of the Grand Crusade (25 player)",
+    "titleZh": null,
     "description": "Defeat every boss in the Trial of the Grand Crusader in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 3744
@@ -1470,7 +1796,9 @@ export const ACHIEVEMENTS = [
     "id": 3918,
     "faction": -1,
     "title": "Call of the Grand Crusade (10 player)",
+    "titleZh": null,
     "description": "Defeat every boss in the Trial of the Grand Crusader in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 3744
@@ -1479,7 +1807,9 @@ export const ACHIEVEMENTS = [
     "id": 4019,
     "faction": -1,
     "title": "Victories over Hunter Champion (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Hunter Champion (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -1488,7 +1818,9 @@ export const ACHIEVEMENTS = [
     "id": 4628,
     "faction": -1,
     "title": "Heroic: Storming the Citadel (10 player)",
+    "titleZh": null,
     "description": "Defeat the first four bosses in Icecrown Citadel in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4167
@@ -1497,7 +1829,9 @@ export const ACHIEVEMENTS = [
     "id": 4632,
     "faction": -1,
     "title": "Heroic: Storming the Citadel (25 player)",
+    "titleZh": null,
     "description": "Defeat the first four bosses in Icecrown Citadel in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4167
@@ -1506,7 +1840,9 @@ export const ACHIEVEMENTS = [
     "id": 4714,
     "faction": -1,
     "title": "Bronjahm kills (Heroic Forge of Souls)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -1515,7 +1851,9 @@ export const ACHIEVEMENTS = [
     "id": 8,
     "faction": -1,
     "title": "Level 30",
+    "titleZh": null,
     "description": "Reach level 30.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3270
@@ -1524,7 +1862,9 @@ export const ACHIEVEMENTS = [
     "id": 34,
     "faction": 1,
     "title": "I've Toured the Fjord",
+    "titleZh": null,
     "description": "Complete 130 quests in Howling Fjord.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3337
@@ -1533,7 +1873,9 @@ export const ACHIEVEMENTS = [
     "id": 44,
     "faction": -1,
     "title": "Explore Outland",
+    "titleZh": null,
     "description": "Explore the regions of Outland.",
+    "descriptionZh": null,
     "category": 97,
     "points": 25,
     "iconId": 3492
@@ -1542,7 +1884,9 @@ export const ACHIEVEMENTS = [
     "id": 56,
     "faction": -1,
     "title": "Deaths in Warsong Gulch",
+    "titleZh": null,
     "description": "Deaths in Warsong Gulch",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -1551,7 +1895,9 @@ export const ACHIEVEMENTS = [
     "id": 97,
     "faction": -1,
     "title": "Daily quests completed",
+    "titleZh": null,
     "description": "Daily quests completed",
+    "descriptionZh": null,
     "category": 133,
     "points": 0,
     "iconId": 0
@@ -1560,7 +1906,9 @@ export const ACHIEVEMENTS = [
     "id": 113,
     "faction": -1,
     "title": "Deaths from fatigue",
+    "titleZh": null,
     "description": "Deaths from fatigue",
+    "descriptionZh": null,
     "category": 126,
     "points": 0,
     "iconId": 4
@@ -1569,7 +1917,9 @@ export const ACHIEVEMENTS = [
     "id": 123,
     "faction": -1,
     "title": "Artisan Cook",
+    "titleZh": null,
     "description": "Become an Artisan Cook.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1467
@@ -1578,7 +1928,9 @@ export const ACHIEVEMENTS = [
     "id": 128,
     "faction": -1,
     "title": "Artisan Fisherman",
+    "titleZh": null,
     "description": "Become an Artisan Fisherman.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 580
@@ -1587,7 +1939,9 @@ export const ACHIEVEMENTS = [
     "id": 133,
     "faction": -1,
     "title": "Artisan in First Aid",
+    "titleZh": null,
     "description": "Become an Artisan in first aid.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 504
@@ -1596,7 +1950,9 @@ export const ACHIEVEMENTS = [
     "id": 165,
     "faction": -1,
     "title": "Arathi Basin Perfection",
+    "titleZh": null,
     "description": "Win Arathi Basin with a score of 1600 to 0.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 20,
     "iconId": 3469
@@ -1605,7 +1961,9 @@ export const ACHIEVEMENTS = [
     "id": 197,
     "faction": -1,
     "title": "Total damage done",
+    "titleZh": null,
     "description": "Total damage done",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 4
@@ -1614,7 +1972,9 @@ export const ACHIEVEMENTS = [
     "id": 199,
     "faction": -1,
     "title": "Capture the Flag",
+    "titleZh": null,
     "description": "Personally carry and capture the flag in Warsong Gulch.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3390
@@ -1623,7 +1983,9 @@ export const ACHIEVEMENTS = [
     "id": 221,
     "faction": -1,
     "title": "Alterac Grave Robber",
+    "titleZh": null,
     "description": "Take 50 graveyards in Alterac Valley.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3379
@@ -1632,7 +1994,9 @@ export const ACHIEVEMENTS = [
     "id": 255,
     "faction": -1,
     "title": "Bring Me The Head of... Oh Wait",
+    "titleZh": null,
     "description": "Kill the Headless Horseman.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 1817
@@ -1641,7 +2005,9 @@ export const ACHIEVEMENTS = [
     "id": 259,
     "faction": 0,
     "title": "Scrooge",
+    "titleZh": null,
     "description": "Throw a snowball at Cairne Bloodhoof during the Feast of Winter Veil.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 1665
@@ -1650,7 +2016,9 @@ export const ACHIEVEMENTS = [
     "id": 333,
     "faction": -1,
     "title": "Gold looted",
+    "titleZh": null,
     "description": "Gold looted",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -1659,7 +2027,9 @@ export const ACHIEVEMENTS = [
     "id": 341,
     "faction": -1,
     "title": "Epic items looted",
+    "titleZh": null,
     "description": "Epic items looted",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 4
@@ -1668,7 +2038,9 @@ export const ACHIEVEMENTS = [
     "id": 350,
     "faction": -1,
     "title": "Mage Portals taken",
+    "titleZh": null,
     "description": "Mage Portals taken",
+    "descriptionZh": null,
     "category": 134,
     "points": 0,
     "iconId": 4
@@ -1677,7 +2049,9 @@ export const ACHIEVEMENTS = [
     "id": 363,
     "faction": -1,
     "title": "5v5 matches",
+    "titleZh": null,
     "description": "5v5 matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -1686,7 +2060,9 @@ export const ACHIEVEMENTS = [
     "id": 466,
     "faction": -1,
     "title": "Realm First! Level 80 Druid",
+    "titleZh": null,
     "description": "First druid on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 261
@@ -1695,7 +2071,9 @@ export const ACHIEVEMENTS = [
     "id": 480,
     "faction": -1,
     "title": "Azjol-Nerub",
+    "titleZh": null,
     "description": "Defeat the bosses in Azjol-Nerub.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3229
@@ -1704,7 +2082,9 @@ export const ACHIEVEMENTS = [
     "id": 491,
     "faction": -1,
     "title": "Heroic: Azjol-Nerub",
+    "titleZh": null,
     "description": "Defeat the Azjol-Nerub bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3230
@@ -1713,7 +2093,9 @@ export const ACHIEVEMENTS = [
     "id": 505,
     "faction": -1,
     "title": "250 Quests Completed",
+    "titleZh": null,
     "description": "Complete 250 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3419
@@ -1722,7 +2104,9 @@ export const ACHIEVEMENTS = [
     "id": 515,
     "faction": -1,
     "title": "500 Honorable Kills",
+    "titleZh": null,
     "description": "Get 500 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3456
@@ -1731,7 +2115,9 @@ export const ACHIEVEMENTS = [
     "id": 524,
     "faction": -1,
     "title": "10 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 10 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3608
@@ -1740,7 +2126,9 @@ export const ACHIEVEMENTS = [
     "id": 529,
     "faction": -1,
     "title": "Most factions at Honored or higher",
+    "titleZh": null,
     "description": "Most factions at Honored or higher",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 1
@@ -1749,7 +2137,9 @@ export const ACHIEVEMENTS = [
     "id": 562,
     "faction": -1,
     "title": "The Arachnid Quarter (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Arachnid Quarter of Naxxramas in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1899
@@ -1758,7 +2148,9 @@ export const ACHIEVEMENTS = [
     "id": 563,
     "faction": -1,
     "title": "The Arachnid Quarter (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Arachnid Quarter of Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1899
@@ -1767,7 +2159,9 @@ export const ACHIEVEMENTS = [
     "id": 607,
     "faction": -1,
     "title": "10 Coins of Ancestry",
+    "titleZh": null,
     "description": "Receive 10 Coins of Ancestry.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2717
@@ -1776,7 +2170,9 @@ export const ACHIEVEMENTS = [
     "id": 630,
     "faction": -1,
     "title": "Wailing Caverns",
+    "titleZh": null,
     "description": "Defeat Mutanus the Devourer.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3654
@@ -1785,7 +2181,9 @@ export const ACHIEVEMENTS = [
     "id": 649,
     "faction": -1,
     "title": "The Slave Pens",
+    "titleZh": null,
     "description": "Defeat Quagmirran.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3591
@@ -1794,7 +2192,9 @@ export const ACHIEVEMENTS = [
     "id": 732,
     "faction": -1,
     "title": "Professional Artisan",
+    "titleZh": null,
     "description": "Become an Artisan in a profession.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 2846
@@ -1803,7 +2203,9 @@ export const ACHIEVEMENTS = [
     "id": 768,
     "faction": -1,
     "title": "Explore Tirisfal Glades",
+    "titleZh": null,
     "description": "Explore Tirisfal Glades, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3570
@@ -1812,7 +2214,9 @@ export const ACHIEVEMENTS = [
     "id": 783,
     "faction": -1,
     "title": "The Perfect Storm",
+    "titleZh": null,
     "description": "Win Eye of the Storm with a score of 1600 to 0.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 2830
@@ -1821,7 +2225,9 @@ export const ACHIEVEMENTS = [
     "id": 840,
     "faction": -1,
     "title": "Battlegrounds won",
+    "titleZh": null,
     "description": "Battlegrounds won",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -1830,7 +2236,9 @@ export const ACHIEVEMENTS = [
     "id": 842,
     "faction": -1,
     "title": "Explore Teldrassil",
+    "titleZh": null,
     "description": "Explore Teldrassil, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3528
@@ -1839,7 +2247,9 @@ export const ACHIEVEMENTS = [
     "id": 867,
     "faction": -1,
     "title": "Explore Terokkar Forest",
+    "titleZh": null,
     "description": "Explore Terokkar Forest, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3586
@@ -1848,7 +2258,9 @@ export const ACHIEVEMENTS = [
     "id": 875,
     "faction": -1,
     "title": "Vengefully Dedicated",
+    "titleZh": null,
     "description": "Win 200 ranked arena matches at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3594
@@ -1857,7 +2269,9 @@ export const ACHIEVEMENTS = [
     "id": 893,
     "faction": -1,
     "title": "Cenarion War Hippogryph",
+    "titleZh": null,
     "description": "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2554
@@ -1866,7 +2280,9 @@ export const ACHIEVEMENTS = [
     "id": 950,
     "faction": -1,
     "title": "Frenzyheart Tribe",
+    "titleZh": null,
     "description": "Earn exalted status with the Frenzyheart Tribe.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 956
@@ -1875,7 +2291,9 @@ export const ACHIEVEMENTS = [
     "id": 957,
     "faction": -1,
     "title": "Hero of the Zandalar Tribe",
+    "titleZh": null,
     "description": "Earn exalted status with the Zandalar Tribe.",
+    "descriptionZh": null,
     "category": 14864,
     "points": 10,
     "iconId": 2745
@@ -1884,7 +2302,9 @@ export const ACHIEVEMENTS = [
     "id": 1067,
     "faction": -1,
     "title": "Total times playing world's smallest violin",
+    "titleZh": null,
     "description": "Total times playing world's smallest violin",
+    "descriptionZh": null,
     "category": 131,
     "points": 0,
     "iconId": 1
@@ -1893,7 +2313,9 @@ export const ACHIEVEMENTS = [
     "id": 1070,
     "faction": -1,
     "title": "Epoch Hunter kills (The Escape From Durnholde)",
+    "titleZh": null,
     "description": "Epoch Hunter kills (The Escape From Durnholde)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 1701
@@ -1902,7 +2324,9 @@ export const ACHIEVEMENTS = [
     "id": 1093,
     "faction": -1,
     "title": "Scarlet Commander Mograine kills (Scarlet Monastery)",
+    "titleZh": null,
     "description": "Scarlet Commander Mograine kills (Scarlet Monastery)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2792
@@ -1911,7 +2335,9 @@ export const ACHIEVEMENTS = [
     "id": 1108,
     "faction": -1,
     "title": "Deaths in 5v5",
+    "titleZh": null,
     "description": "Deaths in 5v5",
+    "descriptionZh": null,
     "category": 123,
     "points": 0,
     "iconId": 1
@@ -1920,7 +2346,9 @@ export const ACHIEVEMENTS = [
     "id": 1145,
     "faction": -1,
     "title": "King of the Fire Festival",
+    "titleZh": null,
     "description": "Complete the quest, \"A Thief's Reward\", by stealing the flames from your enemy's capital cities.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1599
@@ -1929,7 +2357,9 @@ export const ACHIEVEMENTS = [
     "id": 1200,
     "faction": -1,
     "title": "Secondary skills at maximum skill",
+    "titleZh": null,
     "description": "Secondary skills at maximum skill",
+    "descriptionZh": null,
     "category": 132,
     "points": 0,
     "iconId": 1
@@ -1938,7 +2368,9 @@ export const ACHIEVEMENTS = [
     "id": 1229,
     "faction": -1,
     "title": "Revived by druids",
+    "titleZh": null,
     "description": "Revived by druids",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 1
@@ -1947,7 +2379,9 @@ export const ACHIEVEMENTS = [
     "id": 1231,
     "faction": -1,
     "title": "Keristrasza kills (The Nexus)",
+    "titleZh": null,
     "description": "Keristrasza kills (The Nexus)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 56
@@ -1956,7 +2390,9 @@ export const ACHIEVEMENTS = [
     "id": 1265,
     "faction": -1,
     "title": "Explore Dragonblight",
+    "titleZh": null,
     "description": "Explore Dragonblight, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3332
@@ -1965,7 +2401,9 @@ export const ACHIEVEMENTS = [
     "id": 1271,
     "faction": 0,
     "title": "To Hellfire and Back",
+    "titleZh": null,
     "description": "Complete 90 quests in Hellfire Peninsula.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3554
@@ -1974,7 +2412,9 @@ export const ACHIEVEMENTS = [
     "id": 1284,
     "faction": -1,
     "title": "Outland Dungeonmaster",
+    "titleZh": null,
     "description": "Complete the Burning Crusade dungeon achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1948
@@ -1983,7 +2423,9 @@ export const ACHIEVEMENTS = [
     "id": 1298,
     "faction": -1,
     "title": "Different bandage types used",
+    "titleZh": null,
     "description": "Different bandage types used",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -1992,7 +2434,9 @@ export const ACHIEVEMENTS = [
     "id": 1310,
     "faction": -1,
     "title": "Storm the Beach",
+    "titleZh": null,
     "description": "Capture the Titan Relic in under four minutes.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 20,
     "iconId": 3403
@@ -2001,7 +2445,9 @@ export const ACHIEVEMENTS = [
     "id": 1336,
     "faction": -1,
     "title": "Creature type killed the most",
+    "titleZh": null,
     "description": "Creature type killed the most",
+    "descriptionZh": null,
     "category": 135,
     "points": 0,
     "iconId": 1
@@ -2010,7 +2456,9 @@ export const ACHIEVEMENTS = [
     "id": 1458,
     "faction": -1,
     "title": "Continent with the most Honorable Kills",
+    "titleZh": null,
     "description": "Continent with the most Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -2019,7 +2467,9 @@ export const ACHIEVEMENTS = [
     "id": 1464,
     "faction": -1,
     "title": "Emblems of Heroism acquired",
+    "titleZh": null,
     "description": "Emblems of Heroism acquired",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -2028,7 +2478,9 @@ export const ACHIEVEMENTS = [
     "id": 1489,
     "faction": -1,
     "title": "Continent with the most Killing Blows",
+    "titleZh": null,
     "description": "Continent with the most Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -2037,7 +2489,9 @@ export const ACHIEVEMENTS = [
     "id": 1532,
     "faction": -1,
     "title": "Highest Blacksmithing skill",
+    "titleZh": null,
     "description": "Highest Blacksmithing skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -2046,7 +2500,9 @@ export const ACHIEVEMENTS = [
     "id": 1677,
     "faction": 0,
     "title": "Loremaster of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Complete 550 quests in Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 14861,
     "points": 10,
     "iconId": 3490
@@ -2055,7 +2511,9 @@ export const ACHIEVEMENTS = [
     "id": 1695,
     "faction": -1,
     "title": "Dangerous Love",
+    "titleZh": null,
     "description": "Assist the Steamwheedle Cartel in stopping the sinister Crown Chemical Co. plot.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1853
@@ -2064,7 +2522,9 @@ export const ACHIEVEMENTS = [
     "id": 1707,
     "faction": 1,
     "title": "Fool For Love",
+    "titleZh": null,
     "description": "Complete the Love is in the Air achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3699
@@ -2073,7 +2533,9 @@ export const ACHIEVEMENTS = [
     "id": 1745,
     "faction": -1,
     "title": "Cooking Recipes known",
+    "titleZh": null,
     "description": "Cooking Recipes known",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 4
@@ -2082,7 +2544,9 @@ export const ACHIEVEMENTS = [
     "id": 1755,
     "faction": -1,
     "title": "Within Our Grasp",
+    "titleZh": null,
     "description": "Attack Wintergrasp and succeed in 10 minutes or less.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 145
@@ -2091,7 +2555,9 @@ export const ACHIEVEMENTS = [
     "id": 1789,
     "faction": -1,
     "title": "Daily Chores",
+    "titleZh": null,
     "description": "Complete five daily quests with your orphan out.",
+    "descriptionZh": null,
     "category": 163,
     "points": 10,
     "iconId": 162
@@ -2100,7 +2566,9 @@ export const ACHIEVEMENTS = [
     "id": 1936,
     "faction": -1,
     "title": "Does Your Wolpertinger Linger?",
+    "titleZh": null,
     "description": "Obtain a Wolpertinger pet.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 1312
@@ -2109,7 +2577,9 @@ export const ACHIEVEMENTS = [
     "id": 2219,
     "faction": -1,
     "title": "Total deaths in 5-player heroic dungeons",
+    "titleZh": null,
     "description": "Total deaths in 5-player heroic dungeons",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -2118,7 +2588,9 @@ export const ACHIEVEMENTS = [
     "id": 2418,
     "faction": -1,
     "title": "Chocoholic",
+    "titleZh": null,
     "description": "Eat 100 Noblegarden Chocolates during the Noblegarden celebration.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3706
@@ -2127,7 +2599,9 @@ export const ACHIEVEMENTS = [
     "id": 2772,
     "faction": -1,
     "title": "Tilted!",
+    "titleZh": null,
     "description": "Defeat another player in a mounted duel at the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 370
@@ -2136,7 +2610,9 @@ export const ACHIEVEMENTS = [
     "id": 2858,
     "faction": -1,
     "title": "Ignis the Furnace Master kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Ignis the Furnace Master kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -2145,7 +2621,9 @@ export const ACHIEVEMENTS = [
     "id": 2890,
     "faction": -1,
     "title": "The Keepers of Ulduar (10 player)",
+    "titleZh": null,
     "description": "Defeat the Keeper bosses of Ulduar in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3847
@@ -2154,7 +2632,9 @@ export const ACHIEVEMENTS = [
     "id": 2891,
     "faction": -1,
     "title": "The Keepers of Ulduar (25 player)",
+    "titleZh": null,
     "description": "Defeat the Keeper bosses of Ulduar in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3847
@@ -2163,7 +2643,9 @@ export const ACHIEVEMENTS = [
     "id": 3577,
     "faction": 0,
     "title": "Now We're Cookin'",
+    "titleZh": null,
     "description": "Cook up one of every Pilgrim's Bounty dish.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3678
@@ -2172,7 +2654,9 @@ export const ACHIEVEMENTS = [
     "id": 3797,
     "faction": -1,
     "title": "Upper Back Pain (10 player)",
+    "titleZh": null,
     "description": "Defeat Icehowl while at least 2 Snobolds remain alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 1665
@@ -2181,7 +2665,9 @@ export const ACHIEVEMENTS = [
     "id": 3813,
     "faction": -1,
     "title": "Upper Back Pain (25 player)",
+    "titleZh": null,
     "description": "Defeat Icehowl while at least 4 Snobolds remain alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 1665
@@ -2190,7 +2676,9 @@ export const ACHIEVEMENTS = [
     "id": 3845,
     "faction": -1,
     "title": "Isle of Conquest All-Star",
+    "titleZh": null,
     "description": "In a single Isle of Conquest battle, assault a base, defend a base, destroy a vehicle and kill a player.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 20,
     "iconId": 2268
@@ -2199,7 +2687,9 @@ export const ACHIEVEMENTS = [
     "id": 4048,
     "faction": -1,
     "title": "Victories over Mage Champion (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Mage Champion (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -2208,7 +2698,9 @@ export const ACHIEVEMENTS = [
     "id": 4528,
     "faction": -1,
     "title": "The Plagueworks (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Plagueworks in Icecrown Citadel in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4177
@@ -2217,7 +2709,9 @@ export const ACHIEVEMENTS = [
     "id": 4605,
     "faction": -1,
     "title": "The Plagueworks (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Plagueworks in Icecrown Citadel in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4177
@@ -2226,7 +2720,9 @@ export const ACHIEVEMENTS = [
     "id": 4715,
     "faction": -1,
     "title": "Devourer of Souls kills (Forge of Souls)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -2235,7 +2731,9 @@ export const ACHIEVEMENTS = [
     "id": 9,
     "faction": -1,
     "title": "Level 40",
+    "titleZh": null,
     "description": "Reach level 40.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3271
@@ -2244,7 +2742,9 @@ export const ACHIEVEMENTS = [
     "id": 45,
     "faction": -1,
     "title": "Explore Northrend",
+    "titleZh": null,
     "description": "Explore the regions of Northrend.",
+    "descriptionZh": null,
     "category": 97,
     "points": 25,
     "iconId": 3493
@@ -2253,7 +2753,9 @@ export const ACHIEVEMENTS = [
     "id": 108,
     "faction": -1,
     "title": "Critters killed",
+    "titleZh": null,
     "description": "Critters killed",
+    "descriptionZh": null,
     "category": 135,
     "points": 0,
     "iconId": 4
@@ -2262,7 +2764,9 @@ export const ACHIEVEMENTS = [
     "id": 114,
     "faction": -1,
     "title": "Deaths from falling",
+    "titleZh": null,
     "description": "Deaths from falling",
+    "descriptionZh": null,
     "category": 126,
     "points": 0,
     "iconId": 4
@@ -2271,7 +2775,9 @@ export const ACHIEVEMENTS = [
     "id": 124,
     "faction": -1,
     "title": "Master Cook",
+    "titleZh": null,
     "description": "Become a Master Cook.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1467
@@ -2280,7 +2786,9 @@ export const ACHIEVEMENTS = [
     "id": 129,
     "faction": -1,
     "title": "Master Fisherman",
+    "titleZh": null,
     "description": "Become a Master Fisherman.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 580
@@ -2289,7 +2797,9 @@ export const ACHIEVEMENTS = [
     "id": 134,
     "faction": -1,
     "title": "Master in First Aid",
+    "titleZh": null,
     "description": "Become a Master in first aid.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 504
@@ -2298,7 +2808,9 @@ export const ACHIEVEMENTS = [
     "id": 158,
     "faction": -1,
     "title": "Me and the Cappin' Makin' it Happen",
+    "titleZh": null,
     "description": "Take 50 flags in Arathi Basin.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3470
@@ -2307,7 +2819,9 @@ export const ACHIEVEMENTS = [
     "id": 200,
     "faction": -1,
     "title": "Persistent Defender",
+    "titleZh": null,
     "description": "Return 50 flags as a defender in Warsong Gulch.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3398
@@ -2316,7 +2830,9 @@ export const ACHIEVEMENTS = [
     "id": 222,
     "faction": -1,
     "title": "Tower Defense",
+    "titleZh": null,
     "description": "Defend 50 towers in Alterac Valley.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3581
@@ -2325,7 +2841,9 @@ export const ACHIEVEMENTS = [
     "id": 248,
     "faction": -1,
     "title": "Sunday's Finest",
+    "titleZh": null,
     "description": "Discover the White Tuxedo Shirt and Black Tuxedo Pants by opening Brightly Colored Eggs during the Noblegarden celebration.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3712
@@ -2334,7 +2852,9 @@ export const ACHIEVEMENTS = [
     "id": 289,
     "faction": -1,
     "title": "The Savior of Hallow's End",
+    "titleZh": null,
     "description": "Complete one of the quests to save a village from the Headless Horseman.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3512
@@ -2343,7 +2863,9 @@ export const ACHIEVEMENTS = [
     "id": 326,
     "faction": -1,
     "title": "Gold from quest rewards",
+    "titleZh": null,
     "description": "Gold from quest rewards",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -2352,7 +2874,9 @@ export const ACHIEVEMENTS = [
     "id": 336,
     "faction": -1,
     "title": "Legendary items acquired",
+    "titleZh": null,
     "description": "Legendary items acquired",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 4
@@ -2361,7 +2885,9 @@ export const ACHIEVEMENTS = [
     "id": 345,
     "faction": -1,
     "title": "Health potions consumed",
+    "titleZh": null,
     "description": "Health potions consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 4
@@ -2370,7 +2896,9 @@ export const ACHIEVEMENTS = [
     "id": 362,
     "faction": -1,
     "title": "5v5 victories",
+    "titleZh": null,
     "description": "5v5 victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -2379,7 +2907,9 @@ export const ACHIEVEMENTS = [
     "id": 383,
     "faction": -1,
     "title": "Arena Honorable Kills",
+    "titleZh": null,
     "description": "Arena Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 4
@@ -2388,7 +2918,9 @@ export const ACHIEVEMENTS = [
     "id": 465,
     "faction": -1,
     "title": "Realm First! Level 80 Paladin",
+    "titleZh": null,
     "description": "First paladin on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 25
@@ -2397,7 +2929,9 @@ export const ACHIEVEMENTS = [
     "id": 481,
     "faction": -1,
     "title": "Ahn'kahet: The Old Kingdom",
+    "titleZh": null,
     "description": "Defeat the bosses in Ahn'kahet: The Old Kingdom.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3231
@@ -2406,7 +2940,9 @@ export const ACHIEVEMENTS = [
     "id": 492,
     "faction": -1,
     "title": "Heroic: Ahn'kahet: The Old Kingdom",
+    "titleZh": null,
     "description": "Defeat the Ahn'kahet: The Old Kingdom bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3232
@@ -2415,7 +2951,9 @@ export const ACHIEVEMENTS = [
     "id": 506,
     "faction": -1,
     "title": "500 Quests Completed",
+    "titleZh": null,
     "description": "Complete 500 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3418
@@ -2424,7 +2962,9 @@ export const ACHIEVEMENTS = [
     "id": 516,
     "faction": -1,
     "title": "1000 Honorable Kills",
+    "titleZh": null,
     "description": "Get 1000 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3457
@@ -2433,7 +2973,9 @@ export const ACHIEVEMENTS = [
     "id": 521,
     "faction": -1,
     "title": "15 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 15 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3607
@@ -2442,7 +2984,9 @@ export const ACHIEVEMENTS = [
     "id": 528,
     "faction": -1,
     "title": "Total damage received",
+    "titleZh": null,
     "description": "Total damage received",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 1
@@ -2451,7 +2995,9 @@ export const ACHIEVEMENTS = [
     "id": 564,
     "faction": -1,
     "title": "The Construct Quarter (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Construct Quarter of Naxxramas in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2956
@@ -2460,7 +3006,9 @@ export const ACHIEVEMENTS = [
     "id": 565,
     "faction": -1,
     "title": "The Construct Quarter (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Construct Quarter of Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2956
@@ -2469,7 +3017,9 @@ export const ACHIEVEMENTS = [
     "id": 608,
     "faction": -1,
     "title": "25 Coins of Ancestry",
+    "titleZh": null,
     "description": "Receive 25 Coins of Ancestry.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2717
@@ -2478,7 +3028,9 @@ export const ACHIEVEMENTS = [
     "id": 631,
     "faction": -1,
     "title": "Shadowfang Keep",
+    "titleZh": null,
     "description": "Defeat Archmage Arugal.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3822
@@ -2487,7 +3039,9 @@ export const ACHIEVEMENTS = [
     "id": 650,
     "faction": -1,
     "title": "Underbog",
+    "titleZh": null,
     "description": "Defeat The Black Stalker.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3823
@@ -2496,7 +3050,9 @@ export const ACHIEVEMENTS = [
     "id": 733,
     "faction": -1,
     "title": "Professional Master",
+    "titleZh": null,
     "description": "Become a Master in a profession.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 2846
@@ -2505,7 +3061,9 @@ export const ACHIEVEMENTS = [
     "id": 759,
     "faction": -1,
     "title": "Average daily quests completed per day",
+    "titleZh": null,
     "description": "Average daily quests completed per day",
+    "descriptionZh": null,
     "category": 133,
     "points": 0,
     "iconId": 1
@@ -2514,7 +3072,9 @@ export const ACHIEVEMENTS = [
     "id": 784,
     "faction": -1,
     "title": "Eye of the Storm Domination",
+    "titleZh": null,
     "description": "Win Eye of the Storm 10 times while holding 4 bases.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 2830
@@ -2523,7 +3083,9 @@ export const ACHIEVEMENTS = [
     "id": 799,
     "faction": -1,
     "title": "Spirit returned to body by shamans",
+    "titleZh": null,
     "description": "Spirit returned to body by shamans",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 1
@@ -2532,7 +3094,9 @@ export const ACHIEVEMENTS = [
     "id": 859,
     "faction": -1,
     "title": "Explore Eversong Woods",
+    "titleZh": null,
     "description": "Explore Eversong Woods, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3537
@@ -2541,7 +3105,9 @@ export const ACHIEVEMENTS = [
     "id": 860,
     "faction": -1,
     "title": "Explore Azuremyst Isle",
+    "titleZh": null,
     "description": "Explore Azuremyst Isle, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3545
@@ -2550,7 +3116,9 @@ export const ACHIEVEMENTS = [
     "id": 866,
     "faction": -1,
     "title": "Explore Nagrand",
+    "titleZh": null,
     "description": "Explore Nagrand, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3563
@@ -2559,7 +3127,9 @@ export const ACHIEVEMENTS = [
     "id": 876,
     "faction": -1,
     "title": "Brutally Dedicated",
+    "titleZh": null,
     "description": "Win 300 ranked arena matches at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3595
@@ -2568,7 +3138,9 @@ export const ACHIEVEMENTS = [
     "id": 894,
     "faction": -1,
     "title": "Flying High Over Skettis",
+    "titleZh": null,
     "description": "Earn exalted status within the Sha'tari Skyguard.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2422
@@ -2577,7 +3149,9 @@ export const ACHIEVEMENTS = [
     "id": 917,
     "faction": -1,
     "title": "Total deaths in 10-player raids",
+    "titleZh": null,
     "description": "Total deaths in 10-player raids",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -2586,7 +3160,9 @@ export const ACHIEVEMENTS = [
     "id": 924,
     "faction": -1,
     "title": "Most Northrend factions at Exalted",
+    "titleZh": null,
     "description": "Most Northrend factions at Exalted",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 1
@@ -2595,7 +3171,9 @@ export const ACHIEVEMENTS = [
     "id": 951,
     "faction": -1,
     "title": "The Oracles",
+    "titleZh": null,
     "description": "Earn exalted status with the The Oracles.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 1751
@@ -2604,7 +3182,9 @@ export const ACHIEVEMENTS = [
     "id": 955,
     "faction": -1,
     "title": "Hydraxian Waterlords",
+    "titleZh": null,
     "description": "Earn exalted status with the Hydraxian Waterlords.",
+    "descriptionZh": null,
     "category": 14864,
     "points": 10,
     "iconId": 2134
@@ -2613,7 +3193,9 @@ export const ACHIEVEMENTS = [
     "id": 1022,
     "faction": 1,
     "title": "Flame Warden of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Honor the flames of Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1923
@@ -2622,7 +3204,9 @@ export const ACHIEVEMENTS = [
     "id": 1066,
     "faction": -1,
     "title": "Total times LOL'd",
+    "titleZh": null,
     "description": "Total times LOL'd",
+    "descriptionZh": null,
     "category": 131,
     "points": 0,
     "iconId": 1
@@ -2631,7 +3215,9 @@ export const ACHIEVEMENTS = [
     "id": 1071,
     "faction": -1,
     "title": "Quagmirran kills (Slave Pens)",
+    "titleZh": null,
     "description": "Quagmirran kills (Slave Pens)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2051
@@ -2640,7 +3226,9 @@ export const ACHIEVEMENTS = [
     "id": 1094,
     "faction": -1,
     "title": "Chief Ukorz Sandscalp kills (Zul'Farrak)",
+    "titleZh": null,
     "description": "Chief Ukorz Sandscalp kills (Zul'Farrak)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 1698
@@ -2649,7 +3237,9 @@ export const ACHIEVEMENTS = [
     "id": 1106,
     "faction": -1,
     "title": "Deaths in Eye of the Storm",
+    "titleZh": null,
     "description": "Deaths in Eye of the Storm",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -2658,7 +3248,9 @@ export const ACHIEVEMENTS = [
     "id": 1185,
     "faction": -1,
     "title": "The Brewfest Diet",
+    "titleZh": null,
     "description": "Eat 8 of the Brewfest foods listed below.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 2996
@@ -2667,7 +3259,9 @@ export const ACHIEVEMENTS = [
     "id": 1190,
     "faction": -1,
     "title": "Mysteries of the Marsh",
+    "titleZh": null,
     "description": "Complete 54 quests in Zangarmarsh.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3585
@@ -2676,7 +3270,9 @@ export const ACHIEVEMENTS = [
     "id": 1202,
     "faction": -1,
     "title": "Weapon skills at maximum skill",
+    "titleZh": null,
     "description": "Weapon skills at maximum skill",
+    "descriptionZh": null,
     "category": 132,
     "points": 0,
     "iconId": 1
@@ -2685,7 +3281,9 @@ export const ACHIEVEMENTS = [
     "id": 1255,
     "faction": 1,
     "title": "Scrooge",
+    "titleZh": null,
     "description": "Throw a snowball at King Magni Bronzebeard during the Feast of Winter Veil.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 1665
@@ -2694,7 +3292,9 @@ export const ACHIEVEMENTS = [
     "id": 1266,
     "faction": -1,
     "title": "Explore Grizzly Hills",
+    "titleZh": null,
     "description": "Explore Grizzly Hills, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3333
@@ -2703,7 +3303,9 @@ export const ACHIEVEMENTS = [
     "id": 1287,
     "faction": -1,
     "title": "Outland Dungeon Hero",
+    "titleZh": null,
     "description": "Complete the heroic Burning Crusade dungeon achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 20,
     "iconId": 1762
@@ -2712,7 +3314,9 @@ export const ACHIEVEMENTS = [
     "id": 1339,
     "faction": -1,
     "title": "Mage portal taken most",
+    "titleZh": null,
     "description": "Mage portal taken most",
+    "descriptionZh": null,
     "category": 134,
     "points": 0,
     "iconId": 1
@@ -2721,7 +3325,9 @@ export const ACHIEVEMENTS = [
     "id": 1356,
     "faction": 0,
     "title": "I've Toured the Fjord",
+    "titleZh": null,
     "description": "Complete 105 quests in Howling Fjord.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3337
@@ -2730,7 +3336,9 @@ export const ACHIEVEMENTS = [
     "id": 1465,
     "faction": -1,
     "title": "Emblems of Valor acquired",
+    "titleZh": null,
     "description": "Emblems of Valor acquired",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -2739,7 +3347,9 @@ export const ACHIEVEMENTS = [
     "id": 1490,
     "faction": -1,
     "title": "Arena Killing Blows",
+    "titleZh": null,
     "description": "Arena Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 4
@@ -2748,7 +3358,9 @@ export const ACHIEVEMENTS = [
     "id": 1505,
     "faction": -1,
     "title": "Keristrasza kills (Heroic Nexus)",
+    "titleZh": null,
     "description": "Keristrasza kills (Heroic Nexus)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 56
@@ -2757,7 +3369,9 @@ export const ACHIEVEMENTS = [
     "id": 1678,
     "faction": 1,
     "title": "Loremaster of Kalimdor",
+    "titleZh": null,
     "description": "Complete 700 quests in Kalimdor.",
+    "descriptionZh": null,
     "category": 14861,
     "points": 10,
     "iconId": 3491
@@ -2766,7 +3380,9 @@ export const ACHIEVEMENTS = [
     "id": 1699,
     "faction": -1,
     "title": "Fistful of Love",
+    "titleZh": null,
     "description": "Use a Handful of Rose Petals on each of the race/class combinations listed below.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1848
@@ -2775,7 +3391,9 @@ export const ACHIEVEMENTS = [
     "id": 1730,
     "faction": -1,
     "title": "Blacksmithing Plans learned",
+    "titleZh": null,
     "description": "Blacksmithing Plans learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -2784,7 +3402,9 @@ export const ACHIEVEMENTS = [
     "id": 1765,
     "faction": -1,
     "title": "Steady Hands",
+    "titleZh": null,
     "description": "Disarm 5 seaforium charges in a single battle.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 1755
@@ -2793,7 +3413,9 @@ export const ACHIEVEMENTS = [
     "id": 1792,
     "faction": -1,
     "title": "Aw, Isn't It Cute?",
+    "titleZh": null,
     "description": "Obtain one of the Children's Week reward pets.",
+    "descriptionZh": null,
     "category": 163,
     "points": 10,
     "iconId": 1588
@@ -2802,7 +3424,9 @@ export const ACHIEVEMENTS = [
     "id": 1976,
     "faction": -1,
     "title": "Dalaran Cooking Awards gained",
+    "titleZh": null,
     "description": "Dalaran Cooking Awards gained",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 1
@@ -2811,7 +3435,9 @@ export const ACHIEVEMENTS = [
     "id": 2199,
     "faction": -1,
     "title": "Wintergrasp Ranger",
+    "titleZh": null,
     "description": "Kill 10 players in each of the Wintergrasp areas listed below.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2945
@@ -2820,7 +3446,9 @@ export const ACHIEVEMENTS = [
     "id": 2397,
     "faction": -1,
     "title": "Battleground won the most",
+    "titleZh": null,
     "description": "Battleground won the most",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -2829,7 +3457,9 @@ export const ACHIEVEMENTS = [
     "id": 2797,
     "faction": 1,
     "title": "Noble Gardener",
+    "titleZh": null,
     "description": "Complete the Noblegarden achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3202
@@ -2838,7 +3468,9 @@ export const ACHIEVEMENTS = [
     "id": 2836,
     "faction": -1,
     "title": "Lance a Lot",
+    "titleZh": null,
     "description": "Best a rider of every racial faction at the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 370
@@ -2847,7 +3479,9 @@ export const ACHIEVEMENTS = [
     "id": 2859,
     "faction": -1,
     "title": "XT-002 Deconstructor kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "XT-002 Deconstructor kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -2856,7 +3490,9 @@ export const ACHIEVEMENTS = [
     "id": 2892,
     "faction": -1,
     "title": "The Descent into Madness (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Descent into Madness area of Ulduar in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3848
@@ -2865,7 +3501,9 @@ export const ACHIEVEMENTS = [
     "id": 2893,
     "faction": -1,
     "title": "The Descent into Madness (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Descent into Madness area of Ulduar in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3848
@@ -2874,7 +3512,9 @@ export const ACHIEVEMENTS = [
     "id": 3556,
     "faction": 1,
     "title": "Pilgrim's Paunch",
+    "titleZh": null,
     "description": "Acquire the Spirit of Sharing from a complete Bountiful Table feast at every Alliance capital.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3709
@@ -2883,7 +3523,9 @@ export const ACHIEVEMENTS = [
     "id": 3846,
     "faction": 1,
     "title": "Resource Glut",
+    "titleZh": null,
     "description": "Win Isle of Conquest while your team controls the Quarry and Oil Refinery.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 3736
@@ -2892,7 +3534,9 @@ export const ACHIEVEMENTS = [
     "id": 3936,
     "faction": -1,
     "title": "Not One, But Two Jormungars (10 player)",
+    "titleZh": null,
     "description": "Defeat Acidmaw and Dreadscale within 10 seconds of each other in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 4025
@@ -2901,7 +3545,9 @@ export const ACHIEVEMENTS = [
     "id": 3937,
     "faction": -1,
     "title": "Not One, But Two Jormungars (25 player)",
+    "titleZh": null,
     "description": "Defeat Acidmaw and Dreadscale within 10 seconds of each other in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 4025
@@ -2910,7 +3556,9 @@ export const ACHIEVEMENTS = [
     "id": 4049,
     "faction": -1,
     "title": "Victories over Mage Champion (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Mage Champion (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -2919,7 +3567,9 @@ export const ACHIEVEMENTS = [
     "id": 4629,
     "faction": -1,
     "title": "Heroic: The Plagueworks (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Plagueworks in Icecrown Citadel in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4177
@@ -2928,7 +3578,9 @@ export const ACHIEVEMENTS = [
     "id": 4633,
     "faction": -1,
     "title": "Heroic: The Plagueworks (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Plagueworks in Icecrown Citadel in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4177
@@ -2937,7 +3589,9 @@ export const ACHIEVEMENTS = [
     "id": 4716,
     "faction": -1,
     "title": "Devourer of Souls kills (Heroic Forge of Souls)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -2946,7 +3600,9 @@ export const ACHIEVEMENTS = [
     "id": 10,
     "faction": -1,
     "title": "Level 50",
+    "titleZh": null,
     "description": "Reach level 50.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3272
@@ -2955,7 +3611,9 @@ export const ACHIEVEMENTS = [
     "id": 35,
     "faction": 1,
     "title": "Might of Dragonblight",
+    "titleZh": null,
     "description": "Complete 115 quests in Dragonblight.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3338
@@ -2964,7 +3622,9 @@ export const ACHIEVEMENTS = [
     "id": 46,
     "faction": -1,
     "title": "World Explorer",
+    "titleZh": null,
     "description": "Explore Eastern Kingdoms, Kalimdor, Outland and Northrend.",
+    "descriptionZh": null,
     "category": 97,
     "points": 50,
     "iconId": 2759
@@ -2973,7 +3633,9 @@ export const ACHIEVEMENTS = [
     "id": 53,
     "faction": -1,
     "title": "Alterac Valley battles",
+    "titleZh": null,
     "description": "Alterac Valley battles",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -2982,7 +3644,9 @@ export const ACHIEVEMENTS = [
     "id": 73,
     "faction": -1,
     "title": "Disgracin' The Basin",
+    "titleZh": null,
     "description": "Assault 3 bases in a single Arathi Basin battle.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 456
@@ -2991,7 +3655,9 @@ export const ACHIEVEMENTS = [
     "id": 94,
     "faction": -1,
     "title": "Quests abandoned",
+    "titleZh": null,
     "description": "Quests abandoned",
+    "descriptionZh": null,
     "category": 133,
     "points": 0,
     "iconId": 0
@@ -3000,7 +3666,9 @@ export const ACHIEVEMENTS = [
     "id": 115,
     "faction": -1,
     "title": "Deaths from fire and lava",
+    "titleZh": null,
     "description": "Deaths from fire and lava",
+    "descriptionZh": null,
     "category": 126,
     "points": 0,
     "iconId": 4
@@ -3009,7 +3677,9 @@ export const ACHIEVEMENTS = [
     "id": 125,
     "faction": -1,
     "title": "Grand Master Cook",
+    "titleZh": null,
     "description": "Become a Grand Master Cook.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1467
@@ -3018,7 +3688,9 @@ export const ACHIEVEMENTS = [
     "id": 130,
     "faction": -1,
     "title": "Grand Master Fisherman",
+    "titleZh": null,
     "description": "Become a Grand Master Fisherman.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 580
@@ -3027,7 +3699,9 @@ export const ACHIEVEMENTS = [
     "id": 135,
     "faction": -1,
     "title": "Grand Master in First Aid",
+    "titleZh": null,
     "description": "Become a Grand Master in first aid.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 504
@@ -3036,7 +3710,9 @@ export const ACHIEVEMENTS = [
     "id": 189,
     "faction": -1,
     "title": "Largest heal cast",
+    "titleZh": null,
     "description": "Largest heal cast",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 4
@@ -3045,7 +3721,9 @@ export const ACHIEVEMENTS = [
     "id": 214,
     "faction": -1,
     "title": "Flurry",
+    "titleZh": null,
     "description": "Win Eye of the Storm in under 6 minutes.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3386
@@ -3054,7 +3732,9 @@ export const ACHIEVEMENTS = [
     "id": 224,
     "faction": 0,
     "title": "Loyal Defender",
+    "titleZh": null,
     "description": "In Alterac Valley, kill 50 enemy players in the Hall of the Frostwolf.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3582
@@ -3063,7 +3743,9 @@ export const ACHIEVEMENTS = [
     "id": 249,
     "faction": -1,
     "title": "Dressed for the Occasion",
+    "titleZh": null,
     "description": "Discover an Elegant Dress by opening Brightly Colored Eggs during the Noblegarden celebration.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3713
@@ -3072,7 +3754,9 @@ export const ACHIEVEMENTS = [
     "id": 281,
     "faction": -1,
     "title": "First Aid skill",
+    "titleZh": null,
     "description": "First Aid skill",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 1
@@ -3081,7 +3765,9 @@ export const ACHIEVEMENTS = [
     "id": 339,
     "faction": -1,
     "title": "Mounts owned",
+    "titleZh": null,
     "description": "Mounts owned",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 4
@@ -3090,7 +3776,9 @@ export const ACHIEVEMENTS = [
     "id": 353,
     "faction": -1,
     "title": "Number of times hearthed",
+    "titleZh": null,
     "description": "Number of times hearthed",
+    "descriptionZh": null,
     "category": 134,
     "points": 0,
     "iconId": 4
@@ -3099,7 +3787,9 @@ export const ACHIEVEMENTS = [
     "id": 365,
     "faction": -1,
     "title": "3v3 matches",
+    "titleZh": null,
     "description": "3v3 matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -3108,7 +3798,9 @@ export const ACHIEVEMENTS = [
     "id": 382,
     "faction": -1,
     "title": "Battleground Honorable Kills",
+    "titleZh": null,
     "description": "Battleground Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 4
@@ -3117,7 +3809,9 @@ export const ACHIEVEMENTS = [
     "id": 464,
     "faction": -1,
     "title": "Realm First! Level 80 Priest",
+    "titleZh": null,
     "description": "First priest on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1523
@@ -3126,7 +3820,9 @@ export const ACHIEVEMENTS = [
     "id": 482,
     "faction": -1,
     "title": "Drak'Tharon Keep",
+    "titleZh": null,
     "description": "Defeat the bosses in Drak'Tharon Keep.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3233
@@ -3135,7 +3831,9 @@ export const ACHIEVEMENTS = [
     "id": 493,
     "faction": -1,
     "title": "Heroic: Drak'Tharon Keep",
+    "titleZh": null,
     "description": "Defeat the Drak'Tharon Keep bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3234
@@ -3144,7 +3842,9 @@ export const ACHIEVEMENTS = [
     "id": 507,
     "faction": -1,
     "title": "1000 Quests Completed",
+    "titleZh": null,
     "description": "Complete 1000 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3417
@@ -3153,7 +3853,9 @@ export const ACHIEVEMENTS = [
     "id": 512,
     "faction": -1,
     "title": "5000 Honorable Kills",
+    "titleZh": null,
     "description": "Get 5000 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3459
@@ -3162,7 +3864,9 @@ export const ACHIEVEMENTS = [
     "id": 520,
     "faction": -1,
     "title": "20 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 20 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3606
@@ -3171,7 +3875,9 @@ export const ACHIEVEMENTS = [
     "id": 566,
     "faction": -1,
     "title": "The Plague Quarter (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Plague Quarter of Naxxramas in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2997
@@ -3180,7 +3886,9 @@ export const ACHIEVEMENTS = [
     "id": 567,
     "faction": -1,
     "title": "The Plague Quarter (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Plague Quarter of Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2997
@@ -3189,7 +3897,9 @@ export const ACHIEVEMENTS = [
     "id": 609,
     "faction": -1,
     "title": "50 Coins of Ancestry",
+    "titleZh": null,
     "description": "Receive 50 Coins of Ancestry.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2717
@@ -3198,7 +3908,9 @@ export const ACHIEVEMENTS = [
     "id": 632,
     "faction": -1,
     "title": "Blackfathom Deeps",
+    "titleZh": null,
     "description": "Defeat Aku'mai.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3653
@@ -3207,7 +3919,9 @@ export const ACHIEVEMENTS = [
     "id": 651,
     "faction": -1,
     "title": "Mana-Tombs",
+    "titleZh": null,
     "description": "Defeat Nexus-Prince Shaffar.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3666
@@ -3216,7 +3930,9 @@ export const ACHIEVEMENTS = [
     "id": 699,
     "faction": -1,
     "title": "World Wide Winner",
+    "titleZh": null,
     "description": "Win a ranked arena match in Blade's Edge, Nagrand, The Ring of Valor, Dalaran Sewers and the Ruins of Lordaeron at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 535
@@ -3225,7 +3941,9 @@ export const ACHIEVEMENTS = [
     "id": 734,
     "faction": -1,
     "title": "Professional Grand Master",
+    "titleZh": null,
     "description": "Become a Grand Master in a profession.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 2846
@@ -3234,7 +3952,9 @@ export const ACHIEVEMENTS = [
     "id": 750,
     "faction": -1,
     "title": "Explore The Barrens",
+    "titleZh": null,
     "description": "Explore The Barrens, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3547
@@ -3243,7 +3963,9 @@ export const ACHIEVEMENTS = [
     "id": 779,
     "faction": -1,
     "title": "Explore Loch Modan",
+    "titleZh": null,
     "description": "Explore Loch Modan, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3558
@@ -3252,7 +3974,9 @@ export const ACHIEVEMENTS = [
     "id": 800,
     "faction": -1,
     "title": "Redeemed by paladins",
+    "titleZh": null,
     "description": "Redeemed by paladins",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 1
@@ -3261,7 +3985,9 @@ export const ACHIEVEMENTS = [
     "id": 865,
     "faction": -1,
     "title": "Explore Blade's Edge Mountains",
+    "titleZh": null,
     "description": "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3549
@@ -3270,7 +3996,9 @@ export const ACHIEVEMENTS = [
     "id": 872,
     "faction": -1,
     "title": "Frenzied Defender",
+    "titleZh": null,
     "description": "Return 5 flags in a single Warsong Gulch battle.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3484
@@ -3279,7 +4007,9 @@ export const ACHIEVEMENTS = [
     "id": 896,
     "faction": -1,
     "title": "A Quest a Day Keeps the Ogres at Bay",
+    "titleZh": null,
     "description": "Earn exalted status within Ogri'la.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2448
@@ -3288,7 +4018,9 @@ export const ACHIEVEMENTS = [
     "id": 916,
     "faction": -1,
     "title": "Total deaths in 25-player raids",
+    "titleZh": null,
     "description": "Total deaths in 25-player raids",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -3297,7 +4029,9 @@ export const ACHIEVEMENTS = [
     "id": 919,
     "faction": -1,
     "title": "Gold earned from auctions",
+    "titleZh": null,
     "description": "Gold earned from auctions",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -3306,7 +4040,9 @@ export const ACHIEVEMENTS = [
     "id": 925,
     "faction": -1,
     "title": "Most Outland factions at Exalted",
+    "titleZh": null,
     "description": "Most Outland factions at Exalted",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 1
@@ -3315,7 +4051,9 @@ export const ACHIEVEMENTS = [
     "id": 952,
     "faction": -1,
     "title": "Mercenary of Sholazar",
+    "titleZh": null,
     "description": "Earn exalted status with the The Oracles and the Frenzyheart Tribe.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 229
@@ -3324,7 +4062,9 @@ export const ACHIEVEMENTS = [
     "id": 956,
     "faction": -1,
     "title": "Brood of Nozdormu",
+    "titleZh": null,
     "description": "Earn exalted status with the Brood of Nozdormu.",
+    "descriptionZh": null,
     "category": 14864,
     "points": 10,
     "iconId": 1701
@@ -3333,7 +4073,9 @@ export const ACHIEVEMENTS = [
     "id": 979,
     "faction": -1,
     "title": "The Mask Task",
+    "titleZh": null,
     "description": "Obtain a Flimsy Mask during Hallow's End.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2954
@@ -3342,7 +4084,9 @@ export const ACHIEVEMENTS = [
     "id": 1023,
     "faction": 1,
     "title": "Flame Warden of Kalimdor",
+    "titleZh": null,
     "description": "Honor the flames of Kalimdor.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1923
@@ -3351,7 +4095,9 @@ export const ACHIEVEMENTS = [
     "id": 1045,
     "faction": -1,
     "title": "Total cheers",
+    "titleZh": null,
     "description": "Total cheers",
+    "descriptionZh": null,
     "category": 131,
     "points": 0,
     "iconId": 1
@@ -3360,7 +4106,9 @@ export const ACHIEVEMENTS = [
     "id": 1072,
     "faction": -1,
     "title": "Black Stalker kills (Underbog)",
+    "titleZh": null,
     "description": "Black Stalker kills (Underbog)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2603
@@ -3369,7 +4117,9 @@ export const ACHIEVEMENTS = [
     "id": 1095,
     "faction": -1,
     "title": "Emperor Dagran Thaurissan kills (Blackrock Depths)",
+    "titleZh": null,
     "description": "Emperor Dagran Thaurissan kills (Blackrock Depths)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2302
@@ -3378,7 +4128,9 @@ export const ACHIEVEMENTS = [
     "id": 1191,
     "faction": 1,
     "title": "Terror of Terokkar",
+    "titleZh": null,
     "description": "Complete 63 quests in Terokkar Forest.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3586
@@ -3387,7 +4139,9 @@ export const ACHIEVEMENTS = [
     "id": 1232,
     "faction": -1,
     "title": "Anub'arak kills (Azjol-Nerub)",
+    "titleZh": null,
     "description": "Anub'arak kills (Azjol-Nerub)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 1899
@@ -3396,7 +4150,9 @@ export const ACHIEVEMENTS = [
     "id": 1267,
     "faction": -1,
     "title": "Explore Zul'Drak",
+    "titleZh": null,
     "description": "Explore Zul'Drak, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3334
@@ -3405,7 +4161,9 @@ export const ACHIEVEMENTS = [
     "id": 1279,
     "faction": 1,
     "title": "Flirt With Disaster",
+    "titleZh": null,
     "description": "Get completely smashed, put on your best perfume, throw a handful of rose petals on Sraaz and then kiss him. You'll regret it in the morning.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1846
@@ -3414,7 +4172,9 @@ export const ACHIEVEMENTS = [
     "id": 1282,
     "faction": -1,
     "title": "Fa-la-la-la-Ogri'la",
+    "titleZh": null,
     "description": "Complete the Bomb Them Again! quest while mounted on a flying reindeer during the Feast of Winter Veil.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 3700
@@ -3423,7 +4183,9 @@ export const ACHIEVEMENTS = [
     "id": 1286,
     "faction": -1,
     "title": "Outland Raider",
+    "titleZh": null,
     "description": "Complete the Burning Crusade raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 20,
     "iconId": 3204
@@ -3432,7 +4194,9 @@ export const ACHIEVEMENTS = [
     "id": 1299,
     "faction": -1,
     "title": "Health potion used most",
+    "titleZh": null,
     "description": "Health potion used most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -3441,7 +4205,9 @@ export const ACHIEVEMENTS = [
     "id": 1491,
     "faction": -1,
     "title": "Battleground Killing Blows",
+    "titleZh": null,
     "description": "Battleground Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 4
@@ -3450,7 +4216,9 @@ export const ACHIEVEMENTS = [
     "id": 1500,
     "faction": -1,
     "title": "Deaths in Strand of the Ancients",
+    "titleZh": null,
     "description": "Deaths in Strand of the Ancients",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -3459,7 +4227,9 @@ export const ACHIEVEMENTS = [
     "id": 1535,
     "faction": -1,
     "title": "Highest Enchanting skill",
+    "titleZh": null,
     "description": "Highest Enchanting skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -3468,7 +4238,9 @@ export const ACHIEVEMENTS = [
     "id": 1680,
     "faction": 0,
     "title": "Loremaster of Kalimdor",
+    "titleZh": null,
     "description": "Complete 685 quests in Kalimdor.",
+    "descriptionZh": null,
     "category": 14861,
     "points": 10,
     "iconId": 3491
@@ -3477,7 +4249,9 @@ export const ACHIEVEMENTS = [
     "id": 1737,
     "faction": 1,
     "title": "Destruction Derby",
+    "titleZh": null,
     "description": "Destroy each of the vehicles listed below.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3505
@@ -3486,7 +4260,9 @@ export const ACHIEVEMENTS = [
     "id": 1757,
     "faction": 1,
     "title": "Defense of the Ancients",
+    "titleZh": null,
     "description": "Defend the beach without losing any walls.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 276
@@ -3495,7 +4271,9 @@ export const ACHIEVEMENTS = [
     "id": 1786,
     "faction": -1,
     "title": "School of Hard Knocks",
+    "titleZh": null,
     "description": "Take your orphan into the battlegrounds and complete the feats listed below.",
+    "descriptionZh": null,
     "category": 163,
     "points": 10,
     "iconId": 1511
@@ -3504,7 +4282,9 @@ export const ACHIEVEMENTS = [
     "id": 2773,
     "faction": -1,
     "title": "It's Just a Flesh Wound",
+    "titleZh": null,
     "description": "Unmask and defeat the Black Knight at the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 2737
@@ -3513,7 +4293,9 @@ export const ACHIEVEMENTS = [
     "id": 2796,
     "faction": -1,
     "title": "Brew of the Month",
+    "titleZh": null,
     "description": "Join the Brew of the Month club.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 3082
@@ -3522,7 +4304,9 @@ export const ACHIEVEMENTS = [
     "id": 2798,
     "faction": 0,
     "title": "Noble Gardener",
+    "titleZh": null,
     "description": "Complete the Noblegarden achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3202
@@ -3531,7 +4315,9 @@ export const ACHIEVEMENTS = [
     "id": 2860,
     "faction": -1,
     "title": "Assembly of Iron kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Assembly of Iron kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -3540,7 +4326,9 @@ export const ACHIEVEMENTS = [
     "id": 2894,
     "faction": -1,
     "title": "The Secrets of Ulduar (10 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Ulduar in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 25,
     "iconId": 3849
@@ -3549,7 +4337,9 @@ export const ACHIEVEMENTS = [
     "id": 2895,
     "faction": -1,
     "title": "The Secrets of Ulduar (25 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Ulduar in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 25,
     "iconId": 3849
@@ -3558,7 +4348,9 @@ export const ACHIEVEMENTS = [
     "id": 3018,
     "faction": -1,
     "title": "Emblems of Conquest acquired",
+    "titleZh": null,
     "description": "Emblems of Conquest acquired",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -3567,7 +4359,9 @@ export const ACHIEVEMENTS = [
     "id": 3557,
     "faction": 0,
     "title": "Pilgrim's Paunch",
+    "titleZh": null,
     "description": "Acquire the Spirit of Sharing from a complete Bountiful Table feast at every Horde capital.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3709
@@ -3576,7 +4370,9 @@ export const ACHIEVEMENTS = [
     "id": 3851,
     "faction": 1,
     "title": "Mine",
+    "titleZh": null,
     "description": "Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 4016
@@ -3585,7 +4381,9 @@ export const ACHIEVEMENTS = [
     "id": 3996,
     "faction": -1,
     "title": "Three Sixty Pain Spike (10 player)",
+    "titleZh": null,
     "description": "Defeat Lord Jaraxxus while at least two Mistresses of Pain are alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 1942
@@ -3594,7 +4392,9 @@ export const ACHIEVEMENTS = [
     "id": 3997,
     "faction": -1,
     "title": "Three Sixty Pain Spike (25 player)",
+    "titleZh": null,
     "description": "Defeat Lord Jaraxxus while at least two Mistresses of Pain are alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 1942
@@ -3603,7 +4403,9 @@ export const ACHIEVEMENTS = [
     "id": 4050,
     "faction": -1,
     "title": "Victories over Rogue Champion (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Rogue Champion (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -3612,7 +4414,9 @@ export const ACHIEVEMENTS = [
     "id": 4529,
     "faction": -1,
     "title": "The Crimson Hall (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Crimson Hall in Icecrown Citadel in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4178
@@ -3621,7 +4425,9 @@ export const ACHIEVEMENTS = [
     "id": 4606,
     "faction": -1,
     "title": "The Crimson Hall (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Crimson Hall in Icecrown Citadel in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4178
@@ -3630,7 +4436,9 @@ export const ACHIEVEMENTS = [
     "id": 4717,
     "faction": -1,
     "title": "Forgemaster Garfrost kills (Pit of Saron)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -3639,7 +4447,9 @@ export const ACHIEVEMENTS = [
     "id": 11,
     "faction": -1,
     "title": "Level 60",
+    "titleZh": null,
     "description": "Reach level 60.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3273
@@ -3648,7 +4458,9 @@ export const ACHIEVEMENTS = [
     "id": 49,
     "faction": -1,
     "title": "Alterac Valley victories",
+    "titleZh": null,
     "description": "Alterac Valley victories",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -3657,7 +4469,9 @@ export const ACHIEVEMENTS = [
     "id": 58,
     "faction": 1,
     "title": "Deaths from Drek'Thar",
+    "titleZh": null,
     "description": "Deaths from Drek'Thar",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -3666,7 +4480,9 @@ export const ACHIEVEMENTS = [
     "id": 137,
     "faction": -1,
     "title": "Stocking Up",
+    "titleZh": null,
     "description": "Create 500 Heavy Frostweave Bandages.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 2497
@@ -3675,7 +4491,9 @@ export const ACHIEVEMENTS = [
     "id": 153,
     "faction": -1,
     "title": "The Old Gnome and the Sea",
+    "titleZh": null,
     "description": "Successfully fish from a school.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3694
@@ -3684,7 +4502,9 @@ export const ACHIEVEMENTS = [
     "id": 178,
     "faction": -1,
     "title": "Enchanting formulae learned",
+    "titleZh": null,
     "description": "Enchanting formulae learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -3693,7 +4513,9 @@ export const ACHIEVEMENTS = [
     "id": 206,
     "faction": 1,
     "title": "Supreme Defender",
+    "titleZh": null,
     "description": "Kill 100 flag carriers in Warsong Gulch.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3400
@@ -3702,7 +4524,9 @@ export const ACHIEVEMENTS = [
     "id": 213,
     "faction": -1,
     "title": "Stormtrooper",
+    "titleZh": null,
     "description": "Kill 5 flag carriers in a single Eye of the Storm battle.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3401
@@ -3711,7 +4535,9 @@ export const ACHIEVEMENTS = [
     "id": 277,
     "faction": -1,
     "title": "'Tis the Season",
+    "titleZh": null,
     "description": "During the Feast of Winter Veil, wear 3 pieces of winter clothing and eat Graccu's Mince Meat Fruitcake.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 1789
@@ -3720,7 +4546,9 @@ export const ACHIEVEMENTS = [
     "id": 284,
     "faction": -1,
     "title": "A Mask for All Occasions",
+    "titleZh": null,
     "description": "Collect the 20 unique Flimsy Masks listed below.",
+    "descriptionZh": null,
     "category": 158,
     "points": 20,
     "iconId": 2953
@@ -3729,7 +4557,9 @@ export const ACHIEVEMENTS = [
     "id": 322,
     "faction": -1,
     "title": "Total deaths to Lich King dungeon bosses",
+    "titleZh": null,
     "description": "Total deaths to Lich King dungeon bosses",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 4
@@ -3738,7 +4568,9 @@ export const ACHIEVEMENTS = [
     "id": 329,
     "faction": -1,
     "title": "Auctions posted",
+    "titleZh": null,
     "description": "Auctions posted",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -3747,7 +4579,9 @@ export const ACHIEVEMENTS = [
     "id": 338,
     "faction": -1,
     "title": "Vanity pets owned",
+    "titleZh": null,
     "description": "Vanity pets owned",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 4
@@ -3756,7 +4590,9 @@ export const ACHIEVEMENTS = [
     "id": 364,
     "faction": -1,
     "title": "3v3 victories",
+    "titleZh": null,
     "description": "3v3 victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -3765,7 +4601,9 @@ export const ACHIEVEMENTS = [
     "id": 399,
     "faction": -1,
     "title": "Just the Two of Us: 1550",
+    "titleZh": null,
     "description": "Earn a 1550 personal rating in the 2v2 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3039
@@ -3774,7 +4612,9 @@ export const ACHIEVEMENTS = [
     "id": 463,
     "faction": -1,
     "title": "Realm First! Level 80 Warlock",
+    "titleZh": null,
     "description": "First warlock on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 155
@@ -3783,7 +4623,9 @@ export const ACHIEVEMENTS = [
     "id": 483,
     "faction": -1,
     "title": "The Violet Hold",
+    "titleZh": null,
     "description": "Defeat Cyanigosa in The Violet Hold.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3235
@@ -3792,7 +4634,9 @@ export const ACHIEVEMENTS = [
     "id": 494,
     "faction": -1,
     "title": "Heroic: The Violet Hold",
+    "titleZh": null,
     "description": "Defeat Cyanigosa in The Violet Hold on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3236
@@ -3801,7 +4645,9 @@ export const ACHIEVEMENTS = [
     "id": 508,
     "faction": -1,
     "title": "1500 Quests Completed",
+    "titleZh": null,
     "description": "Complete 1500 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3416
@@ -3810,7 +4656,9 @@ export const ACHIEVEMENTS = [
     "id": 509,
     "faction": -1,
     "title": "10000 Honorable Kills",
+    "titleZh": null,
     "description": "Get 10000 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3462
@@ -3819,7 +4667,9 @@ export const ACHIEVEMENTS = [
     "id": 519,
     "faction": -1,
     "title": "25 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 25 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3605
@@ -3828,7 +4678,9 @@ export const ACHIEVEMENTS = [
     "id": 568,
     "faction": -1,
     "title": "The Military Quarter (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Military Quarter of Naxxramas in 10 player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2639
@@ -3837,7 +4689,9 @@ export const ACHIEVEMENTS = [
     "id": 569,
     "faction": -1,
     "title": "The Military Quarter (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Military Quarter of Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2639
@@ -3846,7 +4700,9 @@ export const ACHIEVEMENTS = [
     "id": 626,
     "faction": -1,
     "title": "Lunar Festival Finery",
+    "titleZh": null,
     "description": "Purchase a festive pant suit or festive dress with Coins of Ancestry.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2789
@@ -3855,7 +4711,9 @@ export const ACHIEVEMENTS = [
     "id": 633,
     "faction": -1,
     "title": "Stormwind Stockade",
+    "titleZh": null,
     "description": "Defeat Bazil Thredd.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3652
@@ -3864,7 +4722,9 @@ export const ACHIEVEMENTS = [
     "id": 666,
     "faction": -1,
     "title": "Auchenai Crypts",
+    "titleZh": null,
     "description": "Defeat Exarch Maladaar.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3590
@@ -3873,7 +4733,9 @@ export const ACHIEVEMENTS = [
     "id": 735,
     "faction": -1,
     "title": "Working Day and Night",
+    "titleZh": null,
     "description": "Become a Grand Master in two professions.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 162
@@ -3882,7 +4744,9 @@ export const ACHIEVEMENTS = [
     "id": 801,
     "faction": -1,
     "title": "Resurrected by soulstones",
+    "titleZh": null,
     "description": "Resurrected by soulstones",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 1
@@ -3891,7 +4755,9 @@ export const ACHIEVEMENTS = [
     "id": 802,
     "faction": -1,
     "title": "Explore Westfall",
+    "titleZh": null,
     "description": "Explore Westfall, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3572
@@ -3900,7 +4766,9 @@ export const ACHIEVEMENTS = [
     "id": 829,
     "faction": -1,
     "title": "Largest heal received",
+    "titleZh": null,
     "description": "Largest heal received",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 1
@@ -3909,7 +4777,9 @@ export const ACHIEVEMENTS = [
     "id": 843,
     "faction": -1,
     "title": "Explore Netherstorm",
+    "titleZh": null,
     "description": "Explore Netherstorm, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3564
@@ -3918,7 +4788,9 @@ export const ACHIEVEMENTS = [
     "id": 844,
     "faction": -1,
     "title": "Explore Darkshore",
+    "titleZh": null,
     "description": "Explore Darkshore, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3553
@@ -3927,7 +4799,9 @@ export const ACHIEVEMENTS = [
     "id": 877,
     "faction": -1,
     "title": "The Cake Is Not A Lie",
+    "titleZh": null,
     "description": "Bake a Delicious Chocolate Cake.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2917
@@ -3936,7 +4810,9 @@ export const ACHIEVEMENTS = [
     "id": 897,
     "faction": -1,
     "title": "You're So Offensive",
+    "titleZh": null,
     "description": "Earn exalted status with the Shattered Sun Offensive.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2807
@@ -3945,7 +4821,9 @@ export const ACHIEVEMENTS = [
     "id": 1007,
     "faction": -1,
     "title": "The Wyrmrest Accord",
+    "titleZh": null,
     "description": "Earn exalted status with The Wyrmrest Accord.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 3684
@@ -3954,7 +4832,9 @@ export const ACHIEVEMENTS = [
     "id": 1024,
     "faction": 1,
     "title": "Flame Warden of Outland",
+    "titleZh": null,
     "description": "Honor the flames of Outland.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1923
@@ -3963,7 +4843,9 @@ export const ACHIEVEMENTS = [
     "id": 1065,
     "faction": -1,
     "title": "Total waves",
+    "titleZh": null,
     "description": "Total waves",
+    "descriptionZh": null,
     "category": 131,
     "points": 0,
     "iconId": 1
@@ -3972,7 +4854,9 @@ export const ACHIEVEMENTS = [
     "id": 1073,
     "faction": -1,
     "title": "Exarch Maladaar kills (Auchenai Crypts)",
+    "titleZh": null,
     "description": "Exarch Maladaar kills (Auchenai Crypts)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2796
@@ -3981,7 +4865,9 @@ export const ACHIEVEMENTS = [
     "id": 1097,
     "faction": -1,
     "title": "Baron Rivendare kills (Stratholme)",
+    "titleZh": null,
     "description": "Baron Rivendare kills (Stratholme)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2718
@@ -3990,7 +4876,9 @@ export const ACHIEVEMENTS = [
     "id": 1151,
     "faction": 1,
     "title": "Loyal Defender",
+    "titleZh": null,
     "description": "In Alterac Valley, kill 50 enemy players in the Hall of the Stormpike.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3582
@@ -3999,7 +4887,9 @@ export const ACHIEVEMENTS = [
     "id": 1153,
     "faction": -1,
     "title": "Overly Defensive",
+    "titleZh": null,
     "description": "Defend 3 bases in a single Arathi Basin battle.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3397
@@ -4008,7 +4898,9 @@ export const ACHIEVEMENTS = [
     "id": 1183,
     "faction": -1,
     "title": "Brew of the Year",
+    "titleZh": null,
     "description": "Sample 12 beers featured in the Brew of the Month club.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 2535
@@ -4017,7 +4909,9 @@ export const ACHIEVEMENTS = [
     "id": 1268,
     "faction": -1,
     "title": "Explore Sholazar Basin",
+    "titleZh": null,
     "description": "Explore Sholazar Basin, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3335
@@ -4026,7 +4920,9 @@ export const ACHIEVEMENTS = [
     "id": 1272,
     "faction": 0,
     "title": "Terror of Terokkar",
+    "titleZh": null,
     "description": "Complete 68 quests in Terokkar Forest.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3586
@@ -4035,7 +4931,9 @@ export const ACHIEVEMENTS = [
     "id": 1280,
     "faction": 0,
     "title": "Flirt With Disaster",
+    "titleZh": null,
     "description": "Get completely smashed, put on your best perfume, throw a handful of rose petals on Jeremiah Payson and then kiss him. You'll regret it in the morning.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1846
@@ -4044,7 +4942,9 @@ export const ACHIEVEMENTS = [
     "id": 1288,
     "faction": -1,
     "title": "Northrend Dungeonmaster",
+    "titleZh": null,
     "description": "Complete the Northrend dungeon achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1947
@@ -4053,7 +4953,9 @@ export const ACHIEVEMENTS = [
     "id": 1300,
     "faction": -1,
     "title": "Different health potions used",
+    "titleZh": null,
     "description": "Different health potions used",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -4062,7 +4964,9 @@ export const ACHIEVEMENTS = [
     "id": 1359,
     "faction": 0,
     "title": "Might of Dragonblight",
+    "titleZh": null,
     "description": "Complete 130 quests in Dragonblight.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3338
@@ -4071,7 +4975,9 @@ export const ACHIEVEMENTS = [
     "id": 1466,
     "faction": 1,
     "title": "Most Alliance factions at Exalted",
+    "titleZh": null,
     "description": "Most Alliance factions at Exalted",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 1
@@ -4080,7 +4986,9 @@ export const ACHIEVEMENTS = [
     "id": 1506,
     "faction": -1,
     "title": "Anub'arak kills (Heroic Azjol-Nerub)",
+    "titleZh": null,
     "description": "Anub'arak kills (Heroic Azjol-Nerub)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 1899
@@ -4089,7 +4997,9 @@ export const ACHIEVEMENTS = [
     "id": 1716,
     "faction": -1,
     "title": "Battleground with the most Killing Blows",
+    "titleZh": null,
     "description": "Battleground with the most Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -4098,7 +5008,9 @@ export const ACHIEVEMENTS = [
     "id": 1719,
     "faction": -1,
     "title": "Battleground with the most Honorable Kills",
+    "titleZh": null,
     "description": "Battleground with the most Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -4107,7 +5019,9 @@ export const ACHIEVEMENTS = [
     "id": 1748,
     "faction": -1,
     "title": "First Aid Manuals learned",
+    "titleZh": null,
     "description": "First Aid Manuals learned",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 4
@@ -4116,7 +5030,9 @@ export const ACHIEVEMENTS = [
     "id": 1790,
     "faction": -1,
     "title": "Hail To The King, Baby",
+    "titleZh": null,
     "description": "Defeat King Ymiron in Utgarde Pinnacle with your orphan out.",
+    "descriptionZh": null,
     "category": 163,
     "points": 10,
     "iconId": 3320
@@ -4125,7 +5041,9 @@ export const ACHIEVEMENTS = [
     "id": 1793,
     "faction": -1,
     "title": "For The Children",
+    "titleZh": null,
     "description": "Complete the Children's Week achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 2523
@@ -4134,7 +5052,9 @@ export const ACHIEVEMENTS = [
     "id": 2200,
     "faction": 0,
     "title": "Defense of the Ancients",
+    "titleZh": null,
     "description": "Defend the beach without losing any walls.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 276
@@ -4143,7 +5063,9 @@ export const ACHIEVEMENTS = [
     "id": 2416,
     "faction": -1,
     "title": "Hard Boiled",
+    "titleZh": null,
     "description": "Lay an egg in Un'Goro Crater's Golakka Hot Springs as a rabbit during the Noblegarden celebration.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3711
@@ -4152,7 +5074,9 @@ export const ACHIEVEMENTS = [
     "id": 2476,
     "faction": 0,
     "title": "Destruction Derby",
+    "titleZh": null,
     "description": "Destroy each of the vehicles listed below.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3505
@@ -4161,7 +5085,9 @@ export const ACHIEVEMENTS = [
     "id": 2861,
     "faction": -1,
     "title": "Kologarn kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Kologarn kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -4170,7 +5096,9 @@ export const ACHIEVEMENTS = [
     "id": 3097,
     "faction": -1,
     "title": "Dwarfageddon (10 player)",
+    "titleZh": null,
     "description": "Destroy 100 Steelforged Defenders in 10 seconds on the Ulduar gauntlet in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3779
@@ -4179,7 +5107,9 @@ export const ACHIEVEMENTS = [
     "id": 3098,
     "faction": -1,
     "title": "Dwarfageddon (25 player)",
+    "titleZh": null,
     "description": "Destroy 100 Steelforged Defenders in 10 seconds on the Ulduar gauntlet in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3779
@@ -4188,7 +5118,9 @@ export const ACHIEVEMENTS = [
     "id": 3580,
     "faction": 1,
     "title": "Pilgrim's Peril",
+    "titleZh": null,
     "description": "While wearing either a Pilgrim's Dress, Robe, or Attire, take a seat at each enemy capital's Bountiful Table.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 1703
@@ -4197,7 +5129,9 @@ export const ACHIEVEMENTS = [
     "id": 3736,
     "faction": -1,
     "title": "Pony Up!",
+    "titleZh": null,
     "description": "Purchase and use an Argent Pony from Dame Evniki Kapsalis, the Crusader's Quartermaster.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 1176
@@ -4206,7 +5140,9 @@ export const ACHIEVEMENTS = [
     "id": 3798,
     "faction": -1,
     "title": "Resilience Will Fix It (10 player)",
+    "titleZh": null,
     "description": "Kill all the enemy heroes within 60 seconds of the first one dying in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 4007
@@ -4215,7 +5151,9 @@ export const ACHIEVEMENTS = [
     "id": 3814,
     "faction": -1,
     "title": "Resilience Will Fix It (25 player)",
+    "titleZh": null,
     "description": "Kill all the enemy heroes within 60 seconds of the first one dying in 25-player mode..",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 4007
@@ -4224,7 +5162,9 @@ export const ACHIEVEMENTS = [
     "id": 4051,
     "faction": -1,
     "title": "Victories over Rogue Champion (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Rogue Champion (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -4233,7 +5173,9 @@ export const ACHIEVEMENTS = [
     "id": 4176,
     "faction": 0,
     "title": "Resource Glut",
+    "titleZh": null,
     "description": "Win Isle of Conquest while your team controls the Quarry and Oil Refinery.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 3736
@@ -4242,7 +5184,9 @@ export const ACHIEVEMENTS = [
     "id": 4630,
     "faction": -1,
     "title": "Heroic: The Crimson Hall (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Crimson Hall in Icecrown Citadel in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4178
@@ -4251,7 +5195,9 @@ export const ACHIEVEMENTS = [
     "id": 4634,
     "faction": -1,
     "title": "Heroic: The Crimson Hall (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Crimson Hall in Icecrown Citadel in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4178
@@ -4260,7 +5206,9 @@ export const ACHIEVEMENTS = [
     "id": 4728,
     "faction": -1,
     "title": "Forgemaster Garfrost kills (Heroic Pit of Saron)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -4269,7 +5217,9 @@ export const ACHIEVEMENTS = [
     "id": 4729,
     "faction": -1,
     "title": "Emblems of Triumph acquired",
+    "titleZh": null,
     "description": "Emblems of Triumph acquired",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -4278,7 +5228,9 @@ export const ACHIEVEMENTS = [
     "id": 12,
     "faction": -1,
     "title": "Level 70",
+    "titleZh": null,
     "description": "Reach level 70.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3274
@@ -4287,7 +5239,9 @@ export const ACHIEVEMENTS = [
     "id": 32,
     "faction": -1,
     "title": "2000 Quests Completed",
+    "titleZh": null,
     "description": "Complete 2000 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3415
@@ -4296,7 +5250,9 @@ export const ACHIEVEMENTS = [
     "id": 37,
     "faction": 1,
     "title": "Fo' Grizzle My Shizzle",
+    "titleZh": null,
     "description": "Complete 85 quests in Grizzly Hills.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3339
@@ -4305,7 +5261,9 @@ export const ACHIEVEMENTS = [
     "id": 55,
     "faction": -1,
     "title": "Arathi Basin battles",
+    "titleZh": null,
     "description": "Arathi Basin battles",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -4314,7 +5272,9 @@ export const ACHIEVEMENTS = [
     "id": 141,
     "faction": -1,
     "title": "Ultimate Triage",
+    "titleZh": null,
     "description": "Use a Heavy Frostweave Bandage to heal another player or yourself with less than 5% health.",
+    "descriptionZh": null,
     "category": 172,
     "points": 10,
     "iconId": 2741
@@ -4323,7 +5283,9 @@ export const ACHIEVEMENTS = [
     "id": 157,
     "faction": -1,
     "title": "To The Rescue!",
+    "titleZh": null,
     "description": "Come to the defense of a base in Arathi Basin 50 times by recapping the flag.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 2205
@@ -4332,7 +5294,9 @@ export const ACHIEVEMENTS = [
     "id": 183,
     "faction": -1,
     "title": "Materials produced from disenchanting",
+    "titleZh": null,
     "description": "Materials produced from disenchanting",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -4341,7 +5305,9 @@ export const ACHIEVEMENTS = [
     "id": 198,
     "faction": -1,
     "title": "Total healing done",
+    "titleZh": null,
     "description": "Total healing done",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 4
@@ -4350,7 +5316,9 @@ export const ACHIEVEMENTS = [
     "id": 212,
     "faction": -1,
     "title": "Storm Capper",
+    "titleZh": null,
     "description": "Personally carry and capture the flag in Eye of the Storm.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3391
@@ -4359,7 +5327,9 @@ export const ACHIEVEMENTS = [
     "id": 225,
     "faction": 1,
     "title": "Everything Counts",
+    "titleZh": null,
     "description": "Win Alterac Valley while your team controls both mines.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3433
@@ -4368,7 +5338,9 @@ export const ACHIEVEMENTS = [
     "id": 239,
     "faction": -1,
     "title": "25000 Honorable Kills",
+    "titleZh": null,
     "description": "Get 25000 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3460
@@ -4377,7 +5349,9 @@ export const ACHIEVEMENTS = [
     "id": 275,
     "faction": -1,
     "title": "Veteran Nanny",
+    "titleZh": null,
     "description": "Acquire Egbert's Egg, Sleepy Willy, and Elekk Training Collar on one character.",
+    "descriptionZh": null,
     "category": 163,
     "points": 50,
     "iconId": 2525
@@ -4386,7 +5360,9 @@ export const ACHIEVEMENTS = [
     "id": 330,
     "faction": -1,
     "title": "Auction purchases",
+    "titleZh": null,
     "description": "Auction purchases",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -4395,7 +5371,9 @@ export const ACHIEVEMENTS = [
     "id": 367,
     "faction": -1,
     "title": "2v2 matches",
+    "titleZh": null,
     "description": "2v2 matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -4404,7 +5382,9 @@ export const ACHIEVEMENTS = [
     "id": 400,
     "faction": -1,
     "title": "Just the Two of Us: 1750",
+    "titleZh": null,
     "description": "Earn a 1750 personal rating in the 2v2 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3038
@@ -4413,7 +5393,9 @@ export const ACHIEVEMENTS = [
     "id": 462,
     "faction": -1,
     "title": "Realm First! Level 80 Hunter",
+    "titleZh": null,
     "description": "First hunter on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2831
@@ -4422,7 +5404,9 @@ export const ACHIEVEMENTS = [
     "id": 484,
     "faction": -1,
     "title": "Gundrak",
+    "titleZh": null,
     "description": "Defeat the bosses in Gundrak.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3237
@@ -4431,7 +5415,9 @@ export const ACHIEVEMENTS = [
     "id": 495,
     "faction": -1,
     "title": "Heroic: Gundrak",
+    "titleZh": null,
     "description": "Defeat the Gundrak bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3238
@@ -4440,7 +5426,9 @@ export const ACHIEVEMENTS = [
     "id": 518,
     "faction": -1,
     "title": "30 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 30 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3604
@@ -4449,7 +5437,9 @@ export const ACHIEVEMENTS = [
     "id": 572,
     "faction": -1,
     "title": "Sapphiron's Demise (10 player)",
+    "titleZh": null,
     "description": "Defeat Sapphiron in Naxxramas in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1700
@@ -4458,7 +5448,9 @@ export const ACHIEVEMENTS = [
     "id": 573,
     "faction": -1,
     "title": "Sapphiron's Demise (25 player)",
+    "titleZh": null,
     "description": "Defeat Sapphiron in Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1700
@@ -4467,7 +5459,9 @@ export const ACHIEVEMENTS = [
     "id": 593,
     "faction": 0,
     "title": "Deaths from Vanndar Stormpike",
+    "titleZh": null,
     "description": "Deaths from Vanndar Stormpike",
+    "descriptionZh": null,
     "category": 124,
     "points": 0,
     "iconId": 1
@@ -4476,7 +5470,9 @@ export const ACHIEVEMENTS = [
     "id": 635,
     "faction": -1,
     "title": "Razorfen Kraul",
+    "titleZh": null,
     "description": "Defeat Charlga Razorflank.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3686
@@ -4485,7 +5481,9 @@ export const ACHIEVEMENTS = [
     "id": 652,
     "faction": -1,
     "title": "The Escape From Durnholde",
+    "titleZh": null,
     "description": "Defeat Epoch Hunter.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3824
@@ -4494,7 +5492,9 @@ export const ACHIEVEMENTS = [
     "id": 730,
     "faction": -1,
     "title": "Skills to Pay the Bills",
+    "titleZh": null,
     "description": "Become a Grand Master in fishing, first aid and cooking.",
+    "descriptionZh": null,
     "category": 169,
     "points": 10,
     "iconId": 1657
@@ -4503,7 +5503,9 @@ export const ACHIEVEMENTS = [
     "id": 841,
     "faction": -1,
     "title": "Explore Wetlands",
+    "titleZh": null,
     "description": "Explore Wetlands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3573
@@ -4512,7 +5514,9 @@ export const ACHIEVEMENTS = [
     "id": 861,
     "faction": -1,
     "title": "Explore Bloodmyst Isle",
+    "titleZh": null,
     "description": "Explore Bloodmyst Isle, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3551
@@ -4521,7 +5525,9 @@ export const ACHIEVEMENTS = [
     "id": 864,
     "faction": -1,
     "title": "Explore Shadowmoon Valley",
+    "titleZh": null,
     "description": "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 3584
@@ -4530,7 +5536,9 @@ export const ACHIEVEMENTS = [
     "id": 898,
     "faction": -1,
     "title": "On Wings of Nether",
+    "titleZh": null,
     "description": "Earn exalted status with Netherwing.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 1928
@@ -4539,7 +5547,9 @@ export const ACHIEVEMENTS = [
     "id": 906,
     "faction": -1,
     "title": "Kickin' It Up a Notch",
+    "titleZh": null,
     "description": "Complete each of The Rokk's 4 cooking daily quests listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2923
@@ -4548,7 +5558,9 @@ export const ACHIEVEMENTS = [
     "id": 922,
     "faction": -1,
     "title": "Mana potions consumed",
+    "titleZh": null,
     "description": "Mana potions consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -4557,7 +5569,9 @@ export const ACHIEVEMENTS = [
     "id": 926,
     "faction": 0,
     "title": "Most Horde factions at Exalted",
+    "titleZh": null,
     "description": "Most Horde factions at Exalted",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 1
@@ -4566,7 +5580,9 @@ export const ACHIEVEMENTS = [
     "id": 928,
     "faction": -1,
     "title": "Extra bank slots purchased",
+    "titleZh": null,
     "description": "Extra bank slots purchased",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 1
@@ -4575,7 +5591,9 @@ export const ACHIEVEMENTS = [
     "id": 933,
     "faction": -1,
     "title": "Total 10-player raids entered",
+    "titleZh": null,
     "description": "Total 10-player raids entered",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -4584,7 +5602,9 @@ export const ACHIEVEMENTS = [
     "id": 981,
     "faction": -1,
     "title": "That Sparkling Smile",
+    "titleZh": null,
     "description": "Show off your sparkling smile by using a Tooth Pick.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3510
@@ -4593,7 +5613,9 @@ export const ACHIEVEMENTS = [
     "id": 1008,
     "faction": -1,
     "title": "The Kirin Tor",
+    "titleZh": null,
     "description": "Earn exalted status with The Kirin Tor.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 3682
@@ -4602,7 +5624,9 @@ export const ACHIEVEMENTS = [
     "id": 1034,
     "faction": 1,
     "title": "The Fires of Azeroth",
+    "titleZh": null,
     "description": "Complete the Flame Warden of Eastern Kingdoms, Kalimdor and Outland achievements.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 12
@@ -4611,7 +5635,9 @@ export const ACHIEVEMENTS = [
     "id": 1038,
     "faction": 1,
     "title": "The Flame Warden",
+    "titleZh": null,
     "description": "Complete the Midsummer achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 20,
     "iconId": 2974
@@ -4620,7 +5646,9 @@ export const ACHIEVEMENTS = [
     "id": 1074,
     "faction": -1,
     "title": "Talon King Ikiss kills (Sethekk Halls)",
+    "titleZh": null,
     "description": "Talon King Ikiss kills (Sethekk Halls)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2378
@@ -4629,7 +5657,9 @@ export const ACHIEVEMENTS = [
     "id": 1096,
     "faction": -1,
     "title": "General Drakkisath kills (Blackrock Spire)",
+    "titleZh": null,
     "description": "General Drakkisath kills (Blackrock Spire)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 1551
@@ -4638,7 +5668,9 @@ export const ACHIEVEMENTS = [
     "id": 1111,
     "faction": -1,
     "title": "2v2 Arena Honorable Kills",
+    "titleZh": null,
     "description": "2v2 Arena Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -4647,7 +5679,9 @@ export const ACHIEVEMENTS = [
     "id": 1192,
     "faction": 1,
     "title": "Nagrand Slam",
+    "titleZh": null,
     "description": "Complete 75 quests in Nagrand.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3563
@@ -4656,7 +5690,9 @@ export const ACHIEVEMENTS = [
     "id": 1233,
     "faction": -1,
     "title": "Herald Volazj kills (Ahn'kahet: The Old Kingdom)",
+    "titleZh": null,
     "description": "Herald Volazj kills (Ahn'kahet: The Old Kingdom)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 1256
@@ -4665,7 +5701,9 @@ export const ACHIEVEMENTS = [
     "id": 1252,
     "faction": 0,
     "title": "Supreme Defender",
+    "titleZh": null,
     "description": "Kill 100 flag carriers in Warsong Gulch.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3400
@@ -4674,7 +5712,9 @@ export const ACHIEVEMENTS = [
     "id": 1253,
     "faction": -1,
     "title": "Raised as a ghoul",
+    "titleZh": null,
     "description": "Raised as a ghoul",
+    "descriptionZh": null,
     "category": 127,
     "points": 0,
     "iconId": 221
@@ -4683,7 +5723,9 @@ export const ACHIEVEMENTS = [
     "id": 1257,
     "faction": -1,
     "title": "The Scavenger",
+    "titleZh": null,
     "description": "Successfully fish in each of the junk nodes listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3068
@@ -4692,7 +5734,9 @@ export const ACHIEVEMENTS = [
     "id": 1260,
     "faction": -1,
     "title": "Drunken Stupor",
+    "titleZh": null,
     "description": "Fall 65 yards without dying while completely smashed during the Brewfest Holiday.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 2402
@@ -4701,7 +5745,9 @@ export const ACHIEVEMENTS = [
     "id": 1281,
     "faction": -1,
     "title": "The Rocket's Red Glare",
+    "titleZh": null,
     "description": "Shoot off 10 Red Rocket Clusters in 25 seconds or less.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2368
@@ -4710,7 +5756,9 @@ export const ACHIEVEMENTS = [
     "id": 1289,
     "faction": -1,
     "title": "Northrend Dungeon Hero",
+    "titleZh": null,
     "description": "Complete the heroic Northrend dungeon achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 20,
     "iconId": 857
@@ -4719,7 +5767,9 @@ export const ACHIEVEMENTS = [
     "id": 1295,
     "faction": -1,
     "title": "Crashin' & Thrashin'",
+    "titleZh": null,
     "description": "Gain 25 crashes with your Crashin' Thrashin' Racer during the Feast of Winter Veil.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 2367
@@ -4728,7 +5778,9 @@ export const ACHIEVEMENTS = [
     "id": 1457,
     "faction": -1,
     "title": "Explore Crystalsong Forest",
+    "titleZh": null,
     "description": "Explore Crystalsong Forest, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3471
@@ -4737,7 +5789,9 @@ export const ACHIEVEMENTS = [
     "id": 1492,
     "faction": -1,
     "title": "2v2 Arena Killing Blows",
+    "titleZh": null,
     "description": "2v2 Arena Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -4746,7 +5800,9 @@ export const ACHIEVEMENTS = [
     "id": 1519,
     "faction": -1,
     "title": "Fishing skill",
+    "titleZh": null,
     "description": "Fishing skill",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 1
@@ -4755,7 +5811,9 @@ export const ACHIEVEMENTS = [
     "id": 1704,
     "faction": -1,
     "title": "I Pitied The Fool",
+    "titleZh": null,
     "description": "Pity the Love Fool in the locations specified below.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 2339
@@ -4764,7 +5822,9 @@ export const ACHIEVEMENTS = [
     "id": 1723,
     "faction": -1,
     "title": "Vehicular Gnomeslaughter",
+    "titleZh": null,
     "description": "Kill 100 players in Wintergrasp using a vehicle or a cannon.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2547
@@ -4773,7 +5833,9 @@ export const ACHIEVEMENTS = [
     "id": 1761,
     "faction": -1,
     "title": "The Dapper Sapper",
+    "titleZh": null,
     "description": "Plant 100 Seaforium charges which successfully damage a wall. ",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 2565
@@ -4782,7 +5844,9 @@ export const ACHIEVEMENTS = [
     "id": 2216,
     "faction": -1,
     "title": "Most deadly Lich King dungeon boss",
+    "titleZh": null,
     "description": "Most deadly Lich King dungeon boss",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -4791,7 +5855,9 @@ export const ACHIEVEMENTS = [
     "id": 2419,
     "faction": 1,
     "title": "Spring Fling",
+    "titleZh": null,
     "description": "Find your pet Spring Rabbit another one to love in each of the towns listed below.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3202
@@ -4800,7 +5866,9 @@ export const ACHIEVEMENTS = [
     "id": 2777,
     "faction": 1,
     "title": "Champion of Darnassus",
+    "titleZh": null,
     "description": "Earn the right to represent Darnassus in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3801
@@ -4809,7 +5877,9 @@ export const ACHIEVEMENTS = [
     "id": 2868,
     "faction": -1,
     "title": "Auriaya kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Auriaya kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -4818,7 +5888,9 @@ export const ACHIEVEMENTS = [
     "id": 2905,
     "faction": -1,
     "title": "Unbroken (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan on the first try without anyone repairing their vehicle in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 325
@@ -4827,7 +5899,9 @@ export const ACHIEVEMENTS = [
     "id": 2906,
     "faction": -1,
     "title": "Unbroken (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan on the first try without anyone repairing their vehicle in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 325
@@ -4836,7 +5910,9 @@ export const ACHIEVEMENTS = [
     "id": 3581,
     "faction": 0,
     "title": "Pilgrim's Peril",
+    "titleZh": null,
     "description": "While wearing either a Pilgrim's Dress, Robe, or Attire, take a seat at each enemy capital's Bountiful Table.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 1704
@@ -4845,7 +5921,9 @@ export const ACHIEVEMENTS = [
     "id": 3799,
     "faction": -1,
     "title": "Salt and Pepper (10 player)",
+    "titleZh": null,
     "description": "Defeat the Twin Val'kyr in 3 minutes or less in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 4005
@@ -4854,7 +5932,9 @@ export const ACHIEVEMENTS = [
     "id": 3815,
     "faction": -1,
     "title": "Salt and Pepper (25 player)",
+    "titleZh": null,
     "description": "Defeat the Twin Val'kyr in 3 minutes or less in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 4005
@@ -4863,7 +5943,9 @@ export const ACHIEVEMENTS = [
     "id": 4052,
     "faction": -1,
     "title": "Victories over Shaman Champion (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Shaman Champion (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -4872,7 +5954,9 @@ export const ACHIEVEMENTS = [
     "id": 4177,
     "faction": 0,
     "title": "Mine",
+    "titleZh": null,
     "description": "Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 4016
@@ -4881,7 +5965,9 @@ export const ACHIEVEMENTS = [
     "id": 4527,
     "faction": -1,
     "title": "The Frostwing Halls (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Frostwing Halls in Icecrown Citadel in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4158
@@ -4890,7 +5976,9 @@ export const ACHIEVEMENTS = [
     "id": 4607,
     "faction": -1,
     "title": "The Frostwing Halls (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Frostwing Halls in Icecrown Citadel in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4158
@@ -4899,7 +5987,9 @@ export const ACHIEVEMENTS = [
     "id": 4718,
     "faction": -1,
     "title": "Ick and Krick kills (Pit of Saron)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -4908,7 +5998,9 @@ export const ACHIEVEMENTS = [
     "id": 4730,
     "faction": -1,
     "title": "Emblems of Frost acquired",
+    "titleZh": null,
     "description": "Emblems of Frost acquired",
+    "descriptionZh": null,
     "category": 130,
     "points": 0,
     "iconId": 1
@@ -4917,7 +6009,9 @@ export const ACHIEVEMENTS = [
     "id": 13,
     "faction": -1,
     "title": "Level 80",
+    "titleZh": null,
     "description": "Reach level 80.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3275
@@ -4926,7 +6020,9 @@ export const ACHIEVEMENTS = [
     "id": 51,
     "faction": -1,
     "title": "Arathi Basin victories",
+    "titleZh": null,
     "description": "Arathi Basin victories",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -4935,7 +6031,9 @@ export const ACHIEVEMENTS = [
     "id": 150,
     "faction": -1,
     "title": "The Fishing Diplomat",
+    "titleZh": null,
     "description": "Fish something up in Orgrimmar and Stormwind.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 2737
@@ -4944,7 +6042,9 @@ export const ACHIEVEMENTS = [
     "id": 161,
     "faction": -1,
     "title": "Resilient Victory",
+    "titleZh": null,
     "description": "Overcome a 500 resource disadvantage in a match of Arathi Basin and claim victory.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3468
@@ -4953,7 +6053,9 @@ export const ACHIEVEMENTS = [
     "id": 168,
     "faction": -1,
     "title": "Warsong Gulch Perfection",
+    "titleZh": null,
     "description": "Win Warsong Gulch with a score of 3 to 0.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3485
@@ -4962,7 +6064,9 @@ export const ACHIEVEMENTS = [
     "id": 181,
     "faction": -1,
     "title": "Items disenchanted",
+    "titleZh": null,
     "description": "Items disenchanted",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -4971,7 +6075,9 @@ export const ACHIEVEMENTS = [
     "id": 216,
     "faction": -1,
     "title": "Bound for Glory",
+    "titleZh": null,
     "description": "In a single Eye of the Storm match, capture the flag 3 times without dying.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 2267
@@ -4980,7 +6086,9 @@ export const ACHIEVEMENTS = [
     "id": 279,
     "faction": -1,
     "title": "Simply Abominable",
+    "titleZh": null,
     "description": "Complete the quest to retrieve Smokywood Pastures' stolen treats and receive a Smokywood Pastures' Thank You.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 3190
@@ -4989,7 +6097,9 @@ export const ACHIEVEMENTS = [
     "id": 295,
     "faction": -1,
     "title": "Direbrewfest",
+    "titleZh": null,
     "description": "Kill Coren Direbrew.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 2788
@@ -4998,7 +6108,9 @@ export const ACHIEVEMENTS = [
     "id": 323,
     "faction": -1,
     "title": "Total deaths to Lich King 10-player raid bosses",
+    "titleZh": null,
     "description": "Total deaths to Lich King 10-player raid bosses",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 4
@@ -5007,7 +6119,9 @@ export const ACHIEVEMENTS = [
     "id": 331,
     "faction": -1,
     "title": "Most expensive bid on auction",
+    "titleZh": null,
     "description": "Most expensive bid on auction",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -5016,7 +6130,9 @@ export const ACHIEVEMENTS = [
     "id": 366,
     "faction": -1,
     "title": "2v2 victories",
+    "titleZh": null,
     "description": "2v2 victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -5025,7 +6141,9 @@ export const ACHIEVEMENTS = [
     "id": 401,
     "faction": -1,
     "title": "Just the Two of Us: 2000",
+    "titleZh": null,
     "description": "Earn a 2000 personal rating in the 2v2 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3037
@@ -5034,7 +6152,9 @@ export const ACHIEVEMENTS = [
     "id": 461,
     "faction": -1,
     "title": "Realm First! Level 80 Death Knight",
+    "titleZh": null,
     "description": "First death knight on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2639
@@ -5043,7 +6163,9 @@ export const ACHIEVEMENTS = [
     "id": 485,
     "faction": -1,
     "title": "Halls of Stone",
+    "titleZh": null,
     "description": "Defeat the boss encounters in Halls of Stone.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3239
@@ -5052,7 +6174,9 @@ export const ACHIEVEMENTS = [
     "id": 496,
     "faction": -1,
     "title": "Heroic: Halls of Stone",
+    "titleZh": null,
     "description": "Defeat the boss encounters in the Halls of Stone on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3240
@@ -5061,7 +6185,9 @@ export const ACHIEVEMENTS = [
     "id": 574,
     "faction": -1,
     "title": "Kel'Thuzad's Defeat (10 player)",
+    "titleZh": null,
     "description": "Defeat Kel'Thuzad in Naxxramas in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1898
@@ -5070,7 +6196,9 @@ export const ACHIEVEMENTS = [
     "id": 575,
     "faction": -1,
     "title": "Kel'Thuzad's Defeat (25 player)",
+    "titleZh": null,
     "description": "Defeat Kel'Thuzad in Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1898
@@ -5079,7 +6207,9 @@ export const ACHIEVEMENTS = [
     "id": 634,
     "faction": -1,
     "title": "Gnomeregan",
+    "titleZh": null,
     "description": "Defeat Mekgineer Thermaplugg.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3641
@@ -5088,7 +6218,9 @@ export const ACHIEVEMENTS = [
     "id": 653,
     "faction": -1,
     "title": "Sethekk Halls",
+    "titleZh": null,
     "description": "Defeat Talon King Ikiss.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3631
@@ -5097,7 +6229,9 @@ export const ACHIEVEMENTS = [
     "id": 769,
     "faction": -1,
     "title": "Explore Silverpine Forest",
+    "titleZh": null,
     "description": "Explore Silverpine Forest, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3576
@@ -5106,7 +6240,9 @@ export const ACHIEVEMENTS = [
     "id": 830,
     "faction": -1,
     "title": "Total healing received",
+    "titleZh": null,
     "description": "Total healing received",
+    "descriptionZh": null,
     "category": 141,
     "points": 0,
     "iconId": 1
@@ -5115,7 +6251,9 @@ export const ACHIEVEMENTS = [
     "id": 845,
     "faction": -1,
     "title": "Explore Ashenvale",
+    "titleZh": null,
     "description": "Explore Ashenvale, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3543
@@ -5124,7 +6262,9 @@ export const ACHIEVEMENTS = [
     "id": 869,
     "faction": -1,
     "title": "50000 Honorable Kills",
+    "titleZh": null,
     "description": "Get 50000 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3461
@@ -5133,7 +6273,9 @@ export const ACHIEVEMENTS = [
     "id": 899,
     "faction": 1,
     "title": "Oh My, Kurenai",
+    "titleZh": null,
     "description": "Earn exalted status with the Kurenai.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 15,
     "iconId": 2208
@@ -5142,7 +6284,9 @@ export const ACHIEVEMENTS = [
     "id": 931,
     "faction": -1,
     "title": "Total factions encountered",
+    "titleZh": null,
     "description": "Total factions encountered",
+    "descriptionZh": null,
     "category": 147,
     "points": 0,
     "iconId": 1
@@ -5151,7 +6295,9 @@ export const ACHIEVEMENTS = [
     "id": 934,
     "faction": -1,
     "title": "Total 25-player raids entered",
+    "titleZh": null,
     "description": "Total 25-player raids entered",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -5160,7 +6306,9 @@ export const ACHIEVEMENTS = [
     "id": 978,
     "faction": -1,
     "title": "3000 Quests Completed",
+    "titleZh": null,
     "description": "Complete 3000 quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 50,
     "iconId": 3414
@@ -5169,7 +6317,9 @@ export const ACHIEVEMENTS = [
     "id": 1009,
     "faction": -1,
     "title": "Knights of the Ebon Blade",
+    "titleZh": null,
     "description": "Earn exalted status with the Knights of the Ebon Blade.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 3683
@@ -5178,7 +6328,9 @@ export const ACHIEVEMENTS = [
     "id": 1014,
     "faction": -1,
     "title": "35 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 35 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3603
@@ -5187,7 +6339,9 @@ export const ACHIEVEMENTS = [
     "id": 1028,
     "faction": 1,
     "title": "Extinguishing Eastern Kingdoms",
+    "titleZh": null,
     "description": "Desecrate the Horde's bonfires in Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -5196,7 +6350,9 @@ export const ACHIEVEMENTS = [
     "id": 1039,
     "faction": 0,
     "title": "The Flame Keeper",
+    "titleZh": null,
     "description": "Complete the Midsummer achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 20,
     "iconId": 2975
@@ -5205,7 +6361,9 @@ export const ACHIEVEMENTS = [
     "id": 1040,
     "faction": 1,
     "title": "Rotten Hallow",
+    "titleZh": null,
     "description": "Ruin Hallow's End for the Horde by completing Sergeant Hartman's quests which involve crashing the wickerman festival and cleaning up the stinkbombs from Southshore.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3480
@@ -5214,7 +6372,9 @@ export const ACHIEVEMENTS = [
     "id": 1043,
     "faction": -1,
     "title": "Greed rolls made on loot",
+    "titleZh": null,
     "description": "Greed rolls made on loot",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 1
@@ -5223,7 +6383,9 @@ export const ACHIEVEMENTS = [
     "id": 1075,
     "faction": -1,
     "title": "Murmur kills (Shadow Labyrinth)",
+    "titleZh": null,
     "description": "Murmur kills (Shadow Labyrinth)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2793
@@ -5232,7 +6394,9 @@ export const ACHIEVEMENTS = [
     "id": 1102,
     "faction": -1,
     "title": "Hakkar kills (Zul'Gurub)",
+    "titleZh": null,
     "description": "Hakkar kills (Zul'Gurub)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2804
@@ -5241,7 +6405,9 @@ export const ACHIEVEMENTS = [
     "id": 1110,
     "faction": -1,
     "title": "3v3 Arena Honorable Kills",
+    "titleZh": null,
     "description": "3v3 Arena Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -5250,7 +6416,9 @@ export const ACHIEVEMENTS = [
     "id": 1164,
     "faction": 0,
     "title": "Everything Counts",
+    "titleZh": null,
     "description": "Win Alterac Valley while your team controls both mines.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3433
@@ -5259,7 +6427,9 @@ export const ACHIEVEMENTS = [
     "id": 1269,
     "faction": -1,
     "title": "Explore Storm Peaks",
+    "titleZh": null,
     "description": "Explore Storm Peaks, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3404
@@ -5268,7 +6438,9 @@ export const ACHIEVEMENTS = [
     "id": 1273,
     "faction": 0,
     "title": "Nagrand Slam",
+    "titleZh": null,
     "description": "Complete 87 quests in Nagrand.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3563
@@ -5277,7 +6449,9 @@ export const ACHIEVEMENTS = [
     "id": 1291,
     "faction": -1,
     "title": "Lonely?",
+    "titleZh": null,
     "description": "Enjoy a Buttermilk Delight with someone in Dalaran at a Romantic Picnic during the Love is in the Air celebration.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 2545
@@ -5286,7 +6460,9 @@ export const ACHIEVEMENTS = [
     "id": 1301,
     "faction": -1,
     "title": "Mana potion used most",
+    "titleZh": null,
     "description": "Mana potion used most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -5295,7 +6471,9 @@ export const ACHIEVEMENTS = [
     "id": 1311,
     "faction": -1,
     "title": "Medium Rare",
+    "titleZh": null,
     "description": "Kill one of the extremely rare and hard to find Outland creatures listed below.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 10,
     "iconId": 134
@@ -5304,7 +6482,9 @@ export const ACHIEVEMENTS = [
     "id": 1357,
     "faction": 0,
     "title": "Fo' Grizzle My Shizzle",
+    "titleZh": null,
     "description": "Complete 75 quests in Grizzly Hills.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3339
@@ -5313,7 +6493,9 @@ export const ACHIEVEMENTS = [
     "id": 1493,
     "faction": -1,
     "title": "3v3 Arena Killing Blows",
+    "titleZh": null,
     "description": "3v3 Arena Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -5322,7 +6504,9 @@ export const ACHIEVEMENTS = [
     "id": 1507,
     "faction": -1,
     "title": "Herald Volazj kills (Heroic Ahn'kahet)",
+    "titleZh": null,
     "description": "Herald Volazj kills (Heroic Ahn'kahet)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 1256
@@ -5331,7 +6515,9 @@ export const ACHIEVEMENTS = [
     "id": 1518,
     "faction": -1,
     "title": "Fish caught",
+    "titleZh": null,
     "description": "Fish caught",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 1
@@ -5340,7 +6526,9 @@ export const ACHIEVEMENTS = [
     "id": 1552,
     "faction": -1,
     "title": "Frenzied Firecracker",
+    "titleZh": null,
     "description": "Shoot off 10 Festival Firecrackers in 30 seconds or less.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 355
@@ -5349,7 +6537,9 @@ export const ACHIEVEMENTS = [
     "id": 1727,
     "faction": -1,
     "title": "Leaning Tower",
+    "titleZh": null,
     "description": "Destroy a tower in Wintergrasp.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2661
@@ -5358,7 +6548,9 @@ export const ACHIEVEMENTS = [
     "id": 1800,
     "faction": -1,
     "title": "The Outland Gourmet",
+    "titleZh": null,
     "description": "Cook each of the Outland cooking recipes listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3162
@@ -5367,7 +6559,9 @@ export const ACHIEVEMENTS = [
     "id": 2193,
     "faction": -1,
     "title": "Explosives Expert",
+    "titleZh": null,
     "description": "Plant 5 Seaforium charges which successfully damage a wall in a single battle.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 355
@@ -5376,7 +6570,9 @@ export const ACHIEVEMENTS = [
     "id": 2497,
     "faction": 0,
     "title": "Spring Fling",
+    "titleZh": null,
     "description": "Find your pet Spring Rabbit another one to love in each of the towns listed below.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3202
@@ -5385,7 +6581,9 @@ export const ACHIEVEMENTS = [
     "id": 2760,
     "faction": 1,
     "title": "Exalted Champion of Darnassus",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Darnassus in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3801
@@ -5394,7 +6592,9 @@ export const ACHIEVEMENTS = [
     "id": 2862,
     "faction": -1,
     "title": "Hodir victories (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Hodir victories (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -5403,7 +6603,9 @@ export const ACHIEVEMENTS = [
     "id": 2907,
     "faction": -1,
     "title": "Three Car Garage (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan while in each of the following vehicles in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 656
@@ -5412,7 +6614,9 @@ export const ACHIEVEMENTS = [
     "id": 2908,
     "faction": -1,
     "title": "Three Car Garage (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan while in each of the following vehicles in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 656
@@ -5421,7 +6625,9 @@ export const ACHIEVEMENTS = [
     "id": 3596,
     "faction": 1,
     "title": "Pilgrim's Progress",
+    "titleZh": null,
     "description": "Complete each of the Pilgrim's Bounty dailies.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3966
@@ -5430,7 +6636,9 @@ export const ACHIEVEMENTS = [
     "id": 3800,
     "faction": -1,
     "title": "The Traitor King (10 player)",
+    "titleZh": null,
     "description": "Kill 40 Swarm Scarabs within 30 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 4006
@@ -5439,7 +6647,9 @@ export const ACHIEVEMENTS = [
     "id": 3816,
     "faction": -1,
     "title": "The Traitor King (25 player)",
+    "titleZh": null,
     "description": "Kill 40 Swarm Scarabs within 30 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 4006
@@ -5448,7 +6658,9 @@ export const ACHIEVEMENTS = [
     "id": 3838,
     "faction": -1,
     "title": "Dungeon & Raid Emblem",
+    "titleZh": null,
     "description": "Loot an Emblem of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -5457,7 +6669,9 @@ export const ACHIEVEMENTS = [
     "id": 3847,
     "faction": -1,
     "title": "Four Car Garage",
+    "titleZh": null,
     "description": "In Isle of Conquest, control the following vehicles:",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 656
@@ -5466,7 +6680,9 @@ export const ACHIEVEMENTS = [
     "id": 4053,
     "faction": -1,
     "title": "Victories over Shaman Champion (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Shaman Champion (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -5475,7 +6691,9 @@ export const ACHIEVEMENTS = [
     "id": 4631,
     "faction": -1,
     "title": "Heroic: The Frostwing Halls (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Frostwing Halls in Icecrown Citadel in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4158
@@ -5484,7 +6702,9 @@ export const ACHIEVEMENTS = [
     "id": 4635,
     "faction": -1,
     "title": "Heroic: The Frostwing Halls (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of The Frostwing Halls in Icecrown Citadel in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4158
@@ -5493,7 +6713,9 @@ export const ACHIEVEMENTS = [
     "id": 4719,
     "faction": -1,
     "title": "Ick and Krick kills (Heroic Pit of Saron)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -5502,7 +6724,9 @@ export const ACHIEVEMENTS = [
     "id": 36,
     "faction": -1,
     "title": "The Empire of Zul'Drak",
+    "titleZh": null,
     "description": "Complete 100 quests in Zul'Drak.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3340
@@ -5511,7 +6735,9 @@ export const ACHIEVEMENTS = [
     "id": 54,
     "faction": -1,
     "title": "Eye of the Storm battles",
+    "titleZh": null,
     "description": "Eye of the Storm battles",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -5520,7 +6746,9 @@ export const ACHIEVEMENTS = [
     "id": 103,
     "faction": -1,
     "title": "Circle of Blood matches",
+    "titleZh": null,
     "description": "Circle of Blood matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -5529,7 +6757,9 @@ export const ACHIEVEMENTS = [
     "id": 156,
     "faction": -1,
     "title": "Territorial Dominance",
+    "titleZh": null,
     "description": "Win 10 Arathi Basin matches while controlling all 5 flags.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3452
@@ -5538,7 +6768,9 @@ export const ACHIEVEMENTS = [
     "id": 201,
     "faction": -1,
     "title": "Warsong Expedience",
+    "titleZh": null,
     "description": "Win Warsong Gulch in under 7 minutes.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3389
@@ -5547,7 +6779,9 @@ export const ACHIEVEMENTS = [
     "id": 226,
     "faction": -1,
     "title": "The Alterac Blitz",
+    "titleZh": null,
     "description": "Win Alterac Valley in 6 minutes.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 20,
     "iconId": 3380
@@ -5556,7 +6790,9 @@ export const ACHIEVEMENTS = [
     "id": 306,
     "faction": -1,
     "title": "Master Angler of Azeroth",
+    "titleZh": null,
     "description": "Win the Booty Bay fishing contest or the Kalu'ak Fishing Derby.",
+    "descriptionZh": null,
     "category": 171,
     "points": 20,
     "iconId": 577
@@ -5565,7 +6801,9 @@ export const ACHIEVEMENTS = [
     "id": 332,
     "faction": -1,
     "title": "Most expensive auction sold",
+    "titleZh": null,
     "description": "Most expensive auction sold",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -5574,7 +6812,9 @@ export const ACHIEVEMENTS = [
     "id": 460,
     "faction": -1,
     "title": "Realm First! Level 80 Mage",
+    "titleZh": null,
     "description": "First mage on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2832
@@ -5583,7 +6823,9 @@ export const ACHIEVEMENTS = [
     "id": 486,
     "faction": -1,
     "title": "Halls of Lightning",
+    "titleZh": null,
     "description": "Defeat the bosses in Halls of Lightning.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3241
@@ -5592,7 +6834,9 @@ export const ACHIEVEMENTS = [
     "id": 497,
     "faction": -1,
     "title": "Heroic: Halls of Lightning",
+    "titleZh": null,
     "description": "Defeat the Halls of Lightning bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3242
@@ -5601,7 +6845,9 @@ export const ACHIEVEMENTS = [
     "id": 576,
     "faction": -1,
     "title": "The Fall of Naxxramas (10 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Naxxramas in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 25,
     "iconId": 3258
@@ -5610,7 +6856,9 @@ export const ACHIEVEMENTS = [
     "id": 577,
     "faction": -1,
     "title": "The Fall of Naxxramas (25 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 50,
     "iconId": 3259
@@ -5619,7 +6867,9 @@ export const ACHIEVEMENTS = [
     "id": 587,
     "faction": -1,
     "title": "Stormy Assassin",
+    "titleZh": null,
     "description": "In a single Eye of the Storm battle, get 5 honorable kills at each of the bases.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 2837
@@ -5628,7 +6878,9 @@ export const ACHIEVEMENTS = [
     "id": 636,
     "faction": -1,
     "title": "Razorfen Downs",
+    "titleZh": null,
     "description": "Defeat Amnennar the Coldbringer.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3655
@@ -5637,7 +6889,9 @@ export const ACHIEVEMENTS = [
     "id": 654,
     "faction": -1,
     "title": "Shadow Labyrinth",
+    "titleZh": null,
     "description": "Defeat Murmur.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3825
@@ -5646,7 +6900,9 @@ export const ACHIEVEMENTS = [
     "id": 705,
     "faction": -1,
     "title": "Master of Arms",
+    "titleZh": null,
     "description": "Raise four weapon skills to 400.",
+    "descriptionZh": null,
     "category": 92,
     "points": 25,
     "iconId": 279
@@ -5655,7 +6911,9 @@ export const ACHIEVEMENTS = [
     "id": 846,
     "faction": -1,
     "title": "Explore Thousand Needles",
+    "titleZh": null,
     "description": "Explore Thousand Needles, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3580
@@ -5664,7 +6922,9 @@ export const ACHIEVEMENTS = [
     "id": 858,
     "faction": -1,
     "title": "Explore Ghostlands",
+    "titleZh": null,
     "description": "Explore Ghostlands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3540
@@ -5673,7 +6933,9 @@ export const ACHIEVEMENTS = [
     "id": 870,
     "faction": -1,
     "title": "100000 Honorable Kills",
+    "titleZh": null,
     "description": "Get 100000 honorable kills.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3453
@@ -5682,7 +6944,9 @@ export const ACHIEVEMENTS = [
     "id": 901,
     "faction": 0,
     "title": "Mag'har of Draenor",
+    "titleZh": null,
     "description": "Earn exalted status with The Mag'har.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 15,
     "iconId": 2208
@@ -5691,7 +6955,9 @@ export const ACHIEVEMENTS = [
     "id": 937,
     "faction": -1,
     "title": "Elune's Blessing",
+    "titleZh": null,
     "description": "Complete the Elune's Blessing quest by defeating Omen.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2821
@@ -5700,7 +6966,9 @@ export const ACHIEVEMENTS = [
     "id": 973,
     "faction": -1,
     "title": "5 Daily Quests Complete",
+    "titleZh": null,
     "description": "Complete 5 daily quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3424
@@ -5709,7 +6977,9 @@ export const ACHIEVEMENTS = [
     "id": 1010,
     "faction": -1,
     "title": "Northrend Vanguard",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Argent Crusade, Wyrmrest Accord, Kirin Tor and Knights of the Ebon Blade.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 20,
     "iconId": 2207
@@ -5718,7 +6988,9 @@ export const ACHIEVEMENTS = [
     "id": 1015,
     "faction": -1,
     "title": "40 Exalted Reputations",
+    "titleZh": null,
     "description": "Raise 40 reputations to Exalted.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3602
@@ -5727,7 +6999,9 @@ export const ACHIEVEMENTS = [
     "id": 1029,
     "faction": 1,
     "title": "Extinguishing Kalimdor",
+    "titleZh": null,
     "description": "Desecrate the Horde's bonfires in Kalimdor.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -5736,7 +7010,9 @@ export const ACHIEVEMENTS = [
     "id": 1041,
     "faction": 0,
     "title": "Rotten Hallow",
+    "titleZh": null,
     "description": "Ruin Hallow's End for the Alliance by completing Darkcaller Yanka's quests which involve going to Southshore, ruining the kegs with rotten eggs and tossing stinkbombs into the town.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3480
@@ -5745,7 +7021,9 @@ export const ACHIEVEMENTS = [
     "id": 1044,
     "faction": -1,
     "title": "Need rolls made on loot",
+    "titleZh": null,
     "description": "Need rolls made on loot",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 1
@@ -5754,7 +7032,9 @@ export const ACHIEVEMENTS = [
     "id": 1076,
     "faction": -1,
     "title": "Aeonus kills (Opening of the Dark Portal)",
+    "titleZh": null,
     "description": "Aeonus kills (Opening of the Dark Portal)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 1699
@@ -5763,7 +7043,9 @@ export const ACHIEVEMENTS = [
     "id": 1098,
     "faction": -1,
     "title": "Onyxia kills (Onyxia's Lair)",
+    "titleZh": null,
     "description": "Onyxia kills (Onyxia's Lair)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 1548
@@ -5772,7 +7054,9 @@ export const ACHIEVEMENTS = [
     "id": 1103,
     "faction": -1,
     "title": "Lich King 5-player dungeons completed (final boss killed)",
+    "titleZh": null,
     "description": "Lich King 5-player dungeons completed (final boss killed)",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -5781,7 +7065,9 @@ export const ACHIEVEMENTS = [
     "id": 1109,
     "faction": -1,
     "title": "5v5 Arena Honorable Kills",
+    "titleZh": null,
     "description": "5v5 Arena Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -5790,7 +7076,9 @@ export const ACHIEVEMENTS = [
     "id": 1159,
     "faction": -1,
     "title": "Just the Two of Us: 2200",
+    "titleZh": null,
     "description": "Earn a 2200 personal rating in the 2v2 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3036
@@ -5799,7 +7087,9 @@ export const ACHIEVEMENTS = [
     "id": 1186,
     "faction": -1,
     "title": "Down With The Dark Iron",
+    "titleZh": null,
     "description": "Defend the Brewfest camp from the Dark Iron attack and complete the quest, \"This One Time, When I Was Drunk...\"",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 3072
@@ -5808,7 +7098,9 @@ export const ACHIEVEMENTS = [
     "id": 1193,
     "faction": -1,
     "title": "On the Blade's Edge",
+    "titleZh": null,
     "description": "Complete 86 quests in Blade's Edge Mountains.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3549
@@ -5817,7 +7109,9 @@ export const ACHIEVEMENTS = [
     "id": 1234,
     "faction": -1,
     "title": "The Prophet Tharon'ja kills (Drak'Tharon Keep)",
+    "titleZh": null,
     "description": "The Prophet Tharon'ja kills (Drak'Tharon Keep)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2912
@@ -5826,7 +7120,9 @@ export const ACHIEVEMENTS = [
     "id": 1270,
     "faction": -1,
     "title": "Explore Icecrown",
+    "titleZh": null,
     "description": "Explore Icecrown, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3473
@@ -5835,7 +7131,9 @@ export const ACHIEVEMENTS = [
     "id": 1302,
     "faction": -1,
     "title": "Different mana potions used",
+    "titleZh": null,
     "description": "Different mana potions used",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -5844,7 +7142,9 @@ export const ACHIEVEMENTS = [
     "id": 1312,
     "faction": -1,
     "title": "Bloody Rare",
+    "titleZh": null,
     "description": "Kill all of the extremely rare and hard to find Outland creatures listed below.",
+    "descriptionZh": null,
     "category": 14779,
     "points": 25,
     "iconId": 134
@@ -5853,7 +7153,9 @@ export const ACHIEVEMENTS = [
     "id": 1456,
     "faction": -1,
     "title": "Fish and other things caught",
+    "titleZh": null,
     "description": "Fish and other things caught",
+    "descriptionZh": null,
     "category": 178,
     "points": 0,
     "iconId": 1
@@ -5862,7 +7164,9 @@ export const ACHIEVEMENTS = [
     "id": 1494,
     "faction": -1,
     "title": "5v5 Arena Killing Blows",
+    "titleZh": null,
     "description": "5v5 Arena Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -5871,7 +7175,9 @@ export const ACHIEVEMENTS = [
     "id": 1544,
     "faction": -1,
     "title": "Highest Engineering skill",
+    "titleZh": null,
     "description": "Highest Engineering skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -5880,7 +7186,9 @@ export const ACHIEVEMENTS = [
     "id": 1687,
     "faction": -1,
     "title": "Let It Snow",
+    "titleZh": null,
     "description": "During the Feast of Winter Veil, use a Handful of Snowflakes on each of the race/class combinations listed below.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 976
@@ -5889,7 +7197,9 @@ export const ACHIEVEMENTS = [
     "id": 1694,
     "faction": -1,
     "title": "Lovely Luck Is On Your Side",
+    "titleZh": null,
     "description": "Open a Lovely Dress Box and receive a Lovely Black Dress.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 3193
@@ -5898,7 +7208,9 @@ export const ACHIEVEMENTS = [
     "id": 1751,
     "faction": -1,
     "title": "Didn't Stand a Chance",
+    "titleZh": null,
     "description": "Kill 20 mounted players using a tower cannon.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3434
@@ -5907,7 +7219,9 @@ export const ACHIEVEMENTS = [
     "id": 1762,
     "faction": 1,
     "title": "Not Even a Scratch",
+    "titleZh": null,
     "description": "Win a Strand of the Ancients battle without losing any siege vehicles.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 457
@@ -5916,7 +7230,9 @@ export const ACHIEVEMENTS = [
     "id": 1777,
     "faction": -1,
     "title": "The Northrend Gourmet",
+    "titleZh": null,
     "description": "Cook 15 of the Northrend recipes listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3211
@@ -5925,7 +7241,9 @@ export const ACHIEVEMENTS = [
     "id": 2217,
     "faction": -1,
     "title": "Most deadly Lich King 10-player raid boss",
+    "titleZh": null,
     "description": "Most deadly Lich King 10-player raid boss",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -5934,7 +7252,9 @@ export const ACHIEVEMENTS = [
     "id": 2420,
     "faction": 0,
     "title": "Noble Garden",
+    "titleZh": null,
     "description": "Hide a Brightly Colored Egg in Silvermoon City.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3329
@@ -5943,7 +7263,9 @@ export const ACHIEVEMENTS = [
     "id": 2778,
     "faction": 1,
     "title": "Champion of the Exodar",
+    "titleZh": null,
     "description": "Earn the right to represent the Exodar in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3796
@@ -5952,7 +7274,9 @@ export const ACHIEVEMENTS = [
     "id": 2863,
     "faction": -1,
     "title": "Thorim victories (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Thorim victories (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -5961,7 +7285,9 @@ export const ACHIEVEMENTS = [
     "id": 2909,
     "faction": -1,
     "title": "Take Out Those Turrets (10 player)",
+    "titleZh": null,
     "description": "Destroy a Flame Leviathan Defense Turret in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3854
@@ -5970,7 +7296,9 @@ export const ACHIEVEMENTS = [
     "id": 2910,
     "faction": -1,
     "title": "Take Out Those Turrets (25 player)",
+    "titleZh": null,
     "description": "Destroy a Flame Leviathan Defense Turret in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2589
@@ -5979,7 +7307,9 @@ export const ACHIEVEMENTS = [
     "id": 3457,
     "faction": -1,
     "title": "The Captain's Booty",
+    "titleZh": null,
     "description": "Drink with the Dread Captain Demeza to join her crew during Pirates' Day.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 2421
@@ -5988,7 +7318,9 @@ export const ACHIEVEMENTS = [
     "id": 3597,
     "faction": 0,
     "title": "Pilgrim's Progress",
+    "titleZh": null,
     "description": "Complete each of the Pilgrim's Bounty dailies.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3966
@@ -5997,7 +7329,9 @@ export const ACHIEVEMENTS = [
     "id": 3808,
     "faction": -1,
     "title": "A Tribute to Skill (10 player)",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with at least 25 attempts remaining in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 3293
@@ -6006,7 +7340,9 @@ export const ACHIEVEMENTS = [
     "id": 3817,
     "faction": -1,
     "title": "A Tribute to Skill (25 player)",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with at least 25 attempts remaining in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 3293
@@ -6015,7 +7351,9 @@ export const ACHIEVEMENTS = [
     "id": 3839,
     "faction": -1,
     "title": "25 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 25 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -6024,7 +7362,9 @@ export const ACHIEVEMENTS = [
     "id": 3848,
     "faction": -1,
     "title": "A-bomb-inable",
+    "titleZh": null,
     "description": "In a single Isle of Conquest battle, use 5 Seaforium Bombs on the enemy gates.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 2565
@@ -6033,7 +7373,9 @@ export const ACHIEVEMENTS = [
     "id": 4054,
     "faction": -1,
     "title": "Victories over Warrior Champion (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Warrior Champion (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -6042,7 +7384,9 @@ export const ACHIEVEMENTS = [
     "id": 4530,
     "faction": -1,
     "title": "The Frozen Throne (10 player)",
+    "titleZh": null,
     "description": "Defeat the Lich King in Icecrown Citadel in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4179
@@ -6051,7 +7395,9 @@ export const ACHIEVEMENTS = [
     "id": 4597,
     "faction": -1,
     "title": "The Frozen Throne (25 player)",
+    "titleZh": null,
     "description": "Defeat the Lich King in Icecrown Citadel in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4179
@@ -6060,7 +7406,9 @@ export const ACHIEVEMENTS = [
     "id": 4720,
     "faction": -1,
     "title": "Scourgelord Tyrannus kills (Pit of Saron)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -6069,7 +7417,9 @@ export const ACHIEVEMENTS = [
     "id": 16,
     "faction": -1,
     "title": "Did Somebody Order a Knuckle Sandwich?",
+    "titleZh": null,
     "description": "Raise your unarmed skill to 400.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1997
@@ -6078,7 +7428,9 @@ export const ACHIEVEMENTS = [
     "id": 39,
     "faction": -1,
     "title": "Into the Basin",
+    "titleZh": null,
     "description": "Complete 75 quests in Sholazar Basin.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3341
@@ -6087,7 +7439,9 @@ export const ACHIEVEMENTS = [
     "id": 50,
     "faction": -1,
     "title": "Eye of the Storm victories",
+    "titleZh": null,
     "description": "Eye of the Storm victories",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -6096,7 +7450,9 @@ export const ACHIEVEMENTS = [
     "id": 104,
     "faction": -1,
     "title": "Circle of Blood victories",
+    "titleZh": null,
     "description": "Circle of Blood victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -6105,7 +7461,9 @@ export const ACHIEVEMENTS = [
     "id": 159,
     "faction": -1,
     "title": "Let's Get This Done",
+    "titleZh": null,
     "description": "Win Arathi Basin in 6 minutes.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 3383
@@ -6114,7 +7472,9 @@ export const ACHIEVEMENTS = [
     "id": 204,
     "faction": -1,
     "title": "Ironman",
+    "titleZh": null,
     "description": "In a single Warsong Gulch battle, carry and capture the flag 3 times without dying.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3482
@@ -6123,7 +7483,9 @@ export const ACHIEVEMENTS = [
     "id": 223,
     "faction": -1,
     "title": "The Sickly Gazelle",
+    "titleZh": null,
     "description": "In Alterac Valley, kill an enemy in the Field of Strife before they dismount.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 3434
@@ -6132,7 +7494,9 @@ export const ACHIEVEMENTS = [
     "id": 293,
     "faction": -1,
     "title": "Disturbing the Peace",
+    "titleZh": null,
     "description": "While wearing 3 pieces of Brewfest clothing, get completely smashed and dance in Dalaran.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 2518
@@ -6141,7 +7505,9 @@ export const ACHIEVEMENTS = [
     "id": 324,
     "faction": -1,
     "title": "Total deaths to Lich King 25-player raid bosses",
+    "titleZh": null,
     "description": "Total deaths to Lich King 25-player raid bosses",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 4
@@ -6150,7 +7516,9 @@ export const ACHIEVEMENTS = [
     "id": 402,
     "faction": -1,
     "title": "Three's Company: 1550",
+    "titleZh": null,
     "description": "Earn a 1550 personal rating in the 3v3 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3050
@@ -6159,7 +7527,9 @@ export const ACHIEVEMENTS = [
     "id": 459,
     "faction": -1,
     "title": "Realm First! Level 80 Warrior",
+    "titleZh": null,
     "description": "First warrior on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1462
@@ -6168,7 +7538,9 @@ export const ACHIEVEMENTS = [
     "id": 487,
     "faction": -1,
     "title": "The Oculus",
+    "titleZh": null,
     "description": "Defeat the bosses in The Oculus.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3243
@@ -6177,7 +7549,9 @@ export const ACHIEVEMENTS = [
     "id": 498,
     "faction": -1,
     "title": "Heroic: The Oculus",
+    "titleZh": null,
     "description": "Defeat The Oculus bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3244
@@ -6186,7 +7560,9 @@ export const ACHIEVEMENTS = [
     "id": 578,
     "faction": -1,
     "title": "The Dedicated Few (10 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of Naxxramas with less than 9 people in the zone in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 25,
     "iconId": 61
@@ -6195,7 +7571,9 @@ export const ACHIEVEMENTS = [
     "id": 579,
     "faction": -1,
     "title": "The Dedicated Few (25 player)",
+    "titleZh": null,
     "description": "Defeat the bosses of Naxxramas with less than 21 people in the zone in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 50,
     "iconId": 61
@@ -6204,7 +7582,9 @@ export const ACHIEVEMENTS = [
     "id": 637,
     "faction": -1,
     "title": "Scarlet Monastery",
+    "titleZh": null,
     "description": "Defeat the Scarlet Crusade within the Scarlet Monastery.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 2792
@@ -6213,7 +7593,9 @@ export const ACHIEVEMENTS = [
     "id": 655,
     "faction": -1,
     "title": "Opening of the Dark Portal",
+    "titleZh": null,
     "description": "Defeat Aeonus.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3826
@@ -6222,7 +7604,9 @@ export const ACHIEVEMENTS = [
     "id": 726,
     "faction": -1,
     "title": "Mr. Pinchy's Magical Crawdad Box",
+    "titleZh": null,
     "description": "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 2105
@@ -6231,7 +7615,9 @@ export const ACHIEVEMENTS = [
     "id": 762,
     "faction": 0,
     "title": "Ambassador of the Horde",
+    "titleZh": null,
     "description": "Earn exalted reputation with 5 home cities.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3374
@@ -6240,7 +7626,9 @@ export const ACHIEVEMENTS = [
     "id": 780,
     "faction": -1,
     "title": "Explore Redridge Mountains",
+    "titleZh": null,
     "description": "Explore Redridge Mountains, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3565
@@ -6249,7 +7637,9 @@ export const ACHIEVEMENTS = [
     "id": 847,
     "faction": -1,
     "title": "Explore Stonetalon Mountains",
+    "titleZh": null,
     "description": "Explore Stonetalon Mountains, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3578
@@ -6258,7 +7648,9 @@ export const ACHIEVEMENTS = [
     "id": 902,
     "faction": -1,
     "title": "Chief Exalted Officer",
+    "titleZh": null,
     "description": "Earn exalted status with The Consortium.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2558
@@ -6267,7 +7659,9 @@ export const ACHIEVEMENTS = [
     "id": 912,
     "faction": -1,
     "title": "Elders of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Honor the Elders which are located in Eastern Kingdoms",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2218
@@ -6276,7 +7670,9 @@ export const ACHIEVEMENTS = [
     "id": 921,
     "faction": -1,
     "title": "Gold from vendors",
+    "titleZh": null,
     "description": "Gold from vendors",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -6285,7 +7681,9 @@ export const ACHIEVEMENTS = [
     "id": 923,
     "faction": -1,
     "title": "Elixirs consumed",
+    "titleZh": null,
     "description": "Elixirs consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -6294,7 +7692,9 @@ export const ACHIEVEMENTS = [
     "id": 974,
     "faction": -1,
     "title": "50 Daily Quests Complete",
+    "titleZh": null,
     "description": "Complete 50 daily quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3425
@@ -6303,7 +7703,9 @@ export const ACHIEVEMENTS = [
     "id": 1011,
     "faction": 0,
     "title": "The Winds of the North",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Horde Expedition.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 20,
     "iconId": 2625
@@ -6312,7 +7714,9 @@ export const ACHIEVEMENTS = [
     "id": 1030,
     "faction": 1,
     "title": "Extinguishing Outland",
+    "titleZh": null,
     "description": "Desecrate the Horde's bonfires in Outland.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -6321,7 +7725,9 @@ export const ACHIEVEMENTS = [
     "id": 1077,
     "faction": -1,
     "title": "Warlord Kalithresh kills (The Steamvault)",
+    "titleZh": null,
     "description": "Warlord Kalithresh kills (The Steamvault)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 1647
@@ -6330,7 +7736,9 @@ export const ACHIEVEMENTS = [
     "id": 1099,
     "faction": -1,
     "title": "Ragnaros kills (Molten Core)",
+    "titleZh": null,
     "description": "Ragnaros kills (Molten Core)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 2290
@@ -6339,7 +7747,9 @@ export const ACHIEVEMENTS = [
     "id": 1104,
     "faction": -1,
     "title": "Lich King 10-player raids completed (final boss killed)",
+    "titleZh": null,
     "description": "Lich King 10-player raids completed (final boss killed)",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -6348,7 +7758,9 @@ export const ACHIEVEMENTS = [
     "id": 1113,
     "faction": -1,
     "title": "Alterac Valley Honorable Kills",
+    "titleZh": null,
     "description": "Alterac Valley Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -6357,7 +7769,9 @@ export const ACHIEVEMENTS = [
     "id": 1157,
     "faction": -1,
     "title": "Duel-icious",
+    "titleZh": null,
     "description": "Win a duel against another player.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2023
@@ -6366,7 +7780,9 @@ export const ACHIEVEMENTS = [
     "id": 1194,
     "faction": -1,
     "title": "Into the Nether",
+    "titleZh": null,
     "description": "Complete 120 quests in Netherstorm.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3564
@@ -6375,7 +7791,9 @@ export const ACHIEVEMENTS = [
     "id": 1258,
     "faction": -1,
     "title": "Take a Chill Pill",
+    "titleZh": null,
     "description": "In Eye of the Storm, kill a player who is under the effects of the Berserker power-up.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3423
@@ -6384,7 +7802,9 @@ export const ACHIEVEMENTS = [
     "id": 1261,
     "faction": -1,
     "title": "G.N.E.R.D. Rage",
+    "titleZh": null,
     "description": "Earn 50 honorable kills while under the influence of the G.N.E.R.D. buff. It's a slap in the face!",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2006
@@ -6393,7 +7813,9 @@ export const ACHIEVEMENTS = [
     "id": 1495,
     "faction": -1,
     "title": "Alterac Valley Killing Blows",
+    "titleZh": null,
     "description": "Alterac Valley Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -6402,7 +7824,9 @@ export const ACHIEVEMENTS = [
     "id": 1508,
     "faction": -1,
     "title": "The Prophet Tharon'ja kills (Heroic Drak'Tharon Keep)",
+    "titleZh": null,
     "description": "The Prophet Tharon'ja kills (Heroic Drak'Tharon Keep)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2912
@@ -6411,7 +7835,9 @@ export const ACHIEVEMENTS = [
     "id": 1526,
     "faction": -1,
     "title": "Fishing daily quests completed",
+    "titleZh": null,
     "description": "Fishing daily quests completed",
+    "descriptionZh": null,
     "category": 178,
     "points": 10,
     "iconId": 2736
@@ -6420,7 +7846,9 @@ export const ACHIEVEMENTS = [
     "id": 1683,
     "faction": 0,
     "title": "Brewmaster",
+    "titleZh": null,
     "description": "Complete the Brewfest achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3697
@@ -6429,7 +7857,9 @@ export const ACHIEVEMENTS = [
     "id": 1685,
     "faction": 0,
     "title": "Bros. Before Ho Ho Ho's",
+    "titleZh": null,
     "description": "Use Mistletoe on the Horde \"Brothers\" during the Feast of Winter Veil.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 1793
@@ -6438,7 +7868,9 @@ export const ACHIEVEMENTS = [
     "id": 1703,
     "faction": -1,
     "title": "My Love is Like a Red, Red Rose",
+    "titleZh": null,
     "description": "Obtain a Bouquet of Red or Ebon Roses during the Love is in the Air celebration.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1937
@@ -6447,7 +7879,9 @@ export const ACHIEVEMENTS = [
     "id": 1734,
     "faction": -1,
     "title": "Engineering Schematics learned",
+    "titleZh": null,
     "description": "Engineering Schematics learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -6456,7 +7890,9 @@ export const ACHIEVEMENTS = [
     "id": 1778,
     "faction": -1,
     "title": "The Northrend Gourmet",
+    "titleZh": null,
     "description": "Cook 30 of the Northrend recipes listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3212
@@ -6465,7 +7901,9 @@ export const ACHIEVEMENTS = [
     "id": 2080,
     "faction": -1,
     "title": "Black War Mammoth",
+    "titleZh": null,
     "description": "Obtain a Black War Mammoth.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3444
@@ -6474,7 +7912,9 @@ export const ACHIEVEMENTS = [
     "id": 2192,
     "faction": 0,
     "title": "Not Even a Scratch",
+    "titleZh": null,
     "description": "Win a Strand of the Ancients battle without losing any siege vehicles.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 457
@@ -6483,7 +7923,9 @@ export const ACHIEVEMENTS = [
     "id": 2256,
     "faction": -1,
     "title": "Northern Exposure",
+    "titleZh": null,
     "description": "Kill one of the extremely rare and hard to find Northrend creatures listed below.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 10,
     "iconId": 3637
@@ -6492,7 +7934,9 @@ export const ACHIEVEMENTS = [
     "id": 2421,
     "faction": 1,
     "title": "Noble Garden",
+    "titleZh": null,
     "description": "Hide a Brightly Colored Egg in Stormwind City.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3329
@@ -6501,7 +7945,9 @@ export const ACHIEVEMENTS = [
     "id": 2761,
     "faction": 1,
     "title": "Exalted Champion of the Exodar",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent the Exodar in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3796
@@ -6510,7 +7956,9 @@ export const ACHIEVEMENTS = [
     "id": 2864,
     "faction": -1,
     "title": "Freya victories (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Freya victories (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -6519,7 +7967,9 @@ export const ACHIEVEMENTS = [
     "id": 2911,
     "faction": -1,
     "title": "Shutout (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan without causing a System Shutdown in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3504
@@ -6528,7 +7978,9 @@ export const ACHIEVEMENTS = [
     "id": 2912,
     "faction": -1,
     "title": "Shutout (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan without causing a System Shutdown in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3504
@@ -6537,7 +7989,9 @@ export const ACHIEVEMENTS = [
     "id": 3558,
     "faction": -1,
     "title": "Sharing is Caring",
+    "titleZh": null,
     "description": "Pass one of every dish at a Bountiful Table.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 79
@@ -6546,7 +8000,9 @@ export const ACHIEVEMENTS = [
     "id": 3809,
     "faction": -1,
     "title": "A Tribute to Mad Skill (10 player)",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with at least 45 attempts remaining in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 4008
@@ -6555,7 +8011,9 @@ export const ACHIEVEMENTS = [
     "id": 3818,
     "faction": -1,
     "title": "A Tribute to Mad Skill (25 player)",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with at least 45 attempts remaining in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 4008
@@ -6564,7 +8022,9 @@ export const ACHIEVEMENTS = [
     "id": 3840,
     "faction": -1,
     "title": "50 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 50 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -6573,7 +8033,9 @@ export const ACHIEVEMENTS = [
     "id": 3849,
     "faction": -1,
     "title": "A-bomb-ination",
+    "titleZh": null,
     "description": "In a single Isle of Conquest battle, use 5 Huge Seaforium Bombs on the enemy gates",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 1755
@@ -6582,7 +8044,9 @@ export const ACHIEVEMENTS = [
     "id": 4055,
     "faction": -1,
     "title": "Victories over Warrior Champion (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Warrior Champion (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -6591,7 +8055,9 @@ export const ACHIEVEMENTS = [
     "id": 4583,
     "faction": -1,
     "title": "Bane of the Fallen King",
+    "titleZh": null,
     "description": "Defeat the Lich King in Icecrown Citadel in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4148
@@ -6600,7 +8066,9 @@ export const ACHIEVEMENTS = [
     "id": 4584,
     "faction": -1,
     "title": "The Light of Dawn",
+    "titleZh": null,
     "description": "Defeat the Lich King in Icecrown Citadel in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 2821
@@ -6609,7 +8077,9 @@ export const ACHIEVEMENTS = [
     "id": 4721,
     "faction": -1,
     "title": "Scourgelord Tyrannus kills (Heroic Pit of Saron)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -6618,7 +8088,9 @@ export const ACHIEVEMENTS = [
     "id": 4778,
     "faction": -1,
     "title": "Disenchant rolls made on loot",
+    "titleZh": null,
     "description": "Disenchant rolls made on loot",
+    "descriptionZh": null,
     "category": 191,
     "points": 0,
     "iconId": 1
@@ -6627,7 +8099,9 @@ export const ACHIEVEMENTS = [
     "id": 38,
     "faction": -1,
     "title": "The Summit of Storm Peaks",
+    "titleZh": null,
     "description": "Complete 100 quests in Storm Peaks.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3405
@@ -6636,7 +8110,9 @@ export const ACHIEVEMENTS = [
     "id": 162,
     "faction": -1,
     "title": "We Had It All Along *cough*",
+    "titleZh": null,
     "description": "Win Arathi Basin by 10 points (1600 to 1590).",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 1876
@@ -6645,7 +8121,9 @@ export const ACHIEVEMENTS = [
     "id": 220,
     "faction": 1,
     "title": "Stormpike Perfection",
+    "titleZh": null,
     "description": "Win Alterac Valley without losing a tower or captain. You must also control all of the Horde's towers.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 20,
     "iconId": 2897
@@ -6654,7 +8132,9 @@ export const ACHIEVEMENTS = [
     "id": 233,
     "faction": -1,
     "title": "Bloodthirsty Berserker",
+    "titleZh": null,
     "description": "Get a killing blow while under the effects of the berserker buff in Eye of the Storm.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 38
@@ -6663,7 +8143,9 @@ export const ACHIEVEMENTS = [
     "id": 245,
     "faction": -1,
     "title": "That Takes Class",
+    "titleZh": null,
     "description": "Get an honorable, killing blow on one of each class.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 244
@@ -6672,7 +8154,9 @@ export const ACHIEVEMENTS = [
     "id": 291,
     "faction": -1,
     "title": "Check Your Head",
+    "titleZh": null,
     "description": "Use Weighted Jack-o'-Lanterns to put pumpkin heads on each of the races listed below.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2528
@@ -6681,7 +8165,9 @@ export const ACHIEVEMENTS = [
     "id": 303,
     "faction": -1,
     "title": "Have Keg, Will Travel",
+    "titleZh": null,
     "description": "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
+    "descriptionZh": null,
     "category": 162,
     "points": 10,
     "iconId": 354
@@ -6690,7 +8176,9 @@ export const ACHIEVEMENTS = [
     "id": 403,
     "faction": -1,
     "title": "Three's Company: 1750",
+    "titleZh": null,
     "description": "Earn a 1750 personal rating in the 3v3 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3049
@@ -6699,7 +8187,9 @@ export const ACHIEVEMENTS = [
     "id": 458,
     "faction": -1,
     "title": "Realm First! Level 80 Rogue",
+    "titleZh": null,
     "description": "First rogue on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1834
@@ -6708,7 +8198,9 @@ export const ACHIEVEMENTS = [
     "id": 488,
     "faction": -1,
     "title": "Utgarde Pinnacle",
+    "titleZh": null,
     "description": "Defeat the bosses in Utgarde Pinnacle.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3245
@@ -6717,7 +8209,9 @@ export const ACHIEVEMENTS = [
     "id": 499,
     "faction": -1,
     "title": "Heroic: Utgarde Pinnacle",
+    "titleZh": null,
     "description": "Defeat the Utgarde Pinnacle bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3246
@@ -6726,7 +8220,9 @@ export const ACHIEVEMENTS = [
     "id": 546,
     "faction": -1,
     "title": "Safe Deposit",
+    "titleZh": null,
     "description": "Buy 7 additional bank slots.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2492
@@ -6735,7 +8231,9 @@ export const ACHIEVEMENTS = [
     "id": 638,
     "faction": -1,
     "title": "Uldaman",
+    "titleZh": null,
     "description": "Defeat Archaedas.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3656
@@ -6744,7 +8242,9 @@ export const ACHIEVEMENTS = [
     "id": 656,
     "faction": -1,
     "title": "The Steamvault",
+    "titleZh": null,
     "description": "Defeat Warlord Kalithresh.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3657
@@ -6753,7 +8253,9 @@ export const ACHIEVEMENTS = [
     "id": 712,
     "faction": 0,
     "title": "Warsong Outrider",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Warsong Outriders.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 282
@@ -6762,7 +8264,9 @@ export const ACHIEVEMENTS = [
     "id": 778,
     "faction": -1,
     "title": "Explore Duskwood",
+    "titleZh": null,
     "description": "Explore Duskwood, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3533
@@ -6771,7 +8275,9 @@ export const ACHIEVEMENTS = [
     "id": 848,
     "faction": -1,
     "title": "Explore Desolace",
+    "titleZh": null,
     "description": "Explore Desolace, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3530
@@ -6780,7 +8286,9 @@ export const ACHIEVEMENTS = [
     "id": 878,
     "faction": -1,
     "title": "One That Didn't Get Away",
+    "titleZh": null,
     "description": "Catch one of the rare fish in the list below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 2918
@@ -6789,7 +8297,9 @@ export const ACHIEVEMENTS = [
     "id": 900,
     "faction": -1,
     "title": "The Czar of Sporeggar",
+    "titleZh": null,
     "description": "Earn exalted status with Sporeggar.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 15,
     "iconId": 2920
@@ -6798,7 +8308,9 @@ export const ACHIEVEMENTS = [
     "id": 911,
     "faction": -1,
     "title": "Elders of Kalimdor",
+    "titleZh": null,
     "description": "Honor the Elders which are located in Kalimdor.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2218
@@ -6807,7 +8319,9 @@ export const ACHIEVEMENTS = [
     "id": 948,
     "faction": 1,
     "title": "Ambassador of the Alliance",
+    "titleZh": null,
     "description": "Earn exalted reputation with 5 home cities.",
+    "descriptionZh": null,
     "category": 201,
     "points": 10,
     "iconId": 3375
@@ -6816,7 +8330,9 @@ export const ACHIEVEMENTS = [
     "id": 975,
     "faction": -1,
     "title": "200 Daily Quests Complete",
+    "titleZh": null,
     "description": "Complete 200 daily quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3426
@@ -6825,7 +8341,9 @@ export const ACHIEVEMENTS = [
     "id": 1012,
     "faction": 1,
     "title": "The Winds of the North",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Alliance Vanguard.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 20,
     "iconId": 2413
@@ -6834,7 +8352,9 @@ export const ACHIEVEMENTS = [
     "id": 1035,
     "faction": 1,
     "title": "Desecration of the Horde",
+    "titleZh": null,
     "description": "Complete the Extinguishing Eastern Kingdoms, Kalimdor and Outland achievements.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -6843,7 +8363,9 @@ export const ACHIEVEMENTS = [
     "id": 1078,
     "faction": -1,
     "title": "Warchief Kargath Bladefist kills (The Shattered Halls)",
+    "titleZh": null,
     "description": "Warchief Kargath Bladefist kills (The Shattered Halls)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 1962
@@ -6852,7 +8374,9 @@ export const ACHIEVEMENTS = [
     "id": 1100,
     "faction": -1,
     "title": "Nefarian kills (Blackwing Lair)",
+    "titleZh": null,
     "description": "Nefarian kills (Blackwing Lair)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 1699
@@ -6861,7 +8385,9 @@ export const ACHIEVEMENTS = [
     "id": 1114,
     "faction": -1,
     "title": "Arathi Basin Honorable Kills",
+    "titleZh": null,
     "description": "Arathi Basin Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -6870,7 +8396,9 @@ export const ACHIEVEMENTS = [
     "id": 1146,
     "faction": -1,
     "title": "Gold spent on travel",
+    "titleZh": null,
     "description": "Gold spent on travel",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -6879,7 +8407,9 @@ export const ACHIEVEMENTS = [
     "id": 1195,
     "faction": -1,
     "title": "Shadow of the Betrayer",
+    "titleZh": null,
     "description": "Complete 90 quests in Shadowmoon Valley.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3584
@@ -6888,7 +8418,9 @@ export const ACHIEVEMENTS = [
     "id": 1235,
     "faction": -1,
     "title": "Cyanigosa kills (The Violet Hold)",
+    "titleZh": null,
     "description": "Cyanigosa kills (The Violet Hold)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 1955
@@ -6897,7 +8429,9 @@ export const ACHIEVEMENTS = [
     "id": 1303,
     "faction": -1,
     "title": "Elixir consumed most",
+    "titleZh": null,
     "description": "Elixir consumed most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -6906,7 +8440,9 @@ export const ACHIEVEMENTS = [
     "id": 1496,
     "faction": -1,
     "title": "Arathi Basin Killing Blows",
+    "titleZh": null,
     "description": "Arathi Basin Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -6915,7 +8451,9 @@ export const ACHIEVEMENTS = [
     "id": 1538,
     "faction": -1,
     "title": "Highest Herbalism skill",
+    "titleZh": null,
     "description": "Highest Herbalism skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -6924,7 +8462,9 @@ export const ACHIEVEMENTS = [
     "id": 1547,
     "faction": -1,
     "title": "Dalaran Sewers matches",
+    "titleZh": null,
     "description": "Dalaran Sewers matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -6933,7 +8473,9 @@ export const ACHIEVEMENTS = [
     "id": 1549,
     "faction": -1,
     "title": "Strand of the Ancients battles",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -6942,7 +8484,9 @@ export const ACHIEVEMENTS = [
     "id": 1684,
     "faction": 1,
     "title": "Brewmaster",
+    "titleZh": null,
     "description": "Complete the Brewfest achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3697
@@ -6951,7 +8495,9 @@ export const ACHIEVEMENTS = [
     "id": 1686,
     "faction": 1,
     "title": "Bros. Before Ho Ho Ho's",
+    "titleZh": null,
     "description": "Use Mistletoe on the Alliance \"Brothers\" during the Feast of Winter Veil.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 1793
@@ -6960,7 +8506,9 @@ export const ACHIEVEMENTS = [
     "id": 1697,
     "faction": 1,
     "title": "Nation of Adoration",
+    "titleZh": null,
     "description": "Complete the Lovely Charm Bracelet daily quest for each Alliance capital.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 3192
@@ -6969,7 +8517,9 @@ export const ACHIEVEMENTS = [
     "id": 1763,
     "faction": -1,
     "title": "Artillery Veteran",
+    "titleZh": null,
     "description": "Destroy 100 vehicles using a turret.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 2244
@@ -6978,7 +8528,9 @@ export const ACHIEVEMENTS = [
     "id": 1768,
     "faction": -1,
     "title": "Lich King 25-player raids completed (final boss killed)",
+    "titleZh": null,
     "description": "Lich King 25-player raids completed (final boss killed)",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -6987,7 +8539,9 @@ export const ACHIEVEMENTS = [
     "id": 1779,
     "faction": -1,
     "title": "The Northrend Gourmet",
+    "titleZh": null,
     "description": "Cook 45 of the Northrend recipes listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3213
@@ -6996,7 +8550,9 @@ export const ACHIEVEMENTS = [
     "id": 1858,
     "faction": -1,
     "title": "Arachnophobia (10 player)",
+    "titleZh": null,
     "description": "Defeat Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3515
@@ -7005,7 +8561,9 @@ export const ACHIEVEMENTS = [
     "id": 1859,
     "faction": -1,
     "title": "Arachnophobia (25 player)",
+    "titleZh": null,
     "description": "Kill Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3515
@@ -7014,7 +8572,9 @@ export const ACHIEVEMENTS = [
     "id": 2085,
     "faction": -1,
     "title": "50 Stone Keeper's Shards",
+    "titleZh": null,
     "description": "Loot 50 Stone Keeper's Shards.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3448
@@ -7023,7 +8583,9 @@ export const ACHIEVEMENTS = [
     "id": 2218,
     "faction": -1,
     "title": "Most deadly Lich King 25-player raid boss",
+    "titleZh": null,
     "description": "Most deadly Lich King 25-player raid boss",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -7032,7 +8594,9 @@ export const ACHIEVEMENTS = [
     "id": 2257,
     "faction": -1,
     "title": "Frostbitten",
+    "titleZh": null,
     "description": "Kill all of the extremely rare and hard to find Northrend creatures listed below.",
+    "descriptionZh": null,
     "category": 14780,
     "points": 25,
     "iconId": 3638
@@ -7041,7 +8605,9 @@ export const ACHIEVEMENTS = [
     "id": 2422,
     "faction": -1,
     "title": "Shake Your Bunny-Maker",
+    "titleZh": null,
     "description": "Use Spring Flowers to place rabbit ears upon females of at least 18th level.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 1216
@@ -7050,7 +8616,9 @@ export const ACHIEVEMENTS = [
     "id": 2779,
     "faction": 1,
     "title": "Champion of Gnomeregan",
+    "titleZh": null,
     "description": "Earn the right to represent the Gnomeregan Exiles in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3799
@@ -7059,7 +8627,9 @@ export const ACHIEVEMENTS = [
     "id": 2865,
     "faction": -1,
     "title": "Mimiron victories (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Mimiron victories (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -7068,7 +8638,9 @@ export const ACHIEVEMENTS = [
     "id": 2913,
     "faction": -1,
     "title": "Orbital Bombardment (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with at least 1 Orbital Defense System active in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 554
@@ -7077,7 +8649,9 @@ export const ACHIEVEMENTS = [
     "id": 2918,
     "faction": -1,
     "title": "Orbital Bombardment (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with 1 Orbital Defense System active in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 554
@@ -7086,7 +8660,9 @@ export const ACHIEVEMENTS = [
     "id": 3582,
     "faction": -1,
     "title": "Terokkar Turkey Time",
+    "titleZh": null,
     "description": "Defeat Talon King Ikiss while wearing a Pilgrim's Hat and either a Pilgrim's Dress, Robe, or Attire.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3631
@@ -7095,7 +8671,9 @@ export const ACHIEVEMENTS = [
     "id": 3810,
     "faction": -1,
     "title": "A Tribute to Insanity (10 player)",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with 50 attempts remaining in 10-player mode.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 3916
@@ -7104,7 +8682,9 @@ export const ACHIEVEMENTS = [
     "id": 3819,
     "faction": -1,
     "title": "A Tribute to Insanity (25 player)",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with 50 attempts remaining in 25-player mode.",
+    "descriptionZh": null,
     "category": 15002,
     "points": 10,
     "iconId": 3916
@@ -7113,7 +8693,9 @@ export const ACHIEVEMENTS = [
     "id": 3841,
     "faction": -1,
     "title": "100 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 100 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -7122,7 +8704,9 @@ export const ACHIEVEMENTS = [
     "id": 3850,
     "faction": -1,
     "title": "Mowed Down",
+    "titleZh": null,
     "description": "In Isle of Conquest, destroy 10 vehicles and 100 players with turrets.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 3435
@@ -7131,7 +8715,9 @@ export const ACHIEVEMENTS = [
     "id": 4022,
     "faction": -1,
     "title": "Victories over Argent Confessor Paletress (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Argent Confessor Paletress (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -7140,7 +8726,9 @@ export const ACHIEVEMENTS = [
     "id": 4532,
     "faction": -1,
     "title": "Fall of the Lich King (10 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Icecrown Citadel in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 25,
     "iconId": 4157
@@ -7149,7 +8737,9 @@ export const ACHIEVEMENTS = [
     "id": 4608,
     "faction": -1,
     "title": "Fall of the Lich King (25 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Icecrown Citadel in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 25,
     "iconId": 4157
@@ -7158,7 +8748,9 @@ export const ACHIEVEMENTS = [
     "id": 4722,
     "faction": -1,
     "title": "Falric kills (Halls of Reflection)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -7167,7 +8759,9 @@ export const ACHIEVEMENTS = [
     "id": 40,
     "faction": -1,
     "title": "Icecrown: The Final Goal",
+    "titleZh": null,
     "description": "Complete 140 quests in Icecrown.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3474
@@ -7176,7 +8770,9 @@ export const ACHIEVEMENTS = [
     "id": 211,
     "faction": -1,
     "title": "Storm Glory",
+    "titleZh": null,
     "description": "While your team holds 4 of the bases in Eye of the Storm, personally grab the flag and capture it.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 10,
     "iconId": 3508
@@ -7185,7 +8781,9 @@ export const ACHIEVEMENTS = [
     "id": 246,
     "faction": 1,
     "title": "Know Thy Enemy",
+    "titleZh": null,
     "description": "Get an honorable, killing blow on five different races.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 245
@@ -7194,7 +8792,9 @@ export const ACHIEVEMENTS = [
     "id": 283,
     "faction": -1,
     "title": "The Masquerade",
+    "titleZh": null,
     "description": "Get transformed by the Hallowed Wands listed below.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3513
@@ -7203,7 +8803,9 @@ export const ACHIEVEMENTS = [
     "id": 405,
     "faction": -1,
     "title": "Three's Company: 2000",
+    "titleZh": null,
     "description": "Earn a 2000 personal rating in the 3v3 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3048
@@ -7212,7 +8814,9 @@ export const ACHIEVEMENTS = [
     "id": 479,
     "faction": -1,
     "title": "The Culling of Stratholme",
+    "titleZh": null,
     "description": "Defeat the bosses in Caverns of Time: Stratholme.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 3248
@@ -7221,7 +8825,9 @@ export const ACHIEVEMENTS = [
     "id": 500,
     "faction": -1,
     "title": "Heroic: The Culling of Stratholme",
+    "titleZh": null,
     "description": "Defeat the Caverns of Time: Stratholme bosses on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3249
@@ -7230,7 +8836,9 @@ export const ACHIEVEMENTS = [
     "id": 639,
     "faction": -1,
     "title": "Zul'Farrak",
+    "titleZh": null,
     "description": "Defeat Chief Ukorz Sandscalp.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3687
@@ -7239,7 +8847,9 @@ export const ACHIEVEMENTS = [
     "id": 657,
     "faction": -1,
     "title": "The Shattered Halls",
+    "titleZh": null,
     "description": "Defeat Warchief Kargath Bladefist.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3827
@@ -7248,7 +8858,9 @@ export const ACHIEVEMENTS = [
     "id": 710,
     "faction": 0,
     "title": "The Defiler",
+    "titleZh": null,
     "description": "Gain exalted reputation with The Forsaken Defilers.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 2847
@@ -7257,7 +8869,9 @@ export const ACHIEVEMENTS = [
     "id": 713,
     "faction": 1,
     "title": "Silverwing Sentinel",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Silverwing Sentinels.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 131
@@ -7266,7 +8880,9 @@ export const ACHIEVEMENTS = [
     "id": 752,
     "faction": -1,
     "title": "Deaths in Naxxramas",
+    "titleZh": null,
     "description": "Deaths in Naxxramas",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -7275,7 +8891,9 @@ export const ACHIEVEMENTS = [
     "id": 772,
     "faction": -1,
     "title": "Explore Hillsbrad Foothills",
+    "titleZh": null,
     "description": "Explore Hillsbrad Foothills, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3555
@@ -7284,7 +8902,9 @@ export const ACHIEVEMENTS = [
     "id": 850,
     "faction": -1,
     "title": "Explore Dustwallow Marsh",
+    "titleZh": null,
     "description": "Explore Dustwallow Marsh, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3534
@@ -7293,7 +8913,9 @@ export const ACHIEVEMENTS = [
     "id": 873,
     "faction": 0,
     "title": "Frostwolf Perfection",
+    "titleZh": null,
     "description": "Win Alterac Valley without losing a tower or captain. You must also control all of the Alliance's towers.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 20,
     "iconId": 2898
@@ -7302,7 +8924,9 @@ export const ACHIEVEMENTS = [
     "id": 903,
     "faction": -1,
     "title": "Shattrath Divided",
+    "titleZh": null,
     "description": "Earn exalted status with The Scryers or The Aldor.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2174
@@ -7311,7 +8935,9 @@ export const ACHIEVEMENTS = [
     "id": 942,
     "faction": 1,
     "title": "The Diplomat",
+    "titleZh": null,
     "description": "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Kurenai.",
+    "descriptionZh": null,
     "category": 201,
     "points": 25,
     "iconId": 2737
@@ -7320,7 +8946,9 @@ export const ACHIEVEMENTS = [
     "id": 976,
     "faction": -1,
     "title": "500 Daily Quests Complete",
+    "titleZh": null,
     "description": "Complete 500 daily quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3427
@@ -7329,7 +8957,9 @@ export const ACHIEVEMENTS = [
     "id": 1025,
     "faction": 0,
     "title": "Flame Keeper of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Honor the flames of Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1923
@@ -7338,7 +8968,9 @@ export const ACHIEVEMENTS = [
     "id": 1079,
     "faction": -1,
     "title": "Pathaleon the Calculator kills (The Mechanar)",
+    "titleZh": null,
     "description": "Pathaleon the Calculator kills (The Mechanar)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2529
@@ -7347,7 +8979,9 @@ export const ACHIEVEMENTS = [
     "id": 1101,
     "faction": -1,
     "title": "C'Thun kills (Temple of Ahn'Qiraj)",
+    "titleZh": null,
     "description": "C'Thun kills (Temple of Ahn'Qiraj)",
+    "descriptionZh": null,
     "category": 14821,
     "points": 5,
     "iconId": 1826
@@ -7356,7 +8990,9 @@ export const ACHIEVEMENTS = [
     "id": 1115,
     "faction": -1,
     "title": "Warsong Gulch Honorable Kills",
+    "titleZh": null,
     "description": "Warsong Gulch Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -7365,7 +9001,9 @@ export const ACHIEVEMENTS = [
     "id": 1147,
     "faction": -1,
     "title": "Gold spent at barber shops",
+    "titleZh": null,
     "description": "Gold spent at barber shops",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -7374,7 +9012,9 @@ export const ACHIEVEMENTS = [
     "id": 1176,
     "faction": -1,
     "title": "Got My Mind On My Money",
+    "titleZh": null,
     "description": "Loot 100 gold.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2992
@@ -7383,7 +9023,9 @@ export const ACHIEVEMENTS = [
     "id": 1275,
     "faction": -1,
     "title": "Bombs Away",
+    "titleZh": null,
     "description": "Complete the Fires Over Skettis quest in under 2 minutes 15 seconds while not in a group.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 2505
@@ -7392,7 +9034,9 @@ export const ACHIEVEMENTS = [
     "id": 1304,
     "faction": -1,
     "title": "Different elixirs used",
+    "titleZh": null,
     "description": "Different elixirs used",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -7401,7 +9045,9 @@ export const ACHIEVEMENTS = [
     "id": 1396,
     "faction": -1,
     "title": "Elders of Northrend",
+    "titleZh": null,
     "description": "Honor the Elders which are located in Northrend.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2218
@@ -7410,7 +9056,9 @@ export const ACHIEVEMENTS = [
     "id": 1404,
     "faction": -1,
     "title": "Realm First! Level 80 Gnome",
+    "titleZh": null,
     "description": "First gnome on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3283
@@ -7419,7 +9067,9 @@ export const ACHIEVEMENTS = [
     "id": 1467,
     "faction": -1,
     "title": "Lich King 5-player bosses killed",
+    "titleZh": null,
     "description": "Lich King 5-player bosses killed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 10,
     "iconId": 2813
@@ -7428,7 +9078,9 @@ export const ACHIEVEMENTS = [
     "id": 1497,
     "faction": -1,
     "title": "Warsong Gulch Killing Blows",
+    "titleZh": null,
     "description": "Warsong Gulch Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -7437,7 +9089,9 @@ export const ACHIEVEMENTS = [
     "id": 1509,
     "faction": -1,
     "title": "Cyanigosa kills (Heroic Violet Hold)",
+    "titleZh": null,
     "description": "Cyanigosa kills (Heroic Violet Hold)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 1955
@@ -7446,7 +9100,9 @@ export const ACHIEVEMENTS = [
     "id": 1539,
     "faction": -1,
     "title": "Highest Inscription skill",
+    "titleZh": null,
     "description": "Highest Inscription skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -7455,7 +9111,9 @@ export const ACHIEVEMENTS = [
     "id": 1548,
     "faction": -1,
     "title": "Dalaran Sewers victories",
+    "titleZh": null,
     "description": "Dalaran Sewers victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -7464,7 +9122,9 @@ export const ACHIEVEMENTS = [
     "id": 1550,
     "faction": -1,
     "title": "Strand of the Ancients victories",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -7473,7 +9133,9 @@ export const ACHIEVEMENTS = [
     "id": 1656,
     "faction": 1,
     "title": "Hallowed Be Thy Name",
+    "titleZh": null,
     "description": "Complete the Hallow's End achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3514
@@ -7482,7 +9144,9 @@ export const ACHIEVEMENTS = [
     "id": 1688,
     "faction": -1,
     "title": "The Winter Veil Gourmet",
+    "titleZh": null,
     "description": "During the Feast of Winter Veil, use your culinary expertise to produce a Gingerbread Cookie, Egg Nog and Hot Apple Cider.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 3191
@@ -7491,7 +9155,9 @@ export const ACHIEVEMENTS = [
     "id": 1698,
     "faction": 0,
     "title": "Nation of Adoration",
+    "titleZh": null,
     "description": "Complete the Lovely Charm Bracelet daily quest for each Horde capital.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 3192
@@ -7500,7 +9166,9 @@ export const ACHIEVEMENTS = [
     "id": 1836,
     "faction": -1,
     "title": "Old Crafty",
+    "titleZh": null,
     "description": "Fish up Old Crafty in Orgrimmar.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 2918
@@ -7509,7 +9177,9 @@ export const ACHIEVEMENTS = [
     "id": 1856,
     "faction": -1,
     "title": "Make Quick Werk Of Him (10 player)",
+    "titleZh": null,
     "description": "Defeat Patchwerk in Naxxramas in 3 minutes or less in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 313
@@ -7518,7 +9188,9 @@ export const ACHIEVEMENTS = [
     "id": 1857,
     "faction": -1,
     "title": "Make Quick Werk Of Him (25 player)",
+    "titleZh": null,
     "description": "Kill Patchwerk in Naxxramas in 3 minutes or less in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 97
@@ -7527,7 +9199,9 @@ export const ACHIEVEMENTS = [
     "id": 1998,
     "faction": -1,
     "title": "Dalaran Cooking Award",
+    "titleZh": null,
     "description": "Obtain a Dalaran Cooking Award.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2468
@@ -7536,7 +9210,9 @@ export const ACHIEVEMENTS = [
     "id": 2082,
     "faction": -1,
     "title": "Ice Mammoth",
+    "titleZh": null,
     "description": "Obtain an Ice Mammoth.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 3446
@@ -7545,7 +9221,9 @@ export const ACHIEVEMENTS = [
     "id": 2086,
     "faction": -1,
     "title": "100 Stone Keeper's Shards",
+    "titleZh": null,
     "description": "Loot 100 Stone Keeper's Shards.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3448
@@ -7554,7 +9232,9 @@ export const ACHIEVEMENTS = [
     "id": 2189,
     "faction": -1,
     "title": "Artillery Expert",
+    "titleZh": null,
     "description": "Destroy 5 vehicles using a turret in a single battle.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 1617
@@ -7563,7 +9243,9 @@ export const ACHIEVEMENTS = [
     "id": 2436,
     "faction": -1,
     "title": "Desert Rose",
+    "titleZh": null,
     "description": "Use Spring Robes to plant a flower in each of the deserts listed below.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 3060
@@ -7572,7 +9254,9 @@ export const ACHIEVEMENTS = [
     "id": 2762,
     "faction": 1,
     "title": "Exalted Champion of Gnomeregan",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent the Gnomeregan Exiles in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3799
@@ -7581,7 +9265,9 @@ export const ACHIEVEMENTS = [
     "id": 2866,
     "faction": -1,
     "title": "General Vezax kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "General Vezax kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -7590,7 +9276,9 @@ export const ACHIEVEMENTS = [
     "id": 2914,
     "faction": -1,
     "title": "Orbital Devastation (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with at least 2 Orbital Defense Systems active in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 287
@@ -7599,7 +9287,9 @@ export const ACHIEVEMENTS = [
     "id": 2916,
     "faction": -1,
     "title": "Orbital Devastation (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with 2 Orbital Defense Systems active in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 287
@@ -7608,7 +9298,9 @@ export const ACHIEVEMENTS = [
     "id": 3578,
     "faction": -1,
     "title": "The Turkinator",
+    "titleZh": null,
     "description": "Hunt enough Wild Turkeys quickly enough to gain Turkey Triumph.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 2221
@@ -7617,7 +9309,9 @@ export const ACHIEVEMENTS = [
     "id": 3842,
     "faction": -1,
     "title": "250 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 250 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -7626,7 +9320,9 @@ export const ACHIEVEMENTS = [
     "id": 3852,
     "faction": -1,
     "title": "Cut the Blue Wire... No the Red Wire!",
+    "titleZh": null,
     "description": "In Isle of Conquest, disarm 25 bombs.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 355
@@ -7635,7 +9331,9 @@ export const ACHIEVEMENTS = [
     "id": 4023,
     "faction": -1,
     "title": "Victories over Argent Confessor Paletress (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Argent Confessor Paletress (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -7644,7 +9342,9 @@ export const ACHIEVEMENTS = [
     "id": 4080,
     "faction": -1,
     "title": "A Tribute to Dedicated Insanity",
+    "titleZh": null,
     "description": "Meet the criteria for A Tribute to Insanity without any raid member having used an item only obtainable from 25-player Coliseum, or any more powerful item.",
+    "descriptionZh": null,
     "category": 15001,
     "points": 10,
     "iconId": 3805
@@ -7653,7 +9353,9 @@ export const ACHIEVEMENTS = [
     "id": 4636,
     "faction": -1,
     "title": "Heroic: Fall of the Lich King (10 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Icecrown Citadel in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 25,
     "iconId": 4157
@@ -7662,7 +9364,9 @@ export const ACHIEVEMENTS = [
     "id": 4637,
     "faction": -1,
     "title": "Heroic: Fall of the Lich King (25 player)",
+    "titleZh": null,
     "description": "Defeat every boss in Icecrown Citadel in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 25,
     "iconId": 4157
@@ -7671,7 +9375,9 @@ export const ACHIEVEMENTS = [
     "id": 4723,
     "faction": -1,
     "title": "Falric kills (Heroic Halls of Reflection)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -7680,7 +9386,9 @@ export const ACHIEVEMENTS = [
     "id": 52,
     "faction": -1,
     "title": "Warsong Gulch battles",
+    "titleZh": null,
     "description": "Warsong Gulch battles",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -7689,7 +9397,9 @@ export const ACHIEVEMENTS = [
     "id": 101,
     "faction": -1,
     "title": "Ring of Trials matches",
+    "titleZh": null,
     "description": "Ring of Trials matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -7698,7 +9408,9 @@ export const ACHIEVEMENTS = [
     "id": 292,
     "faction": -1,
     "title": "Sinister Calling",
+    "titleZh": null,
     "description": "Obtain a Sinister Squashling pet and Hallowed Helm.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3511
@@ -7707,7 +9419,9 @@ export const ACHIEVEMENTS = [
     "id": 561,
     "faction": -1,
     "title": "D.E.H.T.A's Little P.I.T.A.",
+    "titleZh": null,
     "description": "Uphold D.E.H.T.A's beliefs by completing all of the quests up to and including the Assassination of Harold Lane.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3476
@@ -7716,7 +9430,9 @@ export const ACHIEVEMENTS = [
     "id": 582,
     "faction": -1,
     "title": "Alterac Valley All-Star",
+    "titleZh": null,
     "description": "In a single Alterac Valley battle, assault a graveyard, defend a graveyard, assault a tower, defend a tower and slay someone in the Field of Strife.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 20,
     "iconId": 2268
@@ -7725,7 +9441,9 @@ export const ACHIEVEMENTS = [
     "id": 640,
     "faction": -1,
     "title": "Maraudon",
+    "titleZh": null,
     "description": "Defeat Princess Theradras.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3689
@@ -7734,7 +9452,9 @@ export const ACHIEVEMENTS = [
     "id": 658,
     "faction": -1,
     "title": "The Mechanar",
+    "titleZh": null,
     "description": "Defeat Pathaleon the Calculator.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3688
@@ -7743,7 +9463,9 @@ export const ACHIEVEMENTS = [
     "id": 711,
     "faction": 1,
     "title": "Knight of Arathor",
+    "titleZh": null,
     "description": "Gain exalted reputation with The League of Arathor.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 10,
     "iconId": 1934
@@ -7752,7 +9474,9 @@ export const ACHIEVEMENTS = [
     "id": 782,
     "faction": -1,
     "title": "Explore Swamp of Sorrows",
+    "titleZh": null,
     "description": "Explore Swamp of Sorrows, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3569
@@ -7761,7 +9485,9 @@ export const ACHIEVEMENTS = [
     "id": 811,
     "faction": -1,
     "title": "Flasks consumed",
+    "titleZh": null,
     "description": "Flasks consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -7770,7 +9496,9 @@ export const ACHIEVEMENTS = [
     "id": 849,
     "faction": -1,
     "title": "Explore Feralas",
+    "titleZh": null,
     "description": "Explore Feralas, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3539
@@ -7779,7 +9507,9 @@ export const ACHIEVEMENTS = [
     "id": 910,
     "faction": -1,
     "title": "Elders of the Dungeons",
+    "titleZh": null,
     "description": "Honor the Elders which are located inside the dungeons.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2218
@@ -7788,7 +9518,9 @@ export const ACHIEVEMENTS = [
     "id": 943,
     "faction": 0,
     "title": "The Diplomat",
+    "titleZh": null,
     "description": "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and The Mag'har.",
+    "descriptionZh": null,
     "category": 201,
     "points": 25,
     "iconId": 2737
@@ -7797,7 +9529,9 @@ export const ACHIEVEMENTS = [
     "id": 958,
     "faction": -1,
     "title": "Sworn to the Deathsworn",
+    "titleZh": null,
     "description": "Earn exalted status with the Ashtongue Deathsworn.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 3696
@@ -7806,7 +9540,9 @@ export const ACHIEVEMENTS = [
     "id": 977,
     "faction": -1,
     "title": "1000 Daily Quests Complete",
+    "titleZh": null,
     "description": "Complete 1000 daily quests.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3428
@@ -7815,7 +9551,9 @@ export const ACHIEVEMENTS = [
     "id": 1005,
     "faction": 0,
     "title": "Know Thy Enemy",
+    "titleZh": null,
     "description": "Get an honorable, killing blow on five different races.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 245
@@ -7824,7 +9562,9 @@ export const ACHIEVEMENTS = [
     "id": 1026,
     "faction": 0,
     "title": "Flame Keeper of Kalimdor",
+    "titleZh": null,
     "description": "Honor the flames of Kalimdor.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1923
@@ -7833,7 +9573,9 @@ export const ACHIEVEMENTS = [
     "id": 1080,
     "faction": -1,
     "title": "Warp Splinter kills (The Botanica)",
+    "titleZh": null,
     "description": "Warp Splinter kills (The Botanica)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2794
@@ -7842,7 +9584,9 @@ export const ACHIEVEMENTS = [
     "id": 1112,
     "faction": -1,
     "title": "Eye of the Storm Honorable Kills",
+    "titleZh": null,
     "description": "Eye of the Storm Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -7851,7 +9595,9 @@ export const ACHIEVEMENTS = [
     "id": 1148,
     "faction": -1,
     "title": "Gold spent on postage",
+    "titleZh": null,
     "description": "Gold spent on postage",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -7860,7 +9606,9 @@ export const ACHIEVEMENTS = [
     "id": 1160,
     "faction": -1,
     "title": "Three's Company: 2200",
+    "titleZh": null,
     "description": "Earn a 2200 personal rating in the 3v3 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3047
@@ -7869,7 +9617,9 @@ export const ACHIEVEMENTS = [
     "id": 1171,
     "faction": -1,
     "title": "Master of Eye of the Storm",
+    "titleZh": null,
     "description": "Complete the Eye of the Storm achievements listed below.",
+    "descriptionZh": null,
     "category": 14803,
     "points": 25,
     "iconId": 1931
@@ -7878,7 +9628,9 @@ export const ACHIEVEMENTS = [
     "id": 1177,
     "faction": -1,
     "title": "Got My Mind On My Money",
+    "titleZh": null,
     "description": "Loot 1,000 gold.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2802
@@ -7887,7 +9639,9 @@ export const ACHIEVEMENTS = [
     "id": 1236,
     "faction": -1,
     "title": "Gal'darah kills (Gundrak)",
+    "titleZh": null,
     "description": "Gal'darah kills (Gundrak)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2914
@@ -7896,7 +9650,9 @@ export const ACHIEVEMENTS = [
     "id": 1259,
     "faction": -1,
     "title": "Not So Fast",
+    "titleZh": null,
     "description": "In Warsong Gulch, kill a player who is under the effects of the speed power-up.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 517
@@ -7905,7 +9661,9 @@ export const ACHIEVEMENTS = [
     "id": 1276,
     "faction": -1,
     "title": "Blade's Edge Bomberman",
+    "titleZh": null,
     "description": "Complete the Bomb Them Again! quest in under 2 minutes 15 seconds while not in a group.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 1696
@@ -7914,7 +9672,9 @@ export const ACHIEVEMENTS = [
     "id": 1405,
     "faction": -1,
     "title": "Realm First! Level 80 Blood Elf",
+    "titleZh": null,
     "description": "First blood elf on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3323
@@ -7923,7 +9683,9 @@ export const ACHIEVEMENTS = [
     "id": 1485,
     "faction": -1,
     "title": "Lich King 5-player different bosses killed",
+    "titleZh": null,
     "description": "Lich King 5-player different bosses killed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -7932,7 +9694,9 @@ export const ACHIEVEMENTS = [
     "id": 1498,
     "faction": -1,
     "title": "Eye of the Storm Killing Blows",
+    "titleZh": null,
     "description": "Eye of the Storm Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -7941,7 +9705,9 @@ export const ACHIEVEMENTS = [
     "id": 1657,
     "faction": 0,
     "title": "Hallowed Be Thy Name",
+    "titleZh": null,
     "description": "Complete the Hallow's End achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3514
@@ -7950,7 +9716,9 @@ export const ACHIEVEMENTS = [
     "id": 1689,
     "faction": -1,
     "title": "He Knows If You've Been Naughty",
+    "titleZh": null,
     "description": "Open one of the presents underneath the Winter Veil tree once they are available.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 1859
@@ -7959,7 +9727,9 @@ export const ACHIEVEMENTS = [
     "id": 1700,
     "faction": -1,
     "title": "Perma-Peddle",
+    "titleZh": null,
     "description": "Obtain a permanent Peddlefeet pet by procuring a Truesilver Shafted Arrow.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 288
@@ -7968,7 +9738,9 @@ export const ACHIEVEMENTS = [
     "id": 1735,
     "faction": -1,
     "title": "Inscriptions learned",
+    "titleZh": null,
     "description": "Inscriptions learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -7977,7 +9749,9 @@ export const ACHIEVEMENTS = [
     "id": 1764,
     "faction": -1,
     "title": "Drop it!",
+    "titleZh": null,
     "description": "Kill 100 players carrying seaforium.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 454
@@ -7986,7 +9760,9 @@ export const ACHIEVEMENTS = [
     "id": 1837,
     "faction": -1,
     "title": "Old Ironjaw",
+    "titleZh": null,
     "description": "Fish up Old Ironjaw in Ironforge.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 1881
@@ -7995,7 +9771,9 @@ export const ACHIEVEMENTS = [
     "id": 1996,
     "faction": -1,
     "title": "The Safety Dance (10 player)",
+    "titleZh": null,
     "description": "Defeat Heigan the Unclean in Naxxramas without anyone in the raid dying in 10 player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2116
@@ -8004,7 +9782,9 @@ export const ACHIEVEMENTS = [
     "id": 1999,
     "faction": -1,
     "title": "10 Dalaran Cooking Awards",
+    "titleZh": null,
     "description": "Obtain 10 Dalaran Cooking Awards.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2468
@@ -8013,7 +9793,9 @@ export const ACHIEVEMENTS = [
     "id": 2083,
     "faction": -1,
     "title": "Grand Ice Mammoth",
+    "titleZh": null,
     "description": "Obtain a Grand Ice Mammoth.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 10,
     "iconId": 3446
@@ -8022,7 +9804,9 @@ export const ACHIEVEMENTS = [
     "id": 2087,
     "faction": -1,
     "title": "250 Stone Keeper's Shards",
+    "titleZh": null,
     "description": "Loot 250 Stone Keeper's Shards.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3448
@@ -8031,7 +9815,9 @@ export const ACHIEVEMENTS = [
     "id": 2139,
     "faction": -1,
     "title": "The Safety Dance (25 player)",
+    "titleZh": null,
     "description": "Defeat Heigan the Unclean in Naxxramas without anyone in the raid dying in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2116
@@ -8040,7 +9826,9 @@ export const ACHIEVEMENTS = [
     "id": 2576,
     "faction": -1,
     "title": "Blushing Bride",
+    "titleZh": null,
     "description": "Kiss someone wearing an Elegant Dress while wearing a White Tuxedo Shirt and Black Tuxedo Pants.",
+    "descriptionZh": null,
     "category": 159,
     "points": 10,
     "iconId": 694
@@ -8049,7 +9837,9 @@ export const ACHIEVEMENTS = [
     "id": 2780,
     "faction": 1,
     "title": "Champion of Ironforge",
+    "titleZh": null,
     "description": "Earn the right to represent Ironforge in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3797
@@ -8058,7 +9848,9 @@ export const ACHIEVEMENTS = [
     "id": 2869,
     "faction": -1,
     "title": "Yogg-Saron kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Yogg-Saron kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -8067,7 +9859,9 @@ export const ACHIEVEMENTS = [
     "id": 2915,
     "faction": -1,
     "title": "Nuked from Orbit (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with at least 3 Orbital Defense Systems active in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3850
@@ -8076,7 +9870,9 @@ export const ACHIEVEMENTS = [
     "id": 2917,
     "faction": -1,
     "title": "Nuked from Orbit (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with 3 Orbital Defense Systems active in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3850
@@ -8085,7 +9881,9 @@ export const ACHIEVEMENTS = [
     "id": 3516,
     "faction": -1,
     "title": "Deaths in Ulduar",
+    "titleZh": null,
     "description": "Deaths in Ulduar",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -8094,7 +9892,9 @@ export const ACHIEVEMENTS = [
     "id": 3559,
     "faction": -1,
     "title": "Turkey Lurkey",
+    "titleZh": null,
     "description": "Blast those dirty, sneaking Rogues with your Turkey Shooter.",
+    "descriptionZh": null,
     "category": 14981,
     "points": 10,
     "iconId": 3589
@@ -8103,7 +9903,9 @@ export const ACHIEVEMENTS = [
     "id": 3778,
     "faction": 0,
     "title": "Trial of the Champion",
+    "titleZh": null,
     "description": "Defeat the bosses in the Trial of the Champion.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 370
@@ -8112,7 +9914,9 @@ export const ACHIEVEMENTS = [
     "id": 3843,
     "faction": -1,
     "title": "500 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 500 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -8121,7 +9925,9 @@ export const ACHIEVEMENTS = [
     "id": 3853,
     "faction": -1,
     "title": "All Over the Isle",
+    "titleZh": null,
     "description": "In a single Isle of Conquest battle, kill a player at each of the following locations:",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 4017
@@ -8130,7 +9936,9 @@ export const ACHIEVEMENTS = [
     "id": 4024,
     "faction": -1,
     "title": "Victories over Eadric the Pure (Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Eadric the Pure (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -8139,7 +9947,9 @@ export const ACHIEVEMENTS = [
     "id": 4297,
     "faction": 0,
     "title": "Heroic: Trial of the Champion",
+    "titleZh": null,
     "description": "Defeat the bosses in the Trial of the Champion on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 370
@@ -8148,7 +9958,9 @@ export const ACHIEVEMENTS = [
     "id": 4534,
     "faction": -1,
     "title": "Boned (10 player)",
+    "titleZh": null,
     "description": "Defeat Lord Marrowgar without any raid member remaining impaled for more than 8 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4159
@@ -8157,7 +9969,9 @@ export const ACHIEVEMENTS = [
     "id": 4610,
     "faction": -1,
     "title": "Boned (25 player)",
+    "titleZh": null,
     "description": "Defeat Lord Marrowgar without any raid member remaining impaled for more than 8 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4159
@@ -8166,7 +9980,9 @@ export const ACHIEVEMENTS = [
     "id": 4724,
     "faction": -1,
     "title": "Marwyn kills (Halls of Reflection)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -8175,7 +9991,9 @@ export const ACHIEVEMENTS = [
     "id": 31,
     "faction": -1,
     "title": "A Simple Re-Quest",
+    "titleZh": null,
     "description": "Complete a daily quest every day for five consecutive days.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 3481
@@ -8184,7 +10002,9 @@ export const ACHIEVEMENTS = [
     "id": 100,
     "faction": -1,
     "title": "Ring of Trials victories",
+    "titleZh": null,
     "description": "Ring of Trials victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -8193,7 +10013,9 @@ export const ACHIEVEMENTS = [
     "id": 105,
     "faction": -1,
     "title": "Warsong Gulch victories",
+    "titleZh": null,
     "description": "Warsong Gulch victories",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 4
@@ -8202,7 +10024,9 @@ export const ACHIEVEMENTS = [
     "id": 110,
     "faction": -1,
     "title": "Lich King 5-player boss killed the most",
+    "titleZh": null,
     "description": "Lich King 5-player boss killed the most",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 4
@@ -8211,7 +10035,9 @@ export const ACHIEVEMENTS = [
     "id": 203,
     "faction": 1,
     "title": "Not In My House",
+    "titleZh": null,
     "description": "In a single Warsong Gulch battle, kill 2 flag carriers before they leave the Silverwing Flag Room.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3583
@@ -8220,7 +10046,9 @@ export const ACHIEVEMENTS = [
     "id": 247,
     "faction": -1,
     "title": "Make Love, Not Warcraft",
+    "titleZh": null,
     "description": "Emote /hug on a dead enemy before they release corpse.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 1853
@@ -8229,7 +10057,9 @@ export const ACHIEVEMENTS = [
     "id": 406,
     "faction": -1,
     "title": "High Five: 1550",
+    "titleZh": null,
     "description": "Earn a 1550 personal rating in the 5v5 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3046
@@ -8238,7 +10068,9 @@ export const ACHIEVEMENTS = [
     "id": 547,
     "faction": -1,
     "title": "Veteran of the Wrathgate",
+    "titleZh": null,
     "description": "Complete the Dragonblight quests leading up to and including the Return to Angrathar.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3475
@@ -8247,7 +10079,9 @@ export const ACHIEVEMENTS = [
     "id": 560,
     "faction": -1,
     "title": "Deadliest Catch",
+    "titleZh": null,
     "description": "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 1751
@@ -8256,7 +10090,9 @@ export const ACHIEVEMENTS = [
     "id": 583,
     "faction": -1,
     "title": "Arathi Basin All-Star",
+    "titleZh": null,
     "description": "Assault and Defend 2 bases in a single Arathi Basin match.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 20,
     "iconId": 2729
@@ -8265,7 +10101,9 @@ export const ACHIEVEMENTS = [
     "id": 641,
     "faction": -1,
     "title": "Sunken Temple",
+    "titleZh": null,
     "description": "Defeat Shade of Eranikus.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3690
@@ -8274,7 +10112,9 @@ export const ACHIEVEMENTS = [
     "id": 659,
     "faction": -1,
     "title": "The Botanica",
+    "titleZh": null,
     "description": "Defeat Warp Splinter.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3642
@@ -8283,7 +10123,9 @@ export const ACHIEVEMENTS = [
     "id": 706,
     "faction": 0,
     "title": "Frostwolf Howler",
+    "titleZh": null,
     "description": "Obtain a Frostwolf Howler.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 2826
@@ -8292,7 +10134,9 @@ export const ACHIEVEMENTS = [
     "id": 765,
     "faction": -1,
     "title": "Explore Badlands",
+    "titleZh": null,
     "description": "Explore Badlands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3546
@@ -8301,7 +10145,9 @@ export const ACHIEVEMENTS = [
     "id": 851,
     "faction": -1,
     "title": "Explore Tanaris Desert",
+    "titleZh": null,
     "description": "Explore Tanaris Desert, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3577
@@ -8310,7 +10156,9 @@ export const ACHIEVEMENTS = [
     "id": 914,
     "faction": -1,
     "title": "Elders of the Horde",
+    "titleZh": null,
     "description": "Honor the Elders which are located in the Horde capital cities.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2218
@@ -8319,7 +10167,9 @@ export const ACHIEVEMENTS = [
     "id": 945,
     "faction": -1,
     "title": "The Argent Champion",
+    "titleZh": null,
     "description": "Earn exalted status with the Argent Dawn and the Argent Crusade.",
+    "descriptionZh": null,
     "category": 201,
     "points": 25,
     "iconId": 2139
@@ -8328,7 +10178,9 @@ export const ACHIEVEMENTS = [
     "id": 959,
     "faction": -1,
     "title": "The Scale of the Sands",
+    "titleZh": null,
     "description": "Earn exalted status with The Scale of the Sands.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 2937
@@ -8337,7 +10189,9 @@ export const ACHIEVEMENTS = [
     "id": 965,
     "faction": 0,
     "title": "Tricks and Treats of Kalimdor",
+    "titleZh": null,
     "description": "Visit the Candy Buckets in Kalimdor.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3509
@@ -8346,7 +10200,9 @@ export const ACHIEVEMENTS = [
     "id": 1027,
     "faction": 0,
     "title": "Flame Keeper of Outland",
+    "titleZh": null,
     "description": "Honor the flames of Outland.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1923
@@ -8355,7 +10211,9 @@ export const ACHIEVEMENTS = [
     "id": 1081,
     "faction": -1,
     "title": "Harbinger Skyriss kills (The Arcatraz)",
+    "titleZh": null,
     "description": "Harbinger Skyriss kills (The Arcatraz)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2313
@@ -8364,7 +10222,9 @@ export const ACHIEVEMENTS = [
     "id": 1150,
     "faction": -1,
     "title": "Gold spent on talent tree respecs",
+    "titleZh": null,
     "description": "Gold spent on talent tree respecs",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 1
@@ -8373,7 +10233,9 @@ export const ACHIEVEMENTS = [
     "id": 1178,
     "faction": -1,
     "title": "Got My Mind On My Money",
+    "titleZh": null,
     "description": "Loot 5,000 gold.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2994
@@ -8382,7 +10244,9 @@ export const ACHIEVEMENTS = [
     "id": 1262,
     "faction": 1,
     "title": "Loremaster of Outland",
+    "titleZh": null,
     "description": "Complete the Outland quest achievements listed below.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3492
@@ -8391,7 +10255,9 @@ export const ACHIEVEMENTS = [
     "id": 1305,
     "faction": -1,
     "title": "Flask consumed most",
+    "titleZh": null,
     "description": "Flask consumed most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -8400,7 +10266,9 @@ export const ACHIEVEMENTS = [
     "id": 1406,
     "faction": -1,
     "title": "Realm First! Level 80 Draenei",
+    "titleZh": null,
     "description": "First draenei on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3324
@@ -8409,7 +10277,9 @@ export const ACHIEVEMENTS = [
     "id": 1486,
     "faction": -1,
     "title": "Strand of the Ancients Honorable Kills",
+    "titleZh": null,
     "description": "Strand of the Ancients Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -8418,7 +10288,9 @@ export const ACHIEVEMENTS = [
     "id": 1499,
     "faction": -1,
     "title": "Strand of the Ancients Killing Blows",
+    "titleZh": null,
     "description": "Strand of the Ancients Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -8427,7 +10299,9 @@ export const ACHIEVEMENTS = [
     "id": 1510,
     "faction": -1,
     "title": "Gal'darah kills (Heroic Gundrak)",
+    "titleZh": null,
     "description": "Gal'darah kills (Heroic Gundrak)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2914
@@ -8436,7 +10310,9 @@ export const ACHIEVEMENTS = [
     "id": 1540,
     "faction": -1,
     "title": "Highest Jewelcrafting skill",
+    "titleZh": null,
     "description": "Highest Jewelcrafting skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -8445,7 +10321,9 @@ export const ACHIEVEMENTS = [
     "id": 1690,
     "faction": -1,
     "title": "A Frosty Shake",
+    "titleZh": null,
     "description": "During the Feast of Winter Veil, use your Winter Veil Disguise kit to become a snowman and then dance with another snowman in Dalaran.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 501
@@ -8454,7 +10332,9 @@ export const ACHIEVEMENTS = [
     "id": 1696,
     "faction": -1,
     "title": "The Rocket's Pink Glare",
+    "titleZh": null,
     "description": "Shoot off 10 Love Rockets in 20 seconds or less.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 3195
@@ -8463,7 +10343,9 @@ export const ACHIEVEMENTS = [
     "id": 1997,
     "faction": -1,
     "title": "Momma Said Knock You Out (10 player)",
+    "titleZh": null,
     "description": "Defeat Grand Widow Faerlina in Naxxramas without dispelling or preventing frenzy in 10 player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 543
@@ -8472,7 +10354,9 @@ export const ACHIEVEMENTS = [
     "id": 2000,
     "faction": -1,
     "title": "25 Dalaran Cooking Awards",
+    "titleZh": null,
     "description": "Obtain 25 Dalaran Cooking Awards.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2468
@@ -8481,7 +10365,9 @@ export const ACHIEVEMENTS = [
     "id": 2088,
     "faction": -1,
     "title": "500 Stone Keeper's Shards",
+    "titleZh": null,
     "description": "Loot 500 Stone Keeper's Shards.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3448
@@ -8490,7 +10376,9 @@ export const ACHIEVEMENTS = [
     "id": 2140,
     "faction": -1,
     "title": "Momma Said Knock You Out (25 player)",
+    "titleZh": null,
     "description": "Defeat Grand Widow Faerlina in Naxxramas without dispelling or preventing frenzy in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 543
@@ -8499,7 +10387,9 @@ export const ACHIEVEMENTS = [
     "id": 2190,
     "faction": -1,
     "title": "Drop it now!",
+    "titleZh": null,
     "description": "Kill 5 players carrying seaforium in a single battle.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 2908
@@ -8508,7 +10398,9 @@ export const ACHIEVEMENTS = [
     "id": 2763,
     "faction": 1,
     "title": "Exalted Champion of Ironforge",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Ironforge in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3797
@@ -8517,7 +10409,9 @@ export const ACHIEVEMENTS = [
     "id": 2867,
     "faction": -1,
     "title": "Algalon the Observer kills (Ulduar 10 player)",
+    "titleZh": null,
     "description": "Algalon the Observer kills (Ulduar 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -8526,7 +10420,9 @@ export const ACHIEVEMENTS = [
     "id": 3056,
     "faction": -1,
     "title": "Orbit-uary (10 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with all 4 Orbital Defense Systems active in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 1521
@@ -8535,7 +10431,9 @@ export const ACHIEVEMENTS = [
     "id": 3057,
     "faction": -1,
     "title": "Orbit-uary (25 player)",
+    "titleZh": null,
     "description": "Defeat Flame Leviathan with 4 Orbital Defense Systems active in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 1521
@@ -8544,7 +10442,9 @@ export const ACHIEVEMENTS = [
     "id": 3456,
     "faction": -1,
     "title": "Dead Man's Party",
+    "titleZh": null,
     "description": "Dance with Catrina to become a skeleton during the Day of the Dead.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3932
@@ -8553,7 +10453,9 @@ export const ACHIEVEMENTS = [
     "id": 3844,
     "faction": -1,
     "title": "1000 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 1000 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -8562,7 +10464,9 @@ export const ACHIEVEMENTS = [
     "id": 3854,
     "faction": -1,
     "title": "Back Door Job",
+    "titleZh": null,
     "description": "In Isle of Conquest, enter the enemy courtyard while their gates still stand.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 3768
@@ -8571,7 +10475,9 @@ export const ACHIEVEMENTS = [
     "id": 4025,
     "faction": -1,
     "title": "Victories over Eadric the Pure (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "Victories over Eadric the Pure (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -8580,7 +10486,9 @@ export const ACHIEVEMENTS = [
     "id": 4296,
     "faction": 1,
     "title": "Trial of the Champion",
+    "titleZh": null,
     "description": "Defeat the bosses in the Trial of the Champion.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 370
@@ -8589,7 +10497,9 @@ export const ACHIEVEMENTS = [
     "id": 4298,
     "faction": 1,
     "title": "Heroic: Trial of the Champion",
+    "titleZh": null,
     "description": "Defeat the bosses in the Trial of the Champion on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 370
@@ -8598,7 +10508,9 @@ export const ACHIEVEMENTS = [
     "id": 4535,
     "faction": -1,
     "title": "Full House (10 player)",
+    "titleZh": null,
     "description": "Defeat Lady Deathwhisper with at least five different types of Cultists active at the time of her demise in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4160
@@ -8607,7 +10519,9 @@ export const ACHIEVEMENTS = [
     "id": 4598,
     "faction": -1,
     "title": "The Ashen Verdict",
+    "titleZh": null,
     "description": "Earn exalted status with the Ashen Verdict.",
+    "descriptionZh": null,
     "category": 14866,
     "points": 15,
     "iconId": 1672
@@ -8616,7 +10530,9 @@ export const ACHIEVEMENTS = [
     "id": 4611,
     "faction": -1,
     "title": "Full House (25 player)",
+    "titleZh": null,
     "description": "Defeat Lady Deathwhisper with at least five different types of Cultists active at the time of her demise in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4160
@@ -8625,7 +10541,9 @@ export const ACHIEVEMENTS = [
     "id": 4725,
     "faction": -1,
     "title": "Marwyn kills (Heroic Halls of Reflection)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -8634,7 +10552,9 @@ export const ACHIEVEMENTS = [
     "id": 4780,
     "faction": -1,
     "title": "Deaths in Trial of the Crusader",
+    "titleZh": null,
     "description": "Deaths in Trial of the Crusader",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -8643,7 +10563,9 @@ export const ACHIEVEMENTS = [
     "id": 144,
     "faction": -1,
     "title": "The Lurker Above",
+    "titleZh": null,
     "description": "Fish up The Lurker Below in Serpentshrine Cavern.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 1734
@@ -8652,7 +10574,9 @@ export const ACHIEVEMENTS = [
     "id": 334,
     "faction": -1,
     "title": "Most gold ever owned",
+    "titleZh": null,
     "description": "Most gold ever owned",
+    "descriptionZh": null,
     "category": 140,
     "points": 0,
     "iconId": 4
@@ -8661,7 +10585,9 @@ export const ACHIEVEMENTS = [
     "id": 389,
     "faction": -1,
     "title": "Gurubashi Arena Master",
+    "titleZh": null,
     "description": "Loot the Arena Master trinket from the Gurubashi Arena.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2977
@@ -8670,7 +10596,9 @@ export const ACHIEVEMENTS = [
     "id": 407,
     "faction": -1,
     "title": "High Five: 1750",
+    "titleZh": null,
     "description": "Earn a 1750 personal rating in the 5v5 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3045
@@ -8679,7 +10607,9 @@ export const ACHIEVEMENTS = [
     "id": 584,
     "faction": -1,
     "title": "Arathi Basin Assassin",
+    "titleZh": null,
     "description": "Get five honorable kills at each of the bases in a single Arathi Basin battle.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 20,
     "iconId": 2285
@@ -8688,7 +10618,9 @@ export const ACHIEVEMENTS = [
     "id": 642,
     "faction": -1,
     "title": "Blackrock Depths",
+    "titleZh": null,
     "description": "Defeat Emperor Dagran Thaurissan.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3662
@@ -8697,7 +10629,9 @@ export const ACHIEVEMENTS = [
     "id": 660,
     "faction": -1,
     "title": "The Arcatraz",
+    "titleZh": null,
     "description": "Defeat Harbinger Skyriss.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3659
@@ -8706,7 +10640,9 @@ export const ACHIEVEMENTS = [
     "id": 707,
     "faction": 1,
     "title": "Stormpike Battle Charger",
+    "titleZh": null,
     "description": "Obtain a Stormpike Battle Charger.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 2827
@@ -8715,7 +10651,9 @@ export const ACHIEVEMENTS = [
     "id": 781,
     "faction": -1,
     "title": "Explore Stranglethorn Vale",
+    "titleZh": null,
     "description": "Explore Stranglethorn Vale, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3568
@@ -8724,7 +10662,9 @@ export const ACHIEVEMENTS = [
     "id": 852,
     "faction": -1,
     "title": "Explore Azshara",
+    "titleZh": null,
     "description": "Explore Azshara, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3544
@@ -8733,7 +10673,9 @@ export const ACHIEVEMENTS = [
     "id": 915,
     "faction": -1,
     "title": "Elders of the Alliance",
+    "titleZh": null,
     "description": "Honor the Elders which are located in the Alliance capital cities.",
+    "descriptionZh": null,
     "category": 160,
     "points": 10,
     "iconId": 2218
@@ -8742,7 +10684,9 @@ export const ACHIEVEMENTS = [
     "id": 941,
     "faction": -1,
     "title": "Hemet Nesingwary: The Collected Quests",
+    "titleZh": null,
     "description": "Complete the Green Hills of Stranglethorn, Hills Like White Elekk and Snows of Northrend achievements.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 2926
@@ -8751,7 +10695,9 @@ export const ACHIEVEMENTS = [
     "id": 953,
     "faction": -1,
     "title": "Guardian of Cenarius",
+    "titleZh": null,
     "description": "Earn exalted status with the Cenarion Circle and Cenarion Expedition.",
+    "descriptionZh": null,
     "category": 201,
     "points": 25,
     "iconId": 553
@@ -8760,7 +10706,9 @@ export const ACHIEVEMENTS = [
     "id": 960,
     "faction": -1,
     "title": "The Violet Eye",
+    "titleZh": null,
     "description": "Earn exalted status with The Violet Eye.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 1487
@@ -8769,7 +10717,9 @@ export const ACHIEVEMENTS = [
     "id": 961,
     "faction": -1,
     "title": "Honorary Frenzyheart",
+    "titleZh": null,
     "description": "Complete the 8 daily quests for the Frenzyheart listed below.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3477
@@ -8778,7 +10728,9 @@ export const ACHIEVEMENTS = [
     "id": 967,
     "faction": 0,
     "title": "Tricks and Treats of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Visit the Candy Buckets in Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2951
@@ -8787,7 +10739,9 @@ export const ACHIEVEMENTS = [
     "id": 1036,
     "faction": 0,
     "title": "The Fires of Azeroth",
+    "titleZh": null,
     "description": "Complete the Flame Keeper of Eastern Kingdoms, Kalimdor and Outland achievements.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 12
@@ -8796,7 +10750,9 @@ export const ACHIEVEMENTS = [
     "id": 1082,
     "faction": -1,
     "title": "Kael'thas Sunstrider kills (Magister's Terrace)",
+    "titleZh": null,
     "description": "Kael'thas Sunstrider kills (Magister's Terrace)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2787
@@ -8805,7 +10761,9 @@ export const ACHIEVEMENTS = [
     "id": 1180,
     "faction": -1,
     "title": "Got My Mind On My Money",
+    "titleZh": null,
     "description": "Loot 10,000 gold.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2993
@@ -8814,7 +10772,9 @@ export const ACHIEVEMENTS = [
     "id": 1188,
     "faction": -1,
     "title": "Shafted!",
+    "titleZh": null,
     "description": "Shoot 10 players with the Silver Shafted Arrow.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 288
@@ -8823,7 +10783,9 @@ export const ACHIEVEMENTS = [
     "id": 1237,
     "faction": -1,
     "title": "Sjonnir the Ironshaper kills (Halls of Stone)",
+    "titleZh": null,
     "description": "Sjonnir the Ironshaper kills (Halls of Stone)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2325
@@ -8832,7 +10794,9 @@ export const ACHIEVEMENTS = [
     "id": 1251,
     "faction": 0,
     "title": "Not In My House",
+    "titleZh": null,
     "description": "In a single Warsong Gulch battle, kill 2 flag carriers before they leave the Warsong Flag Room.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3583
@@ -8841,7 +10805,9 @@ export const ACHIEVEMENTS = [
     "id": 1274,
     "faction": 0,
     "title": "Loremaster of Outland",
+    "titleZh": null,
     "description": "Complete the Outland quest achievements listed below.",
+    "descriptionZh": null,
     "category": 14862,
     "points": 10,
     "iconId": 3492
@@ -8850,7 +10816,9 @@ export const ACHIEVEMENTS = [
     "id": 1306,
     "faction": -1,
     "title": "Different flasks consumed",
+    "titleZh": null,
     "description": "Different flasks consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -8859,7 +10827,9 @@ export const ACHIEVEMENTS = [
     "id": 1407,
     "faction": -1,
     "title": "Realm First! Level 80 Dwarf",
+    "titleZh": null,
     "description": "First dwarf on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3286
@@ -8868,7 +10838,9 @@ export const ACHIEVEMENTS = [
     "id": 1545,
     "faction": -1,
     "title": "Ring of Valor matches",
+    "titleZh": null,
     "description": "Ring of Valor matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -8877,7 +10849,9 @@ export const ACHIEVEMENTS = [
     "id": 1738,
     "faction": -1,
     "title": "Jewelcrafting Designs learned",
+    "titleZh": null,
     "description": "Jewelcrafting Designs learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -8886,7 +10860,9 @@ export const ACHIEVEMENTS = [
     "id": 1766,
     "faction": -1,
     "title": "Ancient Protector",
+    "titleZh": null,
     "description": "Kill 10 players in the Courtyard of the Ancients in a single battle.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 2957
@@ -8895,7 +10871,9 @@ export const ACHIEVEMENTS = [
     "id": 1770,
     "faction": -1,
     "title": "Lich King 10-player bosses killed",
+    "titleZh": null,
     "description": "Lich King 10-player bosses killed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -8904,7 +10882,9 @@ export const ACHIEVEMENTS = [
     "id": 2001,
     "faction": -1,
     "title": "50 Dalaran Cooking Awards",
+    "titleZh": null,
     "description": "Obtain 50 Dalaran Cooking Awards.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2468
@@ -8913,7 +10893,9 @@ export const ACHIEVEMENTS = [
     "id": 2089,
     "faction": -1,
     "title": "1000 Stone Keeper's Shards",
+    "titleZh": null,
     "description": "Loot 1000 Stone Keeper's Shards.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 3448
@@ -8922,7 +10904,9 @@ export const ACHIEVEMENTS = [
     "id": 2178,
     "faction": -1,
     "title": "Shocking! (10 player)",
+    "titleZh": null,
     "description": "Defeat Thaddius in Naxxramas without anyone in the raid crossing the negative and positive charges in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1886
@@ -8931,7 +10915,9 @@ export const ACHIEVEMENTS = [
     "id": 2179,
     "faction": -1,
     "title": "Shocking! (25 player)",
+    "titleZh": null,
     "description": "Defeat Thaddius in Naxxramas without anyone in the raid crossing the negative and positive charges in 25 player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1886
@@ -8940,7 +10926,9 @@ export const ACHIEVEMENTS = [
     "id": 2781,
     "faction": 1,
     "title": "Champion of Stormwind",
+    "titleZh": null,
     "description": "Earn the right to represent Stormwind in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3800
@@ -8949,7 +10937,9 @@ export const ACHIEVEMENTS = [
     "id": 2872,
     "faction": -1,
     "title": "Flame Leviathan kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Flame Leviathan kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -8958,7 +10948,9 @@ export const ACHIEVEMENTS = [
     "id": 2919,
     "faction": -1,
     "title": "A Quick Shave (10 player)",
+    "titleZh": null,
     "description": "Defeat Razorscale without allowing her to fly into the air more than once in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3851
@@ -8967,7 +10959,9 @@ export const ACHIEVEMENTS = [
     "id": 2921,
     "faction": -1,
     "title": "A Quick Shave (25 player)",
+    "titleZh": null,
     "description": "Defeat Razorscale without allowing her to fly into the air more than once in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3851
@@ -8976,7 +10970,9 @@ export const ACHIEVEMENTS = [
     "id": 3478,
     "faction": 1,
     "title": "Pilgrim",
+    "titleZh": null,
     "description": "Complete the Pilgrim's Bounty achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3936
@@ -8985,7 +10981,9 @@ export const ACHIEVEMENTS = [
     "id": 3856,
     "faction": 1,
     "title": "Demolition Derby",
+    "titleZh": null,
     "description": "Destroy the following vehicles in Isle of Conquest",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 2306
@@ -8994,7 +10992,9 @@ export const ACHIEVEMENTS = [
     "id": 3876,
     "faction": -1,
     "title": "1500 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 1500 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -9003,7 +11003,9 @@ export const ACHIEVEMENTS = [
     "id": 4026,
     "faction": -1,
     "title": "The Black Knight kills (Trial of the Champion)",
+    "titleZh": null,
     "description": "The Black Knight kills (Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -9012,7 +11014,9 @@ export const ACHIEVEMENTS = [
     "id": 4096,
     "faction": -1,
     "title": "Isle of Conquest battles",
+    "titleZh": null,
     "description": "Isle of Conquest battles",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -9021,7 +11025,9 @@ export const ACHIEVEMENTS = [
     "id": 4436,
     "faction": 1,
     "title": "BB King",
+    "titleZh": null,
     "description": "Pelt the enemy leaders listed below.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 393
@@ -9030,7 +11036,9 @@ export const ACHIEVEMENTS = [
     "id": 4516,
     "faction": -1,
     "title": "The Forge of Souls",
+    "titleZh": null,
     "description": "Defeat the bosses in The Forge of Souls",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 4149
@@ -9039,7 +11047,9 @@ export const ACHIEVEMENTS = [
     "id": 4519,
     "faction": -1,
     "title": "Heroic: The Forge of Souls",
+    "titleZh": null,
     "description": "Defeat the bosses in The Forge of Souls on Heroic difficulty",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4149
@@ -9048,7 +11058,9 @@ export const ACHIEVEMENTS = [
     "id": 4536,
     "faction": -1,
     "title": "I'm on a Boat (10 player)",
+    "titleZh": null,
     "description": "Claim victory in the Gunship Battle without any raid member visiting the enemy gunship more than twice in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4145
@@ -9057,7 +11069,9 @@ export const ACHIEVEMENTS = [
     "id": 4612,
     "faction": -1,
     "title": "I'm on a Boat (25 player)",
+    "titleZh": null,
     "description": "Claim victory in the Gunship Battle without any raid member visiting the enemy gunship more than once in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4145
@@ -9066,7 +11080,9 @@ export const ACHIEVEMENTS = [
     "id": 4726,
     "faction": -1,
     "title": "Lich King escapes (Halls of Reflection)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -9075,7 +11091,9 @@ export const ACHIEVEMENTS = [
     "id": 4777,
     "faction": -1,
     "title": "Isle of Conquest Killing Blows",
+    "titleZh": null,
     "description": "Isle of Conquest Killing Blows",
+    "descriptionZh": null,
     "category": 137,
     "points": 0,
     "iconId": 1
@@ -9084,7 +11102,9 @@ export const ACHIEVEMENTS = [
     "id": 4779,
     "faction": -1,
     "title": "Isle of Conquest Honorable Kills",
+    "titleZh": null,
     "description": "Isle of Conquest Honorable Kills",
+    "descriptionZh": null,
     "category": 136,
     "points": 0,
     "iconId": 1
@@ -9093,7 +11113,9 @@ export const ACHIEVEMENTS = [
     "id": 4781,
     "faction": -1,
     "title": "Deaths in Icecrown Citadel",
+    "titleZh": null,
     "description": "Deaths in Icecrown Citadel",
+    "descriptionZh": null,
     "category": 125,
     "points": 0,
     "iconId": 1
@@ -9102,7 +11124,9 @@ export const ACHIEVEMENTS = [
     "id": 202,
     "faction": 1,
     "title": "Quick Cap",
+    "titleZh": null,
     "description": "Grab the flag and capture it in under 75 seconds.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3483
@@ -9111,7 +11135,9 @@ export const ACHIEVEMENTS = [
     "id": 346,
     "faction": -1,
     "title": "Beverages consumed",
+    "titleZh": null,
     "description": "Beverages consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 4
@@ -9120,7 +11146,9 @@ export const ACHIEVEMENTS = [
     "id": 396,
     "faction": -1,
     "title": "Gurubashi Arena Grand Master",
+    "titleZh": null,
     "description": "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2555
@@ -9129,7 +11157,9 @@ export const ACHIEVEMENTS = [
     "id": 404,
     "faction": -1,
     "title": "High Five: 2000",
+    "titleZh": null,
     "description": "Earn a 2000 personal rating in the 5v5 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3044
@@ -9138,7 +11168,9 @@ export const ACHIEVEMENTS = [
     "id": 643,
     "faction": -1,
     "title": "Lower Blackrock Spire",
+    "titleZh": null,
     "description": "Defeat Overlord Wyrmthalak.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3650
@@ -9147,7 +11179,9 @@ export const ACHIEVEMENTS = [
     "id": 661,
     "faction": -1,
     "title": "Magister's Terrace",
+    "titleZh": null,
     "description": "Defeat Kael'thas Sunstrider.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3665
@@ -9156,7 +11190,9 @@ export const ACHIEVEMENTS = [
     "id": 708,
     "faction": 0,
     "title": "Hero of the Frostwolf Clan",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Frostwolf Clan.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 2828
@@ -9165,7 +11201,9 @@ export const ACHIEVEMENTS = [
     "id": 760,
     "faction": -1,
     "title": "Explore Alterac Mountains",
+    "titleZh": null,
     "description": "Explore Alterac Mountains, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3541
@@ -9174,7 +11212,9 @@ export const ACHIEVEMENTS = [
     "id": 853,
     "faction": -1,
     "title": "Explore Felwood",
+    "titleZh": null,
     "description": "Explore Felwood, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3538
@@ -9183,7 +11223,9 @@ export const ACHIEVEMENTS = [
     "id": 905,
     "faction": -1,
     "title": "Old Man Barlowned",
+    "titleZh": null,
     "description": "Complete each of Old Man Barlo's 5 fishing daily quests listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3693
@@ -9192,7 +11234,9 @@ export const ACHIEVEMENTS = [
     "id": 962,
     "faction": -1,
     "title": "Savior of the Oracles",
+    "titleZh": null,
     "description": "Complete the 8 daily quests for the Oracles listed below.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3478
@@ -9201,7 +11245,9 @@ export const ACHIEVEMENTS = [
     "id": 968,
     "faction": 0,
     "title": "Tricks and Treats of Outland",
+    "titleZh": null,
     "description": "Visit the Candy Buckets in Outland.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2952
@@ -9210,7 +11256,9 @@ export const ACHIEVEMENTS = [
     "id": 1031,
     "faction": 0,
     "title": "Extinguishing Eastern Kingdoms",
+    "titleZh": null,
     "description": "Desecrate the Alliance's bonfires in Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -9219,7 +11267,9 @@ export const ACHIEVEMENTS = [
     "id": 1083,
     "faction": -1,
     "title": "Prince Malchezaar kills (Karazhan)",
+    "titleZh": null,
     "description": "Prince Malchezaar kills (Karazhan)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2294
@@ -9228,7 +11278,9 @@ export const ACHIEVEMENTS = [
     "id": 1169,
     "faction": 1,
     "title": "Master of Arathi Basin",
+    "titleZh": null,
     "description": "Complete the Arathi Basin achievements listed below.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 25,
     "iconId": 1156
@@ -9237,7 +11289,9 @@ export const ACHIEVEMENTS = [
     "id": 1181,
     "faction": -1,
     "title": "Got My Mind On My Money",
+    "titleZh": null,
     "description": "Loot 25,000 gold.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2801
@@ -9246,7 +11300,9 @@ export const ACHIEVEMENTS = [
     "id": 1408,
     "faction": -1,
     "title": "Realm First! Level 80 Human",
+    "titleZh": null,
     "description": "First human on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3325
@@ -9255,7 +11311,9 @@ export const ACHIEVEMENTS = [
     "id": 1511,
     "faction": -1,
     "title": "Sjonnir the Ironshaper kills (Heroic Halls of Stone)",
+    "titleZh": null,
     "description": "Sjonnir the Ironshaper kills (Heroic Halls of Stone)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2325
@@ -9264,7 +11322,9 @@ export const ACHIEVEMENTS = [
     "id": 1546,
     "faction": -1,
     "title": "Ring of Valor victories",
+    "titleZh": null,
     "description": "Ring of Valor victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -9273,7 +11333,9 @@ export const ACHIEVEMENTS = [
     "id": 1576,
     "faction": -1,
     "title": "Of Blood and Anguish",
+    "titleZh": null,
     "description": "Complete the Ring of Blood quests in Nagrand and the Ampitheater of Anguish quests in Zul'Drak.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 1599
@@ -9282,7 +11344,9 @@ export const ACHIEVEMENTS = [
     "id": 1638,
     "faction": -1,
     "title": "Skyshattered",
+    "titleZh": null,
     "description": "Defeat Captain Skyshatter in the Dragonmaw race on Netherwing Ledge.",
+    "descriptionZh": null,
     "category": 14865,
     "points": 10,
     "iconId": 1928
@@ -9291,7 +11355,9 @@ export const ACHIEVEMENTS = [
     "id": 1702,
     "faction": -1,
     "title": "Sweet Tooth",
+    "titleZh": null,
     "description": "Sample the Love is in the Air candies listed below.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1855
@@ -9300,7 +11366,9 @@ export const ACHIEVEMENTS = [
     "id": 1722,
     "faction": -1,
     "title": "Archavon the Stone Watcher (10 player)",
+    "titleZh": null,
     "description": "Defeat Archavon the Stone Watcher in 10 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2351
@@ -9309,7 +11377,9 @@ export const ACHIEVEMENTS = [
     "id": 1771,
     "faction": -1,
     "title": "Lich King 10-player different bosses killed",
+    "titleZh": null,
     "description": "Lich King 10-player different bosses killed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -9318,7 +11388,9 @@ export const ACHIEVEMENTS = [
     "id": 1977,
     "faction": -1,
     "title": "Dalaran Jewelcrafter's Tokens gained",
+    "titleZh": null,
     "description": "Dalaran Jewelcrafter's Tokens gained",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -9327,7 +11399,9 @@ export const ACHIEVEMENTS = [
     "id": 2002,
     "faction": -1,
     "title": "100 Dalaran Cooking Awards",
+    "titleZh": null,
     "description": "Obtain 100 Dalaran Cooking Awards.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2468
@@ -9336,7 +11410,9 @@ export const ACHIEVEMENTS = [
     "id": 2180,
     "faction": -1,
     "title": "Subtraction (10 player)",
+    "titleZh": null,
     "description": "Defeat Thaddius in Naxxramas with less than 9 players in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1885
@@ -9345,7 +11421,9 @@ export const ACHIEVEMENTS = [
     "id": 2181,
     "faction": -1,
     "title": "Subtraction (25 player)",
+    "titleZh": null,
     "description": "Defeat Thaddius in Naxxramas with less than 21 players in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1885
@@ -9354,7 +11432,9 @@ export const ACHIEVEMENTS = [
     "id": 2191,
     "faction": -1,
     "title": "Ancient Courtyard Protector",
+    "titleZh": null,
     "description": "Kill 100 players in the Courtyard of the Ancients.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 10,
     "iconId": 856
@@ -9363,7 +11443,9 @@ export const ACHIEVEMENTS = [
     "id": 2764,
     "faction": 1,
     "title": "Exalted Champion of Stormwind",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Stormwind in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3800
@@ -9372,7 +11454,9 @@ export const ACHIEVEMENTS = [
     "id": 2873,
     "faction": -1,
     "title": "Razorscale kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Razorscale kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -9381,7 +11465,9 @@ export const ACHIEVEMENTS = [
     "id": 2923,
     "faction": -1,
     "title": "Iron Dwarf, Medium Rare (10 player)",
+    "titleZh": null,
     "description": "Defeat 25 Dark Rune Guardian Dwarves with Razorscale's Flame Breath in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3853
@@ -9390,7 +11476,9 @@ export const ACHIEVEMENTS = [
     "id": 2924,
     "faction": -1,
     "title": "Iron Dwarf, Medium Rare (25 player)",
+    "titleZh": null,
     "description": "Defeat 25 Dark Rune Guardian Dwarves with Razorscale's Flame Breath in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3853
@@ -9399,7 +11487,9 @@ export const ACHIEVEMENTS = [
     "id": 3656,
     "faction": 0,
     "title": "Pilgrim",
+    "titleZh": null,
     "description": "Complete the Pilgrim's Bounty achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3936
@@ -9408,7 +11498,9 @@ export const ACHIEVEMENTS = [
     "id": 4027,
     "faction": -1,
     "title": "The Black Knight kills (Heroic Trial of the Champion)",
+    "titleZh": null,
     "description": "The Black Knight kills (Heroic Trial of the Champion)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -9417,7 +11509,9 @@ export const ACHIEVEMENTS = [
     "id": 4097,
     "faction": -1,
     "title": "Isle of Conquest victories",
+    "titleZh": null,
     "description": "Isle of Conquest victories",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 4
@@ -9426,7 +11520,9 @@ export const ACHIEVEMENTS = [
     "id": 4256,
     "faction": 0,
     "title": "Demolition Derby",
+    "titleZh": null,
     "description": "Destroy the following vehicles in Isle of Conquest",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 2306
@@ -9435,7 +11531,9 @@ export const ACHIEVEMENTS = [
     "id": 4316,
     "faction": -1,
     "title": "2500 Dungeon & Raid Emblems",
+    "titleZh": null,
     "description": "Loot 2500 Emblems of Heroism, Valor, Conquest, Triumph or Frost.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 1950
@@ -9444,7 +11542,9 @@ export const ACHIEVEMENTS = [
     "id": 4437,
     "faction": 0,
     "title": "BB King",
+    "titleZh": null,
     "description": "Pelt the enemy leaders listed below.",
+    "descriptionZh": null,
     "category": 156,
     "points": 10,
     "iconId": 393
@@ -9453,7 +11553,9 @@ export const ACHIEVEMENTS = [
     "id": 4517,
     "faction": -1,
     "title": "The Pit of Saron",
+    "titleZh": null,
     "description": "Defeat the bosses in The Pit of Saron.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 4150
@@ -9462,7 +11564,9 @@ export const ACHIEVEMENTS = [
     "id": 4520,
     "faction": -1,
     "title": "Heroic: The Pit of Saron",
+    "titleZh": null,
     "description": "Defeat the bosses in The Pit of Saron on Heroic difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4150
@@ -9471,7 +11575,9 @@ export const ACHIEVEMENTS = [
     "id": 4537,
     "faction": -1,
     "title": "I've Gone and Made a Mess (10 player)",
+    "titleZh": null,
     "description": "Defeat the Deathbringer before Mark of the Fallen Champion is cast three times in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4161
@@ -9480,7 +11586,9 @@ export const ACHIEVEMENTS = [
     "id": 4613,
     "faction": -1,
     "title": "I've Gone and Made a Mess (25 player)",
+    "titleZh": null,
     "description": "Defeat the Deathbringer before Mark of the Fallen Champion is cast five times in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4161
@@ -9489,7 +11597,9 @@ export const ACHIEVEMENTS = [
     "id": 4727,
     "faction": -1,
     "title": "Lich King escapes (Heroic Halls of Reflection)",
+    "titleZh": null,
     "description": "",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -9498,7 +11608,9 @@ export const ACHIEVEMENTS = [
     "id": 99,
     "faction": -1,
     "title": "Ruins of Lordaeron matches",
+    "titleZh": null,
     "description": "Ruins of Lordaeron matches",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -9507,7 +11619,9 @@ export const ACHIEVEMENTS = [
     "id": 388,
     "faction": 1,
     "title": "City Defender",
+    "titleZh": null,
     "description": "Kill 50 enemy players in any of your home cities.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3574
@@ -9516,7 +11630,9 @@ export const ACHIEVEMENTS = [
     "id": 393,
     "faction": -1,
     "title": "Alterac Valley towers defended",
+    "titleZh": null,
     "description": "Alterac Valley towers defended",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1243604
@@ -9525,7 +11641,9 @@ export const ACHIEVEMENTS = [
     "id": 667,
     "faction": -1,
     "title": "Heroic: Hellfire Ramparts",
+    "titleZh": null,
     "description": "Defeat the leaders of Hellfire Ramparts on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3680
@@ -9534,7 +11652,9 @@ export const ACHIEVEMENTS = [
     "id": 709,
     "faction": 1,
     "title": "Hero of the Stormpike Guard",
+    "titleZh": null,
     "description": "Gain exalted reputation with the Stormpike Guard.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 2829
@@ -9543,7 +11663,9 @@ export const ACHIEVEMENTS = [
     "id": 761,
     "faction": -1,
     "title": "Explore Arathi Highlands",
+    "titleZh": null,
     "description": "Explore Arathi Highlands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3542
@@ -9552,7 +11674,9 @@ export const ACHIEVEMENTS = [
     "id": 854,
     "faction": -1,
     "title": "Explore Un'Goro Crater",
+    "titleZh": null,
     "description": "Explore Un'Goro Crater, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3588
@@ -9561,7 +11685,9 @@ export const ACHIEVEMENTS = [
     "id": 891,
     "faction": -1,
     "title": "Giddy Up!",
+    "titleZh": null,
     "description": "Learn the apprentice riding skill.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1176
@@ -9570,7 +11696,9 @@ export const ACHIEVEMENTS = [
     "id": 938,
     "faction": -1,
     "title": "The Snows of Northrend",
+    "titleZh": null,
     "description": "Complete all of Hemet Nesingwary quests in Northrend up to and including Post-partum Aggression.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 1581
@@ -9579,7 +11707,9 @@ export const ACHIEVEMENTS = [
     "id": 971,
     "faction": 0,
     "title": "Tricks and Treats of Azeroth",
+    "titleZh": null,
     "description": "Complete the Kalimdor, Eastern Kingdoms and Outland Tricks and Treats achievements.",
+    "descriptionZh": null,
     "category": 158,
     "points": 20,
     "iconId": 1743
@@ -9588,7 +11718,9 @@ export const ACHIEVEMENTS = [
     "id": 1032,
     "faction": 0,
     "title": "Extinguishing Kalimdor",
+    "titleZh": null,
     "description": "Desecrate the Alliance's bonfires in Kalimdor.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -9597,7 +11729,9 @@ export const ACHIEVEMENTS = [
     "id": 1084,
     "faction": -1,
     "title": "Zul'jin kills (Zul'Aman)",
+    "titleZh": null,
     "description": "Zul'jin kills (Zul'Aman)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2806
@@ -9606,7 +11740,9 @@ export const ACHIEVEMENTS = [
     "id": 1161,
     "faction": -1,
     "title": "High Five: 2200",
+    "titleZh": null,
     "description": "Earn a 2200 personal rating in the 5v5 bracket of the arena at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3043
@@ -9615,7 +11751,9 @@ export const ACHIEVEMENTS = [
     "id": 1170,
     "faction": 0,
     "title": "Master of Arathi Basin",
+    "titleZh": null,
     "description": "Complete the Arathi Basin achievements listed below.",
+    "descriptionZh": null,
     "category": 14802,
     "points": 25,
     "iconId": 1156
@@ -9624,7 +11762,9 @@ export const ACHIEVEMENTS = [
     "id": 1182,
     "faction": -1,
     "title": "The Bread Winner",
+    "titleZh": null,
     "description": "Make 10,000 gold from quest rewards.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 2995
@@ -9633,7 +11773,9 @@ export const ACHIEVEMENTS = [
     "id": 1225,
     "faction": -1,
     "title": "Outland Angler",
+    "titleZh": null,
     "description": "Catch a fish in each of the specific nodes listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3691
@@ -9642,7 +11784,9 @@ export const ACHIEVEMENTS = [
     "id": 1238,
     "faction": -1,
     "title": "Loken kills (Halls of Lightning)",
+    "titleZh": null,
     "description": "Loken kills (Halls of Lightning)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 320
@@ -9651,7 +11795,9 @@ export const ACHIEVEMENTS = [
     "id": 1307,
     "faction": -1,
     "title": "Upper Blackrock Spire",
+    "titleZh": null,
     "description": "Defeat General Drakkisath.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3821
@@ -9660,7 +11806,9 @@ export const ACHIEVEMENTS = [
     "id": 1409,
     "faction": -1,
     "title": "Realm First! Level 80 Night Elf",
+    "titleZh": null,
     "description": "First night elf on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3288
@@ -9669,7 +11817,9 @@ export const ACHIEVEMENTS = [
     "id": 1502,
     "faction": 0,
     "title": "Quick Cap",
+    "titleZh": null,
     "description": "Grab the flag and capture it in under 75 seconds.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 3483
@@ -9678,7 +11828,9 @@ export const ACHIEVEMENTS = [
     "id": 1536,
     "faction": -1,
     "title": "Highest Leatherworking skill",
+    "titleZh": null,
     "description": "Highest Leatherworking skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -9687,7 +11839,9 @@ export const ACHIEVEMENTS = [
     "id": 1658,
     "faction": -1,
     "title": "Champion of the Frozen Wastes",
+    "titleZh": null,
     "description": "Defeat the dungeon and raid bosses listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 182
@@ -9696,7 +11850,9 @@ export const ACHIEVEMENTS = [
     "id": 1691,
     "faction": 0,
     "title": "Merrymaker",
+    "titleZh": null,
     "description": "Complete the Winter Veil achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3695
@@ -9705,7 +11861,9 @@ export const ACHIEVEMENTS = [
     "id": 1721,
     "faction": -1,
     "title": "Archavon the Stone Watcher (25 player)",
+    "titleZh": null,
     "description": "Defeat Archavon the Stone Watcher in 25 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2351
@@ -9714,7 +11872,9 @@ export const ACHIEVEMENTS = [
     "id": 1772,
     "faction": -1,
     "title": "Lich King 10-player boss killed the most",
+    "titleZh": null,
     "description": "Lich King 10-player boss killed the most",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -9723,7 +11883,9 @@ export const ACHIEVEMENTS = [
     "id": 1773,
     "faction": -1,
     "title": "Beverage consumed most",
+    "titleZh": null,
     "description": "Beverage consumed most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -9732,7 +11894,9 @@ export const ACHIEVEMENTS = [
     "id": 1780,
     "faction": -1,
     "title": "Second That Emotion",
+    "titleZh": null,
     "description": "Eat each one of the \"emotion\" foods listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1854
@@ -9741,7 +11905,9 @@ export const ACHIEVEMENTS = [
     "id": 2182,
     "faction": -1,
     "title": "Spore Loser (10 player)",
+    "titleZh": null,
     "description": "Defeat Loatheb in Naxxramas without killing any spores in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3099
@@ -9750,7 +11916,9 @@ export const ACHIEVEMENTS = [
     "id": 2183,
     "faction": -1,
     "title": "Spore Loser (25 player)",
+    "titleZh": null,
     "description": "Defeat Loatheb in Naxxramas without killing any spores in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3099
@@ -9759,7 +11927,9 @@ export const ACHIEVEMENTS = [
     "id": 2194,
     "faction": 1,
     "title": "Master of Strand of the Ancients",
+    "titleZh": null,
     "description": "Complete the Strand of the Ancients achievements listed below.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 25,
     "iconId": 3402
@@ -9768,7 +11938,9 @@ export const ACHIEVEMENTS = [
     "id": 2782,
     "faction": 1,
     "title": "Champion of the Alliance",
+    "titleZh": null,
     "description": "Earn the right to represent every Alliance race's faction in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3807
@@ -9777,7 +11949,9 @@ export const ACHIEVEMENTS = [
     "id": 2874,
     "faction": -1,
     "title": "Ignis the Furnace Master kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Ignis the Furnace Master kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -9786,7 +11960,9 @@ export const ACHIEVEMENTS = [
     "id": 2925,
     "faction": -1,
     "title": "Shattered (10 player)",
+    "titleZh": null,
     "description": "Defeat Ignis the Furnace Master after shattering 2 Iron Constructs within 5 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 976
@@ -9795,7 +11971,9 @@ export const ACHIEVEMENTS = [
     "id": 2926,
     "faction": -1,
     "title": "Shattered (25 player)",
+    "titleZh": null,
     "description": "Defeat Ignis the Furnace Master after shattering 2 Iron Constructs within 5 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 976
@@ -9804,7 +11982,9 @@ export const ACHIEVEMENTS = [
     "id": 3855,
     "faction": -1,
     "title": "Glaive Grave",
+    "titleZh": null,
     "description": "In Isle of Conquest, kill 10 players with a Glaive Thrower without dying.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 10,
     "iconId": 85
@@ -9813,7 +11993,9 @@ export const ACHIEVEMENTS = [
     "id": 4028,
     "faction": -1,
     "title": "Victories over the Beasts of Northrend (Trial of the Crusader 10 player)",
+    "titleZh": null,
     "description": "Victories over the Beasts of Northrend (Trial of the Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -9822,7 +12004,9 @@ export const ACHIEVEMENTS = [
     "id": 4518,
     "faction": -1,
     "title": "The Halls of Reflection",
+    "titleZh": null,
     "description": "Defeat the bosses in The Halls of Reflection.",
+    "descriptionZh": null,
     "category": 14806,
     "points": 10,
     "iconId": 4151
@@ -9831,7 +12015,9 @@ export const ACHIEVEMENTS = [
     "id": 4521,
     "faction": -1,
     "title": "Heroic: The Halls of Reflection",
+    "titleZh": null,
     "description": "Defeat the bosses in The Halls of Reflection on Heroic difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4151
@@ -9840,7 +12026,9 @@ export const ACHIEVEMENTS = [
     "id": 4538,
     "faction": -1,
     "title": "Dances with Oozes (10 player)",
+    "titleZh": null,
     "description": "Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 636
@@ -9849,7 +12037,9 @@ export const ACHIEVEMENTS = [
     "id": 4614,
     "faction": -1,
     "title": "Dances with Oozes (25 player)",
+    "titleZh": null,
     "description": "Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 636
@@ -9858,7 +12048,9 @@ export const ACHIEVEMENTS = [
     "id": 4624,
     "faction": -1,
     "title": "Tough Love",
+    "titleZh": null,
     "description": "Defeat the trio of Crown Chemical Co. apothecaries in Shadowfang Keep.",
+    "descriptionZh": null,
     "category": 187,
     "points": 10,
     "iconId": 1076
@@ -9867,7 +12059,9 @@ export const ACHIEVEMENTS = [
     "id": 4639,
     "faction": -1,
     "title": "Lord Marrowgar kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Lord Marrowgar kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -9876,7 +12070,9 @@ export const ACHIEVEMENTS = [
     "id": 102,
     "faction": -1,
     "title": "Ruins of Lordaeron victories",
+    "titleZh": null,
     "description": "Ruins of Lordaeron victories",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -9885,7 +12081,9 @@ export const ACHIEVEMENTS = [
     "id": 207,
     "faction": -1,
     "title": "Save The Day",
+    "titleZh": null,
     "description": "Kill the enemy who is carrying your flag in the opposing team's flag room while the opposing team's flag is at their base, within their control.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 10,
     "iconId": 2119
@@ -9894,7 +12092,9 @@ export const ACHIEVEMENTS = [
     "id": 394,
     "faction": -1,
     "title": "Alterac Valley towers captured",
+    "titleZh": null,
     "description": "Alterac Valley towers captured",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1243604
@@ -9903,7 +12103,9 @@ export const ACHIEVEMENTS = [
     "id": 408,
     "faction": -1,
     "title": "Hot Streak",
+    "titleZh": null,
     "description": "Win ten ranked matches in a row at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 11
@@ -9912,7 +12114,9 @@ export const ACHIEVEMENTS = [
     "id": 644,
     "faction": -1,
     "title": "King of Dire Maul",
+    "titleZh": null,
     "description": "Defeat each wing of Dire Maul.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 559
@@ -9921,7 +12125,9 @@ export const ACHIEVEMENTS = [
     "id": 668,
     "faction": -1,
     "title": "Heroic: The Blood Furnace",
+    "titleZh": null,
     "description": "Defeat Keli'dan the Breaker on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3629
@@ -9930,7 +12136,9 @@ export const ACHIEVEMENTS = [
     "id": 773,
     "faction": -1,
     "title": "Explore The Hinterlands",
+    "titleZh": null,
     "description": "Explore The Hinterlands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3556
@@ -9939,7 +12147,9 @@ export const ACHIEVEMENTS = [
     "id": 855,
     "faction": -1,
     "title": "Explore Moonglade",
+    "titleZh": null,
     "description": "Explore Moonglade, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 1660
@@ -9948,7 +12158,9 @@ export const ACHIEVEMENTS = [
     "id": 889,
     "faction": -1,
     "title": "Fast and Furious",
+    "titleZh": null,
     "description": "Learn the journeyman riding skill.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 836
@@ -9957,7 +12169,9 @@ export const ACHIEVEMENTS = [
     "id": 963,
     "faction": 1,
     "title": "Tricks and Treats of Kalimdor",
+    "titleZh": null,
     "description": "Visit the Candy Buckets in Kalimdor.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 3509
@@ -9966,7 +12180,9 @@ export const ACHIEVEMENTS = [
     "id": 1006,
     "faction": 0,
     "title": "City Defender",
+    "titleZh": null,
     "description": "Kill 50 enemy players in any of your home cities.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3575
@@ -9975,7 +12191,9 @@ export const ACHIEVEMENTS = [
     "id": 1033,
     "faction": 0,
     "title": "Extinguishing Outland",
+    "titleZh": null,
     "description": "Desecrate the Alliance's bonfires in Outland.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -9984,7 +12202,9 @@ export const ACHIEVEMENTS = [
     "id": 1085,
     "faction": -1,
     "title": "Gruul kills (Gruul's Lair)",
+    "titleZh": null,
     "description": "Gruul kills (Gruul's Lair)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2798
@@ -9993,7 +12213,9 @@ export const ACHIEVEMENTS = [
     "id": 1166,
     "faction": -1,
     "title": "To the Looter Go the Spoils",
+    "titleZh": null,
     "description": "Loot the Autographed Picture of Foror & Tigule in Alterac Valley.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 10,
     "iconId": 2990
@@ -10002,7 +12224,9 @@ export const ACHIEVEMENTS = [
     "id": 1410,
     "faction": -1,
     "title": "Realm First! Level 80 Orc",
+    "titleZh": null,
     "description": "First orc on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3289
@@ -10011,7 +12235,9 @@ export const ACHIEVEMENTS = [
     "id": 1512,
     "faction": -1,
     "title": "Loken kills (Heroic Halls of Lightning)",
+    "titleZh": null,
     "description": "Loken kills (Heroic Halls of Lightning)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 320
@@ -10020,7 +12246,9 @@ export const ACHIEVEMENTS = [
     "id": 1517,
     "faction": -1,
     "title": "Northrend Angler",
+    "titleZh": null,
     "description": "Catch a fish in each of the specific nodes listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3692
@@ -10029,7 +12257,9 @@ export const ACHIEVEMENTS = [
     "id": 1596,
     "faction": -1,
     "title": "Guru of Drakuru",
+    "titleZh": null,
     "description": "Complete the main storyline quests involving Drakuru listed below.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3479
@@ -10038,7 +12268,9 @@ export const ACHIEVEMENTS = [
     "id": 1681,
     "faction": 1,
     "title": "The Loremaster",
+    "titleZh": null,
     "description": "Complete the quest achievements listed below.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 1644
@@ -10047,7 +12279,9 @@ export const ACHIEVEMENTS = [
     "id": 1692,
     "faction": 1,
     "title": "Merrymaker",
+    "titleZh": null,
     "description": "Complete the Winter Veil achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 10,
     "iconId": 3695
@@ -10056,7 +12290,9 @@ export const ACHIEVEMENTS = [
     "id": 1740,
     "faction": -1,
     "title": "Leatherworking Patterns learned",
+    "titleZh": null,
     "description": "Leatherworking Patterns learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -10065,7 +12301,9 @@ export const ACHIEVEMENTS = [
     "id": 1756,
     "faction": -1,
     "title": "Lich King 25-player bosses killed",
+    "titleZh": null,
     "description": "Lich King 25-player bosses killed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -10074,7 +12312,9 @@ export const ACHIEVEMENTS = [
     "id": 1774,
     "faction": -1,
     "title": "Different beverages consumed",
+    "titleZh": null,
     "description": "Different beverages consumed",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -10083,7 +12323,9 @@ export const ACHIEVEMENTS = [
     "id": 1781,
     "faction": -1,
     "title": "Critter Gitter",
+    "titleZh": null,
     "description": "Using Critter Bites, coerce 10 critters to be your pet within 3 minutes or less.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2482
@@ -10092,7 +12334,9 @@ export const ACHIEVEMENTS = [
     "id": 1919,
     "faction": -1,
     "title": "On The Rocks",
+    "titleZh": null,
     "description": "Defeat Prince Keleseth in Utgarde Keep on Heroic Difficulty without shattering any Frost Tombs.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3260
@@ -10101,7 +12345,9 @@ export const ACHIEVEMENTS = [
     "id": 2136,
     "faction": -1,
     "title": "Glory of the Hero",
+    "titleZh": null,
     "description": "Complete the Heroic Dungeon achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 3494
@@ -10110,7 +12356,9 @@ export const ACHIEVEMENTS = [
     "id": 2176,
     "faction": -1,
     "title": "And They Would All Go Down Together (10 player)",
+    "titleZh": null,
     "description": "Defeat the 4 Horsemen in Naxxramas, ensuring that they all die within 15 seconds of each other in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3005
@@ -10119,7 +12367,9 @@ export const ACHIEVEMENTS = [
     "id": 2177,
     "faction": -1,
     "title": "And They Would All Go Down Together (25 player)",
+    "titleZh": null,
     "description": "Defeat the 4 Horsemen in Naxxramas, ensuring that they all die within 15 seconds of each other in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3005
@@ -10128,7 +12378,9 @@ export const ACHIEVEMENTS = [
     "id": 2195,
     "faction": 0,
     "title": "Master of Strand of the Ancients",
+    "titleZh": null,
     "description": "Complete the Strand of the Ancients achievements listed below.",
+    "descriptionZh": null,
     "category": 14881,
     "points": 25,
     "iconId": 3402
@@ -10137,7 +12389,9 @@ export const ACHIEVEMENTS = [
     "id": 2770,
     "faction": 1,
     "title": "Exalted Champion of the Alliance",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent every Alliance race's faction in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3807
@@ -10146,7 +12400,9 @@ export const ACHIEVEMENTS = [
     "id": 2884,
     "faction": -1,
     "title": "XT-002 Deconstructor kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "XT-002 Deconstructor kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -10155,7 +12411,9 @@ export const ACHIEVEMENTS = [
     "id": 2927,
     "faction": -1,
     "title": "Hot Pocket (10 player)",
+    "titleZh": null,
     "description": "Survive being thrown into Ignis the Furnace Master's Slag Pot in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 31
@@ -10164,7 +12422,9 @@ export const ACHIEVEMENTS = [
     "id": 2928,
     "faction": -1,
     "title": "Hot Pocket (25 player)",
+    "titleZh": null,
     "description": "Survive being thrown into Ignis the Furnace Master's Slag Pot in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 31
@@ -10173,7 +12433,9 @@ export const ACHIEVEMENTS = [
     "id": 3136,
     "faction": -1,
     "title": "Emalon the Storm Watcher (10 player)",
+    "titleZh": null,
     "description": "Defeat Emalon the Storm Watcher in 10 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2350
@@ -10182,7 +12444,9 @@ export const ACHIEVEMENTS = [
     "id": 3857,
     "faction": 1,
     "title": "Master of Isle of Conquest",
+    "titleZh": null,
     "description": "Complete the Isle of Conquest achievements listed below.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 25,
     "iconId": 3387
@@ -10191,7 +12455,9 @@ export const ACHIEVEMENTS = [
     "id": 4030,
     "faction": -1,
     "title": "Victories over the Beasts of Northrend (Trial of the Grand Crusader 10 player)",
+    "titleZh": null,
     "description": "Victories over the Beasts of Northrend (Trial of the Grand Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -10200,7 +12466,9 @@ export const ACHIEVEMENTS = [
     "id": 4577,
     "faction": -1,
     "title": "Flu Shot Shortage (10 player)",
+    "titleZh": null,
     "description": "Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4162
@@ -10209,7 +12477,9 @@ export const ACHIEVEMENTS = [
     "id": 4615,
     "faction": -1,
     "title": "Flu Shot Shortage (25 player)",
+    "titleZh": null,
     "description": "Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4162
@@ -10218,7 +12488,9 @@ export const ACHIEVEMENTS = [
     "id": 4640,
     "faction": -1,
     "title": "Lord Marrowgar kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Lord Marrowgar kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -10227,7 +12499,9 @@ export const ACHIEVEMENTS = [
     "id": 347,
     "faction": -1,
     "title": "Food eaten",
+    "titleZh": null,
     "description": "Food eaten",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 4
@@ -10236,7 +12510,9 @@ export const ACHIEVEMENTS = [
     "id": 585,
     "faction": -1,
     "title": "Eye of the Storm flags captured",
+    "titleZh": null,
     "description": "Eye of the Storm flags captured",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -10245,7 +12521,9 @@ export const ACHIEVEMENTS = [
     "id": 596,
     "faction": -1,
     "title": "Highest 5 man personal rating",
+    "titleZh": null,
     "description": "Highest 5 man personal rating",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 1
@@ -10254,7 +12532,9 @@ export const ACHIEVEMENTS = [
     "id": 603,
     "faction": 0,
     "title": "Wrath of the Horde",
+    "titleZh": null,
     "description": "Kill 5 Alliance players in each of the cities listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2815
@@ -10263,7 +12543,9 @@ export const ACHIEVEMENTS = [
     "id": 645,
     "faction": -1,
     "title": "Scholomance",
+    "titleZh": null,
     "description": "Defeat the leaders of Scholomance.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 308
@@ -10272,7 +12554,9 @@ export const ACHIEVEMENTS = [
     "id": 669,
     "faction": -1,
     "title": "Heroic: The Slave Pens",
+    "titleZh": null,
     "description": "Defeat Quagmirran on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3591
@@ -10281,7 +12565,9 @@ export const ACHIEVEMENTS = [
     "id": 774,
     "faction": -1,
     "title": "Explore Searing Gorge",
+    "titleZh": null,
     "description": "Explore Searing Gorge, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3566
@@ -10290,7 +12576,9 @@ export const ACHIEVEMENTS = [
     "id": 856,
     "faction": -1,
     "title": "Explore Silithus",
+    "titleZh": null,
     "description": "Explore Silithus, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3567
@@ -10299,7 +12587,9 @@ export const ACHIEVEMENTS = [
     "id": 890,
     "faction": -1,
     "title": "Into The Wild Blue Yonder",
+    "titleZh": null,
     "description": "Learn the expert riding skill.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2054
@@ -10308,7 +12598,9 @@ export const ACHIEVEMENTS = [
     "id": 966,
     "faction": 1,
     "title": "Tricks and Treats of Eastern Kingdoms",
+    "titleZh": null,
     "description": "Visit the Candy Buckets in Eastern Kingdoms.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2951
@@ -10317,7 +12609,9 @@ export const ACHIEVEMENTS = [
     "id": 1037,
     "faction": 0,
     "title": "Desecration of the Alliance",
+    "titleZh": null,
     "description": "Complete the Extinguishing Eastern Kingdoms, Kalimdor and Outland achievements.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 1920
@@ -10326,7 +12620,9 @@ export const ACHIEVEMENTS = [
     "id": 1086,
     "faction": -1,
     "title": "Magtheridon kills (Magtheridon's Lair)",
+    "titleZh": null,
     "description": "Magtheridon kills (Magtheridon's Lair)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2675
@@ -10335,7 +12631,9 @@ export const ACHIEVEMENTS = [
     "id": 1162,
     "faction": -1,
     "title": "Hotter Streak",
+    "titleZh": null,
     "description": "Win ten ranked matches in a row with a rating above 1800 at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 11
@@ -10344,7 +12642,9 @@ export const ACHIEVEMENTS = [
     "id": 1167,
     "faction": 1,
     "title": "Master of Alterac Valley",
+    "titleZh": null,
     "description": "Complete the Alterac Valley achievements listed below.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 25,
     "iconId": 2839
@@ -10353,7 +12653,9 @@ export const ACHIEVEMENTS = [
     "id": 1172,
     "faction": 1,
     "title": "Master of Warsong Gulch",
+    "titleZh": null,
     "description": "Complete the Warsong Gulch achievements listed below.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 25,
     "iconId": 2835
@@ -10362,7 +12664,9 @@ export const ACHIEVEMENTS = [
     "id": 1239,
     "faction": -1,
     "title": "Ley-Guardian Eregos kills (The Oculus)",
+    "titleZh": null,
     "description": "Ley-Guardian Eregos kills (The Oculus)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 180
@@ -10371,7 +12675,9 @@ export const ACHIEVEMENTS = [
     "id": 1277,
     "faction": -1,
     "title": "Rapid Defense",
+    "titleZh": null,
     "description": "Complete the Defending Wyrmrest Temple quest in under 3 minutes while not in a group.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 1700
@@ -10380,7 +12686,9 @@ export const ACHIEVEMENTS = [
     "id": 1411,
     "faction": -1,
     "title": "Realm First! Level 80 Tauren",
+    "titleZh": null,
     "description": "First tauren on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3326
@@ -10389,7 +12697,9 @@ export const ACHIEVEMENTS = [
     "id": 1537,
     "faction": -1,
     "title": "Highest Mining skill",
+    "titleZh": null,
     "description": "Highest Mining skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -10398,7 +12708,9 @@ export const ACHIEVEMENTS = [
     "id": 1682,
     "faction": 0,
     "title": "The Loremaster",
+    "titleZh": null,
     "description": "Complete the quest achievements listed below.",
+    "descriptionZh": null,
     "category": 96,
     "points": 10,
     "iconId": 1644
@@ -10407,7 +12719,9 @@ export const ACHIEVEMENTS = [
     "id": 1759,
     "faction": -1,
     "title": "Lich King 25-player different bosses killed",
+    "titleZh": null,
     "description": "Lich King 25-player different bosses killed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -10416,7 +12730,9 @@ export const ACHIEVEMENTS = [
     "id": 1785,
     "faction": -1,
     "title": "Dinner Impossible",
+    "titleZh": null,
     "description": "Present a Great Feast in each of the battlegrounds listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1578
@@ -10425,7 +12741,9 @@ export const ACHIEVEMENTS = [
     "id": 2137,
     "faction": -1,
     "title": "Glory of the Raider (10 player)",
+    "titleZh": null,
     "description": "Complete the 10-player raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 3499
@@ -10434,7 +12752,9 @@ export const ACHIEVEMENTS = [
     "id": 2144,
     "faction": 1,
     "title": "What A Long, Strange Trip It's Been",
+    "titleZh": null,
     "description": "Complete the world events achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 50,
     "iconId": 3500
@@ -10443,7 +12763,9 @@ export const ACHIEVEMENTS = [
     "id": 2146,
     "faction": -1,
     "title": "The Hundred Club (10 player)",
+    "titleZh": null,
     "description": "Defeat Sapphiron in Naxxramas without any member of the raid having a frost resist value over 100 in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1700
@@ -10452,7 +12774,9 @@ export const ACHIEVEMENTS = [
     "id": 2147,
     "faction": -1,
     "title": "The Hundred Club (25 player)",
+    "titleZh": null,
     "description": "Defeat Sapphiron in Naxxramas without any member of the raid having a frost resist value over 100 in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1700
@@ -10461,7 +12785,9 @@ export const ACHIEVEMENTS = [
     "id": 2150,
     "faction": -1,
     "title": "Split Personality",
+    "titleZh": null,
     "description": "Defeat Grand Magus Telestra in The Nexus on Heroic Difficulty after having killed her images within 5 seconds of each other during both splits.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3392
@@ -10470,7 +12796,9 @@ export const ACHIEVEMENTS = [
     "id": 2817,
     "faction": 1,
     "title": "Exalted Argent Champion of the Alliance",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent every Alliance race's faction in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3807
@@ -10479,7 +12807,9 @@ export const ACHIEVEMENTS = [
     "id": 2885,
     "faction": -1,
     "title": "Assembly of Iron kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Assembly of Iron kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -10488,7 +12818,9 @@ export const ACHIEVEMENTS = [
     "id": 2929,
     "faction": -1,
     "title": "Stokin' the Furnace (25 player)",
+    "titleZh": null,
     "description": "Defeat Ignis the Furnace Master in 4 minutes in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3855
@@ -10497,7 +12829,9 @@ export const ACHIEVEMENTS = [
     "id": 2930,
     "faction": -1,
     "title": "Stokin' the Furnace (10 player)",
+    "titleZh": null,
     "description": "Defeat Ignis the Furnace Master in 4 minutes in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3855
@@ -10506,7 +12840,9 @@ export const ACHIEVEMENTS = [
     "id": 3137,
     "faction": -1,
     "title": "Emalon the Storm Watcher (25 player)",
+    "titleZh": null,
     "description": "Defeat Emalon the Storm Watcher in 25 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2350
@@ -10515,7 +12851,9 @@ export const ACHIEVEMENTS = [
     "id": 3217,
     "faction": -1,
     "title": "Chasing Marcia",
+    "titleZh": null,
     "description": "Complete each of Marcia Chase's 5 fishing daily quests listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 2933
@@ -10524,7 +12862,9 @@ export const ACHIEVEMENTS = [
     "id": 3957,
     "faction": 0,
     "title": "Master of Isle of Conquest",
+    "titleZh": null,
     "description": "Complete the Isle of Conquest achievements listed below.",
+    "descriptionZh": null,
     "category": 15003,
     "points": 25,
     "iconId": 3387
@@ -10533,7 +12873,9 @@ export const ACHIEVEMENTS = [
     "id": 4031,
     "faction": -1,
     "title": "Victories over the Beasts of Northrend (Trial of the Crusader 25 player)",
+    "titleZh": null,
     "description": "Victories over the Beasts of Northrend (Trial of the Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -10542,7 +12884,9 @@ export const ACHIEVEMENTS = [
     "id": 4578,
     "faction": -1,
     "title": "Nausea, Heartburn, Indigestion... (10 player)",
+    "titleZh": null,
     "description": "Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4163
@@ -10551,7 +12895,9 @@ export const ACHIEVEMENTS = [
     "id": 4616,
     "faction": -1,
     "title": "Nausea, Heartburn, Indigestion... (25 player)",
+    "titleZh": null,
     "description": "Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4163
@@ -10560,7 +12906,9 @@ export const ACHIEVEMENTS = [
     "id": 4641,
     "faction": -1,
     "title": "Lord Marrowgar kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Lord Marrowgar kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -10569,7 +12917,9 @@ export const ACHIEVEMENTS = [
     "id": 272,
     "faction": -1,
     "title": "Torch Juggler",
+    "titleZh": null,
     "description": "Juggle 40 torches in 15 seconds in Dalaran.",
+    "descriptionZh": null,
     "category": 161,
     "points": 10,
     "iconId": 2944
@@ -10578,7 +12928,9 @@ export const ACHIEVEMENTS = [
     "id": 395,
     "faction": -1,
     "title": "Warsong Gulch flags captured",
+    "titleZh": null,
     "description": "Warsong Gulch flags captured",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1243604
@@ -10587,7 +12939,9 @@ export const ACHIEVEMENTS = [
     "id": 409,
     "faction": -1,
     "title": "Last Man Standing",
+    "titleZh": null,
     "description": "Be the sole survivor at the end of a ranked 5v5 match at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 2176
@@ -10596,7 +12950,9 @@ export const ACHIEVEMENTS = [
     "id": 595,
     "faction": -1,
     "title": "Highest 3 man personal rating",
+    "titleZh": null,
     "description": "Highest 3 man personal rating",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 1
@@ -10605,7 +12961,9 @@ export const ACHIEVEMENTS = [
     "id": 604,
     "faction": 1,
     "title": "Wrath of the Alliance",
+    "titleZh": null,
     "description": "Kill 5 Horde players in each of the cities listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2503
@@ -10614,7 +12972,9 @@ export const ACHIEVEMENTS = [
     "id": 646,
     "faction": -1,
     "title": "Stratholme",
+    "titleZh": null,
     "description": "Defeat the evil masterminds inhabiting Stratholme.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 2718
@@ -10623,7 +12983,9 @@ export const ACHIEVEMENTS = [
     "id": 670,
     "faction": -1,
     "title": "Heroic: Underbog",
+    "titleZh": null,
     "description": "Defeat The Black Stalker on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3823
@@ -10632,7 +12994,9 @@ export const ACHIEVEMENTS = [
     "id": 766,
     "faction": -1,
     "title": "Explore Blasted Lands",
+    "titleZh": null,
     "description": "Explore Blasted Lands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3550
@@ -10641,7 +13005,9 @@ export const ACHIEVEMENTS = [
     "id": 857,
     "faction": -1,
     "title": "Explore Winterspring",
+    "titleZh": null,
     "description": "Explore Winterspring, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14778,
     "points": 10,
     "iconId": 3587
@@ -10650,7 +13016,9 @@ export const ACHIEVEMENTS = [
     "id": 892,
     "faction": -1,
     "title": "The Right Stuff",
+    "titleZh": null,
     "description": "Learn the artisan riding skill.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2055
@@ -10659,7 +13027,9 @@ export const ACHIEVEMENTS = [
     "id": 969,
     "faction": 1,
     "title": "Tricks and Treats of Outland",
+    "titleZh": null,
     "description": "Visit the Candy Buckets in Outland.",
+    "descriptionZh": null,
     "category": 158,
     "points": 10,
     "iconId": 2952
@@ -10668,7 +13038,9 @@ export const ACHIEVEMENTS = [
     "id": 1087,
     "faction": -1,
     "title": "Lady Vashj kills (Serpentshrine Cavern)",
+    "titleZh": null,
     "description": "Lady Vashj kills (Serpentshrine Cavern)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2379
@@ -10677,7 +13049,9 @@ export const ACHIEVEMENTS = [
     "id": 1168,
     "faction": 0,
     "title": "Master of Alterac Valley",
+    "titleZh": null,
     "description": "Complete the Alterac Valley achievements listed below.",
+    "descriptionZh": null,
     "category": 14801,
     "points": 25,
     "iconId": 2839
@@ -10686,7 +13060,9 @@ export const ACHIEVEMENTS = [
     "id": 1173,
     "faction": 0,
     "title": "Master of Warsong Gulch",
+    "titleZh": null,
     "description": "Complete the Warsong Gulch achievements listed below.",
+    "descriptionZh": null,
     "category": 14804,
     "points": 25,
     "iconId": 2835
@@ -10695,7 +13071,9 @@ export const ACHIEVEMENTS = [
     "id": 1243,
     "faction": -1,
     "title": "Fish Don't Leave Footprints",
+    "titleZh": null,
     "description": "Learn the ability to find fish.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3701
@@ -10704,7 +13082,9 @@ export const ACHIEVEMENTS = [
     "id": 1412,
     "faction": -1,
     "title": "Realm First! Level 80 Troll",
+    "titleZh": null,
     "description": "First troll on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3291
@@ -10713,7 +13093,9 @@ export const ACHIEVEMENTS = [
     "id": 1428,
     "faction": -1,
     "title": "Mine Sweeper",
+    "titleZh": null,
     "description": "Get caught in 10 consecutive land mine explosions in the Sparksocket Minefield without landing.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 1755
@@ -10722,7 +13104,9 @@ export const ACHIEVEMENTS = [
     "id": 1513,
     "faction": -1,
     "title": "Ley-Guardian Eregos kills (Heroic Oculus)",
+    "titleZh": null,
     "description": "Ley-Guardian Eregos kills (Heroic Oculus)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 180
@@ -10731,7 +13115,9 @@ export const ACHIEVEMENTS = [
     "id": 1760,
     "faction": -1,
     "title": "Lich King 25-player boss killed the most",
+    "titleZh": null,
     "description": "Lich King 25-player boss killed the most",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -10740,7 +13126,9 @@ export const ACHIEVEMENTS = [
     "id": 1775,
     "faction": -1,
     "title": "Different foods eaten",
+    "titleZh": null,
     "description": "Different foods eaten",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -10749,7 +13137,9 @@ export const ACHIEVEMENTS = [
     "id": 1795,
     "faction": -1,
     "title": "Lunch Lady",
+    "titleZh": null,
     "description": "Learn 25 cooking recipes.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2353
@@ -10758,7 +13148,9 @@ export const ACHIEVEMENTS = [
     "id": 2036,
     "faction": -1,
     "title": "Intense Cold",
+    "titleZh": null,
     "description": "Defeat Keristrasza in The Nexus on Heroic Difficulty without allowing Intense Cold to reach more than two stacks.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2965
@@ -10767,7 +13159,9 @@ export const ACHIEVEMENTS = [
     "id": 2138,
     "faction": -1,
     "title": "Glory of the Raider (25 player)",
+    "titleZh": null,
     "description": "Complete the 25-player raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 2044
@@ -10776,7 +13170,9 @@ export const ACHIEVEMENTS = [
     "id": 2145,
     "faction": 0,
     "title": "What A Long, Strange Trip It's Been",
+    "titleZh": null,
     "description": "Complete the world events achievements listed below.",
+    "descriptionZh": null,
     "category": 155,
     "points": 50,
     "iconId": 3500
@@ -10785,7 +13181,9 @@ export const ACHIEVEMENTS = [
     "id": 2184,
     "faction": -1,
     "title": "Just Can't Get Enough (10 player)",
+    "titleZh": null,
     "description": "Defeat Kel'Thuzad in Naxxramas while killing at least 18 abominations in his chamber in 10 player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2623
@@ -10794,7 +13192,9 @@ export const ACHIEVEMENTS = [
     "id": 2185,
     "faction": -1,
     "title": "Just Can't Get Enough (25 player)",
+    "titleZh": null,
     "description": "Defeat Kel'Thuzad in Naxxramas while killing at least 18 abominations in his chamber in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2623
@@ -10803,7 +13203,9 @@ export const ACHIEVEMENTS = [
     "id": 2783,
     "faction": 0,
     "title": "Champion of Orgrimmar",
+    "titleZh": null,
     "description": "Earn the right to represent Orgrimmar in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3802
@@ -10812,7 +13214,9 @@ export const ACHIEVEMENTS = [
     "id": 2875,
     "faction": -1,
     "title": "Kologarn kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Kologarn kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -10821,7 +13225,9 @@ export const ACHIEVEMENTS = [
     "id": 2931,
     "faction": -1,
     "title": "Nerf Engineering (10 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor without him recovering any health from XS-013 in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3857
@@ -10830,7 +13236,9 @@ export const ACHIEVEMENTS = [
     "id": 2932,
     "faction": -1,
     "title": "Nerf Engineering (25 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor without him recovering any health from XS-013 Scrapbots in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3857
@@ -10839,7 +13247,9 @@ export const ACHIEVEMENTS = [
     "id": 3216,
     "faction": -1,
     "title": "Smelting Recipes learned",
+    "titleZh": null,
     "description": "Smelting Recipes learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -10848,7 +13258,9 @@ export const ACHIEVEMENTS = [
     "id": 3836,
     "faction": -1,
     "title": "Koralon the Flame Watcher (10 player)",
+    "titleZh": null,
     "description": "Defeat Koralon the Flame Watcher in 10 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2019
@@ -10857,7 +13269,9 @@ export const ACHIEVEMENTS = [
     "id": 4029,
     "faction": -1,
     "title": "Victories over the Beasts of Northrend (Trial of the Grand Crusader 25 player)",
+    "titleZh": null,
     "description": "Victories over the Beasts of Northrend (Trial of the Grand Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -10866,7 +13280,9 @@ export const ACHIEVEMENTS = [
     "id": 4582,
     "faction": -1,
     "title": "The Orb Whisperer (10 player)",
+    "titleZh": null,
     "description": "Defeat the Blood Council without anyone in the raid taking more than 23,000 spell damage in a single hit in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4164
@@ -10875,7 +13291,9 @@ export const ACHIEVEMENTS = [
     "id": 4617,
     "faction": -1,
     "title": "The Orb Whisperer (25 player)",
+    "titleZh": null,
     "description": "Defeat the Blood Council without anyone in the raid taking more than 25,000 spell damage in a single hit in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4164
@@ -10884,7 +13302,9 @@ export const ACHIEVEMENTS = [
     "id": 4642,
     "faction": -1,
     "title": "Lord Marrowgar kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Lord Marrowgar kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -10893,7 +13313,9 @@ export const ACHIEVEMENTS = [
     "id": 41,
     "faction": 1,
     "title": "Loremaster of Northrend",
+    "titleZh": null,
     "description": "Complete the Northrend quest achievements listed below.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3493
@@ -10902,7 +13324,9 @@ export const ACHIEVEMENTS = [
     "id": 370,
     "faction": -1,
     "title": "Highest 2 man personal rating",
+    "titleZh": null,
     "description": "Highest 2 man personal rating",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -10911,7 +13335,9 @@ export const ACHIEVEMENTS = [
     "id": 586,
     "faction": -1,
     "title": "Warsong Gulch flags returned",
+    "titleZh": null,
     "description": "Warsong Gulch flags returned",
+    "descriptionZh": null,
     "category": 153,
     "points": 0,
     "iconId": 1
@@ -10920,7 +13346,9 @@ export const ACHIEVEMENTS = [
     "id": 610,
     "faction": 1,
     "title": "Death to the Warchief!",
+    "titleZh": null,
     "description": "Kill Thrall.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3660
@@ -10929,7 +13357,9 @@ export const ACHIEVEMENTS = [
     "id": 671,
     "faction": -1,
     "title": "Heroic: Mana-Tombs",
+    "titleZh": null,
     "description": "Defeat Nexus-Prince Shaffar on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3666
@@ -10938,7 +13368,9 @@ export const ACHIEVEMENTS = [
     "id": 688,
     "faction": -1,
     "title": "Zul'Gurub",
+    "titleZh": null,
     "description": "Defeat Hakkar.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3651
@@ -10947,7 +13379,9 @@ export const ACHIEVEMENTS = [
     "id": 775,
     "faction": -1,
     "title": "Explore Burning Steppes",
+    "titleZh": null,
     "description": "Explore Burning Steppes, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3552
@@ -10956,7 +13390,9 @@ export const ACHIEVEMENTS = [
     "id": 964,
     "faction": -1,
     "title": "Going Down?",
+    "titleZh": null,
     "description": "Fall 65 yards without dying.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2901
@@ -10965,7 +13401,9 @@ export const ACHIEVEMENTS = [
     "id": 970,
     "faction": 1,
     "title": "Tricks and Treats of Azeroth",
+    "titleZh": null,
     "description": "Complete the Kalimdor, Eastern Kingdoms and Outland Tricks and Treats achievements.",
+    "descriptionZh": null,
     "category": 158,
     "points": 20,
     "iconId": 1743
@@ -10974,7 +13412,9 @@ export const ACHIEVEMENTS = [
     "id": 1088,
     "faction": -1,
     "title": "Kael'thas Sunstrider kills (Tempest Keep)",
+    "titleZh": null,
     "description": "Kael'thas Sunstrider kills (Tempest Keep)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2800
@@ -10983,7 +13423,9 @@ export const ACHIEVEMENTS = [
     "id": 1240,
     "faction": -1,
     "title": "King Ymiron kills (Utgarde Pinnacle)",
+    "titleZh": null,
     "description": "King Ymiron kills (Utgarde Pinnacle)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2885
@@ -10992,7 +13434,9 @@ export const ACHIEVEMENTS = [
     "id": 1413,
     "faction": -1,
     "title": "Realm First! Level 80 Forsaken",
+    "titleZh": null,
     "description": "First forsaken on the realm to achieve level 80.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3292
@@ -11001,7 +13445,9 @@ export const ACHIEVEMENTS = [
     "id": 1541,
     "faction": -1,
     "title": "Highest Skinning skill",
+    "titleZh": null,
     "description": "Highest Skinning skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -11010,7 +13456,9 @@ export const ACHIEVEMENTS = [
     "id": 1776,
     "faction": -1,
     "title": "Food eaten most",
+    "titleZh": null,
     "description": "Food eaten most",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -11019,7 +13467,9 @@ export const ACHIEVEMENTS = [
     "id": 1796,
     "faction": -1,
     "title": "Short Order Cook",
+    "titleZh": null,
     "description": "Learn 50 cooking recipes.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1788
@@ -11028,7 +13478,9 @@ export const ACHIEVEMENTS = [
     "id": 2037,
     "faction": -1,
     "title": "Chaos Theory",
+    "titleZh": null,
     "description": "Defeat Anomalus in The Nexus on Heroic Difficulty without destroying any Chaotic Rifts.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3392
@@ -11037,7 +13489,9 @@ export const ACHIEVEMENTS = [
     "id": 2090,
     "faction": -1,
     "title": "Challenger",
+    "titleZh": null,
     "description": "Earn the Challenger title in an arena season at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3596
@@ -11046,7 +13500,9 @@ export const ACHIEVEMENTS = [
     "id": 2094,
     "faction": -1,
     "title": "A Penny For Your Thoughts",
+    "titleZh": null,
     "description": "Fish up the copper coins listed below from the Dalaran fountain.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3451
@@ -11055,7 +13511,9 @@ export const ACHIEVEMENTS = [
     "id": 2186,
     "faction": -1,
     "title": "The Immortal",
+    "titleZh": null,
     "description": "Within one raid lockout period, defeat every boss in Naxxramas without allowing any raid member to die during any of the boss encounters in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2143
@@ -11064,7 +13522,9 @@ export const ACHIEVEMENTS = [
     "id": 2187,
     "faction": -1,
     "title": "The Undying",
+    "titleZh": null,
     "description": "Within one raid lockout period, defeat every boss in Naxxramas without allowing any raid member to die during any of the boss encounters in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2292
@@ -11073,7 +13533,9 @@ export const ACHIEVEMENTS = [
     "id": 2765,
     "faction": 0,
     "title": "Exalted Champion of Orgrimmar",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Orgrimmar in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3802
@@ -11082,7 +13544,9 @@ export const ACHIEVEMENTS = [
     "id": 2882,
     "faction": -1,
     "title": "Auriaya kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Auriaya kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -11091,7 +13555,9 @@ export const ACHIEVEMENTS = [
     "id": 2933,
     "faction": -1,
     "title": "Nerf Scrapbots (10 player)",
+    "titleZh": null,
     "description": "Defeat 20 XS-013 Scrapbots within 12 seconds using XE-321 Boombots in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2565
@@ -11100,7 +13566,9 @@ export const ACHIEVEMENTS = [
     "id": 2935,
     "faction": -1,
     "title": "Nerf Scrapbots (25 player)",
+    "titleZh": null,
     "description": "Defeat 20 XS-013 Scrapbots within 12 seconds using XE-321 Boombots in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2565
@@ -11109,7 +13577,9 @@ export const ACHIEVEMENTS = [
     "id": 2957,
     "faction": -1,
     "title": "Glory of the Ulduar Raider (10 player)",
+    "titleZh": null,
     "description": "Complete the 10-player raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 3876
@@ -11118,7 +13588,9 @@ export const ACHIEVEMENTS = [
     "id": 3837,
     "faction": -1,
     "title": "Koralon the Flame Watcher (25 player)",
+    "titleZh": null,
     "description": "Defeat Koralon the Flame Watcher in 25 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 2019
@@ -11127,7 +13599,9 @@ export const ACHIEVEMENTS = [
     "id": 4032,
     "faction": -1,
     "title": "Lord Jaraxxus kills (Trial of the Crusader 10 player)",
+    "titleZh": null,
     "description": "Lord Jaraxxus kills (Trial of the Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -11136,7 +13610,9 @@ export const ACHIEVEMENTS = [
     "id": 4456,
     "faction": -1,
     "title": "Random Lich King (normal) dungeons completed",
+    "titleZh": null,
     "description": "LFG random Lich King normal dungeons completed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -11145,7 +13621,9 @@ export const ACHIEVEMENTS = [
     "id": 4539,
     "faction": -1,
     "title": "Once Bitten, Twice Shy (10 player)",
+    "titleZh": null,
     "description": "Defeat Blood-Queen Lana'thel once as a vampire and again without becoming a vampire in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4165
@@ -11154,7 +13632,9 @@ export const ACHIEVEMENTS = [
     "id": 4618,
     "faction": -1,
     "title": "Once Bitten, Twice Shy (25 player)",
+    "titleZh": null,
     "description": "Defeat Blood-Queen Lana'thel once as a vampire and again without becoming a vampire in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4165
@@ -11163,7 +13643,9 @@ export const ACHIEVEMENTS = [
     "id": 4643,
     "faction": -1,
     "title": "Lady Deathwhisper kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Lady Deathwhisper kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -11172,7 +13654,9 @@ export const ACHIEVEMENTS = [
     "id": 545,
     "faction": -1,
     "title": "Shave and a Haircut",
+    "titleZh": null,
     "description": "Visit a Barber Shop and get your hair cut.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2766
@@ -11181,7 +13665,9 @@ export const ACHIEVEMENTS = [
     "id": 589,
     "faction": -1,
     "title": "Highest 5 man team rating",
+    "titleZh": null,
     "description": "Highest 5 man team rating",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 1
@@ -11190,7 +13676,9 @@ export const ACHIEVEMENTS = [
     "id": 611,
     "faction": 1,
     "title": "Bleeding Bloodhoof",
+    "titleZh": null,
     "description": "Kill Cairne Bloodhoof.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3669
@@ -11199,7 +13687,9 @@ export const ACHIEVEMENTS = [
     "id": 622,
     "faction": -1,
     "title": "The Spellweaver's Downfall (10 player)",
+    "titleZh": null,
     "description": "Defeat Malygos in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3256
@@ -11208,7 +13698,9 @@ export const ACHIEVEMENTS = [
     "id": 623,
     "faction": -1,
     "title": "The Spellweaver's Downfall (25 player)",
+    "titleZh": null,
     "description": "Defeat Malygos in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 25,
     "iconId": 3257
@@ -11217,7 +13709,9 @@ export const ACHIEVEMENTS = [
     "id": 672,
     "faction": -1,
     "title": "Heroic: Auchenai Crypts",
+    "titleZh": null,
     "description": "Defeat Exarch Maladaar on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3590
@@ -11226,7 +13720,9 @@ export const ACHIEVEMENTS = [
     "id": 689,
     "faction": -1,
     "title": "Ruins of Ahn'Qiraj",
+    "titleZh": null,
     "description": "Defeat Ossirian the Unscarred.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3681
@@ -11235,7 +13731,9 @@ export const ACHIEVEMENTS = [
     "id": 777,
     "faction": -1,
     "title": "Explore Deadwind Pass",
+    "titleZh": null,
     "description": "Explore Deadwind Pass, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3529
@@ -11244,7 +13742,9 @@ export const ACHIEVEMENTS = [
     "id": 812,
     "faction": -1,
     "title": "Healthstones used",
+    "titleZh": null,
     "description": "Healthstones used",
+    "descriptionZh": null,
     "category": 145,
     "points": 0,
     "iconId": 1
@@ -11253,7 +13753,9 @@ export const ACHIEVEMENTS = [
     "id": 1089,
     "faction": -1,
     "title": "Illidan Stormrage kills (The Black Temple)",
+    "titleZh": null,
     "description": "Illidan Stormrage kills (The Black Temple)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2596
@@ -11262,7 +13764,9 @@ export const ACHIEVEMENTS = [
     "id": 1296,
     "faction": -1,
     "title": "Watch Him Die",
+    "titleZh": null,
     "description": "Defeat Krik'thir the Gatewatcher in Azjol-Nerub on Heroic Difficulty while Watcher Gashra, Watcher Narji, and Watcher Silthik are still alive.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3250
@@ -11271,7 +13775,9 @@ export const ACHIEVEMENTS = [
     "id": 1360,
     "faction": 0,
     "title": "Loremaster of Northrend",
+    "titleZh": null,
     "description": "Complete the Northrend quest achievements listed below.",
+    "descriptionZh": null,
     "category": 14863,
     "points": 10,
     "iconId": 3493
@@ -11280,7 +13786,9 @@ export const ACHIEVEMENTS = [
     "id": 1415,
     "faction": -1,
     "title": "Realm First! Grand Master Alchemist",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in alchemy.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 339
@@ -11289,7 +13797,9 @@ export const ACHIEVEMENTS = [
     "id": 1514,
     "faction": -1,
     "title": "King Ymiron kills (Heroic Utgarde Pinnacle)",
+    "titleZh": null,
     "description": "King Ymiron kills (Heroic Utgarde Pinnacle)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2885
@@ -11298,7 +13808,9 @@ export const ACHIEVEMENTS = [
     "id": 1542,
     "faction": -1,
     "title": "Highest Tailoring skill",
+    "titleZh": null,
     "description": "Highest Tailoring skill",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 1
@@ -11307,7 +13819,9 @@ export const ACHIEVEMENTS = [
     "id": 1797,
     "faction": -1,
     "title": "Chef de Partie",
+    "titleZh": null,
     "description": "Learn 75 cooking recipes.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 2485
@@ -11316,7 +13830,9 @@ export const ACHIEVEMENTS = [
     "id": 2093,
     "faction": -1,
     "title": "Rival",
+    "titleZh": null,
     "description": "Earn the Rival title in an arena season at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3597
@@ -11325,7 +13841,9 @@ export const ACHIEVEMENTS = [
     "id": 2095,
     "faction": -1,
     "title": "Silver in the City",
+    "titleZh": null,
     "description": "Fish up the silver coins listed below from the Dalaran fountain.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3450
@@ -11334,7 +13852,9 @@ export const ACHIEVEMENTS = [
     "id": 2784,
     "faction": 0,
     "title": "Champion of Sen'jin",
+    "titleZh": null,
     "description": "Earn the right to represent Sen'jin in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3804
@@ -11343,7 +13863,9 @@ export const ACHIEVEMENTS = [
     "id": 2934,
     "faction": -1,
     "title": "Nerf Gravity Bombs (10 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor without any raid member dying from a Gravity Bomb in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 1755
@@ -11352,7 +13874,9 @@ export const ACHIEVEMENTS = [
     "id": 2936,
     "faction": -1,
     "title": "Nerf Gravity Bombs (25 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor without any raid member dying from a Gravity Bomb in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 1755
@@ -11361,7 +13885,9 @@ export const ACHIEVEMENTS = [
     "id": 2958,
     "faction": -1,
     "title": "Glory of the Ulduar Raider (25 player)",
+    "titleZh": null,
     "description": "Complete the 25-player raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 3877
@@ -11370,7 +13896,9 @@ export const ACHIEVEMENTS = [
     "id": 3256,
     "faction": -1,
     "title": "Hodir victories (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Hodir victories (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -11379,7 +13907,9 @@ export const ACHIEVEMENTS = [
     "id": 4033,
     "faction": -1,
     "title": "Lord Jaraxxus kills (Trial of the Grand Crusader 10 player)",
+    "titleZh": null,
     "description": "Lord Jaraxxus kills (Trial of the Grand Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -11388,7 +13918,9 @@ export const ACHIEVEMENTS = [
     "id": 4556,
     "faction": -1,
     "title": "Random Lich King (heroic) dungeons completed",
+    "titleZh": null,
     "description": "LFG random Lich King heroic dungeons completed",
+    "descriptionZh": null,
     "category": 14807,
     "points": 0,
     "iconId": 1
@@ -11397,7 +13929,9 @@ export const ACHIEVEMENTS = [
     "id": 4579,
     "faction": -1,
     "title": "Portal Jockey (10 player)",
+    "titleZh": null,
     "description": "Enter every portal spawned by Valithria Dreamwalker before healing her to full health in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 3690
@@ -11406,7 +13940,9 @@ export const ACHIEVEMENTS = [
     "id": 4585,
     "faction": -1,
     "title": "Toravon the Ice Watcher (10 player)",
+    "titleZh": null,
     "description": "Defeat Toravon the Ice Watcher in 10 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 681
@@ -11415,7 +13951,9 @@ export const ACHIEVEMENTS = [
     "id": 4619,
     "faction": -1,
     "title": "Portal Jockey (25 player)",
+    "titleZh": null,
     "description": "Enter every portal spawned by Valithria Dreamwalker before healing her to full health in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 3690
@@ -11424,7 +13962,9 @@ export const ACHIEVEMENTS = [
     "id": 4654,
     "faction": -1,
     "title": "Lady Deathwhisper kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Lady Deathwhisper kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -11433,7 +13973,9 @@ export const ACHIEVEMENTS = [
     "id": 590,
     "faction": -1,
     "title": "Highest 3 man team rating",
+    "titleZh": null,
     "description": "Highest 3 man team rating",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 1
@@ -11442,7 +13984,9 @@ export const ACHIEVEMENTS = [
     "id": 612,
     "faction": 1,
     "title": "Downing the Dark Lady",
+    "titleZh": null,
     "description": "Kill Lady Sylvanas Windrunner.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3661
@@ -11451,7 +13995,9 @@ export const ACHIEVEMENTS = [
     "id": 673,
     "faction": -1,
     "title": "Heroic: The Escape From Durnholde",
+    "titleZh": null,
     "description": "Defeat Epoch Hunter on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3824
@@ -11460,7 +14006,9 @@ export const ACHIEVEMENTS = [
     "id": 686,
     "faction": -1,
     "title": "Molten Core",
+    "titleZh": null,
     "description": "Defeat Ragnaros.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3819
@@ -11469,7 +14017,9 @@ export const ACHIEVEMENTS = [
     "id": 770,
     "faction": -1,
     "title": "Explore Western Plaguelands",
+    "titleZh": null,
     "description": "Explore Western Plaguelands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3571
@@ -11478,7 +14028,9 @@ export const ACHIEVEMENTS = [
     "id": 1017,
     "faction": -1,
     "title": "Can I Keep Him?",
+    "titleZh": null,
     "description": "Obtain a companion pet.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1522
@@ -11487,7 +14039,9 @@ export const ACHIEVEMENTS = [
     "id": 1090,
     "faction": -1,
     "title": "Kil'jaeden kills (Sunwell Plateau)",
+    "titleZh": null,
     "description": "Kil'jaeden kills (Sunwell Plateau)",
+    "descriptionZh": null,
     "category": 14822,
     "points": 5,
     "iconId": 2807
@@ -11496,7 +14050,9 @@ export const ACHIEVEMENTS = [
     "id": 1241,
     "faction": -1,
     "title": "Mal'Ganis defeated (Caverns of Time: Stratholme)",
+    "titleZh": null,
     "description": "Mal'Ganis defeated (Caverns of Time: Stratholme)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2413
@@ -11505,7 +14061,9 @@ export const ACHIEVEMENTS = [
     "id": 1297,
     "faction": -1,
     "title": "Hadronox Denied",
+    "titleZh": null,
     "description": "Defeat Hadronox in Azjol-Nerub on Heroic Difficulty before he webs the top doors and prevents more creatures from spawning.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3251
@@ -11514,7 +14072,9 @@ export const ACHIEVEMENTS = [
     "id": 1414,
     "faction": -1,
     "title": "Realm First! Grand Master Blacksmith",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in blacksmithing.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 335
@@ -11523,7 +14083,9 @@ export const ACHIEVEMENTS = [
     "id": 1741,
     "faction": -1,
     "title": "Tailoring Patterns learned",
+    "titleZh": null,
     "description": "Tailoring Patterns learned",
+    "descriptionZh": null,
     "category": 173,
     "points": 0,
     "iconId": 4
@@ -11532,7 +14094,9 @@ export const ACHIEVEMENTS = [
     "id": 1798,
     "faction": -1,
     "title": "Sous Chef",
+    "titleZh": null,
     "description": "Learn 100 cooking recipes.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3218
@@ -11541,7 +14105,9 @@ export const ACHIEVEMENTS = [
     "id": 1874,
     "faction": -1,
     "title": "You Don't Have An Eternity (10 player)",
+    "titleZh": null,
     "description": "Defeat Malygos in 6 minutes or less in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3256
@@ -11550,7 +14116,9 @@ export const ACHIEVEMENTS = [
     "id": 1875,
     "faction": -1,
     "title": "You Don't Have An Eternity (25 player)",
+    "titleZh": null,
     "description": "Defeat Malygos in 6 minutes or less in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3256
@@ -11559,7 +14127,9 @@ export const ACHIEVEMENTS = [
     "id": 1957,
     "faction": -1,
     "title": "There's Gold In That There Fountain",
+    "titleZh": null,
     "description": "Fish up the gold coins listed below from the Dalaran fountain.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3328
@@ -11568,7 +14138,9 @@ export const ACHIEVEMENTS = [
     "id": 2092,
     "faction": -1,
     "title": "Duelist",
+    "titleZh": null,
     "description": "Earn the Duelist title in an arena season at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3598
@@ -11577,7 +14149,9 @@ export const ACHIEVEMENTS = [
     "id": 2766,
     "faction": 0,
     "title": "Exalted Champion of Sen'jin",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Sen'jin in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3804
@@ -11586,7 +14160,9 @@ export const ACHIEVEMENTS = [
     "id": 2937,
     "faction": -1,
     "title": "Must Deconstruct Faster (10 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor in 205 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3811
@@ -11595,7 +14171,9 @@ export const ACHIEVEMENTS = [
     "id": 2938,
     "faction": -1,
     "title": "Must Deconstruct Faster (25 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor in 205 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3811
@@ -11604,7 +14182,9 @@ export const ACHIEVEMENTS = [
     "id": 3257,
     "faction": -1,
     "title": "Thorim victories (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Thorim victories (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -11613,7 +14193,9 @@ export const ACHIEVEMENTS = [
     "id": 4034,
     "faction": -1,
     "title": "Lord Jaraxxus kills (Trial of the Crusader 25 player)",
+    "titleZh": null,
     "description": "Lord Jaraxxus kills (Trial of the Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -11622,7 +14204,9 @@ export const ACHIEVEMENTS = [
     "id": 4580,
     "faction": -1,
     "title": "All You Can Eat (10 player)",
+    "titleZh": null,
     "description": "Defeat Sindragosa in 10-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 4166
@@ -11631,7 +14215,9 @@ export const ACHIEVEMENTS = [
     "id": 4586,
     "faction": -1,
     "title": "Toravon the Ice Watcher (25 player)",
+    "titleZh": null,
     "description": "Defeat Toravon the Ice Watcher in 25 player mode.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 681
@@ -11640,7 +14226,9 @@ export const ACHIEVEMENTS = [
     "id": 4602,
     "faction": -1,
     "title": "Glory of the Icecrown Raider (10 player)",
+    "titleZh": null,
     "description": "Complete the 10-player raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 3203
@@ -11649,7 +14237,9 @@ export const ACHIEVEMENTS = [
     "id": 4620,
     "faction": -1,
     "title": "All You Can Eat (25 player)",
+    "titleZh": null,
     "description": "Defeat Sindragosa in 25-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 4166
@@ -11658,7 +14248,9 @@ export const ACHIEVEMENTS = [
     "id": 4655,
     "faction": -1,
     "title": "Lady Deathwhisper kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Lady Deathwhisper kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -11667,7 +14259,9 @@ export const ACHIEVEMENTS = [
     "id": 15,
     "faction": -1,
     "title": "Plenty of Pets",
+    "titleZh": null,
     "description": "Collect 15 unique companion pets.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1522
@@ -11676,7 +14270,9 @@ export const ACHIEVEMENTS = [
     "id": 374,
     "faction": -1,
     "title": "Highest 2 man team rating",
+    "titleZh": null,
     "description": "Highest 2 man team rating",
+    "descriptionZh": null,
     "category": 152,
     "points": 0,
     "iconId": 4
@@ -11685,7 +14281,9 @@ export const ACHIEVEMENTS = [
     "id": 613,
     "faction": 1,
     "title": "Killed in Quel'Thalas",
+    "titleZh": null,
     "description": "Kill Lor'themar Theron.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3670
@@ -11694,7 +14292,9 @@ export const ACHIEVEMENTS = [
     "id": 674,
     "faction": -1,
     "title": "Heroic: Sethekk Halls",
+    "titleZh": null,
     "description": "Defeat Talon King Ikiss on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3631
@@ -11703,7 +14303,9 @@ export const ACHIEVEMENTS = [
     "id": 685,
     "faction": -1,
     "title": "Blackwing Lair",
+    "titleZh": null,
     "description": "Defeat Nefarian.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3817
@@ -11712,7 +14314,9 @@ export const ACHIEVEMENTS = [
     "id": 771,
     "faction": -1,
     "title": "Explore Eastern Plaguelands",
+    "titleZh": null,
     "description": "Explore Eastern Plaguelands, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3535
@@ -11721,7 +14325,9 @@ export const ACHIEVEMENTS = [
     "id": 1416,
     "faction": -1,
     "title": "Realm First! Cooking Grand Master",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in cooking.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1467
@@ -11730,7 +14336,9 @@ export const ACHIEVEMENTS = [
     "id": 1515,
     "faction": -1,
     "title": "Mal'Ganis defeated (Heroic CoT: Stratholme)",
+    "titleZh": null,
     "description": "Mal'Ganis defeated (Heroic CoT: Stratholme)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 5,
     "iconId": 2413
@@ -11739,7 +14347,9 @@ export const ACHIEVEMENTS = [
     "id": 1752,
     "faction": 1,
     "title": "Master of Wintergrasp",
+    "titleZh": null,
     "description": "Complete the Wintergrasp achievements listed below.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 187
@@ -11748,7 +14358,9 @@ export const ACHIEVEMENTS = [
     "id": 1799,
     "faction": -1,
     "title": "Chef de Cuisine",
+    "titleZh": null,
     "description": "Learn 160 cooking recipes.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3219
@@ -11757,7 +14369,9 @@ export const ACHIEVEMENTS = [
     "id": 1860,
     "faction": -1,
     "title": "Gotta Go!",
+    "titleZh": null,
     "description": "Defeat Anub'arak in Azjol-Nerub on Heroic Difficulty in 4 minutes or less.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3295
@@ -11766,7 +14380,9 @@ export const ACHIEVEMENTS = [
     "id": 1869,
     "faction": -1,
     "title": "A Poke In The Eye (10 player)",
+    "titleZh": null,
     "description": "Defeat Malygos with fewer than 9 in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3304
@@ -11775,7 +14391,9 @@ export const ACHIEVEMENTS = [
     "id": 1870,
     "faction": -1,
     "title": "A Poke In The Eye (25 player)",
+    "titleZh": null,
     "description": "Defeat Malygos with fewer than 21 in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3305
@@ -11784,7 +14402,9 @@ export const ACHIEVEMENTS = [
     "id": 1958,
     "faction": -1,
     "title": "I Smell A Giant Rat",
+    "titleZh": null,
     "description": "Fish up the Giant Sewer Rat from The Underbelly in Dalaran.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 1781
@@ -11793,7 +14413,9 @@ export const ACHIEVEMENTS = [
     "id": 2091,
     "faction": -1,
     "title": "Gladiator",
+    "titleZh": null,
     "description": "Earn the Gladiator title in an arena season at level 80.",
+    "descriptionZh": null,
     "category": 165,
     "points": 10,
     "iconId": 3599
@@ -11802,7 +14424,9 @@ export const ACHIEVEMENTS = [
     "id": 2785,
     "faction": 0,
     "title": "Champion of Silvermoon City",
+    "titleZh": null,
     "description": "Earn the right to represent Silvermoon City in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3795
@@ -11811,7 +14435,9 @@ export const ACHIEVEMENTS = [
     "id": 3058,
     "faction": -1,
     "title": "Heartbreaker (10 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor after destroying his heart in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3875
@@ -11820,7 +14446,9 @@ export const ACHIEVEMENTS = [
     "id": 3059,
     "faction": -1,
     "title": "Heartbreaker (25 player)",
+    "titleZh": null,
     "description": "Defeat XT-002 Deconstructor after destroying his heart in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3875
@@ -11829,7 +14457,9 @@ export const ACHIEVEMENTS = [
     "id": 3258,
     "faction": -1,
     "title": "Freya victories (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Freya victories (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -11838,7 +14468,9 @@ export const ACHIEVEMENTS = [
     "id": 4035,
     "faction": -1,
     "title": "Lord Jaraxxus kills (Trial of the Grand Crusader 25 player)",
+    "titleZh": null,
     "description": "Lord Jaraxxus kills (Trial of the Grand Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -11847,7 +14479,9 @@ export const ACHIEVEMENTS = [
     "id": 4601,
     "faction": -1,
     "title": "Been Waiting a Long Time for This (10 player)",
+    "titleZh": null,
     "description": "Allow Necrotic Plague to stack to 30 before defeating the Lich King in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 3141
@@ -11856,7 +14490,9 @@ export const ACHIEVEMENTS = [
     "id": 4603,
     "faction": -1,
     "title": "Glory of the Icecrown Raider (25 player)",
+    "titleZh": null,
     "description": "Complete the 25-player raid achievements listed below.",
+    "descriptionZh": null,
     "category": 168,
     "points": 25,
     "iconId": 4156
@@ -11865,7 +14501,9 @@ export const ACHIEVEMENTS = [
     "id": 4621,
     "faction": -1,
     "title": "Been Waiting a Long Time for This (25 player)",
+    "titleZh": null,
     "description": "Allow Necrotic Plague to stack to 30 before defeating the Lich King in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 3141
@@ -11874,7 +14512,9 @@ export const ACHIEVEMENTS = [
     "id": 4656,
     "faction": -1,
     "title": "Lady Deathwhisper kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Lady Deathwhisper kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -11883,7 +14523,9 @@ export const ACHIEVEMENTS = [
     "id": 614,
     "faction": 1,
     "title": "For The Alliance!",
+    "titleZh": null,
     "description": "Slay the leaders of the Horde.",
+    "descriptionZh": null,
     "category": 95,
     "points": 20,
     "iconId": 1704
@@ -11892,7 +14534,9 @@ export const ACHIEVEMENTS = [
     "id": 675,
     "faction": -1,
     "title": "Heroic: Shadow Labyrinth",
+    "titleZh": null,
     "description": "Defeat Murmur on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3825
@@ -11901,7 +14545,9 @@ export const ACHIEVEMENTS = [
     "id": 687,
     "faction": -1,
     "title": "Temple of Ahn'Qiraj",
+    "titleZh": null,
     "description": "Defeat C'Thun.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3677
@@ -11910,7 +14556,9 @@ export const ACHIEVEMENTS = [
     "id": 868,
     "faction": -1,
     "title": "Explore Isle of Quel'Danas",
+    "titleZh": null,
     "description": "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
+    "descriptionZh": null,
     "category": 14777,
     "points": 10,
     "iconId": 3557
@@ -11919,7 +14567,9 @@ export const ACHIEVEMENTS = [
     "id": 1174,
     "faction": -1,
     "title": "The Arena Master",
+    "titleZh": null,
     "description": "Complete the arena achievements listed below.",
+    "descriptionZh": null,
     "category": 165,
     "points": 50,
     "iconId": 3600
@@ -11928,7 +14578,9 @@ export const ACHIEVEMENTS = [
     "id": 1248,
     "faction": -1,
     "title": "Plethora of Pets",
+    "titleZh": null,
     "description": "Collect 25 unique companion pets.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1522
@@ -11937,7 +14589,9 @@ export const ACHIEVEMENTS = [
     "id": 1361,
     "faction": -1,
     "title": "Anub'Rekhan kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Anub'Rekhan kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1899
@@ -11946,7 +14600,9 @@ export const ACHIEVEMENTS = [
     "id": 1417,
     "faction": -1,
     "title": "Realm First! Grand Master Enchanter",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in enchanting.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 578
@@ -11955,7 +14611,9 @@ export const ACHIEVEMENTS = [
     "id": 1862,
     "faction": -1,
     "title": "Volazj's Quick Demise",
+    "titleZh": null,
     "description": "Defeat Herald Volazj in Ahn'kahet on Heroic Difficulty in 2 minutes or less.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3296
@@ -11964,7 +14622,9 @@ export const ACHIEVEMENTS = [
     "id": 2148,
     "faction": -1,
     "title": "Denyin' the Scion (10 player)",
+    "titleZh": null,
     "description": "Deliver a killing blow to a Scion of Eternity while riding on a hover disk in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3501
@@ -11973,7 +14633,9 @@ export const ACHIEVEMENTS = [
     "id": 2149,
     "faction": -1,
     "title": "Denyin' the Scion (25 player)",
+    "titleZh": null,
     "description": "Deliver a killing blow to a Scion of Eternity while riding on a hover disk in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3501
@@ -11982,7 +14644,9 @@ export const ACHIEVEMENTS = [
     "id": 2767,
     "faction": 0,
     "title": "Exalted Champion of Silvermoon City",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Silvermoon City in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3795
@@ -11991,7 +14655,9 @@ export const ACHIEVEMENTS = [
     "id": 2776,
     "faction": 0,
     "title": "Master of Wintergrasp",
+    "titleZh": null,
     "description": "Complete the Wintergrasp achievements listed below.",
+    "descriptionZh": null,
     "category": 14901,
     "points": 10,
     "iconId": 187
@@ -12000,7 +14666,9 @@ export const ACHIEVEMENTS = [
     "id": 2879,
     "faction": -1,
     "title": "Mimiron victories (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Mimiron victories (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -12009,7 +14677,9 @@ export const ACHIEVEMENTS = [
     "id": 2939,
     "faction": -1,
     "title": "I Choose You, Runemaster Molgeim (10 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron with Runemaster Molgeim as the last member alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3858
@@ -12018,7 +14688,9 @@ export const ACHIEVEMENTS = [
     "id": 2942,
     "faction": -1,
     "title": "I Choose You, Runemaster Molgeim (25 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron with Runemaster Molgeim as the last member alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3858
@@ -12027,7 +14699,9 @@ export const ACHIEVEMENTS = [
     "id": 3218,
     "faction": -1,
     "title": "Turtles All the Way Down",
+    "titleZh": null,
     "description": "Fish up a Sea Turtle mount from any fishing pool in Northrend.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3890
@@ -12036,7 +14710,9 @@ export const ACHIEVEMENTS = [
     "id": 3296,
     "faction": -1,
     "title": "Cooking with Style",
+    "titleZh": null,
     "description": "Obtain a Chef's Hat.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3678
@@ -12045,7 +14721,9 @@ export const ACHIEVEMENTS = [
     "id": 4036,
     "faction": -1,
     "title": "Victories over the Faction Champions (Trial of the Crusader 10 player)",
+    "titleZh": null,
     "description": "Victories over the Faction Champions (Trial of the Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12054,7 +14732,9 @@ export const ACHIEVEMENTS = [
     "id": 4476,
     "faction": -1,
     "title": "Looking For More",
+    "titleZh": null,
     "description": "Use the Dungeon Finder tool to finish random heroic dungeons until you have grouped with 10 random players total.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 3168
@@ -12063,7 +14743,9 @@ export const ACHIEVEMENTS = [
     "id": 4581,
     "faction": -1,
     "title": "Neck-Deep in Vile (10 player)",
+    "titleZh": null,
     "description": "Kill every Vile Spirit that spawns before it explodes and then defeat the Lich King in 10-player mode.",
+    "descriptionZh": null,
     "category": 15041,
     "points": 10,
     "iconId": 3789
@@ -12072,7 +14754,9 @@ export const ACHIEVEMENTS = [
     "id": 4622,
     "faction": -1,
     "title": "Neck-Deep in Vile (25 player)",
+    "titleZh": null,
     "description": "Kill every Vile Spirit that spawns before it explodes and then defeat the Lich King in 25-player mode.",
+    "descriptionZh": null,
     "category": 15042,
     "points": 10,
     "iconId": 3789
@@ -12081,7 +14765,9 @@ export const ACHIEVEMENTS = [
     "id": 4644,
     "faction": -1,
     "title": "Gunship Battle victories (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Gunship Battle victories (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12090,7 +14776,9 @@ export const ACHIEVEMENTS = [
     "id": 615,
     "faction": 0,
     "title": "Storming Stormwind",
+    "titleZh": null,
     "description": "Kill King Varian Wrynn.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3671
@@ -12099,7 +14787,9 @@ export const ACHIEVEMENTS = [
     "id": 676,
     "faction": -1,
     "title": "Heroic: Opening of the Dark Portal",
+    "titleZh": null,
     "description": "Defeat Aeonus on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3826
@@ -12108,7 +14798,9 @@ export const ACHIEVEMENTS = [
     "id": 1250,
     "faction": -1,
     "title": "Shop Smart, Shop Pet...Smart",
+    "titleZh": null,
     "description": "Collect 50 unique companion pets.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1522
@@ -12117,7 +14809,9 @@ export const ACHIEVEMENTS = [
     "id": 1372,
     "faction": -1,
     "title": "Gluth kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Gluth kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -12126,7 +14820,9 @@ export const ACHIEVEMENTS = [
     "id": 1418,
     "faction": -1,
     "title": "Realm First! Grand Master Engineer",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in engineering.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 333
@@ -12135,7 +14831,9 @@ export const ACHIEVEMENTS = [
     "id": 1556,
     "faction": -1,
     "title": "25 Fish",
+    "titleZh": null,
     "description": "Fish up 25 items.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3179
@@ -12144,7 +14842,9 @@ export const ACHIEVEMENTS = [
     "id": 1801,
     "faction": -1,
     "title": "Captain Rumsey's Lager",
+    "titleZh": null,
     "description": "Brew up some of Captain Rumsey's Lager.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 1513
@@ -12153,7 +14853,9 @@ export const ACHIEVEMENTS = [
     "id": 2038,
     "faction": -1,
     "title": "Respect Your Elders",
+    "titleZh": null,
     "description": "Defeat Elder Nadox in Ahn'kahet on Heroic Difficulty without killing any Ahn'kahar Guardians.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3393
@@ -12162,7 +14864,9 @@ export const ACHIEVEMENTS = [
     "id": 2047,
     "faction": -1,
     "title": "Gonna Go When the Volcano Blows (10 player)",
+    "titleZh": null,
     "description": "Defeat Sartharion the Onyx Guardian without getting hit by Lava Strike in 10 player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3087
@@ -12171,7 +14875,9 @@ export const ACHIEVEMENTS = [
     "id": 2048,
     "faction": -1,
     "title": "Gonna Go When the Volcano Blows (25 player)",
+    "titleZh": null,
     "description": "Defeat Sartharion the Onyx Guardian without getting hit by Lava Strike in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3087
@@ -12180,7 +14886,9 @@ export const ACHIEVEMENTS = [
     "id": 2188,
     "faction": -1,
     "title": "Leeeeeeeeeeeeeroy!",
+    "titleZh": null,
     "description": "Kill 50 rookery whelps within 15 seconds.",
+    "descriptionZh": null,
     "category": 14808,
     "points": 10,
     "iconId": 3495
@@ -12189,7 +14897,9 @@ export const ACHIEVEMENTS = [
     "id": 2786,
     "faction": 0,
     "title": "Champion of Thunder Bluff",
+    "titleZh": null,
     "description": "Earn the right to represent Thunder Bluff in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3803
@@ -12198,7 +14908,9 @@ export const ACHIEVEMENTS = [
     "id": 2880,
     "faction": -1,
     "title": "General Vezax kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "General Vezax kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -12207,7 +14919,9 @@ export const ACHIEVEMENTS = [
     "id": 2940,
     "faction": -1,
     "title": "I Choose You, Stormcaller Brundir (10 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron with Stormcaller Brundir as the last member alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3858
@@ -12216,7 +14930,9 @@ export const ACHIEVEMENTS = [
     "id": 2943,
     "faction": -1,
     "title": "I Choose You, Stormcaller Brundir (25 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron with Stormcaller Brundir as the last member alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3858
@@ -12225,7 +14941,9 @@ export const ACHIEVEMENTS = [
     "id": 4037,
     "faction": -1,
     "title": "Victories over the Faction Champions (Trial of the Grand Crusader 10 player)",
+    "titleZh": null,
     "description": "Victories over the Faction Champions (Trial of the Grand Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12234,7 +14952,9 @@ export const ACHIEVEMENTS = [
     "id": 4477,
     "faction": -1,
     "title": "Looking For Many",
+    "titleZh": null,
     "description": "Use the Dungeon Finder tool to finish random heroic dungeons until you have grouped with 50 random players total.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 3049
@@ -12243,7 +14963,9 @@ export const ACHIEVEMENTS = [
     "id": 4659,
     "faction": -1,
     "title": "Gunship Battle victories (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Gunship Battle victories (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12252,7 +14974,9 @@ export const ACHIEVEMENTS = [
     "id": 616,
     "faction": 0,
     "title": "Death to the King!",
+    "titleZh": null,
     "description": "Kill King Magni Bronzebeard.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3672
@@ -12261,7 +14985,9 @@ export const ACHIEVEMENTS = [
     "id": 677,
     "faction": -1,
     "title": "Heroic: The Steamvault",
+    "titleZh": null,
     "description": "Defeat Warlord Kalithresh on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3657
@@ -12270,7 +14996,9 @@ export const ACHIEVEMENTS = [
     "id": 1366,
     "faction": -1,
     "title": "Gothik the Harvester kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Gothik the Harvester kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2639
@@ -12279,7 +15007,9 @@ export const ACHIEVEMENTS = [
     "id": 1419,
     "faction": -1,
     "title": "Realm First! First Aid Grand Master",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in first aid.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 504
@@ -12288,7 +15018,9 @@ export const ACHIEVEMENTS = [
     "id": 1557,
     "faction": -1,
     "title": "50 Fish",
+    "titleZh": null,
     "description": "Fish up 50 items.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3179
@@ -12297,7 +15029,9 @@ export const ACHIEVEMENTS = [
     "id": 1782,
     "faction": 1,
     "title": "Our Daily Bread",
+    "titleZh": null,
     "description": "Complete each of the cooking daily quests offered by Katherine Lee in Dalaran.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 259
@@ -12306,7 +15040,9 @@ export const ACHIEVEMENTS = [
     "id": 2049,
     "faction": -1,
     "title": "Twilight Assist (10 player)",
+    "titleZh": null,
     "description": "With at least one Twilight Drake still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3252
@@ -12315,7 +15051,9 @@ export const ACHIEVEMENTS = [
     "id": 2052,
     "faction": -1,
     "title": "Twilight Assist (25 player)",
+    "titleZh": null,
     "description": "With at least one Twilight Drake still alive, engage and defeat Sartharion the Onyx Guardian in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3252
@@ -12324,7 +15062,9 @@ export const ACHIEVEMENTS = [
     "id": 2056,
     "faction": -1,
     "title": "Volunteer Work",
+    "titleZh": null,
     "description": "Defeat Jedoga Shadowseeker in Ahn'kahet on Heroic Difficulty without killing any Twilight Volunteers.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3436
@@ -12333,7 +15073,9 @@ export const ACHIEVEMENTS = [
     "id": 2516,
     "faction": -1,
     "title": "Lil' Game Hunter",
+    "titleZh": null,
     "description": "Collect 75 unique companion pets.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1522
@@ -12342,7 +15084,9 @@ export const ACHIEVEMENTS = [
     "id": 2768,
     "faction": 0,
     "title": "Exalted Champion of Thunder Bluff",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent Thunder Bluff in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3803
@@ -12351,7 +15095,9 @@ export const ACHIEVEMENTS = [
     "id": 2883,
     "faction": -1,
     "title": "Yogg-Saron kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Yogg-Saron kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -12360,7 +15106,9 @@ export const ACHIEVEMENTS = [
     "id": 2941,
     "faction": -1,
     "title": "I Choose You, Steelbreaker (10 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron with Steelbreaker as the last member alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3858
@@ -12369,7 +15117,9 @@ export const ACHIEVEMENTS = [
     "id": 2944,
     "faction": -1,
     "title": "I Choose You, Steelbreaker (25 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron with Steelbreaker as the last member alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3858
@@ -12378,7 +15128,9 @@ export const ACHIEVEMENTS = [
     "id": 4038,
     "faction": -1,
     "title": "Victories over the Faction Champions (Trial of the Crusader 25 player)",
+    "titleZh": null,
     "description": "Victories over the Faction Champions (Trial of the Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12387,7 +15139,9 @@ export const ACHIEVEMENTS = [
     "id": 4478,
     "faction": -1,
     "title": "Looking For Multitudes",
+    "titleZh": null,
     "description": "Use the Dungeon Finder tool to finish random heroic dungeons until you have grouped with 100 random players total.",
+    "descriptionZh": null,
     "category": 168,
     "points": 10,
     "iconId": 4007
@@ -12396,7 +15150,9 @@ export const ACHIEVEMENTS = [
     "id": 4660,
     "faction": -1,
     "title": "Gunship Battle victories (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Gunship Battle victories (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12405,7 +15161,9 @@ export const ACHIEVEMENTS = [
     "id": 617,
     "faction": 0,
     "title": "Immortal No More",
+    "titleZh": null,
     "description": "Kill High Priestess Tyrande Whisperwind.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3673
@@ -12414,7 +15172,9 @@ export const ACHIEVEMENTS = [
     "id": 621,
     "faction": -1,
     "title": "Represent",
+    "titleZh": null,
     "description": "Equip a tabard.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2637
@@ -12423,7 +15183,9 @@ export const ACHIEVEMENTS = [
     "id": 678,
     "faction": -1,
     "title": "Heroic: The Shattered Halls",
+    "titleZh": null,
     "description": "Defeat Warchief Kargath Bladefist on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3827
@@ -12432,7 +15194,9 @@ export const ACHIEVEMENTS = [
     "id": 1362,
     "faction": -1,
     "title": "Grand Widow Faerlina kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Grand Widow Faerlina kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1899
@@ -12441,7 +15205,9 @@ export const ACHIEVEMENTS = [
     "id": 1420,
     "faction": -1,
     "title": "Realm First! Grand Master Angler",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in fishing.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 580
@@ -12450,7 +15216,9 @@ export const ACHIEVEMENTS = [
     "id": 1558,
     "faction": -1,
     "title": "100 Fish",
+    "titleZh": null,
     "description": "Fish up 100 items.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3179
@@ -12459,7 +15227,9 @@ export const ACHIEVEMENTS = [
     "id": 1783,
     "faction": 0,
     "title": "Our Daily Bread",
+    "titleZh": null,
     "description": "Complete each of the cooking daily quests offered by Awilo Lon'gomba in Dalaran.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 259
@@ -12468,7 +15238,9 @@ export const ACHIEVEMENTS = [
     "id": 2050,
     "faction": -1,
     "title": "Twilight Duo (10 player)",
+    "titleZh": null,
     "description": "With at least two Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3252
@@ -12477,7 +15249,9 @@ export const ACHIEVEMENTS = [
     "id": 2053,
     "faction": -1,
     "title": "Twilight Duo (25 player)",
+    "titleZh": null,
     "description": "With at least two Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3252
@@ -12486,7 +15260,9 @@ export const ACHIEVEMENTS = [
     "id": 2151,
     "faction": -1,
     "title": "Consumption Junction",
+    "titleZh": null,
     "description": "Defeat Trollgore in Drak'Tharon Keep on Heroic Difficulty before Consume reaches ten stacks.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3502
@@ -12495,7 +15271,9 @@ export const ACHIEVEMENTS = [
     "id": 2787,
     "faction": 0,
     "title": "Champion of the Undercity",
+    "titleZh": null,
     "description": "Earn the right to represent the Undercity in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3798
@@ -12504,7 +15282,9 @@ export const ACHIEVEMENTS = [
     "id": 2881,
     "faction": -1,
     "title": "Algalon the Observer kills (Ulduar 25 player)",
+    "titleZh": null,
     "description": "Algalon the Observer kills (Ulduar 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 1700
@@ -12513,7 +15293,9 @@ export const ACHIEVEMENTS = [
     "id": 2945,
     "faction": -1,
     "title": "But I'm On Your Side (10 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron while under the effect of an Iron Boot Flask in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 1763
@@ -12522,7 +15304,9 @@ export const ACHIEVEMENTS = [
     "id": 2946,
     "faction": -1,
     "title": "But I'm On Your Side (25 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron while under the effect of an Iron Boot Flask in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 1763
@@ -12531,7 +15315,9 @@ export const ACHIEVEMENTS = [
     "id": 4039,
     "faction": -1,
     "title": "Victories over the Faction Champions (Trial of the Grand Crusader 25 player)",
+    "titleZh": null,
     "description": "Victories over the Faction Champions (25-player Trial of the Grand Crusader)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12540,7 +15326,9 @@ export const ACHIEVEMENTS = [
     "id": 4661,
     "faction": -1,
     "title": "Gunship Battle victories (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Gunship Battle victories (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12549,7 +15337,9 @@ export const ACHIEVEMENTS = [
     "id": 618,
     "faction": 0,
     "title": "Putting Out the Light",
+    "titleZh": null,
     "description": "Kill Prophet Velen.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3674
@@ -12558,7 +15348,9 @@ export const ACHIEVEMENTS = [
     "id": 679,
     "faction": -1,
     "title": "Heroic: The Mechanar",
+    "titleZh": null,
     "description": "Defeat Pathaleon the Calculator on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3688
@@ -12567,7 +15359,9 @@ export const ACHIEVEMENTS = [
     "id": 1020,
     "faction": -1,
     "title": "Ten Tabards",
+    "titleZh": null,
     "description": "Equip 10 unique tabards.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2637
@@ -12576,7 +15370,9 @@ export const ACHIEVEMENTS = [
     "id": 1371,
     "faction": -1,
     "title": "Grobbulus kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Grobbulus kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -12585,7 +15381,9 @@ export const ACHIEVEMENTS = [
     "id": 1421,
     "faction": -1,
     "title": "Realm First! Grand Master Herbalist",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in herbalism.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 345
@@ -12594,7 +15392,9 @@ export const ACHIEVEMENTS = [
     "id": 1559,
     "faction": -1,
     "title": "250 Fish",
+    "titleZh": null,
     "description": "Fish up 250 items.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3179
@@ -12603,7 +15403,9 @@ export const ACHIEVEMENTS = [
     "id": 1563,
     "faction": 1,
     "title": "Hail to the Chef",
+    "titleZh": null,
     "description": "Complete the cooking achievements listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3678
@@ -12612,7 +15414,9 @@ export const ACHIEVEMENTS = [
     "id": 2039,
     "faction": -1,
     "title": "Better Off Dred",
+    "titleZh": null,
     "description": "Engage King Dred in Drak'Tharon Keep on Heroic Difficulty and slay 6 Drakkari Gutrippers or Drakkari Scytheclaw during his defeat.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3313
@@ -12621,7 +15425,9 @@ export const ACHIEVEMENTS = [
     "id": 2051,
     "faction": -1,
     "title": "The Twilight Zone (10 player)",
+    "titleZh": null,
     "description": "With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3252
@@ -12630,7 +15436,9 @@ export const ACHIEVEMENTS = [
     "id": 2054,
     "faction": -1,
     "title": "The Twilight Zone (25 player)",
+    "titleZh": null,
     "description": "With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3252
@@ -12639,7 +15447,9 @@ export const ACHIEVEMENTS = [
     "id": 2769,
     "faction": 0,
     "title": "Exalted Champion of the Undercity",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent the Undercity in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3798
@@ -12648,7 +15458,9 @@ export const ACHIEVEMENTS = [
     "id": 2870,
     "faction": -1,
     "title": "Emalon the Storm Watcher kills (Wintergrasp 10 player)",
+    "titleZh": null,
     "description": "Emalon the Storm Watcher kills (Wintergrasp 10 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 187
@@ -12657,7 +15469,9 @@ export const ACHIEVEMENTS = [
     "id": 2947,
     "faction": -1,
     "title": "Can't Do That While Stunned (10 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron without allowing Stormcaller Brundir to damage anyone with Chain Lightning or Lightning Whirl in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 320
@@ -12666,7 +15480,9 @@ export const ACHIEVEMENTS = [
     "id": 2948,
     "faction": -1,
     "title": "Can't Do That While Stunned (25 player)",
+    "titleZh": null,
     "description": "Defeat the Assembly of Iron without allowing Stormcaller Brundir to damage anyone with Chain Lightning or Lightning Whirl in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 320
@@ -12675,7 +15491,9 @@ export const ACHIEVEMENTS = [
     "id": 4040,
     "faction": -1,
     "title": "Val'kyr Twins kills (Trial of the Crusader 10 player)",
+    "titleZh": null,
     "description": "Val'kyr Twins kills (Trial of the Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12684,7 +15502,9 @@ export const ACHIEVEMENTS = [
     "id": 4645,
     "faction": -1,
     "title": "Deathbringer kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Deathbringer kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12693,7 +15513,9 @@ export const ACHIEVEMENTS = [
     "id": 619,
     "faction": 0,
     "title": "For The Horde!",
+    "titleZh": null,
     "description": "Slay the leaders of the Alliance.",
+    "descriptionZh": null,
     "category": 95,
     "points": 20,
     "iconId": 1703
@@ -12702,7 +15524,9 @@ export const ACHIEVEMENTS = [
     "id": 680,
     "faction": -1,
     "title": "Heroic: The Botanica",
+    "titleZh": null,
     "description": "Defeat Warp Splinter on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3642
@@ -12711,7 +15535,9 @@ export const ACHIEVEMENTS = [
     "id": 1021,
     "faction": -1,
     "title": "Twenty-Five Tabards",
+    "titleZh": null,
     "description": "Equip 25 unique tabards.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3040
@@ -12720,7 +15546,9 @@ export const ACHIEVEMENTS = [
     "id": 1369,
     "faction": -1,
     "title": "Heigan the Unclean kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Heigan the Unclean kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2997
@@ -12729,7 +15557,9 @@ export const ACHIEVEMENTS = [
     "id": 1422,
     "faction": -1,
     "title": "Realm First! Grand Master Scribe",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in inscription.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2557
@@ -12738,7 +15568,9 @@ export const ACHIEVEMENTS = [
     "id": 1560,
     "faction": -1,
     "title": "500 Fish",
+    "titleZh": null,
     "description": "Fish up 500 items.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3179
@@ -12747,7 +15579,9 @@ export const ACHIEVEMENTS = [
     "id": 1784,
     "faction": 0,
     "title": "Hail to the Chef",
+    "titleZh": null,
     "description": "Complete the cooking achievements listed below.",
+    "descriptionZh": null,
     "category": 170,
     "points": 10,
     "iconId": 3678
@@ -12756,7 +15590,9 @@ export const ACHIEVEMENTS = [
     "id": 2057,
     "faction": -1,
     "title": "Oh Novos!",
+    "titleZh": null,
     "description": "Defeat Novos the Summoner in Drak'Tharon Keep on Heroic Difficulty without allowing any undead minions to reach the floor.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2718
@@ -12765,7 +15601,9 @@ export const ACHIEVEMENTS = [
     "id": 2788,
     "faction": 0,
     "title": "Champion of the Horde",
+    "titleZh": null,
     "description": "Earn the right to represent every Horde race's faction in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3806
@@ -12774,7 +15612,9 @@ export const ACHIEVEMENTS = [
     "id": 2951,
     "faction": -1,
     "title": "With Open Arms (10 player)",
+    "titleZh": null,
     "description": "Defeat Kologarn without destroying either of his arms in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3859
@@ -12783,7 +15623,9 @@ export const ACHIEVEMENTS = [
     "id": 2952,
     "faction": -1,
     "title": "With Open Arms (25 player)",
+    "titleZh": null,
     "description": "Defeat Kologarn without destroying either of his arms in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3859
@@ -12792,7 +15634,9 @@ export const ACHIEVEMENTS = [
     "id": 3236,
     "faction": -1,
     "title": "Emalon the Storm Watcher kills (Wintergrasp 25 player)",
+    "titleZh": null,
     "description": "Emalon the Storm Watcher kills (Wintergrasp 25 player)",
+    "descriptionZh": null,
     "category": 14963,
     "points": 10,
     "iconId": 187
@@ -12801,7 +15645,9 @@ export const ACHIEVEMENTS = [
     "id": 4041,
     "faction": -1,
     "title": "Val'kyr Twins kills (Trial of the Grand Crusader 10 player)",
+    "titleZh": null,
     "description": "Val'kyr Twins kills (Trial of the Grand Crusader 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12810,7 +15656,9 @@ export const ACHIEVEMENTS = [
     "id": 4396,
     "faction": -1,
     "title": "Onyxia's Lair (10 player)",
+    "titleZh": null,
     "description": "Defeat Onyxia in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3820
@@ -12819,7 +15667,9 @@ export const ACHIEVEMENTS = [
     "id": 4397,
     "faction": -1,
     "title": "Onyxia's Lair (25 player)",
+    "titleZh": null,
     "description": "Defeat Onyxia in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3820
@@ -12828,7 +15678,9 @@ export const ACHIEVEMENTS = [
     "id": 4662,
     "faction": -1,
     "title": "Deathbringer kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Deathbringer kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12837,7 +15689,9 @@ export const ACHIEVEMENTS = [
     "id": 556,
     "faction": -1,
     "title": "Epic",
+    "titleZh": null,
     "description": "Equip an epic item in every slot with a minimum item level of 213.",
+    "descriptionZh": null,
     "category": 92,
     "points": 25,
     "iconId": 2808
@@ -12846,7 +15700,9 @@ export const ACHIEVEMENTS = [
     "id": 681,
     "faction": -1,
     "title": "Heroic: The Arcatraz",
+    "titleZh": null,
     "description": "Defeat Harbinger Skyriss on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3659
@@ -12855,7 +15711,9 @@ export const ACHIEVEMENTS = [
     "id": 700,
     "faction": 0,
     "title": "Freedom of the Horde",
+    "titleZh": null,
     "description": "Obtain an Insignia or Medallion of the Horde.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2811
@@ -12864,7 +15722,9 @@ export const ACHIEVEMENTS = [
     "id": 1375,
     "faction": -1,
     "title": "Four Horsemen kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Four Horsemen kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2639
@@ -12873,7 +15733,9 @@ export const ACHIEVEMENTS = [
     "id": 1423,
     "faction": -1,
     "title": "Realm First! Grand Master Jewelcrafter",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in jewelcrafting.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1768
@@ -12882,7 +15744,9 @@ export const ACHIEVEMENTS = [
     "id": 1561,
     "faction": -1,
     "title": "1000 Fish",
+    "titleZh": null,
     "description": "Fish up 1000 items.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 3179
@@ -12891,7 +15755,9 @@ export const ACHIEVEMENTS = [
     "id": 1816,
     "faction": -1,
     "title": "Defenseless",
+    "titleZh": null,
     "description": "Defeat Cyanigosa in The Violet Hold without using Defense Control Crystals and with Prison Seal Integrity at 100% while in Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3264
@@ -12900,7 +15766,9 @@ export const ACHIEVEMENTS = [
     "id": 2771,
     "faction": 0,
     "title": "Exalted Champion of the Horde",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent every Horde race's faction in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3806
@@ -12909,7 +15777,9 @@ export const ACHIEVEMENTS = [
     "id": 2953,
     "faction": -1,
     "title": "Disarmed (10 player)",
+    "titleZh": null,
     "description": "Destroy both of Kologarn's arms and then Kologarn himself within 12 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 560
@@ -12918,7 +15788,9 @@ export const ACHIEVEMENTS = [
     "id": 2954,
     "faction": -1,
     "title": "Disarmed (25 player)",
+    "titleZh": null,
     "description": "Destroy both of Kologarn's arms and then Kologarn himself within 12 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 560
@@ -12927,7 +15799,9 @@ export const ACHIEVEMENTS = [
     "id": 4042,
     "faction": -1,
     "title": "Val'kyr Twins kills (Trial of the Crusader 25 player)",
+    "titleZh": null,
     "description": "Val'kyr Twins kills (Trial of the Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -12936,7 +15810,9 @@ export const ACHIEVEMENTS = [
     "id": 4402,
     "faction": -1,
     "title": "More Dots! (10 player)",
+    "titleZh": null,
     "description": "Defeat Onyxia in less than 5 minutes in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 3821
@@ -12945,7 +15821,9 @@ export const ACHIEVEMENTS = [
     "id": 4405,
     "faction": -1,
     "title": "More Dots! (25 player)",
+    "titleZh": null,
     "description": "Defeat Onyxia in less than 5 minutes in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 3821
@@ -12954,7 +15832,9 @@ export const ACHIEVEMENTS = [
     "id": 4663,
     "faction": -1,
     "title": "Deathbringer kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Deathbringer kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -12963,7 +15843,9 @@ export const ACHIEVEMENTS = [
     "id": 557,
     "faction": -1,
     "title": "Superior",
+    "titleZh": null,
     "description": "Equip a superior item in every slot with a minimum item level of 187.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 133
@@ -12972,7 +15854,9 @@ export const ACHIEVEMENTS = [
     "id": 682,
     "faction": -1,
     "title": "Heroic: Magister's Terrace",
+    "titleZh": null,
     "description": "Defeat Kael'thas Sunstrider on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3664
@@ -12981,7 +15865,9 @@ export const ACHIEVEMENTS = [
     "id": 701,
     "faction": 1,
     "title": "Freedom of the Alliance",
+    "titleZh": null,
     "description": "Obtain an Insignia or Medallion of the Alliance.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2812
@@ -12990,7 +15876,9 @@ export const ACHIEVEMENTS = [
     "id": 1374,
     "faction": -1,
     "title": "Instructor Razuvious kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Instructor Razuvious kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2639
@@ -12999,7 +15887,9 @@ export const ACHIEVEMENTS = [
     "id": 1424,
     "faction": -1,
     "title": "Realm First! Grand Master Leatherworker",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in leatherworking.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 346
@@ -13008,7 +15898,9 @@ export const ACHIEVEMENTS = [
     "id": 1865,
     "faction": -1,
     "title": "Lockdown!",
+    "titleZh": null,
     "description": "Defeat Xevozz, Lavanthor, Ichoron, Zuramat the Obliterator, Erekem, and Moragg in The Violet Hold on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3300
@@ -13017,7 +15909,9 @@ export const ACHIEVEMENTS = [
     "id": 2096,
     "faction": -1,
     "title": "The Coin Master",
+    "titleZh": null,
     "description": "Complete the coin fishing achievements listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 2993
@@ -13026,7 +15920,9 @@ export const ACHIEVEMENTS = [
     "id": 2816,
     "faction": 0,
     "title": "Exalted Argent Champion of the Horde",
+    "titleZh": null,
     "description": "Earn exalted status with and the right to represent every Horde race's faction in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3806
@@ -13035,7 +15931,9 @@ export const ACHIEVEMENTS = [
     "id": 2955,
     "faction": -1,
     "title": "If Looks Could Kill (10 player)",
+    "titleZh": null,
     "description": "Defeat Kologarn without any raid member being hit by Focused Eyebeams in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2446
@@ -13044,7 +15942,9 @@ export const ACHIEVEMENTS = [
     "id": 2956,
     "faction": -1,
     "title": "If Looks Could Kill (25 player)",
+    "titleZh": null,
     "description": "Defeat Kologarn without any raid member being hit by Focused Eyebeams in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2446
@@ -13053,7 +15953,9 @@ export const ACHIEVEMENTS = [
     "id": 4043,
     "faction": -1,
     "title": "Val'kyr Twins kills (Trial of the Grand Crusader 25 player)",
+    "titleZh": null,
     "description": "Val'kyr Twins kills  (Trial of the Grand Crusader 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -13062,7 +15964,9 @@ export const ACHIEVEMENTS = [
     "id": 4403,
     "faction": -1,
     "title": "Many Whelps! Handle It! (10 player)",
+    "titleZh": null,
     "description": "Cause 50 Onyxia Whelplings to hatch within 10 seconds of Onyxia's liftoff, and then defeat her in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 1699
@@ -13071,7 +15975,9 @@ export const ACHIEVEMENTS = [
     "id": 4406,
     "faction": -1,
     "title": "Many Whelps! Handle It! (25 player)",
+    "titleZh": null,
     "description": "Cause 50 Onyxia Whelplings to hatch within 10 seconds of Onyxia's liftoff, and then defeat her in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 1699
@@ -13080,7 +15986,9 @@ export const ACHIEVEMENTS = [
     "id": 4664,
     "faction": -1,
     "title": "Deathbringer kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Deathbringer kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13089,7 +15997,9 @@ export const ACHIEVEMENTS = [
     "id": 558,
     "faction": -1,
     "title": "Greedy",
+    "titleZh": null,
     "description": "Win a greed roll on a superior or better item above level 185 by rolling 100.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2802
@@ -13098,7 +16008,9 @@ export const ACHIEVEMENTS = [
     "id": 690,
     "faction": -1,
     "title": "Karazhan",
+    "titleZh": null,
     "description": "Defeat Prince Malchezaar in Karazhan.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3828
@@ -13107,7 +16019,9 @@ export const ACHIEVEMENTS = [
     "id": 727,
     "faction": -1,
     "title": "Call in the Cavalry",
+    "titleZh": null,
     "description": "Obtain one of the war mounts through the honor system.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 1178
@@ -13116,7 +16030,9 @@ export const ACHIEVEMENTS = [
     "id": 1370,
     "faction": -1,
     "title": "Loatheb kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Loatheb kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2997
@@ -13125,7 +16041,9 @@ export const ACHIEVEMENTS = [
     "id": 1425,
     "faction": -1,
     "title": "Realm First! Grand Master Miner",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in mining.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 336
@@ -13134,7 +16052,9 @@ export const ACHIEVEMENTS = [
     "id": 1516,
     "faction": -1,
     "title": "Accomplished Angler",
+    "titleZh": null,
     "description": "Complete the fishing achievements listed below.",
+    "descriptionZh": null,
     "category": 171,
     "points": 10,
     "iconId": 580
@@ -13143,7 +16063,9 @@ export const ACHIEVEMENTS = [
     "id": 2041,
     "faction": -1,
     "title": "Dehydration",
+    "titleZh": null,
     "description": "Defeat Ichoron in the Violet Hold on Heroic Difficulty without allowing any Ichor Globules to merge.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2134
@@ -13152,7 +16074,9 @@ export const ACHIEVEMENTS = [
     "id": 2959,
     "faction": -1,
     "title": "Rubble and Roll (10 player)",
+    "titleZh": null,
     "description": "Defeat Kologarn after causing at least 25 Rubble creatures to spawn in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2380
@@ -13161,7 +16085,9 @@ export const ACHIEVEMENTS = [
     "id": 2960,
     "faction": -1,
     "title": "Rubble and Roll (25 player)",
+    "titleZh": null,
     "description": "Defeat Kologarn after causing at least 25 Rubble creatures to spawn in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2380
@@ -13170,7 +16096,9 @@ export const ACHIEVEMENTS = [
     "id": 3676,
     "faction": 1,
     "title": "A Silver Confidant",
+    "titleZh": null,
     "description": "Earn both exalted status with The Silver Covenant and the right to represent a city in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 2383
@@ -13179,7 +16107,9 @@ export const ACHIEVEMENTS = [
     "id": 4044,
     "faction": -1,
     "title": "Times completed the Trial of the Crusader (10 player)",
+    "titleZh": null,
     "description": "Times completed the Trial of the Crusader (10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -13188,7 +16118,9 @@ export const ACHIEVEMENTS = [
     "id": 4404,
     "faction": -1,
     "title": "She Deep Breaths More (10 player)",
+    "titleZh": null,
     "description": "Defeat Onyxia without anyone taking damage from a Deep Breath in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2128
@@ -13197,7 +16129,9 @@ export const ACHIEVEMENTS = [
     "id": 4407,
     "faction": -1,
     "title": "She Deep Breaths More (25 player)",
+    "titleZh": null,
     "description": "Defeat Onyxia without anyone taking damage from a Deep Breath in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2128
@@ -13206,7 +16140,9 @@ export const ACHIEVEMENTS = [
     "id": 4646,
     "faction": -1,
     "title": "Festergut kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Festergut kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13215,7 +16151,9 @@ export const ACHIEVEMENTS = [
     "id": 229,
     "faction": -1,
     "title": "The Grim Reaper",
+    "titleZh": null,
     "description": "Get 30 Honorable Kills in a single battle in any battleground.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 1933
@@ -13224,7 +16162,9 @@ export const ACHIEVEMENTS = [
     "id": 559,
     "faction": -1,
     "title": "Needy",
+    "titleZh": null,
     "description": "Win a need roll on a superior or better item above level 185 by rolling 100.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2801
@@ -13233,7 +16173,9 @@ export const ACHIEVEMENTS = [
     "id": 691,
     "faction": -1,
     "title": "Zul'Aman",
+    "titleZh": null,
     "description": "Defeat Zul'jin in Zul'Aman.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3630
@@ -13242,7 +16184,9 @@ export const ACHIEVEMENTS = [
     "id": 1363,
     "faction": -1,
     "title": "Maexxna kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Maexxna kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1899
@@ -13251,7 +16195,9 @@ export const ACHIEVEMENTS = [
     "id": 1426,
     "faction": -1,
     "title": "Realm First! Grand Master Skinner",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in skinning.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 736
@@ -13260,7 +16206,9 @@ export const ACHIEVEMENTS = [
     "id": 2153,
     "faction": -1,
     "title": "A Void Dance",
+    "titleZh": null,
     "description": "Defeat Zuramat the Obliterator in The Violet Hold on Heroic Difficulty without killing any void sentries.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2242
@@ -13269,7 +16217,9 @@ export const ACHIEVEMENTS = [
     "id": 3006,
     "faction": -1,
     "title": "Crazy Cat Lady (10 player)",
+    "titleZh": null,
     "description": "Defeat Auriaya without destroying her Sanctum Sentries in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3870
@@ -13278,7 +16228,9 @@ export const ACHIEVEMENTS = [
     "id": 3007,
     "faction": -1,
     "title": "Crazy Cat Lady (25 player)",
+    "titleZh": null,
     "description": "Defeat Auriaya without destroying her Sanctum Sentries in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3870
@@ -13287,7 +16239,9 @@ export const ACHIEVEMENTS = [
     "id": 3677,
     "faction": 0,
     "title": "The Sunreavers",
+    "titleZh": null,
     "description": "Earn both exalted status with The Sunreavers and the right to represent a city in the Argent Tournament.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 3976
@@ -13296,7 +16250,9 @@ export const ACHIEVEMENTS = [
     "id": 4016,
     "faction": -1,
     "title": "Earth, Wind & Fire (10 player)",
+    "titleZh": null,
     "description": "Defeat Archavon the Stone Watcher, Emalon the Storm Watcher, and Koralon the Flame Watcher within 60 seconds of each other in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 2603
@@ -13305,7 +16261,9 @@ export const ACHIEVEMENTS = [
     "id": 4017,
     "faction": -1,
     "title": "Earth, Wind & Fire (25 player)",
+    "titleZh": null,
     "description": "Defeat Archavon the Stone Watcher, Emalon the Storm Watcher, and Koralon the Flame Watcher within 60 seconds of each other in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 2603
@@ -13314,7 +16272,9 @@ export const ACHIEVEMENTS = [
     "id": 4045,
     "faction": -1,
     "title": "Times completed the Trial of the Grand Crusader (10 player)",
+    "titleZh": null,
     "description": "Times completed the Trial of the Grand Crusader (10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -13323,7 +16283,9 @@ export const ACHIEVEMENTS = [
     "id": 4665,
     "faction": -1,
     "title": "Festergut kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Festergut kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13332,7 +16294,9 @@ export const ACHIEVEMENTS = [
     "id": 692,
     "faction": -1,
     "title": "Gruul's Lair",
+    "titleZh": null,
     "description": "Defeat Gruul the Dragonkiller in Gruul's Lair.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3628
@@ -13341,7 +16305,9 @@ export const ACHIEVEMENTS = [
     "id": 714,
     "faction": 0,
     "title": "The Conqueror",
+    "titleZh": null,
     "description": "Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",
+    "descriptionZh": null,
     "category": 95,
     "points": 20,
     "iconId": 2563
@@ -13350,7 +16316,9 @@ export const ACHIEVEMENTS = [
     "id": 1165,
     "faction": -1,
     "title": "My Sack is \"Gigantique\"",
+    "titleZh": null,
     "description": "Equip Haris Pilton's \"Gigantique\" Bag.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2989
@@ -13359,7 +16327,9 @@ export const ACHIEVEMENTS = [
     "id": 1365,
     "faction": -1,
     "title": "Noth the Plaguebringer kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Noth the Plaguebringer kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2997
@@ -13368,7 +16338,9 @@ export const ACHIEVEMENTS = [
     "id": 1427,
     "faction": -1,
     "title": "Realm First! Grand Master Tailor",
+    "titleZh": null,
     "description": "First person on the realm to achieve 450 skill in tailoring.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 341
@@ -13377,7 +16349,9 @@ export const ACHIEVEMENTS = [
     "id": 1864,
     "faction": -1,
     "title": "What the Eck?",
+    "titleZh": null,
     "description": "Defeat Gal'darah in Gundrak on Heroic Difficulty while under the effects of Eck Residue.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3299
@@ -13386,7 +16360,9 @@ export const ACHIEVEMENTS = [
     "id": 3076,
     "faction": -1,
     "title": "Nine Lives (10 player)",
+    "titleZh": null,
     "description": "Defeat the Feral Defender while defeating Auriaya in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 836
@@ -13395,7 +16371,9 @@ export const ACHIEVEMENTS = [
     "id": 3077,
     "faction": -1,
     "title": "Nine Lives (25 player)",
+    "titleZh": null,
     "description": "Defeat the Feral Defender while defeating Auriaya in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 836
@@ -13404,7 +16382,9 @@ export const ACHIEVEMENTS = [
     "id": 4046,
     "faction": -1,
     "title": "Times completed the Trial of the Crusader (25 player)",
+    "titleZh": null,
     "description": "Times completed the Trial of the Crusader (25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -13413,7 +16393,9 @@ export const ACHIEVEMENTS = [
     "id": 4596,
     "faction": -1,
     "title": "The Sword in the Skull",
+    "titleZh": null,
     "description": "Recover the missing hilt of Quel'Delar, draw the blade from its resting place, reforge the weapon, purify it in the Sunwell, and present it for your just reward.",
+    "descriptionZh": null,
     "category": 14941,
     "points": 10,
     "iconId": 4143
@@ -13422,7 +16404,9 @@ export const ACHIEVEMENTS = [
     "id": 4666,
     "faction": -1,
     "title": "Festergut kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Festergut kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13431,7 +16415,9 @@ export const ACHIEVEMENTS = [
     "id": 4815,
     "faction": -1,
     "title": "The Twilight Destroyer (25 player)",
+    "titleZh": null,
     "description": "Defeat Halion in The Ruby Sanctum in 25-player mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 164
@@ -13440,7 +16426,9 @@ export const ACHIEVEMENTS = [
     "id": 4817,
     "faction": -1,
     "title": "The Twilight Destroyer (10 player)",
+    "titleZh": null,
     "description": "Defeat Halion in The Ruby Sanctum in 10-player mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 164
@@ -13449,7 +16437,9 @@ export const ACHIEVEMENTS = [
     "id": 693,
     "faction": -1,
     "title": "Magtheridon's Lair",
+    "titleZh": null,
     "description": "Defeat Magtheridon in Magtheridon's Lair.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3640
@@ -13458,7 +16448,9 @@ export const ACHIEVEMENTS = [
     "id": 907,
     "faction": 1,
     "title": "The Justicar",
+    "titleZh": null,
     "description": "Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",
+    "descriptionZh": null,
     "category": 95,
     "points": 20,
     "iconId": 2924
@@ -13467,7 +16459,9 @@ export const ACHIEVEMENTS = [
     "id": 1187,
     "faction": -1,
     "title": "The Keymaster",
+    "titleZh": null,
     "description": "Obtain the keys listed below.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2502
@@ -13476,7 +16470,9 @@ export const ACHIEVEMENTS = [
     "id": 1364,
     "faction": -1,
     "title": "Patchwerk kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Patchwerk kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -13485,7 +16481,9 @@ export const ACHIEVEMENTS = [
     "id": 1400,
     "faction": -1,
     "title": "Realm First! Magic Seeker",
+    "titleZh": null,
     "description": "Participated in the realm first defeat of Malygos in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1700
@@ -13494,7 +16492,9 @@ export const ACHIEVEMENTS = [
     "id": 2152,
     "faction": -1,
     "title": "Share The Love",
+    "titleZh": null,
     "description": "Defeat Gal'darah in Gundrak on Heroic Difficulty and have 5 unique party members get impaled throughout the fight.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2714
@@ -13503,7 +16503,9 @@ export const ACHIEVEMENTS = [
     "id": 2961,
     "faction": -1,
     "title": "Cheese the Freeze (10 player)",
+    "titleZh": null,
     "description": "Defeat Hodir without any raid member being hit by Flash Freeze in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 56
@@ -13512,7 +16514,9 @@ export const ACHIEVEMENTS = [
     "id": 2962,
     "faction": -1,
     "title": "Cheese the Freeze (25 player)",
+    "titleZh": null,
     "description": "Defeat Hodir without any raid member being hit by Flash Freeze in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 56
@@ -13521,7 +16525,9 @@ export const ACHIEVEMENTS = [
     "id": 4047,
     "faction": -1,
     "title": "Times completed the Trial of the Grand Crusader (25 player)",
+    "titleZh": null,
     "description": "Times completed the Trial of the Grand Crusader (25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 0,
     "iconId": 1
@@ -13530,7 +16536,9 @@ export const ACHIEVEMENTS = [
     "id": 4667,
     "faction": -1,
     "title": "Festergut kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Festergut kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13539,7 +16547,9 @@ export const ACHIEVEMENTS = [
     "id": 4816,
     "faction": -1,
     "title": "Heroic: The Twilight Destroyer (25 player)",
+    "titleZh": null,
     "description": "Defeat Halion in The Ruby Sanctum in 25-player Heroic mode.",
+    "descriptionZh": null,
     "category": 14923,
     "points": 10,
     "iconId": 164
@@ -13548,7 +16558,9 @@ export const ACHIEVEMENTS = [
     "id": 4818,
     "faction": -1,
     "title": "Heroic: The Twilight Destroyer (10 player)",
+    "titleZh": null,
     "description": "Defeat Halion in The Ruby Sanctum in 10-player Heroic mode.",
+    "descriptionZh": null,
     "category": 14922,
     "points": 10,
     "iconId": 164
@@ -13557,7 +16569,9 @@ export const ACHIEVEMENTS = [
     "id": 456,
     "faction": -1,
     "title": "Realm First! Obsidian Slayer",
+    "titleZh": null,
     "description": "Participated in the realm first defeat of Sartharion the Onyx Guardian in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3308
@@ -13566,7 +16580,9 @@ export const ACHIEVEMENTS = [
     "id": 694,
     "faction": -1,
     "title": "Serpentshrine Cavern",
+    "titleZh": null,
     "description": "Defeat Lady Vashj in Serpentshrine Cavern.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3658
@@ -13575,7 +16591,9 @@ export const ACHIEVEMENTS = [
     "id": 908,
     "faction": 1,
     "title": "Call to Arms!",
+    "titleZh": null,
     "description": "Complete the level 80 versions of the Call to Arms daily battleground quests listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2841
@@ -13584,7 +16602,9 @@ export const ACHIEVEMENTS = [
     "id": 1206,
     "faction": -1,
     "title": "To All The Squirrels I've Loved Before",
+    "titleZh": null,
     "description": "Show the critters of Azeroth how much you /love them.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3132
@@ -13593,7 +16613,9 @@ export const ACHIEVEMENTS = [
     "id": 1373,
     "faction": -1,
     "title": "Thaddius kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Thaddius kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -13602,7 +16624,9 @@ export const ACHIEVEMENTS = [
     "id": 2040,
     "faction": -1,
     "title": "Less-rabi",
+    "titleZh": null,
     "description": "Defeat Moorabi in Gundrak on Heroic Difficulty while preventing him from transforming into a mammoth at any point during the encounter.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3394
@@ -13611,7 +16635,9 @@ export const ACHIEVEMENTS = [
     "id": 2963,
     "faction": -1,
     "title": "I Have the Coolest Friends (10 player)",
+    "titleZh": null,
     "description": "Defeat Hodir without any friendly NPC dying in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 36
@@ -13620,7 +16646,9 @@ export const ACHIEVEMENTS = [
     "id": 2965,
     "faction": -1,
     "title": "I Have the Coolest Friends (25 player)",
+    "titleZh": null,
     "description": "Defeat Hodir without any friendly NPC dying in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 36
@@ -13629,7 +16657,9 @@ export const ACHIEVEMENTS = [
     "id": 4074,
     "faction": -1,
     "title": "Koralon the Flame Watcher kills (Wintergrasp 10 player)",
+    "titleZh": null,
     "description": "Koralon the Flame Watcher kills (Wintergrasp 10 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 10,
     "iconId": 187
@@ -13638,7 +16668,9 @@ export const ACHIEVEMENTS = [
     "id": 4647,
     "faction": -1,
     "title": "Rotface kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Rotface kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13647,7 +16679,9 @@ export const ACHIEVEMENTS = [
     "id": 696,
     "faction": -1,
     "title": "Tempest Keep",
+    "titleZh": null,
     "description": "Defeat Kael'thas Sunstrider in Tempest Keep.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3284
@@ -13656,7 +16690,9 @@ export const ACHIEVEMENTS = [
     "id": 909,
     "faction": 0,
     "title": "Call to Arms!",
+    "titleZh": null,
     "description": "Complete the level 80 versions of the Call to Arms daily battleground quests listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2841
@@ -13665,7 +16701,9 @@ export const ACHIEVEMENTS = [
     "id": 1376,
     "faction": -1,
     "title": "Sapphiron kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Sapphiron kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1700
@@ -13674,7 +16712,9 @@ export const ACHIEVEMENTS = [
     "id": 1402,
     "faction": -1,
     "title": "Realm First! Conqueror of Naxxramas",
+    "titleZh": null,
     "description": "Participated in the realm first defeat of Kel'Thuzad in Naxxramas in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1898
@@ -13683,7 +16723,9 @@ export const ACHIEVEMENTS = [
     "id": 2058,
     "faction": -1,
     "title": "Snakes. Why'd It Have To Be Snakes?",
+    "titleZh": null,
     "description": "Defeat Slad'ran in Gundrak on Heroic Difficulty without getting snake wrapped.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2936
@@ -13692,7 +16734,9 @@ export const ACHIEVEMENTS = [
     "id": 2557,
     "faction": -1,
     "title": "To All The Squirrels Who Shared My Life",
+    "titleZh": null,
     "description": "Show more critters of Azeroth how much you /love them.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3132
@@ -13701,7 +16745,9 @@ export const ACHIEVEMENTS = [
     "id": 2967,
     "faction": -1,
     "title": "Getting Cold in Here (10 player)",
+    "titleZh": null,
     "description": "Defeat Hodir without any raid member having more than 2 stacks of Biting Cold in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3862
@@ -13710,7 +16756,9 @@ export const ACHIEVEMENTS = [
     "id": 2968,
     "faction": -1,
     "title": "Getting Cold in Here (25 player)",
+    "titleZh": null,
     "description": "Defeat Hodir without any raid member having more than 2 stacks of Biting Cold in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 501
@@ -13719,7 +16767,9 @@ export const ACHIEVEMENTS = [
     "id": 4075,
     "faction": -1,
     "title": "Koralon the Flame Watcher kills (Wintergrasp 25 player)",
+    "titleZh": null,
     "description": "Koralon the Flame Watcher kills (Wintergrasp 25 player)",
+    "descriptionZh": null,
     "category": 15021,
     "points": 10,
     "iconId": 187
@@ -13728,7 +16778,9 @@ export const ACHIEVEMENTS = [
     "id": 4668,
     "faction": -1,
     "title": "Rotface kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Rotface kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13737,7 +16789,9 @@ export const ACHIEVEMENTS = [
     "id": 227,
     "faction": -1,
     "title": "Damage Control",
+    "titleZh": null,
     "description": "Do 300,000 damage or healing in a single battle in any battleground. The damage or healing must be done to a player.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3422
@@ -13746,7 +16800,9 @@ export const ACHIEVEMENTS = [
     "id": 695,
     "faction": -1,
     "title": "The Battle for Mount Hyjal",
+    "titleZh": null,
     "description": "Defeat Archimonde in The Battle for Mount Hyjal.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3639
@@ -13755,7 +16811,9 @@ export const ACHIEVEMENTS = [
     "id": 1377,
     "faction": -1,
     "title": "Kel'Thuzad kills (Naxxramas 10 player)",
+    "titleZh": null,
     "description": "Kel'Thuzad kills (Naxxramas 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1898
@@ -13764,7 +16822,9 @@ export const ACHIEVEMENTS = [
     "id": 1866,
     "faction": -1,
     "title": "Good Grief",
+    "titleZh": null,
     "description": "Defeat the Maiden of Grief in the Halls of Stone on Heroic Difficulty in 1 minute or less.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3301
@@ -13773,7 +16833,9 @@ export const ACHIEVEMENTS = [
     "id": 2556,
     "faction": -1,
     "title": "Pest Control",
+    "titleZh": null,
     "description": "Slay the following pests.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1586
@@ -13782,7 +16844,9 @@ export const ACHIEVEMENTS = [
     "id": 2970,
     "faction": -1,
     "title": "Staying Buffed All Winter (25 player)",
+    "titleZh": null,
     "description": "Possess the effects of Toasty Fire, Storm Power and Starlight at the same time in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 11
@@ -13791,7 +16855,9 @@ export const ACHIEVEMENTS = [
     "id": 3117,
     "faction": -1,
     "title": "Realm First! Death's Demise",
+    "titleZh": null,
     "description": "Participated in the realm first defeat of Yogg-Saron without the assistance of any Keepers in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3848
@@ -13800,7 +16866,9 @@ export const ACHIEVEMENTS = [
     "id": 3182,
     "faction": -1,
     "title": "I Could Say That This Cache Was Rare (10 player)",
+    "titleZh": null,
     "description": "Defeat Hodir before he shatters his rare cache in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3927
@@ -13809,7 +16877,9 @@ export const ACHIEVEMENTS = [
     "id": 4669,
     "faction": -1,
     "title": "Rotface kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Rotface kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13818,7 +16888,9 @@ export const ACHIEVEMENTS = [
     "id": 231,
     "faction": -1,
     "title": "Wrecking Ball",
+    "titleZh": null,
     "description": "Get 20 killing blows without dying in a single battle in any battleground.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 2770
@@ -13827,7 +16899,9 @@ export const ACHIEVEMENTS = [
     "id": 697,
     "faction": -1,
     "title": "The Black Temple",
+    "titleZh": null,
     "description": "Defeat Illidan Stormrage in The Black Temple.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3663
@@ -13836,7 +16910,9 @@ export const ACHIEVEMENTS = [
     "id": 1254,
     "faction": -1,
     "title": "Friend or Fowl?",
+    "titleZh": null,
     "description": "Slay 15 turkeys in 3 minutes.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1467
@@ -13845,7 +16921,9 @@ export const ACHIEVEMENTS = [
     "id": 2155,
     "faction": -1,
     "title": "Abuse the Ooze",
+    "titleZh": null,
     "description": "Defeat Sjonnir the Ironshaper in the Halls of Stone on Heroic Difficulty and kill 5 Iron Sludges during the encounter.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 1541
@@ -13854,7 +16932,9 @@ export const ACHIEVEMENTS = [
     "id": 2596,
     "faction": -1,
     "title": "Mr. Bigglesworth kills",
+    "titleZh": null,
     "description": "Mr. Bigglesworth kills",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1700
@@ -13863,7 +16943,9 @@ export const ACHIEVEMENTS = [
     "id": 2969,
     "faction": -1,
     "title": "Staying Buffed All Winter (10 player)",
+    "titleZh": null,
     "description": "Possess the effects of Toasty Fire, Storm Power and Starlight at the same time in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 11
@@ -13872,7 +16954,9 @@ export const ACHIEVEMENTS = [
     "id": 3184,
     "faction": -1,
     "title": "I Could Say That This Cache Was Rare (25 player)",
+    "titleZh": null,
     "description": "Defeat Hodir before he shatters his rare cache in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3927
@@ -13881,7 +16965,9 @@ export const ACHIEVEMENTS = [
     "id": 3259,
     "faction": -1,
     "title": "Realm First! Celestial Defender",
+    "titleZh": null,
     "description": "Participated in the realm first defeat of Algalon the Observer in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3869
@@ -13890,7 +16976,9 @@ export const ACHIEVEMENTS = [
     "id": 4670,
     "faction": -1,
     "title": "Rotface kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Rotface kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13899,7 +16987,9 @@ export const ACHIEVEMENTS = [
     "id": 698,
     "faction": -1,
     "title": "Sunwell Plateau",
+    "titleZh": null,
     "description": "Defeat Kil'jaeden in Sunwell Plateau.",
+    "descriptionZh": null,
     "category": 14805,
     "points": 10,
     "iconId": 3592
@@ -13908,7 +16998,9 @@ export const ACHIEVEMENTS = [
     "id": 1244,
     "faction": -1,
     "title": "Well Read",
+    "titleZh": null,
     "description": "Read the books listed below.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2892
@@ -13917,7 +17009,9 @@ export const ACHIEVEMENTS = [
     "id": 1368,
     "faction": -1,
     "title": "Anub'Rekhan kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Anub'Rekhan kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1899
@@ -13926,7 +17020,9 @@ export const ACHIEVEMENTS = [
     "id": 2016,
     "faction": 1,
     "title": "Grizzled Veteran",
+    "titleZh": null,
     "description": "Complete the Grizzly Hills PvP daily quests listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3343
@@ -13935,7 +17031,9 @@ export const ACHIEVEMENTS = [
     "id": 2154,
     "faction": -1,
     "title": "Brann Spankin' New",
+    "titleZh": null,
     "description": "Defeat the Tribunal of Ages encounter in the Halls of Stone on Heroic Difficulty without allowing Brann Bronzebeard to take any damage.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3286
@@ -13944,7 +17042,9 @@ export const ACHIEVEMENTS = [
     "id": 2971,
     "faction": -1,
     "title": "Don't Stand in the Lightning (10 player)",
+    "titleZh": null,
     "description": "Defeat Thorim without any raid member being struck by Lightning Charge in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 320
@@ -13953,7 +17053,9 @@ export const ACHIEVEMENTS = [
     "id": 2972,
     "faction": -1,
     "title": "Don't Stand in the Lightning (25 player)",
+    "titleZh": null,
     "description": "Defeat Thorim without any raid member being struck by Lightning Charge in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 320
@@ -13962,7 +17064,9 @@ export const ACHIEVEMENTS = [
     "id": 4078,
     "faction": -1,
     "title": "Realm First! Grand Crusader",
+    "titleZh": null,
     "description": "Participated in the realm first conquest of the Trial of the Grand Crusader with 50 attempts remaining in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3805
@@ -13971,7 +17075,9 @@ export const ACHIEVEMENTS = [
     "id": 4648,
     "faction": -1,
     "title": "Blood Prince Council kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Blood Prince Council kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -13980,7 +17086,9 @@ export const ACHIEVEMENTS = [
     "id": 1378,
     "faction": -1,
     "title": "Gluth kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Gluth kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -13989,7 +17097,9 @@ export const ACHIEVEMENTS = [
     "id": 1867,
     "faction": -1,
     "title": "Timely Death",
+    "titleZh": null,
     "description": "Defeat Loken in the Halls of Lightning on Heroic Difficulty in 2 minutes or less.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3302
@@ -13998,7 +17108,9 @@ export const ACHIEVEMENTS = [
     "id": 1956,
     "faction": -1,
     "title": "Higher Learning",
+    "titleZh": null,
     "description": "Read the volumes of \"The Schools of Arcane Magic\" found in Dalaran listed below.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1865
@@ -14007,7 +17119,9 @@ export const ACHIEVEMENTS = [
     "id": 2017,
     "faction": 0,
     "title": "Grizzled Veteran",
+    "titleZh": null,
     "description": "Complete the Grizzly Hills PvP daily quests listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 10,
     "iconId": 3343
@@ -14016,7 +17130,9 @@ export const ACHIEVEMENTS = [
     "id": 2973,
     "faction": -1,
     "title": "I'll Take You All On (10 player)",
+    "titleZh": null,
     "description": "Defeat Thorim, the Ancient Rune Giant and the Runic Colossus in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3864
@@ -14025,7 +17141,9 @@ export const ACHIEVEMENTS = [
     "id": 2974,
     "faction": -1,
     "title": "I'll Take You All On (25 player)",
+    "titleZh": null,
     "description": "Defeat Thorim, the Ancient Rune Giant and the Runic Colossus in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3864
@@ -14034,7 +17152,9 @@ export const ACHIEVEMENTS = [
     "id": 4576,
     "faction": -1,
     "title": "Realm First! Fall of the Lich King",
+    "titleZh": null,
     "description": "Participated in the realm first defeat of the Lich King in 25-player heroic mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 4127
@@ -14043,7 +17163,9 @@ export const ACHIEVEMENTS = [
     "id": 4671,
     "faction": -1,
     "title": "Blood Prince Council kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Blood Prince Council kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14052,7 +17174,9 @@ export const ACHIEVEMENTS = [
     "id": 230,
     "faction": 1,
     "title": "Battlemaster",
+    "titleZh": null,
     "description": "Complete the battleground achievements listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 50,
     "iconId": 3372
@@ -14061,7 +17185,9 @@ export const ACHIEVEMENTS = [
     "id": 1379,
     "faction": -1,
     "title": "Gothik the Harvester kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Gothik the Harvester kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2639
@@ -14070,7 +17196,9 @@ export const ACHIEVEMENTS = [
     "id": 1463,
     "faction": -1,
     "title": "Realm First! Northrend Vanguard",
+    "titleZh": null,
     "description": "First player on the realm to gain exalted reputation with the Argent Crusade, Wyrmrest Accord, Kirin Tor and Knights of the Ebon Blade.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2207
@@ -14079,7 +17207,9 @@ export const ACHIEVEMENTS = [
     "id": 1833,
     "faction": -1,
     "title": "It's Happy Hour Somewhere",
+    "titleZh": null,
     "description": "Drink 25 different types of beverages.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3083
@@ -14088,7 +17218,9 @@ export const ACHIEVEMENTS = [
     "id": 1834,
     "faction": -1,
     "title": "Lightning Struck",
+    "titleZh": null,
     "description": "Defeat General Bjarngrim in the Halls of Lightning on Heroic Difficulty while he has a Temporary Electrical Charge.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3242
@@ -14097,7 +17229,9 @@ export const ACHIEVEMENTS = [
     "id": 2975,
     "faction": -1,
     "title": "Who Needs Bloodlust? (10 player)",
+    "titleZh": null,
     "description": "Defeat Thorim while under the effect of Aura of Celerity in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 122
@@ -14106,7 +17240,9 @@ export const ACHIEVEMENTS = [
     "id": 2976,
     "faction": -1,
     "title": "Who Needs Bloodlust? (25 player)",
+    "titleZh": null,
     "description": "Defeat Thorim while under the effect of Aura of Celerity in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 122
@@ -14115,7 +17251,9 @@ export const ACHIEVEMENTS = [
     "id": 4672,
     "faction": -1,
     "title": "Blood Prince Council kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Blood Prince Council kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14124,7 +17262,9 @@ export const ACHIEVEMENTS = [
     "id": 662,
     "faction": -1,
     "title": "Collector's Edition: Mini-Diablo",
+    "titleZh": null,
     "description": "Owner of the World of Warcraft Collector's Edition Mini-Diablo pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2795
@@ -14133,7 +17273,9 @@ export const ACHIEVEMENTS = [
     "id": 1175,
     "faction": 0,
     "title": "Battlemaster",
+    "titleZh": null,
     "description": "Complete the battleground achievements listed below.",
+    "descriptionZh": null,
     "category": 95,
     "points": 50,
     "iconId": 3373
@@ -14142,7 +17284,9 @@ export const ACHIEVEMENTS = [
     "id": 1380,
     "faction": -1,
     "title": "Grand Widow Faerlina kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Grand Widow Faerlina kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1899
@@ -14151,7 +17295,9 @@ export const ACHIEVEMENTS = [
     "id": 1832,
     "faction": -1,
     "title": "Tastes Like Chicken",
+    "titleZh": null,
     "description": "Sample 50 different kinds of Azeroth's delectable dishes.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3266
@@ -14160,7 +17306,9 @@ export const ACHIEVEMENTS = [
     "id": 2042,
     "faction": -1,
     "title": "Shatter Resistant",
+    "titleZh": null,
     "description": "Defeat Volkhan in the Halls of Lightning on Heroic Difficulty without allowing him to shatter more than 4 Brittle Golems.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 937
@@ -14169,7 +17317,9 @@ export const ACHIEVEMENTS = [
     "id": 2977,
     "faction": -1,
     "title": "Siffed (10 player)",
+    "titleZh": null,
     "description": "Force Thorim to enter the arena while Sif is present in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3863
@@ -14178,7 +17328,9 @@ export const ACHIEVEMENTS = [
     "id": 2978,
     "faction": -1,
     "title": "Siffed (25 player)",
+    "titleZh": null,
     "description": "Force Thorim to enter the arena while Sif is present in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3863
@@ -14187,7 +17339,9 @@ export const ACHIEVEMENTS = [
     "id": 4673,
     "faction": -1,
     "title": "Blood Prince Council kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Blood Prince Council kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14196,7 +17350,9 @@ export const ACHIEVEMENTS = [
     "id": 663,
     "faction": -1,
     "title": "Collector's Edition: Panda",
+    "titleZh": null,
     "description": "Owner of the World of Warcraft Collector's Edition Panda pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2531
@@ -14205,7 +17361,9 @@ export const ACHIEVEMENTS = [
     "id": 1381,
     "faction": -1,
     "title": "Grobbulus kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Grobbulus kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -14214,7 +17372,9 @@ export const ACHIEVEMENTS = [
     "id": 1817,
     "faction": -1,
     "title": "The Culling of Time",
+    "titleZh": null,
     "description": "Defeat the Infinite Corruptor in The Culling of Stratholme on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3265
@@ -14223,7 +17383,9 @@ export const ACHIEVEMENTS = [
     "id": 2076,
     "faction": -1,
     "title": "Armored Brown Bear",
+    "titleZh": null,
     "description": "Obtain an Armored Brown Bear from Mei Francis in Dalaran.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3497
@@ -14232,7 +17394,9 @@ export const ACHIEVEMENTS = [
     "id": 3176,
     "faction": -1,
     "title": "Lose Your Illusion (10 player)",
+    "titleZh": null,
     "description": "Defeat Thorim while Sif is present in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3863
@@ -14241,7 +17405,9 @@ export const ACHIEVEMENTS = [
     "id": 3183,
     "faction": -1,
     "title": "Lose Your Illusion (25 player)",
+    "titleZh": null,
     "description": "Defeat Thorim while Sif is present in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3863
@@ -14250,7 +17416,9 @@ export const ACHIEVEMENTS = [
     "id": 4649,
     "faction": -1,
     "title": "Valithria Dreamwalker rescues (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Valithria Dreamwalker rescues (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14259,7 +17427,9 @@ export const ACHIEVEMENTS = [
     "id": 664,
     "faction": -1,
     "title": "Collector's Edition: Zergling",
+    "titleZh": null,
     "description": "Owner of the World of Warcraft Collector's Edition Zergling pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 214
@@ -14268,7 +17438,9 @@ export const ACHIEVEMENTS = [
     "id": 1382,
     "faction": -1,
     "title": "Heigan the Unclean kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Heigan the Unclean kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2997
@@ -14277,7 +17449,9 @@ export const ACHIEVEMENTS = [
     "id": 1872,
     "faction": -1,
     "title": "Zombiefest!",
+    "titleZh": null,
     "description": "Kill 100 Risen Zombies in 1 minute in The Culling of Stratholme on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3012
@@ -14286,7 +17460,9 @@ export const ACHIEVEMENTS = [
     "id": 2077,
     "faction": -1,
     "title": "Wooly Mammoth",
+    "titleZh": null,
     "description": "Obtain a Wooly Mammoth from Mei Francis in Dalaran.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3443
@@ -14295,7 +17471,9 @@ export const ACHIEVEMENTS = [
     "id": 2979,
     "faction": -1,
     "title": "Lumberjacked (10 player)",
+    "titleZh": null,
     "description": "Defeat Elder Brightleaf, Elder Ironbranch and Elder Stonebark within 15 seconds of each other in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2258
@@ -14304,7 +17482,9 @@ export const ACHIEVEMENTS = [
     "id": 3118,
     "faction": -1,
     "title": "Lumberjacked (25 player)",
+    "titleZh": null,
     "description": "Defeat Elder Brightleaf, Elder Ironbranch and Elder Stonebark within 15 seconds of each other in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2258
@@ -14313,7 +17493,9 @@ export const ACHIEVEMENTS = [
     "id": 4674,
     "faction": -1,
     "title": "Valithria Dreamwalker rescues (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Valithria Dreamwalker rescues (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14322,7 +17504,9 @@ export const ACHIEVEMENTS = [
     "id": 665,
     "faction": -1,
     "title": "Collector's Edition: Netherwhelp",
+    "titleZh": null,
     "description": "Owner of the The Burning Crusade's Collector's Edition Netherwhelp pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2449
@@ -14331,7 +17515,9 @@ export const ACHIEVEMENTS = [
     "id": 1383,
     "faction": -1,
     "title": "Four Horsemen kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Four Horsemen kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2639
@@ -14340,7 +17526,9 @@ export const ACHIEVEMENTS = [
     "id": 2043,
     "faction": -1,
     "title": "The Incredible Hulk",
+    "titleZh": null,
     "description": "Force Svala Sorrowgrave to kill a Scourge Hulk on Heroic Difficulty in Utgarde Pinnacle.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 460
@@ -14349,7 +17537,9 @@ export const ACHIEVEMENTS = [
     "id": 2078,
     "faction": -1,
     "title": "Traveler's Tundra Mammoth",
+    "titleZh": null,
     "description": "Obtain a Traveler's Tundra Mammoth from Mei Francis in Dalaran.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3443
@@ -14358,7 +17548,9 @@ export const ACHIEVEMENTS = [
     "id": 2980,
     "faction": -1,
     "title": "Con-speed-atory (10 player)",
+    "titleZh": null,
     "description": "Defeat Freya within 20 minutes of the first creature you kill in the Conservatory of Life in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2864
@@ -14367,7 +17559,9 @@ export const ACHIEVEMENTS = [
     "id": 2981,
     "faction": -1,
     "title": "Con-speed-atory (25 player)",
+    "titleZh": null,
     "description": "Defeat Freya within 20 minutes of the first creature you kill in the Conservatory of Life in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2864
@@ -14376,7 +17570,9 @@ export const ACHIEVEMENTS = [
     "id": 4675,
     "faction": -1,
     "title": "Valithria Dreamwalker rescues (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Valithria Dreamwalker rescues (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14385,7 +17581,9 @@ export const ACHIEVEMENTS = [
     "id": 683,
     "faction": -1,
     "title": "Collector's Edition: Frost Wyrm Whelp",
+    "titleZh": null,
     "description": "Owner of the Wrath of the Lich King's Collector's Edition Frost Wyrm Whelp pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3752
@@ -14394,7 +17592,9 @@ export const ACHIEVEMENTS = [
     "id": 1384,
     "faction": -1,
     "title": "Instructor Razuvious kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Instructor Razuvious kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2639
@@ -14403,7 +17603,9 @@ export const ACHIEVEMENTS = [
     "id": 1873,
     "faction": -1,
     "title": "Lodi Dodi We Loves the Skadi",
+    "titleZh": null,
     "description": "Defeat Skadi the Ruthless in Utgarde Pinnacle on Heroic Difficulty within 3 minutes of starting the gauntlet event.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3307
@@ -14412,7 +17614,9 @@ export const ACHIEVEMENTS = [
     "id": 2097,
     "faction": -1,
     "title": "Get to the Choppa!",
+    "titleZh": null,
     "description": "Obtain a Mekgineer's Chopper or a Mechano-hog.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 1101
@@ -14421,7 +17625,9 @@ export const ACHIEVEMENTS = [
     "id": 2984,
     "faction": -1,
     "title": "Deforestation (25 player)",
+    "titleZh": null,
     "description": "Defeat 2 Ancient Water Spirits, 2 Storm Lashers and 2 Snaplashers within 10 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 40
@@ -14430,7 +17636,9 @@ export const ACHIEVEMENTS = [
     "id": 2985,
     "faction": -1,
     "title": "Deforestation (10 player)",
+    "titleZh": null,
     "description": "Defeat 2 Ancient Water Spirits, 2 Storm Lashers and 2 Snaplashers within 10 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 40
@@ -14439,7 +17647,9 @@ export const ACHIEVEMENTS = [
     "id": 4676,
     "faction": -1,
     "title": "Valithria Dreamwalker rescues (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Valithria Dreamwalker rescues (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14448,7 +17658,9 @@ export const ACHIEVEMENTS = [
     "id": 1385,
     "faction": -1,
     "title": "Loatheb kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Loatheb kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2997
@@ -14457,7 +17669,9 @@ export const ACHIEVEMENTS = [
     "id": 2084,
     "faction": -1,
     "title": "Ring of the Kirin Tor",
+    "titleZh": null,
     "description": "Purchase a Signet of the Kirin Tor, Band of the Kirin Tor, Loop of the Kirin Tor, or Ring of the Kirin Tor in Dalaran.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3447
@@ -14466,7 +17680,9 @@ export const ACHIEVEMENTS = [
     "id": 2156,
     "faction": -1,
     "title": "My Girl Loves to Skadi All the Time",
+    "titleZh": null,
     "description": "Defeat Skadi the Ruthless in Utgarde Pinnacle on Heroic Difficulty after having killed Grauf from 100% to dead in a single pass.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3319
@@ -14475,7 +17691,9 @@ export const ACHIEVEMENTS = [
     "id": 2982,
     "faction": -1,
     "title": "Getting Back to Nature (10 player)",
+    "titleZh": null,
     "description": "Defeat Freya while she is affected by 25 stacks of Attuned to Nature in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3865
@@ -14484,7 +17702,9 @@ export const ACHIEVEMENTS = [
     "id": 2983,
     "faction": -1,
     "title": "Getting Back to Nature (25 player)",
+    "titleZh": null,
     "description": "Defeat Freya while she is affected by 25 stacks of Attuned to Nature in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3865
@@ -14493,7 +17713,9 @@ export const ACHIEVEMENTS = [
     "id": 4650,
     "faction": -1,
     "title": "Professor Putricide kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Professor Putricide kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14502,7 +17724,9 @@ export const ACHIEVEMENTS = [
     "id": 4824,
     "faction": -1,
     "title": "Collector's Edition: Mini Thor",
+    "titleZh": null,
     "description": "Owner of the Starcraft II Collector's Edition Mini Thor pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 4347
@@ -14511,7 +17735,9 @@ export const ACHIEVEMENTS = [
     "id": 411,
     "faction": -1,
     "title": "Murky",
+    "titleZh": null,
     "description": "Proud owner of Murky from the 2005 BlizzCon in Anaheim, California.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2316
@@ -14520,7 +17746,9 @@ export const ACHIEVEMENTS = [
     "id": 1386,
     "faction": -1,
     "title": "Maexxna kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Maexxna kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1899
@@ -14529,7 +17757,9 @@ export const ACHIEVEMENTS = [
     "id": 2157,
     "faction": -1,
     "title": "King's Bane",
+    "titleZh": null,
     "description": "Defeat King Ymiron in Utgarde Pinnacle on Heroic Difficulty without anyone in the party triggering Bane.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3321
@@ -14538,7 +17768,9 @@ export const ACHIEVEMENTS = [
     "id": 2716,
     "faction": -1,
     "title": "Dual Talent Specialization",
+    "titleZh": null,
     "description": "Visit your class trainer when you are at least level 40 and activate your Dual Talent Specialization.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2970
@@ -14547,7 +17779,9 @@ export const ACHIEVEMENTS = [
     "id": 3177,
     "faction": -1,
     "title": "Knock on Wood (10 player)",
+    "titleZh": null,
     "description": "Defeat Freya while leaving at least 1 Elder alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3642
@@ -14556,7 +17790,9 @@ export const ACHIEVEMENTS = [
     "id": 3185,
     "faction": -1,
     "title": "Knock on Wood (25 player)",
+    "titleZh": null,
     "description": "Defeat Freya while leaving at least 1 Elder alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3642
@@ -14565,7 +17801,9 @@ export const ACHIEVEMENTS = [
     "id": 4677,
     "faction": -1,
     "title": "Professor Putricide kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Professor Putricide kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14574,7 +17812,9 @@ export const ACHIEVEMENTS = [
     "id": 412,
     "faction": -1,
     "title": "Murloc Costume",
+    "titleZh": null,
     "description": "Proud owner of the Murloc Costume from the 2007 BlizzCon in Anaheim, California.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1751
@@ -14583,7 +17823,9 @@ export const ACHIEVEMENTS = [
     "id": 1387,
     "faction": -1,
     "title": "Noth the Plaguebringer kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Noth the Plaguebringer kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 2997
@@ -14592,7 +17834,9 @@ export const ACHIEVEMENTS = [
     "id": 1871,
     "faction": -1,
     "title": "Experienced Drake Rider",
+    "titleZh": null,
     "description": "On three different visits to The Oculus, get credit for defeating Ley-Guardian Eregos while riding an Amber, Emerald, and Ruby drake on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3306
@@ -14601,7 +17845,9 @@ export const ACHIEVEMENTS = [
     "id": 2141,
     "faction": -1,
     "title": "Stable Keeper",
+    "titleZh": null,
     "description": "Obtain 10 mounts.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2165
@@ -14610,7 +17856,9 @@ export const ACHIEVEMENTS = [
     "id": 3178,
     "faction": -1,
     "title": "Knock, Knock on Wood (10 player)",
+    "titleZh": null,
     "description": "Defeat Freya while leaving at least 2 Elders alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3642
@@ -14619,7 +17867,9 @@ export const ACHIEVEMENTS = [
     "id": 3186,
     "faction": -1,
     "title": "Knock, Knock on Wood (25 player)",
+    "titleZh": null,
     "description": "Defeat Freya while leaving at least 2 Elders alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3642
@@ -14628,7 +17878,9 @@ export const ACHIEVEMENTS = [
     "id": 4678,
     "faction": -1,
     "title": "Professor Putricide kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Professor Putricide kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14637,7 +17889,9 @@ export const ACHIEVEMENTS = [
     "id": 415,
     "faction": -1,
     "title": "Big Blizzard Bear",
+    "titleZh": null,
     "description": "Proud owner of the Big Blizzard Bear from the 2008 BlizzCon.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3895
@@ -14646,7 +17900,9 @@ export const ACHIEVEMENTS = [
     "id": 1367,
     "faction": -1,
     "title": "Patchwerk kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Patchwerk kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -14655,7 +17911,9 @@ export const ACHIEVEMENTS = [
     "id": 1868,
     "faction": -1,
     "title": "Make It Count",
+    "titleZh": null,
     "description": "Defeat Ley-Guardian Eregos in The Oculus on Heroic Difficulty within 20 minutes of Drakos the Interrogator's death.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3303
@@ -14664,7 +17922,9 @@ export const ACHIEVEMENTS = [
     "id": 2142,
     "faction": -1,
     "title": "Filling Up The Barn",
+    "titleZh": null,
     "description": "Obtain 25 mounts.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2406
@@ -14673,7 +17933,9 @@ export const ACHIEVEMENTS = [
     "id": 3179,
     "faction": -1,
     "title": "Knock, Knock, Knock on Wood (10 player)",
+    "titleZh": null,
     "description": "Defeat Freya while leaving all 3 Elders alive in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3642
@@ -14682,7 +17944,9 @@ export const ACHIEVEMENTS = [
     "id": 3187,
     "faction": -1,
     "title": "Knock, Knock, Knock on Wood (25 player)",
+    "titleZh": null,
     "description": "Defeat Freya while leaving all 3 Elders alive in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3642
@@ -14691,7 +17955,9 @@ export const ACHIEVEMENTS = [
     "id": 4679,
     "faction": -1,
     "title": "Professor Putricide kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Professor Putricide kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14700,7 +17966,9 @@ export const ACHIEVEMENTS = [
     "id": 1388,
     "faction": -1,
     "title": "Thaddius kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Thaddius kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 97
@@ -14709,7 +17977,9 @@ export const ACHIEVEMENTS = [
     "id": 2044,
     "faction": -1,
     "title": "Ruby Void",
+    "titleZh": null,
     "description": "Defeat Ley-Guardian Eregos in The Oculus on Heroic Difficulty without anyone in your party using a Ruby Drake.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3495
@@ -14718,7 +17988,9 @@ export const ACHIEVEMENTS = [
     "id": 2143,
     "faction": -1,
     "title": "Leading the Cavalry",
+    "titleZh": null,
     "description": "Obtain 50 mounts.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 3444
@@ -14727,7 +17999,9 @@ export const ACHIEVEMENTS = [
     "id": 2989,
     "faction": -1,
     "title": "Set Up Us the Bomb (10 player)",
+    "titleZh": null,
     "description": "Defeat Mimiron without anyone in the raid being hit by the following in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3261
@@ -14736,7 +18010,9 @@ export const ACHIEVEMENTS = [
     "id": 3237,
     "faction": -1,
     "title": "Set Up Us the Bomb (25 player)",
+    "titleZh": null,
     "description": "Defeat Mimiron without anyone in the raid being hit by the following in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3261
@@ -14745,7 +18021,9 @@ export const ACHIEVEMENTS = [
     "id": 3536,
     "faction": -1,
     "title": "The Marine Marine",
+    "titleZh": null,
     "description": "Proud owner of Grunty's Heavy Murloc Egg from the 2009 BlizzCon.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2316
@@ -14754,7 +18032,9 @@ export const ACHIEVEMENTS = [
     "id": 4651,
     "faction": -1,
     "title": "Blood Queen Lana'thel kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Blood Queen Lana'thel kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14763,7 +18043,9 @@ export const ACHIEVEMENTS = [
     "id": 414,
     "faction": -1,
     "title": "Tyrael's Hilt",
+    "titleZh": null,
     "description": "Proud owner of Tyrael's Hilt from the 2008 World Wide Invitational in Paris, France.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2657
@@ -14772,7 +18054,9 @@ export const ACHIEVEMENTS = [
     "id": 1389,
     "faction": -1,
     "title": "Sapphiron kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Sapphiron kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1700
@@ -14781,7 +18065,9 @@ export const ACHIEVEMENTS = [
     "id": 2045,
     "faction": -1,
     "title": "Emerald Void",
+    "titleZh": null,
     "description": "Defeat Ley-Guardian Eregos in The Oculus on Heroic Difficulty without anyone in your party using an Emerald Drake.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3441
@@ -14790,7 +18076,9 @@ export const ACHIEVEMENTS = [
     "id": 2536,
     "faction": 1,
     "title": "Mountain o' Mounts",
+    "titleZh": null,
     "description": "Obtain 100 mounts.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2328
@@ -14799,7 +18087,9 @@ export const ACHIEVEMENTS = [
     "id": 2995,
     "faction": -1,
     "title": "Not-So-Friendly Fire (25 player)",
+    "titleZh": null,
     "description": "Force Mimiron to kill an Assault Bot with a Rocket Strike in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2665
@@ -14808,7 +18098,9 @@ export const ACHIEVEMENTS = [
     "id": 3138,
     "faction": -1,
     "title": "Not-So-Friendly Fire (10 player)",
+    "titleZh": null,
     "description": "Force Mimiron to kill an Assault Bot with a Rocket Strike in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2665
@@ -14817,7 +18109,9 @@ export const ACHIEVEMENTS = [
     "id": 4680,
     "faction": -1,
     "title": "Blood Queen Lana'thel kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Blood Queen Lana'thel kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14826,7 +18120,9 @@ export const ACHIEVEMENTS = [
     "id": 454,
     "faction": 0,
     "title": "Scout",
+    "titleZh": null,
     "description": "Earned the title, \"Scout\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3344
@@ -14835,7 +18131,9 @@ export const ACHIEVEMENTS = [
     "id": 1390,
     "faction": -1,
     "title": "Kel'Thuzad kills (Naxxramas 25 player)",
+    "titleZh": null,
     "description": "Kel'Thuzad kills (Naxxramas 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1898
@@ -14844,7 +18142,9 @@ export const ACHIEVEMENTS = [
     "id": 2046,
     "faction": -1,
     "title": "Amber Void",
+    "titleZh": null,
     "description": "Defeat Ley-Guardian Eregos in The Oculus on Heroic Difficulty without anyone in your party using an Amber Drake.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 3440
@@ -14853,7 +18153,9 @@ export const ACHIEVEMENTS = [
     "id": 2537,
     "faction": 0,
     "title": "Mountain o' Mounts",
+    "titleZh": null,
     "description": "Obtain 100 mounts.",
+    "descriptionZh": null,
     "category": 92,
     "points": 10,
     "iconId": 2328
@@ -14862,7 +18164,9 @@ export const ACHIEVEMENTS = [
     "id": 3180,
     "faction": -1,
     "title": "Firefighter (10 player)",
+    "titleZh": null,
     "description": "Defeat Mimiron after activating his Self-Destruct mechanism in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 1696
@@ -14871,7 +18175,9 @@ export const ACHIEVEMENTS = [
     "id": 3189,
     "faction": -1,
     "title": "Firefighter (25 player)",
+    "titleZh": null,
     "description": "Defeat Mimiron after activating his Self-Destruct mechanism in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 1696
@@ -14880,7 +18186,9 @@ export const ACHIEVEMENTS = [
     "id": 4681,
     "faction": -1,
     "title": "Blood Queen Lana'thel kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Blood Queen Lana'thel kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14889,7 +18197,9 @@ export const ACHIEVEMENTS = [
     "id": 468,
     "faction": 0,
     "title": "Grunt",
+    "titleZh": null,
     "description": "Earned the title, \"Grunt\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3345
@@ -14898,7 +18208,9 @@ export const ACHIEVEMENTS = [
     "id": 1392,
     "faction": -1,
     "title": "Sartharion kills (Chamber of the Aspects 10 player)",
+    "titleZh": null,
     "description": "Sartharion kills (Chamber of the Aspects 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1699
@@ -14907,7 +18219,9 @@ export const ACHIEVEMENTS = [
     "id": 2996,
     "faction": -1,
     "title": "Shadowdodger (10 player)",
+    "titleZh": null,
     "description": "Defeat General Vezax without any raid member being hit by Shadow Crash in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 1939
@@ -14916,7 +18230,9 @@ export const ACHIEVEMENTS = [
     "id": 2997,
     "faction": -1,
     "title": "Shadowdodger (25 player)",
+    "titleZh": null,
     "description": "Defeat General Vezax without any raid member being hit by Shadow Crash in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 1939
@@ -14925,7 +18241,9 @@ export const ACHIEVEMENTS = [
     "id": 3802,
     "faction": -1,
     "title": "Argent Confessor",
+    "titleZh": null,
     "description": "On separate visits to the Trial of the Champion, get credit for defeating Argent Confessor Paletress after suppressing five different memories of the past on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 2792
@@ -14934,7 +18252,9 @@ export const ACHIEVEMENTS = [
     "id": 4682,
     "faction": -1,
     "title": "Blood Queen Lana'thel kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Blood Queen Lana'thel kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14943,7 +18263,9 @@ export const ACHIEVEMENTS = [
     "id": 453,
     "faction": 0,
     "title": "Sergeant",
+    "titleZh": null,
     "description": "Earned the title, \"Sergeant\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3346
@@ -14952,7 +18274,9 @@ export const ACHIEVEMENTS = [
     "id": 1393,
     "faction": -1,
     "title": "Sartharion kills (Chamber of the Aspects 25 player)",
+    "titleZh": null,
     "description": "Sartharion kills (Chamber of the Aspects 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1699
@@ -14961,7 +18285,9 @@ export const ACHIEVEMENTS = [
     "id": 3181,
     "faction": -1,
     "title": "I Love the Smell of Saronite in the Morning (10 player)",
+    "titleZh": null,
     "description": "Defeat General Vezax after defeating the Saronite Animus in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3868
@@ -14970,7 +18296,9 @@ export const ACHIEVEMENTS = [
     "id": 3188,
     "faction": -1,
     "title": "I Love the Smell of Saronite in the Morning (25 player)",
+    "titleZh": null,
     "description": "Defeat General Vezax after defeating the Saronite Animus in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3868
@@ -14979,7 +18307,9 @@ export const ACHIEVEMENTS = [
     "id": 3803,
     "faction": -1,
     "title": "The Faceroller",
+    "titleZh": null,
     "description": "Defeat Eadric the Pure in the Trial of the Champion with his own hammer on Heroic Difficulty.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 42
@@ -14988,7 +18318,9 @@ export const ACHIEVEMENTS = [
     "id": 4652,
     "faction": -1,
     "title": "Sindragosa kills (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Sindragosa kills (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -14997,7 +18329,9 @@ export const ACHIEVEMENTS = [
     "id": 450,
     "faction": 0,
     "title": "Senior Sergeant",
+    "titleZh": null,
     "description": "Earned the title, \"Senior Sergeant\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3347
@@ -15006,7 +18340,9 @@ export const ACHIEVEMENTS = [
     "id": 1391,
     "faction": -1,
     "title": "Malygos kills (10 player)",
+    "titleZh": null,
     "description": "Malygos kills (10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1700
@@ -15015,7 +18351,9 @@ export const ACHIEVEMENTS = [
     "id": 3009,
     "faction": -1,
     "title": "Kiss and Make Up (10 player)",
+    "titleZh": null,
     "description": "/Kiss Sara in Ulduar while she is angry with you in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3192
@@ -15024,7 +18362,9 @@ export const ACHIEVEMENTS = [
     "id": 3011,
     "faction": -1,
     "title": "Kiss and Make Up (25 player)",
+    "titleZh": null,
     "description": "/Kiss Sara in Ulduar while she is angry with you in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3192
@@ -15033,7 +18373,9 @@ export const ACHIEVEMENTS = [
     "id": 3804,
     "faction": -1,
     "title": "I've Had Worse",
+    "titleZh": null,
     "description": "Defeat the Black Knight in the Trial of the Champion on Heroic Difficulty without any player in the group being hit by a ghoul explosion.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 1652
@@ -15042,7 +18384,9 @@ export const ACHIEVEMENTS = [
     "id": 4684,
     "faction": -1,
     "title": "Sindragosa kills (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Sindragosa kills (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15051,7 +18395,9 @@ export const ACHIEVEMENTS = [
     "id": 452,
     "faction": 0,
     "title": "First Sergeant",
+    "titleZh": null,
     "description": "Earned the title, \"First Sergeant\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3348
@@ -15060,7 +18406,9 @@ export const ACHIEVEMENTS = [
     "id": 1394,
     "faction": -1,
     "title": "Malygos kills (25 player)",
+    "titleZh": null,
     "description": "Malygos kills (25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 1700
@@ -15069,7 +18417,9 @@ export const ACHIEVEMENTS = [
     "id": 3157,
     "faction": -1,
     "title": "Three Lights in the Darkness (10 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron with the assistance of three or fewer Keepers in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2206
@@ -15078,7 +18428,9 @@ export const ACHIEVEMENTS = [
     "id": 3161,
     "faction": -1,
     "title": "Three Lights in the Darkness (25 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron with the assistance of three or fewer Keepers in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2206
@@ -15087,7 +18439,9 @@ export const ACHIEVEMENTS = [
     "id": 4522,
     "faction": -1,
     "title": "Soul Power",
+    "titleZh": null,
     "description": "Defeat Bronjahm in The Forge of Souls on Heroic Difficulty with at least 4 Corrupted Soul Fragments alive.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4152
@@ -15096,7 +18450,9 @@ export const ACHIEVEMENTS = [
     "id": 4683,
     "faction": -1,
     "title": "Sindragosa kills (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Sindragosa kills (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15105,7 +18461,9 @@ export const ACHIEVEMENTS = [
     "id": 451,
     "faction": 0,
     "title": "Stone Guard",
+    "titleZh": null,
     "description": "Earned the title, \"Stone Guard\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3349
@@ -15114,7 +18472,9 @@ export const ACHIEVEMENTS = [
     "id": 1753,
     "faction": -1,
     "title": "Archavon the Stone Watcher kills (Wintergrasp 10 player)",
+    "titleZh": null,
     "description": "Archavon the Stone Watcher kills (Wintergrasp 10 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 187
@@ -15123,7 +18483,9 @@ export const ACHIEVEMENTS = [
     "id": 3141,
     "faction": -1,
     "title": "Two Lights in the Darkness (10 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron with the assistance of two or fewer Keepers in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2206
@@ -15132,7 +18494,9 @@ export const ACHIEVEMENTS = [
     "id": 3162,
     "faction": -1,
     "title": "Two Lights in the Darkness (25 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron with the assistance of two or fewer Keepers in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2206
@@ -15141,7 +18505,9 @@ export const ACHIEVEMENTS = [
     "id": 4523,
     "faction": -1,
     "title": "Three Faced",
+    "titleZh": null,
     "description": "Defeat the Devourer of Souls in The Forge of Souls on Heroic Difficulty without him successfully casting Phantom Blast.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4153
@@ -15150,7 +18516,9 @@ export const ACHIEVEMENTS = [
     "id": 4685,
     "faction": -1,
     "title": "Sindragosa kills (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Sindragosa kills (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15159,7 +18527,9 @@ export const ACHIEVEMENTS = [
     "id": 449,
     "faction": 0,
     "title": "Blood Guard",
+    "titleZh": null,
     "description": "Earned the title, \"Blood Guard\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3350
@@ -15168,7 +18538,9 @@ export const ACHIEVEMENTS = [
     "id": 1754,
     "faction": -1,
     "title": "Archavon the Stone Watcher kills (Wintergrasp 25 player)",
+    "titleZh": null,
     "description": "Archavon the Stone Watcher kills (Wintergrasp 25 player)",
+    "descriptionZh": null,
     "category": 14823,
     "points": 10,
     "iconId": 187
@@ -15177,7 +18549,9 @@ export const ACHIEVEMENTS = [
     "id": 3158,
     "faction": -1,
     "title": "One Light in the Darkness (10 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron with the assistance of one or fewer Keepers in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2206
@@ -15186,7 +18560,9 @@ export const ACHIEVEMENTS = [
     "id": 3163,
     "faction": -1,
     "title": "One Light in the Darkness (25 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron with the assistance of one or fewer Keepers in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2206
@@ -15195,7 +18571,9 @@ export const ACHIEVEMENTS = [
     "id": 4524,
     "faction": -1,
     "title": "Doesn't Go to Eleven",
+    "titleZh": null,
     "description": "Defeat Forgemaster Garfrost in The Pit of Saron on Heroic Difficulty before any player gets 11 stacks of Permafrost.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4154
@@ -15204,7 +18582,9 @@ export const ACHIEVEMENTS = [
     "id": 4653,
     "faction": -1,
     "title": "Victories over the Lich King (Icecrown 10 player)",
+    "titleZh": null,
     "description": "Victories over the Lich King (Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15213,7 +18593,9 @@ export const ACHIEVEMENTS = [
     "id": 469,
     "faction": 0,
     "title": "Legionnaire",
+    "titleZh": null,
     "description": "Earned the title, \"Legionnaire\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3351
@@ -15222,7 +18604,9 @@ export const ACHIEVEMENTS = [
     "id": 3159,
     "faction": -1,
     "title": "Alone in the Darkness (10 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron without the assistance of any Keepers in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2206
@@ -15231,7 +18615,9 @@ export const ACHIEVEMENTS = [
     "id": 3164,
     "faction": -1,
     "title": "Alone in the Darkness (25 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron without the assistance of any Keepers in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2206
@@ -15240,7 +18626,9 @@ export const ACHIEVEMENTS = [
     "id": 4525,
     "faction": -1,
     "title": "Don't Look Up",
+    "titleZh": null,
     "description": "Clear the hallway before Scourgelord Tyrannus in The Pit of Saron on Heroic Difficulty without anyone taking icicle damage on the first try.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4155
@@ -15249,7 +18637,9 @@ export const ACHIEVEMENTS = [
     "id": 4686,
     "faction": -1,
     "title": "Victories over the Lich King (Heroic Icecrown 10 player)",
+    "titleZh": null,
     "description": "Victories over the Lich King (Heroic Icecrown 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15258,7 +18648,9 @@ export const ACHIEVEMENTS = [
     "id": 448,
     "faction": 0,
     "title": "Centurion",
+    "titleZh": null,
     "description": "Earned the title, \"Centurion\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3352
@@ -15267,7 +18659,9 @@ export const ACHIEVEMENTS = [
     "id": 3008,
     "faction": -1,
     "title": "Drive Me Crazy (10 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron without any raid member going insane in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 77
@@ -15276,7 +18670,9 @@ export const ACHIEVEMENTS = [
     "id": 3010,
     "faction": -1,
     "title": "Drive Me Crazy (25 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron without any raid member going insane in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 77
@@ -15285,7 +18681,9 @@ export const ACHIEVEMENTS = [
     "id": 4526,
     "faction": -1,
     "title": "We're Not Retreating; We're Advancing in a Different Direction.",
+    "titleZh": null,
     "description": "Escape from the Lich King in under 6 minutes.",
+    "descriptionZh": null,
     "category": 14921,
     "points": 10,
     "iconId": 4148
@@ -15294,7 +18692,9 @@ export const ACHIEVEMENTS = [
     "id": 4687,
     "faction": -1,
     "title": "Victories over the Lich King (Icecrown 25 player)",
+    "titleZh": null,
     "description": "Victories over the Lich King (Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15303,7 +18703,9 @@ export const ACHIEVEMENTS = [
     "id": 447,
     "faction": 0,
     "title": "Champion",
+    "titleZh": null,
     "description": "Earned the title, \"Champion\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3353
@@ -15312,7 +18714,9 @@ export const ACHIEVEMENTS = [
     "id": 3012,
     "faction": -1,
     "title": "He's Not Getting Any Older (10 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron within 7 minutes in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3848
@@ -15321,7 +18725,9 @@ export const ACHIEVEMENTS = [
     "id": 3013,
     "faction": -1,
     "title": "He's Not Getting Any Older (25 player)",
+    "titleZh": null,
     "description": "Defeat Yogg-Saron within 7 minutes in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3848
@@ -15330,7 +18736,9 @@ export const ACHIEVEMENTS = [
     "id": 4688,
     "faction": -1,
     "title": "Victories over the Lich King (Heroic Icecrown 25 player)",
+    "titleZh": null,
     "description": "Victories over the Lich King (Heroic Icecrown 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15339,7 +18747,9 @@ export const ACHIEVEMENTS = [
     "id": 444,
     "faction": 0,
     "title": "Lieutenant General",
+    "titleZh": null,
     "description": "Earned the title, \"Lieutenant General\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3354
@@ -15348,7 +18758,9 @@ export const ACHIEVEMENTS = [
     "id": 3014,
     "faction": -1,
     "title": "They're Coming Out of the Walls (10 player)",
+    "titleZh": null,
     "description": "Defeat 9 Guardians of Yogg-Saron within 12 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3871
@@ -15357,7 +18769,9 @@ export const ACHIEVEMENTS = [
     "id": 3017,
     "faction": -1,
     "title": "They're Coming Out of the Walls (25 player)",
+    "titleZh": null,
     "description": "Defeat 9 Guardians of Yogg-Saron within 12 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3871
@@ -15366,7 +18780,9 @@ export const ACHIEVEMENTS = [
     "id": 4657,
     "faction": -1,
     "title": "Toravon the Ice Watcher kills (Wintergrasp 10 player)",
+    "titleZh": null,
     "description": "Toravon the Ice Watcher kills (Wintergrasp 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15375,7 +18791,9 @@ export const ACHIEVEMENTS = [
     "id": 446,
     "faction": 0,
     "title": "General",
+    "titleZh": null,
     "description": "Earned the title, \"General\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3355
@@ -15384,7 +18802,9 @@ export const ACHIEVEMENTS = [
     "id": 3015,
     "faction": -1,
     "title": "In His House He Waits Dreaming (10 player)",
+    "titleZh": null,
     "description": "Experience all 3 visions of Yogg-Saron's mind in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 1940
@@ -15393,7 +18813,9 @@ export const ACHIEVEMENTS = [
     "id": 3016,
     "faction": -1,
     "title": "In His House He Waits Dreaming (25 player)",
+    "titleZh": null,
     "description": "Experience all 3 visions of Yogg-Saron's mind in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 1940
@@ -15402,7 +18824,9 @@ export const ACHIEVEMENTS = [
     "id": 4658,
     "faction": -1,
     "title": "Toravon the Ice Watcher kills (Wintergrasp 25 player)",
+    "titleZh": null,
     "description": "Toravon the Ice Watcher kills (Wintergrasp 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15411,7 +18835,9 @@ export const ACHIEVEMENTS = [
     "id": 445,
     "faction": 0,
     "title": "Warlord",
+    "titleZh": null,
     "description": "Earned the title, \"Warlord\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3356
@@ -15420,7 +18846,9 @@ export const ACHIEVEMENTS = [
     "id": 3036,
     "faction": -1,
     "title": "Observed (10 player)",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3869
@@ -15429,7 +18857,9 @@ export const ACHIEVEMENTS = [
     "id": 3037,
     "faction": -1,
     "title": "Observed (25 player)",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3869
@@ -15438,7 +18868,9 @@ export const ACHIEVEMENTS = [
     "id": 4821,
     "faction": -1,
     "title": "Halion kills (Ruby Sanctum 10 player)",
+    "titleZh": null,
     "description": "Halion kills (Ruby Sanctum 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15447,7 +18879,9 @@ export const ACHIEVEMENTS = [
     "id": 443,
     "faction": 0,
     "title": "High Warlord",
+    "titleZh": null,
     "description": "Earned the title, \"High Warlord\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3357
@@ -15456,7 +18890,9 @@ export const ACHIEVEMENTS = [
     "id": 3002,
     "faction": -1,
     "title": "Supermassive (25 player)",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer after closing 3 Black Holes within 10 seconds in 25-player mode.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2848
@@ -15465,7 +18901,9 @@ export const ACHIEVEMENTS = [
     "id": 3003,
     "faction": -1,
     "title": "Supermassive (10 player)",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer after closing 3 Black Holes within 10 seconds in 10-player mode.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2848
@@ -15474,7 +18912,9 @@ export const ACHIEVEMENTS = [
     "id": 4822,
     "faction": -1,
     "title": "Halion kills (Heroic Ruby Sanctum 10 player)",
+    "titleZh": null,
     "description": "Halion kills (Heroic Ruby Sanctum 10 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15483,7 +18923,9 @@ export const ACHIEVEMENTS = [
     "id": 442,
     "faction": 1,
     "title": "Private",
+    "titleZh": null,
     "description": "Earned the title, \"Private\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3358
@@ -15492,7 +18934,9 @@ export const ACHIEVEMENTS = [
     "id": 3004,
     "faction": -1,
     "title": "He Feeds On Your Tears (10 player)",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer in 10-player mode without any raid member dying to Algalon at any point during that raid lockout period.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3197
@@ -15501,7 +18945,9 @@ export const ACHIEVEMENTS = [
     "id": 3005,
     "faction": -1,
     "title": "He Feeds On Your Tears (25 player)",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer in 25-player mode without any raid member dying to Algalon at any point during that raid lockout period.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 3197
@@ -15510,7 +18956,9 @@ export const ACHIEVEMENTS = [
     "id": 4820,
     "faction": -1,
     "title": "Halion kills (Ruby Sanctum 25 player)",
+    "titleZh": null,
     "description": "Halion kills (Ruby Sanctum 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15519,7 +18967,9 @@ export const ACHIEVEMENTS = [
     "id": 470,
     "faction": 1,
     "title": "Corporal",
+    "titleZh": null,
     "description": "Earned the title, \"Corporal\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3359
@@ -15528,7 +18978,9 @@ export const ACHIEVEMENTS = [
     "id": 2904,
     "faction": -1,
     "title": "Conqueror of Ulduar",
+    "titleZh": null,
     "description": "Defeat each boss in Ulduar in 25-player mode without allowing any raid member to die to that boss at any point during that raid lockout period.",
+    "descriptionZh": null,
     "category": 14962,
     "points": 10,
     "iconId": 2143
@@ -15537,7 +18989,9 @@ export const ACHIEVEMENTS = [
     "id": 3316,
     "faction": -1,
     "title": "Herald of the Titans",
+    "titleZh": null,
     "description": "Defeat Algalon the Observer in 10-player mode without anyone in the raid wearing any equipment with an item level higher than is available in 10-player Ulduar.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 3869
@@ -15546,7 +19000,9 @@ export const ACHIEVEMENTS = [
     "id": 4823,
     "faction": -1,
     "title": "Halion kills (Heroic Ruby Sanctum 25 player)",
+    "titleZh": null,
     "description": "Halion kills (Heroic Ruby Sanctum 25 player)",
+    "descriptionZh": null,
     "category": 15062,
     "points": 0,
     "iconId": 1
@@ -15555,7 +19011,9 @@ export const ACHIEVEMENTS = [
     "id": 471,
     "faction": 1,
     "title": "Sergeant",
+    "titleZh": null,
     "description": "Earned the title, \"Sergeant\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3360
@@ -15564,7 +19022,9 @@ export const ACHIEVEMENTS = [
     "id": 2903,
     "faction": -1,
     "title": "Champion of Ulduar",
+    "titleZh": null,
     "description": "Defeat each boss in Ulduar in 10-player mode without allowing any raid member to die to that boss at any point during that raid lockout period.",
+    "descriptionZh": null,
     "category": 14961,
     "points": 10,
     "iconId": 2292
@@ -15573,7 +19033,9 @@ export const ACHIEVEMENTS = [
     "id": 441,
     "faction": 1,
     "title": "Master Sergeant",
+    "titleZh": null,
     "description": "Earned the title, \"Master Sergeant\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3361
@@ -15582,7 +19044,9 @@ export const ACHIEVEMENTS = [
     "id": 440,
     "faction": 1,
     "title": "Sergeant Major",
+    "titleZh": null,
     "description": "Earned the title, \"Sergeant Major\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3362
@@ -15591,7 +19055,9 @@ export const ACHIEVEMENTS = [
     "id": 439,
     "faction": 1,
     "title": "Knight",
+    "titleZh": null,
     "description": "Earned the title, \"Knight\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3363
@@ -15600,7 +19066,9 @@ export const ACHIEVEMENTS = [
     "id": 472,
     "faction": 1,
     "title": "Knight-Lieutenant",
+    "titleZh": null,
     "description": "Earned the title, \"Knight-Lieutenant\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3364
@@ -15609,7 +19077,9 @@ export const ACHIEVEMENTS = [
     "id": 438,
     "faction": 1,
     "title": "Knight-Captain",
+    "titleZh": null,
     "description": "Earned the title, \"Knight-Captain\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3365
@@ -15618,7 +19088,9 @@ export const ACHIEVEMENTS = [
     "id": 437,
     "faction": 1,
     "title": "Knight-Champion",
+    "titleZh": null,
     "description": "Earned the title, \"Knight-Champion\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3366
@@ -15627,7 +19099,9 @@ export const ACHIEVEMENTS = [
     "id": 436,
     "faction": 1,
     "title": "Lieutenant Commander",
+    "titleZh": null,
     "description": "Earned the title, \"Lieutenant Commander\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3367
@@ -15636,7 +19110,9 @@ export const ACHIEVEMENTS = [
     "id": 435,
     "faction": 1,
     "title": "Commander",
+    "titleZh": null,
     "description": "Earned the title, \"Commander\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3368
@@ -15645,7 +19121,9 @@ export const ACHIEVEMENTS = [
     "id": 473,
     "faction": 1,
     "title": "Marshal",
+    "titleZh": null,
     "description": "Earned the title, \"Marshal\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3369
@@ -15654,7 +19132,9 @@ export const ACHIEVEMENTS = [
     "id": 434,
     "faction": 1,
     "title": "Field Marshal",
+    "titleZh": null,
     "description": "Earned the title, \"Field Marshal\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3370
@@ -15663,7 +19143,9 @@ export const ACHIEVEMENTS = [
     "id": 433,
     "faction": 1,
     "title": "Grand Marshal",
+    "titleZh": null,
     "description": "Earned the title, \"Grand Marshal\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3371
@@ -15672,7 +19154,9 @@ export const ACHIEVEMENTS = [
     "id": 432,
     "faction": -1,
     "title": "Champion of the Naaru",
+    "titleZh": null,
     "description": "Earned the title, \"Champion of the Naaru\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2843
@@ -15681,7 +19165,9 @@ export const ACHIEVEMENTS = [
     "id": 431,
     "faction": -1,
     "title": "Hand of A'dal",
+    "titleZh": null,
     "description": "Earned the title, \"Hand of A'dal\".",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2570
@@ -15690,7 +19176,9 @@ export const ACHIEVEMENTS = [
     "id": 1205,
     "faction": -1,
     "title": "Hero of Shattrath",
+    "titleZh": null,
     "description": "Gained exalted status with The Scryers and The Aldor.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2175
@@ -15699,7 +19187,9 @@ export const ACHIEVEMENTS = [
     "id": 871,
     "faction": -1,
     "title": "Avast Ye, Admiral!",
+    "titleZh": null,
     "description": "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2421
@@ -15708,7 +19198,9 @@ export const ACHIEVEMENTS = [
     "id": 879,
     "faction": -1,
     "title": "Old School Ride",
+    "titleZh": null,
     "description": "Owner of one of the original epic mounts that are no longer attainable.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1177
@@ -15717,7 +19209,9 @@ export const ACHIEVEMENTS = [
     "id": 729,
     "faction": -1,
     "title": "Deathcharger's Reins",
+    "titleZh": null,
     "description": "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1241
@@ -15726,7 +19220,9 @@ export const ACHIEVEMENTS = [
     "id": 980,
     "faction": -1,
     "title": "The Horseman's Reins",
+    "titleZh": null,
     "description": "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2628
@@ -15735,7 +19231,9 @@ export const ACHIEVEMENTS = [
     "id": 880,
     "faction": -1,
     "title": "Swift Zulian Tiger",
+    "titleZh": null,
     "description": "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1181
@@ -15744,7 +19242,9 @@ export const ACHIEVEMENTS = [
     "id": 881,
     "faction": -1,
     "title": "Swift Razzashi Raptor",
+    "titleZh": null,
     "description": "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1180
@@ -15753,7 +19253,9 @@ export const ACHIEVEMENTS = [
     "id": 882,
     "faction": -1,
     "title": "Fiery Warhorse's Reins",
+    "titleZh": null,
     "description": "Obtain the Fiery Warhorse's Reins from Attumen the Huntsman in Karazhan.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1715
@@ -15762,7 +19264,9 @@ export const ACHIEVEMENTS = [
     "id": 883,
     "faction": -1,
     "title": "Reins of the Raven Lord",
+    "titleZh": null,
     "description": "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2467
@@ -15771,7 +19275,9 @@ export const ACHIEVEMENTS = [
     "id": 884,
     "faction": -1,
     "title": "Swift White Hawkstrider",
+    "titleZh": null,
     "description": "Obtain the Swift White Hawkstrider from Kael'thas Sunstrider in Magister's Terrace.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2399
@@ -15780,7 +19286,9 @@ export const ACHIEVEMENTS = [
     "id": 885,
     "faction": -1,
     "title": "Ashes of Al'ar",
+    "titleZh": null,
     "description": "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1927
@@ -15789,7 +19297,9 @@ export const ACHIEVEMENTS = [
     "id": 4626,
     "faction": -1,
     "title": "And I'll Form the Head!",
+    "titleZh": null,
     "description": "Obtain Mimiron's Head from 25-player Yogg-Saron with no Keepers assisting you.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1815
@@ -15798,7 +19308,9 @@ export const ACHIEVEMENTS = [
     "id": 4627,
     "faction": -1,
     "title": "Big Love Rocket",
+    "titleZh": null,
     "description": "Obtain the Big Love Rocket from Apothecary Hummel in Shadowfang Keep during Love is in the Air.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3195
@@ -15807,7 +19319,9 @@ export const ACHIEVEMENTS = [
     "id": 4625,
     "faction": -1,
     "title": "Invincible's Reins",
+    "titleZh": null,
     "description": "Obtain Invincible from Arthas in Icecrown Citadel.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3005
@@ -15816,7 +19330,9 @@ export const ACHIEVEMENTS = [
     "id": 4079,
     "faction": 0,
     "title": "A Tribute to Immortality",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with 50 attempts remaining and without allowing any raid member to die during any of the boss encounters in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3744
@@ -15825,7 +19341,9 @@ export const ACHIEVEMENTS = [
     "id": 4156,
     "faction": 1,
     "title": "A Tribute to Immortality",
+    "titleZh": null,
     "description": "In the Trial of the Grand Crusader, reach a Tribute Chest with 50 attempts remaining and without allowing any raid member to die during any of the boss encounters in 25-player mode.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3744
@@ -15834,7 +19352,9 @@ export const ACHIEVEMENTS = [
     "id": 886,
     "faction": -1,
     "title": "Swift Nether Drake",
+    "titleZh": null,
     "description": "Obtain the Swift Nether Drake from Arena Season 1 of The Burning Crusade.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2333
@@ -15843,7 +19363,9 @@ export const ACHIEVEMENTS = [
     "id": 887,
     "faction": -1,
     "title": "Merciless Nether Drake",
+    "titleZh": null,
     "description": "Obtain the Merciless Nether Drake from Arena Season 2 of The Burning Crusade.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2333
@@ -15852,7 +19374,9 @@ export const ACHIEVEMENTS = [
     "id": 888,
     "faction": -1,
     "title": "Vengeful Nether Drake",
+    "titleZh": null,
     "description": "Obtain the Vengeful Nether Drake from Arena Season 3 of The Burning Crusade.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2333
@@ -15861,7 +19385,9 @@ export const ACHIEVEMENTS = [
     "id": 2316,
     "faction": -1,
     "title": "Brutal Nether Drake",
+    "titleZh": null,
     "description": "Obtain the Brutal Nether Drake from Arena Season 4 of The Burning Crusade.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2333
@@ -15870,7 +19396,9 @@ export const ACHIEVEMENTS = [
     "id": 3096,
     "faction": -1,
     "title": "Deadly Gladiator's Frostwyrm",
+    "titleZh": null,
     "description": "Obtain the Deadly Gladiator's Frostwyrm from Arena Season 5 of Wrath of the Lich King.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3913
@@ -15879,7 +19407,9 @@ export const ACHIEVEMENTS = [
     "id": 3756,
     "faction": -1,
     "title": "Furious Gladiator's Frostwyrm",
+    "titleZh": null,
     "description": "Obtain the Furious Gladiator's Frostwyrm from Arena Season 6 of Wrath of the Lich King.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3913
@@ -15888,7 +19418,9 @@ export const ACHIEVEMENTS = [
     "id": 3757,
     "faction": -1,
     "title": "Relentless Gladiator's Frostwyrm",
+    "titleZh": null,
     "description": "Obtain the Relentless Gladiator's Frostwyrm from Arena Season 7 of Wrath of the Lich King.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3913
@@ -15897,7 +19429,9 @@ export const ACHIEVEMENTS = [
     "id": 4600,
     "faction": -1,
     "title": "Wrathful Gladiator's Frostwyrm",
+    "titleZh": null,
     "description": "Obtain the Wrathful Gladiator's Frostwyrm from Arena Season 8 of Wrath of the Lich King.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3913
@@ -15906,7 +19440,9 @@ export const ACHIEVEMENTS = [
     "id": 430,
     "faction": -1,
     "title": "Amani War Bear",
+    "titleZh": null,
     "description": "Owner of Amani War Bear.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 957
@@ -15915,7 +19451,9 @@ export const ACHIEVEMENTS = [
     "id": 424,
     "faction": -1,
     "title": "Why? Because It's Red",
+    "titleZh": null,
     "description": "Obtain a Red Qiraji Resonating Crystal.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1812
@@ -15924,7 +19462,9 @@ export const ACHIEVEMENTS = [
     "id": 429,
     "faction": -1,
     "title": "Sulfuras, Hand of Ragnaros",
+    "titleZh": null,
     "description": "Wielder of Sulfuras, Hand of Ragnaros.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2444
@@ -15933,7 +19473,9 @@ export const ACHIEVEMENTS = [
     "id": 428,
     "faction": -1,
     "title": "Thunderfury, Blessed Blade of the Windseeker",
+    "titleZh": null,
     "description": "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2756
@@ -15942,7 +19484,9 @@ export const ACHIEVEMENTS = [
     "id": 425,
     "faction": -1,
     "title": "Atiesh, Greatstaff of the Guardian",
+    "titleZh": null,
     "description": "Wielder of Atiesh, Greatstaff of the Guardian.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2757
@@ -15951,7 +19495,9 @@ export const ACHIEVEMENTS = [
     "id": 426,
     "faction": -1,
     "title": "Warglaives of Azzinoth",
+    "titleZh": null,
     "description": "Wielder of a set of Warglaives of Azzinoth.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2596
@@ -15960,7 +19506,9 @@ export const ACHIEVEMENTS = [
     "id": 725,
     "faction": -1,
     "title": "Thori'dal, the Stars' Fury",
+    "titleZh": null,
     "description": "Wielder of Thori'dal, the Stars' Fury.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2842
@@ -15969,7 +19517,9 @@ export const ACHIEVEMENTS = [
     "id": 3142,
     "faction": -1,
     "title": "Val'anyr, Hammer of Ancient Kings",
+    "titleZh": null,
     "description": "Wielder of Val'anyr, Hammer of Ancient Kings.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3818
@@ -15978,7 +19528,9 @@ export const ACHIEVEMENTS = [
     "id": 4623,
     "faction": -1,
     "title": "Shadowmourne",
+    "titleZh": null,
     "description": "Wielder of Shadowmourne.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 4182
@@ -15987,7 +19539,9 @@ export const ACHIEVEMENTS = [
     "id": 418,
     "faction": -1,
     "title": "Merciless Gladiator",
+    "titleZh": null,
     "description": "Achieved Merciless Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3593
@@ -15996,7 +19550,9 @@ export const ACHIEVEMENTS = [
     "id": 419,
     "faction": -1,
     "title": "Vengeful Gladiator",
+    "titleZh": null,
     "description": "Achieved Vengeful Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3594
@@ -16005,7 +19561,9 @@ export const ACHIEVEMENTS = [
     "id": 420,
     "faction": -1,
     "title": "Brutal Gladiator",
+    "titleZh": null,
     "description": "Achieved Brutal Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3595
@@ -16014,7 +19572,9 @@ export const ACHIEVEMENTS = [
     "id": 3336,
     "faction": -1,
     "title": "Deadly Gladiator",
+    "titleZh": null,
     "description": "Achieved Deadly Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3596
@@ -16023,7 +19583,9 @@ export const ACHIEVEMENTS = [
     "id": 3436,
     "faction": -1,
     "title": "Furious Gladiator",
+    "titleZh": null,
     "description": "Achieved Furious Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3597
@@ -16032,7 +19594,9 @@ export const ACHIEVEMENTS = [
     "id": 3758,
     "faction": -1,
     "title": "Relentless Gladiator",
+    "titleZh": null,
     "description": "Achieved Relentless Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3598
@@ -16041,7 +19605,9 @@ export const ACHIEVEMENTS = [
     "id": 4599,
     "faction": -1,
     "title": "Wrathful Gladiator",
+    "titleZh": null,
     "description": "Achieved Wrathful Gladiator title.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3599
@@ -16050,7 +19616,9 @@ export const ACHIEVEMENTS = [
     "id": 416,
     "faction": -1,
     "title": "Scarab Lord",
+    "titleZh": null,
     "description": "Opened the gates of Ahn'Qiraj.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3567
@@ -16059,7 +19627,9 @@ export const ACHIEVEMENTS = [
     "id": 1292,
     "faction": -1,
     "title": "Yellow Brewfest Stein",
+    "titleZh": null,
     "description": "Proud owner of the 2007 Vintage Yellow Brewfest Stein.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3082
@@ -16068,7 +19638,9 @@ export const ACHIEVEMENTS = [
     "id": 1293,
     "faction": -1,
     "title": "Blue Brewfest Stein",
+    "titleZh": null,
     "description": "Proud owner of the 2008 Vintage Blue Brewfest Stein.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3083
@@ -16077,7 +19649,9 @@ export const ACHIEVEMENTS = [
     "id": 4782,
     "faction": -1,
     "title": "Green Brewfest Stein",
+    "titleZh": null,
     "description": "Proud owner of the 2009 Vintage Green Brewfest Stein.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 4223
@@ -16086,7 +19660,9 @@ export const ACHIEVEMENTS = [
     "id": 1636,
     "faction": -1,
     "title": "Competitor's Tabard",
+    "titleZh": null,
     "description": "Proud owner of a Competitor's Tabard from the 2008 Spirit of Competition event.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2970
@@ -16095,7 +19671,9 @@ export const ACHIEVEMENTS = [
     "id": 1637,
     "faction": -1,
     "title": "Spirit of Competition",
+    "titleZh": null,
     "description": "Proud owner of a Spirit of Competition pet from the 2008 Spirit of Competition event.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2970
@@ -16104,7 +19682,9 @@ export const ACHIEVEMENTS = [
     "id": 1705,
     "faction": -1,
     "title": "Clockwork Rocket Bot",
+    "titleZh": null,
     "description": "Proud owner of the 2007 Vintage Winter Veil gift, the Clockwork Rocket Bot.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1859
@@ -16113,7 +19693,9 @@ export const ACHIEVEMENTS = [
     "id": 1706,
     "faction": -1,
     "title": "Crashin' Thrashin' Racer",
+    "titleZh": null,
     "description": "Proud owner of the 2008 Vintage Winter Veil gift, the Crashin' Thrashin' Racer.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1859
@@ -16122,7 +19704,9 @@ export const ACHIEVEMENTS = [
     "id": 1436,
     "faction": -1,
     "title": "Friends In High Places",
+    "titleZh": null,
     "description": "Obtain a Zhevra mount through the Recruit-a-Friend program.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1716
@@ -16131,7 +19715,9 @@ export const ACHIEVEMENTS = [
     "id": 2079,
     "faction": -1,
     "title": "Tabard of the Protector",
+    "titleZh": null,
     "description": "Obtained a Tabard of the Protector from the Dark Portal event.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2637
@@ -16140,7 +19726,9 @@ export const ACHIEVEMENTS = [
     "id": 2116,
     "faction": -1,
     "title": "Tabard of the Argent Dawn",
+    "titleZh": null,
     "description": "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2637
@@ -16149,7 +19737,9 @@ export const ACHIEVEMENTS = [
     "id": 2398,
     "faction": -1,
     "title": "WoW's 4th Anniversary",
+    "titleZh": null,
     "description": "Logged in during WoW's 4th Anniversary.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2917
@@ -16158,7 +19748,9 @@ export const ACHIEVEMENTS = [
     "id": 4400,
     "faction": -1,
     "title": "WoW's 5th Anniversary",
+    "titleZh": null,
     "description": "Logged in during WoW's 5th Anniversary.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2917
@@ -16167,7 +19759,9 @@ export const ACHIEVEMENTS = [
     "id": 2336,
     "faction": -1,
     "title": "Insane in the Membrane",
+    "titleZh": null,
     "description": "Raise your reputation with the areas listed below.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2938
@@ -16176,7 +19770,9 @@ export const ACHIEVEMENTS = [
     "id": 2456,
     "faction": -1,
     "title": "Vampire Hunter",
+    "titleZh": null,
     "description": "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1577
@@ -16185,7 +19781,9 @@ export const ACHIEVEMENTS = [
     "id": 2357,
     "faction": -1,
     "title": "Dreadsteed of Xoroth",
+    "titleZh": null,
     "description": "Completed the Dreadsteed of Xoroth warlock quest.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1715
@@ -16194,7 +19792,9 @@ export const ACHIEVEMENTS = [
     "id": 2496,
     "faction": -1,
     "title": "The Fifth Element",
+    "titleZh": null,
     "description": "Obtain an Aqual Quintessence.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2134
@@ -16203,7 +19803,9 @@ export const ACHIEVEMENTS = [
     "id": 2358,
     "faction": -1,
     "title": "Charger",
+    "titleZh": null,
     "description": "Completed the paladin quest to obtain a Charger.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1716
@@ -16212,7 +19814,9 @@ export const ACHIEVEMENTS = [
     "id": 2359,
     "faction": -1,
     "title": "Swift Flight Form",
+    "titleZh": null,
     "description": "Completed the druid quest to obtain Swift Flight Form.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2274
@@ -16221,7 +19825,9 @@ export const ACHIEVEMENTS = [
     "id": 3618,
     "faction": -1,
     "title": "Murkimus the Gladiator",
+    "titleZh": null,
     "description": "Proud owner of a Murkimus the Gladiator pet.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 370
@@ -16230,7 +19836,9 @@ export const ACHIEVEMENTS = [
     "id": 3636,
     "faction": -1,
     "title": "Jade Tiger",
+    "titleZh": null,
     "description": "Logged in during the Jade Tiger giveaway.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 283
@@ -16239,7 +19847,9 @@ export const ACHIEVEMENTS = [
     "id": 3896,
     "faction": -1,
     "title": "Onyx Panther",
+    "titleZh": null,
     "description": "Proud owner of an Onyx Panther.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1809
@@ -16248,7 +19858,9 @@ export const ACHIEVEMENTS = [
     "id": 2081,
     "faction": -1,
     "title": "Grand Black War Mammoth",
+    "titleZh": null,
     "description": "Obtain a Grand Black War Mammoth.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3444
@@ -16257,7 +19869,9 @@ export const ACHIEVEMENTS = [
     "id": 3496,
     "faction": -1,
     "title": "A Brew-FAST Mount",
+    "titleZh": null,
     "description": "Obtain an epic Brewfest mount.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 354
@@ -16266,7 +19880,9 @@ export const ACHIEVEMENTS = [
     "id": 3356,
     "faction": 1,
     "title": "Winterspring Frostsaber",
+    "titleZh": null,
     "description": "Obtain a Winterspring Frosaber.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1510
@@ -16275,7 +19891,9 @@ export const ACHIEVEMENTS = [
     "id": 3357,
     "faction": 0,
     "title": "Venomhide Ravasaur",
+    "titleZh": null,
     "description": "Obtain a Venomhide Ravasaur.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 1584
@@ -16284,7 +19902,9 @@ export const ACHIEVEMENTS = [
     "id": 4496,
     "faction": -1,
     "title": "It's Over Nine Thousand!",
+    "titleZh": null,
     "description": "Earn more than 9000 achievement points.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 561
@@ -16293,7 +19913,9 @@ export const ACHIEVEMENTS = [
     "id": 684,
     "faction": -1,
     "title": "Onyxia's Lair (Level 60)",
+    "titleZh": null,
     "description": "Defeat the classic, level 60 version of Onyxia.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3820
@@ -16302,7 +19924,9 @@ export const ACHIEVEMENTS = [
     "id": 2018,
     "faction": -1,
     "title": "Timear Foresees",
+    "titleZh": null,
     "description": "Complete the Northrend daily dungeon quests listed below.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2215
@@ -16311,7 +19935,9 @@ export const ACHIEVEMENTS = [
     "id": 2019,
     "faction": -1,
     "title": "Proof of Demise",
+    "titleZh": null,
     "description": "Completed the Northrend daily dungeon quests listed below.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3028
@@ -16320,7 +19946,9 @@ export const ACHIEVEMENTS = [
     "id": 4784,
     "faction": 1,
     "title": "Emblematic",
+    "titleZh": null,
     "description": "Earn any variety of Emblem.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 4234
@@ -16329,7 +19957,9 @@ export const ACHIEVEMENTS = [
     "id": 4785,
     "faction": 0,
     "title": "Emblematic",
+    "titleZh": null,
     "description": "Earn any variety of Emblem.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 4234
@@ -16338,7 +19968,9 @@ export const ACHIEVEMENTS = [
     "id": 4786,
     "faction": 1,
     "title": "Operation: Gnomeregan",
+    "titleZh": null,
     "description": "You assisted High Tinker Mekkatorque and the Gnomeregan Exiles in the recapture of Gnomeregan's surface.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 3799
@@ -16347,7 +19979,9 @@ export const ACHIEVEMENTS = [
     "id": 4790,
     "faction": 0,
     "title": "Zalazane's Fall",
+    "titleZh": null,
     "description": "You assisted Vol'jin in the final defeat of Zalazane, recapturing the Echo Isles for the Darkspear trolls.",
+    "descriptionZh": null,
     "category": 81,
     "points": 0,
     "iconId": 2513
@@ -16357,431 +19991,517 @@ export const ACHIEVEMENT_CATEGORIES = [
   {
     "id": 92,
     "parent": -1,
-    "name": "General"
+    "name": "General",
+    "nameZh": null
   },
   {
     "id": 123,
     "parent": 122,
-    "name": "Arenas"
+    "name": "Arenas",
+    "nameZh": null
   },
   {
     "id": 130,
     "parent": 1,
-    "name": "Character"
+    "name": "Character",
+    "nameZh": null
   },
   {
     "id": 135,
     "parent": 128,
-    "name": "Creatures"
+    "name": "Creatures",
+    "nameZh": null
   },
   {
     "id": 140,
     "parent": 130,
-    "name": "Wealth"
+    "name": "Wealth",
+    "nameZh": null
   },
   {
     "id": 152,
     "parent": 21,
-    "name": "Rated Arenas"
+    "name": "Rated Arenas",
+    "nameZh": null
   },
   {
     "id": 160,
     "parent": 155,
-    "name": "Lunar Festival"
+    "name": "Lunar Festival",
+    "nameZh": null
   },
   {
     "id": 165,
     "parent": 95,
-    "name": "Arena"
+    "name": "Arena",
+    "nameZh": null
   },
   {
     "id": 170,
     "parent": 169,
-    "name": "Cooking"
+    "name": "Cooking",
+    "nameZh": null
   },
   {
     "id": 178,
     "parent": 132,
-    "name": "Secondary Skills"
+    "name": "Secondary Skills",
+    "nameZh": null
   },
   {
     "id": 14777,
     "parent": 97,
-    "name": "Eastern Kingdoms"
+    "name": "Eastern Kingdoms",
+    "nameZh": null
   },
   {
     "id": 14808,
     "parent": 168,
-    "name": "Classic"
+    "name": "Classic",
+    "nameZh": null
   },
   {
     "id": 14821,
     "parent": 14807,
-    "name": "Classic"
+    "name": "Classic",
+    "nameZh": null
   },
   {
     "id": 14861,
     "parent": 96,
-    "name": "Classic"
+    "name": "Classic",
+    "nameZh": null
   },
   {
     "id": 14864,
     "parent": 201,
-    "name": "Classic"
+    "name": "Classic",
+    "nameZh": null
   },
   {
     "id": 96,
     "parent": -1,
-    "name": "Quests"
+    "name": "Quests",
+    "nameZh": null
   },
   {
     "id": 124,
     "parent": 122,
-    "name": "Battlegrounds"
+    "name": "Battlegrounds",
+    "nameZh": null
   },
   {
     "id": 136,
     "parent": 128,
-    "name": "Honorable Kills"
+    "name": "Honorable Kills",
+    "nameZh": null
   },
   {
     "id": 141,
     "parent": 1,
-    "name": "Combat"
+    "name": "Combat",
+    "nameZh": null
   },
   {
     "id": 145,
     "parent": 130,
-    "name": "Consumables"
+    "name": "Consumables",
+    "nameZh": null
   },
   {
     "id": 153,
     "parent": 21,
-    "name": "Battlegrounds"
+    "name": "Battlegrounds",
+    "nameZh": null
   },
   {
     "id": 171,
     "parent": 169,
-    "name": "Fishing"
+    "name": "Fishing",
+    "nameZh": null
   },
   {
     "id": 173,
     "parent": 132,
-    "name": "Professions"
+    "name": "Professions",
+    "nameZh": null
   },
   {
     "id": 187,
     "parent": 155,
-    "name": "Love is in the Air"
+    "name": "Love is in the Air",
+    "nameZh": null
   },
   {
     "id": 14778,
     "parent": 97,
-    "name": "Kalimdor"
+    "name": "Kalimdor",
+    "nameZh": null
   },
   {
     "id": 14801,
     "parent": 95,
-    "name": "Alterac Valley"
+    "name": "Alterac Valley",
+    "nameZh": null
   },
   {
     "id": 14805,
     "parent": 168,
-    "name": "The Burning Crusade"
+    "name": "The Burning Crusade",
+    "nameZh": null
   },
   {
     "id": 14822,
     "parent": 14807,
-    "name": "The Burning Crusade"
+    "name": "The Burning Crusade",
+    "nameZh": null
   },
   {
     "id": 14862,
     "parent": 96,
-    "name": "The Burning Crusade"
+    "name": "The Burning Crusade",
+    "nameZh": null
   },
   {
     "id": 14865,
     "parent": 201,
-    "name": "The Burning Crusade"
+    "name": "The Burning Crusade",
+    "nameZh": null
   },
   {
     "id": 97,
     "parent": -1,
-    "name": "Exploration"
+    "name": "Exploration",
+    "nameZh": null
   },
   {
     "id": 125,
     "parent": 122,
-    "name": "Dungeons"
+    "name": "Dungeons",
+    "nameZh": null
   },
   {
     "id": 128,
     "parent": 1,
-    "name": "Kills"
+    "name": "Kills",
+    "nameZh": null
   },
   {
     "id": 137,
     "parent": 128,
-    "name": "Killing Blows"
+    "name": "Killing Blows",
+    "nameZh": null
   },
   {
     "id": 147,
     "parent": 130,
-    "name": "Reputation"
+    "name": "Reputation",
+    "nameZh": null
   },
   {
     "id": 154,
     "parent": 21,
-    "name": "World"
+    "name": "World",
+    "nameZh": null
   },
   {
     "id": 159,
     "parent": 155,
-    "name": "Noblegarden"
+    "name": "Noblegarden",
+    "nameZh": null
   },
   {
     "id": 172,
     "parent": 169,
-    "name": "First Aid"
+    "name": "First Aid",
+    "nameZh": null
   },
   {
     "id": 14779,
     "parent": 97,
-    "name": "Outland"
+    "name": "Outland",
+    "nameZh": null
   },
   {
     "id": 14802,
     "parent": 95,
-    "name": "Arathi Basin"
+    "name": "Arathi Basin",
+    "nameZh": null
   },
   {
     "id": 14806,
     "parent": 168,
-    "name": "Lich King Dungeon"
+    "name": "Lich King Dungeon",
+    "nameZh": null
   },
   {
     "id": 14823,
     "parent": 14807,
-    "name": "Wrath of the Lich King"
+    "name": "Wrath of the Lich King",
+    "nameZh": null
   },
   {
     "id": 14863,
     "parent": 96,
-    "name": "Wrath of the Lich King"
+    "name": "Wrath of the Lich King",
+    "nameZh": null
   },
   {
     "id": 14866,
     "parent": 201,
-    "name": "Wrath of the Lich King"
+    "name": "Wrath of the Lich King",
+    "nameZh": null
   },
   {
     "id": 95,
     "parent": -1,
-    "name": "Player vs. Player"
+    "name": "Player vs. Player",
+    "nameZh": null
   },
   {
     "id": 122,
     "parent": 1,
-    "name": "Deaths"
+    "name": "Deaths",
+    "nameZh": null
   },
   {
     "id": 126,
     "parent": 122,
-    "name": "World"
+    "name": "World",
+    "nameZh": null
   },
   {
     "id": 163,
     "parent": 155,
-    "name": "Children's Week"
+    "name": "Children's Week",
+    "nameZh": null
   },
   {
     "id": 191,
     "parent": 130,
-    "name": "Gear"
+    "name": "Gear",
+    "nameZh": null
   },
   {
     "id": 14780,
     "parent": 97,
-    "name": "Northrend"
+    "name": "Northrend",
+    "nameZh": null
   },
   {
     "id": 14803,
     "parent": 95,
-    "name": "Eye of the Storm"
+    "name": "Eye of the Storm",
+    "nameZh": null
   },
   {
     "id": 14921,
     "parent": 168,
-    "name": "Lich King Heroic"
+    "name": "Lich King Heroic",
+    "nameZh": null
   },
   {
     "id": 14963,
     "parent": 14807,
-    "name": "Secrets of Ulduar"
+    "name": "Secrets of Ulduar",
+    "nameZh": null
   },
   {
     "id": 127,
     "parent": 122,
-    "name": "Resurrection"
+    "name": "Resurrection",
+    "nameZh": null
   },
   {
     "id": 133,
     "parent": 1,
-    "name": "Quests"
+    "name": "Quests",
+    "nameZh": null
   },
   {
     "id": 161,
     "parent": 155,
-    "name": "Midsummer"
+    "name": "Midsummer",
+    "nameZh": null
   },
   {
     "id": 168,
     "parent": -1,
-    "name": "Dungeons & Raids"
+    "name": "Dungeons & Raids",
+    "nameZh": null
   },
   {
     "id": 14804,
     "parent": 95,
-    "name": "Warsong Gulch"
+    "name": "Warsong Gulch",
+    "nameZh": null
   },
   {
     "id": 14922,
     "parent": 168,
-    "name": "Lich King 10-Player Raid"
+    "name": "Lich King 10-Player Raid",
+    "nameZh": null
   },
   {
     "id": 15021,
     "parent": 14807,
-    "name": "Call of the Crusade"
+    "name": "Call of the Crusade",
+    "nameZh": null
   },
   {
     "id": 162,
     "parent": 155,
-    "name": "Brewfest"
+    "name": "Brewfest",
+    "nameZh": null
   },
   {
     "id": 169,
     "parent": -1,
-    "name": "Professions"
+    "name": "Professions",
+    "nameZh": null
   },
   {
     "id": 14807,
     "parent": 1,
-    "name": "Dungeons & Raids"
+    "name": "Dungeons & Raids",
+    "nameZh": null
   },
   {
     "id": 14881,
     "parent": 95,
-    "name": "Strand of the Ancients"
+    "name": "Strand of the Ancients",
+    "nameZh": null
   },
   {
     "id": 14923,
     "parent": 168,
-    "name": "Lich King 25-Player Raid"
+    "name": "Lich King 25-Player Raid",
+    "nameZh": null
   },
   {
     "id": 15062,
     "parent": 14807,
-    "name": "Fall of the Lich King"
+    "name": "Fall of the Lich King",
+    "nameZh": null
   },
   {
     "id": 132,
     "parent": 1,
-    "name": "Skills"
+    "name": "Skills",
+    "nameZh": null
   },
   {
     "id": 158,
     "parent": 155,
-    "name": "Hallow's End"
+    "name": "Hallow's End",
+    "nameZh": null
   },
   {
     "id": 201,
     "parent": -1,
-    "name": "Reputation"
+    "name": "Reputation",
+    "nameZh": null
   },
   {
     "id": 14901,
     "parent": 95,
-    "name": "Wintergrasp"
+    "name": "Wintergrasp",
+    "nameZh": null
   },
   {
     "id": 14961,
     "parent": 168,
-    "name": "Secrets of Ulduar 10-Player Raid"
+    "name": "Secrets of Ulduar 10-Player Raid",
+    "nameZh": null
   },
   {
     "id": 134,
     "parent": 1,
-    "name": "Travel"
+    "name": "Travel",
+    "nameZh": null
   },
   {
     "id": 155,
     "parent": -1,
-    "name": "World Events"
+    "name": "World Events",
+    "nameZh": null
   },
   {
     "id": 14962,
     "parent": 168,
-    "name": "Secrets of Ulduar 25-Player Raid"
+    "name": "Secrets of Ulduar 25-Player Raid",
+    "nameZh": null
   },
   {
     "id": 14981,
     "parent": 155,
-    "name": "Pilgrim's Bounty"
+    "name": "Pilgrim's Bounty",
+    "nameZh": null
   },
   {
     "id": 15003,
     "parent": 95,
-    "name": "Isle of Conquest"
+    "name": "Isle of Conquest",
+    "nameZh": null
   },
   {
     "id": 81,
     "parent": -1,
-    "name": "Feats of Strength"
+    "name": "Feats of Strength",
+    "nameZh": null
   },
   {
     "id": 131,
     "parent": 1,
-    "name": "Social"
+    "name": "Social",
+    "nameZh": null
   },
   {
     "id": 156,
     "parent": 155,
-    "name": "Winter Veil"
+    "name": "Winter Veil",
+    "nameZh": null
   },
   {
     "id": 15001,
     "parent": 168,
-    "name": "Call of the Crusade 10-Player Raid"
+    "name": "Call of the Crusade 10-Player Raid",
+    "nameZh": null
   },
   {
     "id": 1,
     "parent": -1,
-    "name": "Statistics"
+    "name": "Statistics",
+    "nameZh": null
   },
   {
     "id": 21,
     "parent": 1,
-    "name": "Player vs. Player"
+    "name": "Player vs. Player",
+    "nameZh": null
   },
   {
     "id": 14941,
     "parent": 155,
-    "name": "Argent Tournament"
+    "name": "Argent Tournament",
+    "nameZh": null
   },
   {
     "id": 15002,
     "parent": 168,
-    "name": "Call of the Crusade 25-Player Raid"
+    "name": "Call of the Crusade 25-Player Raid",
+    "nameZh": null
   },
   {
     "id": 15041,
     "parent": 168,
-    "name": "Fall of the Lich King 10-Player Raid"
+    "name": "Fall of the Lich King 10-Player Raid",
+    "nameZh": null
   },
   {
     "id": 15042,
     "parent": 168,
-    "name": "Fall of the Lich King 25-Player Raid"
+    "name": "Fall of the Lich King 25-Player Raid",
+    "nameZh": null
   }
 ] as const;

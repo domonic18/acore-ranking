@@ -177,7 +177,9 @@ function generateAchievements() {
   const aIdIdx = aHeaders.findIndex(h => h === 'ID');
   const aFactionIdx = aHeaders.findIndex(h => h === 'Faction');
   const aTitleIdx = aHeaders.findIndex(h => h === 'Title_lang[0]');
+  const aTitleZhIdx = aHeaders.findIndex(h => h === 'Title_lang[4]');
   const aDescIdx = aHeaders.findIndex(h => h === 'Description_lang[0]');
+  const aDescZhIdx = aHeaders.findIndex(h => h === 'Description_lang[4]');
   const aCatIdx = aHeaders.findIndex(h => h === 'Category');
   const aPointsIdx = aHeaders.findIndex(h => h === 'Points');
   const aIconIdx = aHeaders.findIndex(h => h === 'IconID');
@@ -188,7 +190,9 @@ function generateAchievements() {
       id: parseInt(achRows[i][aIdIdx], 10),
       faction: parseInt(achRows[i][aFactionIdx], 10),
       title: achRows[i][aTitleIdx],
+      titleZh: achRows[i][aTitleZhIdx] || null,
       description: achRows[i][aDescIdx],
+      descriptionZh: achRows[i][aDescZhIdx] || null,
       category: parseInt(achRows[i][aCatIdx], 10),
       points: parseInt(achRows[i][aPointsIdx], 10) || 0,
       iconId: parseInt(achRows[i][aIconIdx], 10),
@@ -201,6 +205,7 @@ function generateAchievements() {
   const cIdIdx = cHeaders.findIndex(h => h === 'ID');
   const cParentIdx = cHeaders.findIndex(h => h === 'Parent');
   const cNameIdx = cHeaders.findIndex(h => h === 'Name_lang[0]');
+  const cNameZhIdx = cHeaders.findIndex(h => h === 'Name_lang[4]');
 
   const categories: any[] = [];
   for (let i = 1; i < catRows.length; i++) {
@@ -208,6 +213,7 @@ function generateAchievements() {
       id: parseInt(catRows[i][cIdIdx], 10),
       parent: parseInt(catRows[i][cParentIdx], 10),
       name: catRows[i][cNameIdx],
+      nameZh: catRows[i][cNameZhIdx] || null,
     });
   }
 

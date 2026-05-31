@@ -127,12 +127,15 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
 
       {/* 表格 */}
       <div className="overflow-x-auto rounded-lg border border-border">
-        <Table className="w-full">
+        <Table className="w-full min-w-max">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <TableHead key={header.id}>
+                  <TableHead
+                    key={header.id}
+                    className={(header.column.columnDef.meta as { className?: string } | undefined)?.className}
+                  >
                     {header.isPlaceholder
                       ? null
                       : flexRender(header.column.columnDef.header, header.getContext())}
@@ -158,7 +161,10 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
               table.getRowModel().rows.map((row) => (
                 <TableRow key={row.id}>
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="whitespace-nowrap">
+                    <TableCell
+                      key={cell.id}
+                      className={`whitespace-nowrap ${(cell.column.columnDef.meta as { className?: string } | undefined)?.className || ''}`}
+                    >
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
                     </TableCell>
                   ))}

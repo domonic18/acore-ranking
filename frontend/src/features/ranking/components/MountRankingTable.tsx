@@ -21,6 +21,7 @@ const columns: ColumnDef<MountRankPlayer>[] = [
   {
     accessorKey: 'race',
     header: '种族',
+    meta: { className: 'hidden md:table-cell' },
     cell: ({ row }) => (
       <RaceIcon race={row.original.race} gender={row.original.gender} size={24} />
     ),
@@ -36,6 +37,7 @@ const columns: ColumnDef<MountRankPlayer>[] = [
   {
     accessorKey: 'side',
     header: '阵营',
+    meta: { className: 'hidden md:table-cell' },
     cell: ({ row }) => <FactionBadge side={row.original.side} />,
   },
   { accessorKey: 'total_mount_counts', header: '坐骑数' },

@@ -32,10 +32,10 @@ export default function HardcorePage() {
         <ErrorState message={current.error.message} />
       ) : current.data ? (
         <>
-          {activeTab === 'completed60' && <CompletedTable data={current.data} levelHeader="硬核达成级别" />}
-          {activeTab === 'completed70' && <CompletedTable data={current.data} levelHeader="硬核达成级别" />}
-          {activeTab === 'fail' && <FailedTable data={current.data} levelHeader="阵亡级别" />}
-          {activeTab === 'incomplete' && <IncompleteTable data={current.data} levelHeader="当前级别" />}
+          {activeTab === 'completed60' && <CompletedTable data={current.data} levelHeader="级别" />}
+          {activeTab === 'completed70' && <CompletedTable data={current.data} levelHeader="级别" />}
+          {activeTab === 'fail' && <FailedTable data={current.data} levelHeader="级别" />}
+          {activeTab === 'incomplete' && <IncompleteTable data={current.data} levelHeader="级别" />}
         </>
       ) : null}
     </main>

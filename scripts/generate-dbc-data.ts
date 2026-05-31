@@ -89,6 +89,29 @@ function generateSpellIcon() {
   console.log(`Generated spellIcon.ts with ${Object.keys(map).length} entries`);
 }
 
+function generateSpellToIcon() {
+  const content = fs.readFileSync(path.join(dataDir, 'Spell_3.3.5_12340.csv'), 'utf-8');
+  const rows = parseCsv(content);
+  const headers = rows[0];
+  const idIdx = headers.findIndex(h => h === 'ID');
+  const iconIdx = headers.findIndex(h => h === 'SpellIconID');
+
+  const map: Record<number, number> = {};
+  for (let i = 1; i < rows.length; i++) {
+    const id = parseInt(rows[i][idIdx], 10);
+    const iconId = parseInt(rows[i][iconIdx], 10);
+    if (id && iconId) {
+      map[id] = iconId;
+    }
+  }
+
+  fs.writeFileSync(
+    path.join(outDir, 'spellToIcon.ts'),
+    `export const SPELL_TO_ICON: Record<number, number> = ${JSON.stringify(map, null, 2)};\n`,
+  );
+  console.log(`Generated spellToIcon.ts with ${Object.keys(map).length} entries`);
+}
+
 function generateTalents() {
   const tabContent = fs.readFileSync(path.join(dataDir, 'TalentTab_3.3.5_12340.csv'), 'utf-8');
   const tabRows = parseCsv(tabContent);
@@ -197,6 +220,7 @@ function generateAchievements() {
 
 generateItemDisplayInfo();
 generateSpellIcon();
+generateSpellToIcon();
 generateTalents();
 generateAchievements();
 console.log('Done!');

@@ -50,12 +50,13 @@ export class CharacterRepository extends BaseRepository {
         ci.slot,
         ii.itemEntry,
         it.displayid,
-        it.name as item_name,
+        COALESCE(loc.Name, it.name) as item_name,
         it.Quality
       FROM characters c
       INNER JOIN character_inventory ci ON c.guid = ci.guid
       INNER JOIN item_instance ii ON ci.item = ii.guid
       INNER JOIN acore_world.item_template it ON ii.itemEntry = it.entry
+      LEFT JOIN acore_world.item_template_locale loc ON it.entry = loc.ID AND loc.locale = 'zhCN'
       WHERE c.name = ? AND ci.slot BETWEEN 0 AND 19 AND ci.bag = 0
     `, [name]);
   }

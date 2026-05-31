@@ -4,6 +4,7 @@ import { getFactionByRace } from '../shared/utils/faction.util';
 import { formatTotalTime } from '../shared/utils/time.util';
 import { ITEM_DISPLAY_INFO } from '../generated/itemDisplayInfo';
 import { SPELL_ICON } from '../generated/spellIcon';
+import { SPELL_TO_ICON } from '../generated/spellToIcon';
 import { TALENT_TABS, TALENTS } from '../generated/talents';
 import { ACHIEVEMENTS, ACHIEVEMENT_CATEGORIES } from '../generated/achievements';
 
@@ -90,18 +91,23 @@ export class CharacterService {
     }
 
     const trees = tabs.map((tab) => {
-      const spells = TALENTS.filter((t) => t.tabId === tab.id).map((t) => ({
-        id: t.id,
-        tierId: t.tierId,
-        columnIndex: t.columnIndex,
-        spellRank0: t.spellRank0,
-        spellRank1: t.spellRank1,
-        spellRank2: t.spellRank2,
-        spellRank3: t.spellRank3,
-        spellRank4: t.spellRank4,
-        prereqTalent0: t.prereqTalent0,
-        icon: SPELL_ICON[tab.iconId] || null,
-      }));
+      const spells = TALENTS.filter((t) => t.tabId === tab.id).map((t) => {
+        const ranks = [t.spellRank0, t.spellRank1, t.spellRank2, t.spellRank3, t.spellRank4];
+        const firstSpellId = ranks.find((id) => id > 0);
+        const spellIconId = firstSpellId ? SPELL_TO_ICON[firstSpellId] : undefined;
+        return {
+          id: t.id,
+          tierId: t.tierId,
+          columnIndex: t.columnIndex,
+          spellRank0: t.spellRank0,
+          spellRank1: t.spellRank1,
+          spellRank2: t.spellRank2,
+          spellRank3: t.spellRank3,
+          spellRank4: t.spellRank4,
+          prereqTalent0: t.prereqTalent0,
+          icon: spellIconId ? SPELL_ICON[spellIconId] || null : null,
+        };
+      });
       return {
         name: tab.name,
         iconId: tab.iconId,

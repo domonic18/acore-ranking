@@ -32,6 +32,10 @@ export class CacheService {
   }
 
   async set(key: string, value: unknown, ttl: number): Promise<void> {
-    await redis.setex(key, ttl, JSON.stringify(value));
+    try {
+      await redis.setex(key, ttl, JSON.stringify(value));
+    } catch {
+      // Redis unavailable — silently skip caching
+    }
   }
 }

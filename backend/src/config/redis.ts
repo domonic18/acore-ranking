@@ -7,10 +7,15 @@ const redis = new Redis({
   password: env.REDIS_PASSWORD || undefined,
   db: 0,
   lazyConnect: true,
+  enableOfflineQueue: false,
+  maxRetriesPerRequest: 0,
 });
 
 redis.on('error', (err) => {
-  console.error('Redis connection error / Redis 连接错误:', err.message);
+  // Silently ignore connection errors in production (e.g. SCF without Redis)
+  if (env.NODE_ENV === 'development') {
+    console.error('Redis connection error / Redis 连接错误:', err.message);
+  }
 });
 
 export { redis };

@@ -7,16 +7,18 @@ export default function BanlistPage() {
   const { data, isLoading, error } = useBanlist();
 
   return (
-    <main className="mx-auto w-full min-w-[320px] max-w-6xl p-4">
-      <h1 className="mb-4 text-2xl font-bold">封禁列表</h1>
+    <div className="min-h-screen bg-background text-foreground">
+      <main className="mx-auto w-full min-w-[320px] max-w-6xl p-4">
+        <h1 className="mb-4 text-2xl font-bold">封禁列表</h1>
 
-      {isLoading ? (
-        <LoadingState />
-      ) : error ? (
-        <ErrorState message={error.message} />
-      ) : data ? (
-        <BanlistTable data={data} />
-      ) : null}
-    </main>
+        {isLoading ? (
+          <LoadingState />
+        ) : error ? (
+          <ErrorState message={error.message} />
+        ) : data ? (
+          <BanlistTable data={data} />
+        ) : null}
+      </main>
+    </div>
   );
 }

@@ -55,14 +55,6 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: 'banlist',
-        element: (
-          <Suspense fallback={<LoadingState />}>
-            <BanlistPage />
-          </Suspense>
-        ),
-      },
-      {
         path: 'character/:name',
         element: (
           <Suspense fallback={<LoadingState />}>
@@ -71,6 +63,14 @@ export const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: '/banlist',
+    element: (
+      <Suspense fallback={<LoadingState />}>
+        <BanlistPage />
+      </Suspense>
+    ),
   },
   {
     path: '/widget/online',

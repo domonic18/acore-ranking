@@ -5,7 +5,6 @@ const navItems = [
   { to: '/ranking', label: '排行' },
   { to: '/hardcore', label: '硬核' },
   { to: '/achievement', label: '成就' },
-  { to: '/banlist', label: '封禁' },
 ];
 
 export default function App() {

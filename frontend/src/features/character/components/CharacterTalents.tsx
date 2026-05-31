@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { ICON_BASE_URL } from '@/shared/constants/external';
-import type { CharacterTalents } from '../types';
+import type { CharacterTalents as CharacterTalentsData } from '../types';
 
 interface CharacterTalentsProps {
-  data: CharacterTalents;
+  data: CharacterTalentsData;
 }
 
-function TalentTreeView({ tree, learnedSpells, points }: { tree: CharacterTalents['trees'][0]; learnedSpells: Set<number>; points: number }) {
+function TalentTreeView({ tree, learnedSpells, points }: { tree: CharacterTalentsData['trees'][0]; learnedSpells: Set<number>; points: number }) {
   const maxTier = Math.max(...tree.spells.map((s) => s.tierId), 0);
 
   return (

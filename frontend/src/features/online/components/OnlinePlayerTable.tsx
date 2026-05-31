@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { DataTable } from '@/shared/components/DataTable';
 import { FactionBadge } from '@/shared/components/FactionBadge';
 import { RaceIcon, ClassIcon } from '@/shared/components/RaceClassIcons';
-import { GENDER_NAMES } from '@/shared/constants/game';
 import type { ColumnDef } from '@tanstack/react-table';
 import type { OnlinePlayer } from '../types';
 
@@ -35,14 +34,18 @@ const columns: ColumnDef<OnlinePlayer>[] = [
   },
   { accessorKey: 'level', header: '等级' },
   {
-    accessorKey: 'gender',
-    header: '性别',
-    cell: ({ row }) => GENDER_NAMES[row.original.gender] ?? row.original.gender,
-  },
-  {
     accessorKey: 'side',
     header: '阵营',
     cell: ({ row }) => <FactionBadge side={row.original.side} />,
+  },
+  {
+    accessorKey: 'status',
+    header: '状态',
+    cell: () => (
+      <span className="whitespace-nowrap text-sm">
+        <span className="text-green-500">&#9679;</span> 在线
+      </span>
+    ),
   },
 ];
 

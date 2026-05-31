@@ -42,7 +42,7 @@ export function RecentAchievementTimeline({ data }: RecentAchievementTimelinePro
               {achievements.map((a, idx) => (
                 <div
                   key={`${a.guid}-${a.achievement_date}-${idx}`}
-                  className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm"
+                  className="flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs"
                 >
                   <span className="text-muted-foreground shrink-0">{formatTime(a.achievement_date)}</span>
                   <span className="font-bold text-sky-400 shrink-0">{a.name}</span>

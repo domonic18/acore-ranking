@@ -88,7 +88,7 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
   return (
     <div className="space-y-3">
       {/* 顶部工具栏：每页数量左对齐，搜索右对齐 */}
-      <div className="flex flex-wrap items-center justify-between gap-2">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-between">
         <div className="flex items-center gap-2 text-sm">
           <span className="text-muted-foreground">每页显示</span>
           <select
@@ -127,7 +127,7 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
 
       {/* 表格 */}
       <div className="overflow-x-auto rounded-lg border border-border">
-        <Table className="min-w-[600px]">
+        <Table className="w-full">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>

@@ -40,37 +40,3 @@ jobs:
             ${{ env.TCR_REGISTRY }}/${{ secrets.TCR_NAMESPACE }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
-  deploy-to-scf:
-    name: Deploy to SCF / 部署到腾讯云 SCF
-    needs: build-and-push
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout / 检出代码
-        uses: actions/checkout@v4
-
-      - name: Install tccli / 安装腾讯云 CLI
-        run: pip install tccli
-
-      - name: Configure tccli / 配置腾讯云 CLI
-        run: |
-          tccli configure set secretId ${{ secrets.TENCENT_SECRET_ID }}
-          tccli configure set secretKey ${{ secrets.TENCENT_SECRET_KEY }}
-          tccli configure set region ${{ secrets.TENCENT_REGION }}
-
-      - name: Update SCF Function / 更新 SCF 函数
-        run: |
-          IMAGE_URI="${{ env.TCR_REGISTRY }}/${{ secrets.TCR_NAMESPACE }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
-          echo "Deploying image: $IMAGE_URI"
-          tccli scf UpdateFunctionCode \
-            --FunctionName ${{ secrets.SCF_FUNCTION_NAME }} \
-            --ImageConfig "{\"ImageType\":\"personal\",\"ImageUri\":\"$IMAGE_URI\"}"
-
-      - name: Verify Deployment / 验证部署
-        run: |
-          echo "Waiting for SCF function update..."
-          sleep 10
-          tccli scf GetFunction \
-            --FunctionName ${{ secrets.SCF_FUNCTION_NAME }} \
-            --QueryVersion "LATEST" \
-            --Output json | jq '.Response.Status'

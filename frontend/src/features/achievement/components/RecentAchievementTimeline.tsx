@@ -4,11 +4,18 @@ interface RecentAchievementTimelineProps {
   data: RecentAchievement[];
 }
 
+function parseDateParts(dateStr: string) {
+  const [datePart, timePart] = dateStr.split(' ');
+  const [year, month, day] = datePart.split('-').map(Number);
+  const [hour, minute, second] = timePart ? timePart.split(':').map(Number) : [0, 0, 0];
+  return { year, month, day, hour, minute, second };
+}
+
 function groupByDate(items: RecentAchievement[]) {
   const groups: Record<string, RecentAchievement[]> = {};
   for (const item of items) {
-    const date = new Date(item.achievement_date);
-    const key = `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+    const { year, month, day } = parseDateParts(item.achievement_date);
+    const key = `${year}年${month}月${day}日`;
     if (!groups[key]) groups[key] = [];
     groups[key].push(item);
   }
@@ -16,8 +23,8 @@ function groupByDate(items: RecentAchievement[]) {
 }
 
 function formatTime(dateStr: string) {
-  const date = new Date(dateStr);
-  return date.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const { hour, minute, second } = parseDateParts(dateStr);
+  return `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:${String(second).padStart(2, '0')}`;
 }
 
 export function RecentAchievementTimeline({ data }: RecentAchievementTimelineProps) {

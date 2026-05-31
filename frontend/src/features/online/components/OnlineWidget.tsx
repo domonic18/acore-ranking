@@ -38,7 +38,7 @@ export function OnlineWidget() {
           href={detailUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white underline hover:text-blue-300"
+          className="font-medium text-blue-400 underline underline-offset-2 hover:text-blue-300"
         >
           设置详情
         </a>
@@ -89,7 +89,7 @@ export function OnlineWidget() {
             href={onlineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white underline hover:text-blue-300"
+            className="font-bold text-yellow-400 underline underline-offset-2 hover:text-yellow-300"
           >
             {count.total_count}
           </a>{' '}

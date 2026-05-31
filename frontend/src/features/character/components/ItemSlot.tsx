@@ -67,7 +67,7 @@ export function ItemSlot({ slot, item, reverse }: ItemSlotProps) {
         target="_blank"
         rel={aowowRel}
         className={`flex items-center gap-3 ${reverse ? 'flex-row-reverse' : ''}`}
-        title={`${slotNames[slot]}: ${item.name}`}
+        title={`${slotNames[slot]}: ${item!.name}`}
       >
         {content}
       </a>

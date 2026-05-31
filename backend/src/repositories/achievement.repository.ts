@@ -15,7 +15,7 @@ export class AchievementRepository extends BaseRepository {
         c.class,
         c.gender,
         c.level,
-        ad.Title_Lang_zhCN AS achievement_description,
+        ad.Title_Lang_deDE AS achievement_description,
         FROM_UNIXTIME(ca.date) AS achievement_date
       FROM character_achievement AS ca
       INNER JOIN characters AS c ON ca.guid = c.guid

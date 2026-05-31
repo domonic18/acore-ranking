@@ -18,7 +18,7 @@ export class AchievementService {
       class: a.class,
       gender: a.gender,
       level: a.level,
-      achievement_description: a.achievement_description,
+      achievement_description: a.achievement_description || '未知成就',
       achievement_date: a.achievement_date,
     }));
 

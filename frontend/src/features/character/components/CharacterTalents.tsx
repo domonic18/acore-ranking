@@ -7,12 +7,12 @@ interface CharacterTalentsProps {
   data: CharacterTalents;
 }
 
-function TalentTreeView({ tree, learnedSpells }: { tree: CharacterTalents['trees'][0]; learnedSpells: Set<number> }) {
+function TalentTreeView({ tree, learnedSpells, points }: { tree: CharacterTalents['trees'][0]; learnedSpells: Set<number>; points: number }) {
   const maxTier = Math.max(...tree.spells.map((s) => s.tierId), 0);
 
   return (
     <div className="rounded-lg border bg-card p-3">
-      <div className="mb-3 flex items-center gap-2">
+      <div className="mb-3 flex items-center justify-center gap-2">
         {tree.icon && (
           <img
             src={`${ICON_BASE_URL}/${tree.icon}.jpg`}
@@ -22,6 +22,7 @@ function TalentTreeView({ tree, learnedSpells }: { tree: CharacterTalents['trees
           />
         )}
         <span className="font-semibold">{tree.name}</span>
+        <span className="text-sm text-muted-foreground">({points})</span>
       </div>
 
       <div className="grid gap-1" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
@@ -88,22 +89,19 @@ export function CharacterTalents({ data }: CharacterTalentsProps) {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {data.trees.map((tree) => {
           const learnedSpells = new Set(data.talents[activeSpec]);
-          return <TalentTreeView key={tree.name} tree={tree} learnedSpells={learnedSpells} />;
+          let points = 0;
+          for (const spell of tree.spells) {
+            const ranks = [spell.spellRank0, spell.spellRank1, spell.spellRank2, spell.spellRank3, spell.spellRank4].filter((r) => r > 0);
+            for (let i = 0; i < ranks.length; i++) {
+              if (learnedSpells.has(ranks[i])) {
+                points += i + 1;
+                break;
+              }
+            }
+          }
+          return <TalentTreeView key={tree.name} tree={tree} learnedSpells={learnedSpells} points={points} />;
         })}
       </div>
-
-      {data.glyphs[activeSpec]?.length > 0 && (
-        <div className="rounded-lg border bg-card p-3">
-          <div className="mb-2 text-sm font-semibold">铭文</div>
-          <div className="flex flex-wrap gap-2">
-            {data.glyphs[activeSpec].map((glyphId, idx) => (
-              <span key={idx} className="rounded bg-secondary px-2 py-1 text-xs text-muted-foreground">
-                铭文 {glyphId}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

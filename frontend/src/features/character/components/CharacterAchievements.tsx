@@ -123,10 +123,22 @@ export function CharacterAchievements({ data }: CharacterAchievementsProps) {
                     <div className={`truncate text-sm font-medium ${isEarned ? '' : 'text-muted-foreground/60'}`}>{ach.title}</div>
                     <div className={`truncate text-xs ${isEarned ? 'text-muted-foreground' : 'text-muted-foreground/40'}`}>{ach.description}</div>
                   </div>
-                  <div className="shrink-0 text-right">
-                    <div className={`text-sm font-semibold ${isEarned ? '' : 'text-muted-foreground/50'}`}>{ach.points}</div>
+                  <div
+                    className="flex shrink-0 flex-col items-center justify-center text-center"
+                    style={{
+                      width: 64,
+                      height: 64,
+                      backgroundImage: 'url(/assets/UI-Achievement-Shields.png)',
+                      backgroundPosition: '0px -4px',
+                      backgroundRepeat: 'no-repeat',
+                      color: '#ffffff',
+                      textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+                      opacity: isEarned ? 1 : 0.4,
+                    }}
+                  >
+                    <span className="text-sm font-bold leading-tight">{ach.points}</span>
                     {isEarned && (
-                      <div className="text-xs text-muted-foreground">{formatDate(data.earned[ach.id])}</div>
+                      <span className="text-[10px] leading-tight">{formatDate(data.earned[ach.id])}</span>
                     )}
                   </div>
                 </div>

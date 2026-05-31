@@ -14,19 +14,19 @@ export function CharacterEquipment({ items }: CharacterEquipmentProps) {
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-[1fr_auto_1fr]">
+      <div className="grid gap-4 sm:gap-8" style={{ gridTemplateColumns: '1fr auto 1fr' }}>
         {/* Left column - reverse layout for centered armory look */}
-        <div className="space-y-2 md:pr-4">
+        <div className="space-y-2 pr-2 sm:pr-4">
           {leftSlots.map((slot) => (
             <ItemSlot key={slot} slot={slot} item={itemMap.get(slot)} reverse />
           ))}
         </div>
 
         {/* Center spacer */}
-        <div className="hidden md:block w-8" />
+        <div className="w-4 sm:w-8" />
 
         {/* Right column */}
-        <div className="space-y-2 md:pl-4">
+        <div className="space-y-2 pl-2 sm:pl-4">
           {rightSlots.map((slot) => (
             <ItemSlot key={slot} slot={slot} item={itemMap.get(slot)} />
           ))}

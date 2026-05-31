@@ -1,181 +1,181 @@
 export const TALENT_TABS = [
   {
     "id": 81,
-    "name": "Arcane",
+    "name": "奥术",
     "iconId": 125,
     "classMask": 128
   },
   {
     "id": 161,
-    "name": "Arms",
+    "name": "武器",
     "iconId": 514,
     "classMask": 1
   },
   {
     "id": 182,
-    "name": "Assassination",
+    "name": "刺杀",
     "iconId": 514,
     "classMask": 8
   },
   {
     "id": 201,
-    "name": "Discipline",
+    "name": "戒律",
     "iconId": 685,
     "classMask": 16
   },
   {
     "id": 261,
-    "name": "Elemental",
+    "name": "元素",
     "iconId": 62,
     "classMask": 64
   },
   {
     "id": 283,
-    "name": "Balance",
+    "name": "平衡",
     "iconId": 225,
     "classMask": 1024
   },
   {
     "id": 302,
-    "name": "Affliction",
+    "name": "痛苦",
     "iconId": 88,
     "classMask": 256
   },
   {
     "id": 361,
-    "name": "Beast Mastery",
+    "name": "野兽控制",
     "iconId": 255,
     "classMask": 4
   },
   {
     "id": 382,
-    "name": "Holy",
+    "name": "神圣",
     "iconId": 70,
     "classMask": 2
   },
   {
     "id": 398,
-    "name": "Blood",
+    "name": "鲜血",
     "iconId": 2636,
     "classMask": 32
   },
   {
     "id": 41,
-    "name": "Fire",
+    "name": "火焰",
     "iconId": 183,
     "classMask": 128
   },
   {
     "id": 164,
-    "name": "Fury",
+    "name": "狂怒",
     "iconId": 561,
     "classMask": 1
   },
   {
     "id": 181,
-    "name": "Combat",
+    "name": "战斗",
     "iconId": 243,
     "classMask": 8
   },
   {
     "id": 202,
-    "name": "Holy",
+    "name": "神圣",
     "iconId": 2873,
     "classMask": 16
   },
   {
     "id": 263,
-    "name": "Enhancement",
+    "name": "增强",
     "iconId": 19,
     "classMask": 64
   },
   {
     "id": 281,
-    "name": "Feral Combat",
+    "name": "野性战斗",
     "iconId": 107,
     "classMask": 1024
   },
   {
     "id": 303,
-    "name": "Demonology",
+    "name": "恶魔学识",
     "iconId": 90,
     "classMask": 256
   },
   {
     "id": 363,
-    "name": "Marksmanship",
+    "name": "射击",
     "iconId": 126,
     "classMask": 4
   },
   {
     "id": 383,
-    "name": "Protection",
+    "name": "防护",
     "iconId": 291,
     "classMask": 2
   },
   {
     "id": 399,
-    "name": "Frost",
+    "name": "冰霜",
     "iconId": 2632,
     "classMask": 32
   },
   {
     "id": 61,
-    "name": "Frost",
+    "name": "冰霜",
     "iconId": 188,
     "classMask": 128
   },
   {
     "id": 163,
-    "name": "Protection",
+    "name": "防护",
     "iconId": 1463,
     "classMask": 1
   },
   {
     "id": 183,
-    "name": "Subtlety",
+    "name": "敏锐",
     "iconId": 250,
     "classMask": 8
   },
   {
     "id": 203,
-    "name": "Shadow",
+    "name": "暗影",
     "iconId": 234,
     "classMask": 16
   },
   {
     "id": 262,
-    "name": "Restoration",
+    "name": "恢复",
     "iconId": 13,
     "classMask": 64
   },
   {
     "id": 282,
-    "name": "Restoration",
+    "name": "恢复",
     "iconId": 962,
     "classMask": 1024
   },
   {
     "id": 301,
-    "name": "Destruction",
+    "name": "毁灭",
     "iconId": 547,
     "classMask": 256
   },
   {
     "id": 362,
-    "name": "Survival",
+    "name": "生存",
     "iconId": 257,
     "classMask": 4
   },
   {
     "id": 381,
-    "name": "Retribution",
+    "name": "惩戒",
     "iconId": 555,
     "classMask": 2
   },
   {
     "id": 400,
-    "name": "Unholy",
+    "name": "邪恶",
     "iconId": 2633,
     "classMask": 32
   }

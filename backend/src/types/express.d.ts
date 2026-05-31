@@ -1,5 +1,3 @@
-import { ApiResponse } from '../middleware/response-formatter';
-
 declare global {
   namespace Express {
     interface Response {

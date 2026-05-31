@@ -27,5 +27,7 @@ export const Endpoints = {
   character: {
     info: (name: string) => `/api/character/${encodeURIComponent(name)}`,
     items: (name: string) => `/api/character/${encodeURIComponent(name)}/items`,
+    talents: (name: string) => `/api/character/${encodeURIComponent(name)}/talents`,
+    achievements: (name: string) => `/api/character/${encodeURIComponent(name)}/achievements`,
   },
 } as const;

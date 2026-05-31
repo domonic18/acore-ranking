@@ -7,8 +7,13 @@
 FROM node:20-alpine AS frontend-builder
 WORKDIR /app/frontend
 
+ARG VITE_ICON_BASE_URL
+ARG VITE_AOWOW_BASE_URL
+ENV VITE_ICON_BASE_URL=${VITE_ICON_BASE_URL}
+ENV VITE_AOWOW_BASE_URL=${VITE_AOWOW_BASE_URL}
+
 COPY frontend/package*.json ./
-RUN npm ci
+RUN npm ci --legacy-peer-deps
 
 COPY frontend/ ./
 RUN npm run build
@@ -21,7 +26,7 @@ FROM node:20-alpine AS backend-builder
 WORKDIR /app/backend
 
 COPY backend/package*.json ./
-RUN npm ci
+RUN npm ci --legacy-peer-deps
 
 COPY backend/ ./
 RUN npm run build
@@ -34,7 +39,7 @@ FROM node:20-alpine AS production
 WORKDIR /app
 
 COPY backend/package*.json ./
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --only=production --legacy-peer-deps && npm cache clean --force
 
 COPY --from=backend-builder /app/backend/dist ./dist
 COPY --from=frontend-builder /app/frontend/dist ./dist/public

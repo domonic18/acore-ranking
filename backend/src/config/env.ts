@@ -56,7 +56,7 @@ interface RedisConn {
 function parseRedisUrl(url?: string): RedisConn | null {
   if (!url) return null;
   // redis://[:password@]host[:port][/db]
-  const m = url.match(/^redis:\/\/(?::([^@]*)@)?([^:\/]+)(?::(\d+))?(?:\/(\d+))?\/?$/i);
+  const m = url.match(/^redis:\/\/(?::([^@]*)@)?([^:/]+)(?::(\d+))?(?:\/(\d+))?\/?$/i);
   if (!m) return null;
   return {
     host: m[2],

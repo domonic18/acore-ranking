@@ -1,8 +1,15 @@
 import { Card, CardContent } from '@/shared/components/ui/card';
 import { FactionBadge } from '@/shared/components/FactionBadge';
 import { RaceIcon, ClassIcon } from '@/shared/components/RaceClassIcons';
-import { GENDER_NAMES } from '@/shared/constants/game';
 import type { CharacterInfo } from '../types';
+
+function formatDate(dateStr: string) {
+  return new Date(dateStr).toLocaleDateString('zh-CN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+}
 
 interface CharacterProfileProps {
   info: CharacterInfo;
@@ -28,16 +35,16 @@ export function CharacterProfile({ info }: CharacterProfileProps) {
       </Card>
       <Card>
         <CardContent className="p-3">
-          <div className="text-xs text-muted-foreground">性别</div>
-          <div className="text-lg font-semibold">{GENDER_NAMES[info.gender]}</div>
-        </CardContent>
-      </Card>
-      <Card>
-        <CardContent className="p-3">
           <div className="text-xs text-muted-foreground">阵营</div>
           <div className="text-lg font-semibold">
             <FactionBadge side={info.side} />
           </div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent className="p-3">
+          <div className="text-xs text-muted-foreground">公会</div>
+          <div className="text-lg font-semibold">{info.guild ?? '无'}</div>
         </CardContent>
       </Card>
       <Card>
@@ -80,6 +87,18 @@ export function CharacterProfile({ info }: CharacterProfileProps) {
         <CardContent className="p-3">
           <div className="text-xs text-muted-foreground">成就数</div>
           <div className="text-lg font-semibold">{info.achievement_count}</div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent className="p-3">
+          <div className="text-xs text-muted-foreground">注册时间</div>
+          <div className="text-lg font-semibold">{formatDate(info.creation_date)}</div>
+        </CardContent>
+      </Card>
+      <Card>
+        <CardContent className="p-3">
+          <div className="text-xs text-muted-foreground">上次登录</div>
+          <div className="text-lg font-semibold">{formatDate(info.last_login)}</div>
         </CardContent>
       </Card>
     </div>

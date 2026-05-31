@@ -45,6 +45,23 @@ make build
 make up
 ```
 
+## Project Structure / 项目结构
+
+```
+acore-ranking/
+├── backend/          # Express API backend
+├── frontend/         # React SPA frontend
+├── data/             # Static data files (DBC CSVs, spell.csv)
+├── scripts/          # Build-time generation scripts
+└── docs/             # Documentation
+```
+
+## Build Scripts / 构建脚本
+
+See [`scripts/README.md`](scripts/README.md) for details on build-time data generation scripts.
+
+构建时数据生成脚本的详细说明请参见 [`scripts/README.md`](scripts/README.md)。
+
 ## License / 许可证
 
 MIT

@@ -16,4 +16,16 @@ router.get('/:name/items', async (req, res) => {
   res.jsonSuccess(data);
 });
 
+router.get('/:name/talents', async (req, res) => {
+  const { name } = req.params;
+  const data = await service.getCharacterTalents(name);
+  res.jsonSuccess(data);
+});
+
+router.get('/:name/achievements', async (req, res) => {
+  const { name } = req.params;
+  const data = await service.getCharacterAchievements(name);
+  res.jsonSuccess(data);
+});
+
 export default router;

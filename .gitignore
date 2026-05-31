@@ -43,6 +43,7 @@ coverage/
 
 # Data files / 数据文件
 data/spell.csv
+data/dbc/
 
 # Docker
 .docker/

@@ -17,7 +17,7 @@ export class AchievementRepository extends BaseRepository {
         c.gender,
         c.level,
         ad.Title_Lang_deDE AS achievement_description,
-        DATE_FORMAT(CONVERT_TZ(FROM_UNIXTIME(ca.date), '+00:00', '+08:00'), '%Y-%m-%d %H:%i:%s') AS achievement_date
+        ca.date AS achievement_date
       FROM character_achievement AS ca
       INNER JOIN characters AS c ON ca.guid = c.guid
       INNER JOIN acore_world.achievement_dbc AS ad ON ca.achievement = ad.ID

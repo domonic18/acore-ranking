@@ -39,7 +39,21 @@ const columns: ColumnDef<RecentAchievement>[] = [
     cell: ({ row }) => GENDER_NAMES[row.original.gender] ?? row.original.gender,
   },
   { accessorKey: 'achievement_description', header: '成就' },
-  { accessorKey: 'achievement_date', header: '日期' },
+  {
+    accessorKey: 'achievement_date',
+    header: '日期',
+    cell: ({ row }) =>
+      new Date(row.original.achievement_date * 1000).toLocaleString('zh-CN', {
+        timeZone: 'Asia/Shanghai',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+      }),
+  },
 ];
 
 interface RecentAchievementTableProps {

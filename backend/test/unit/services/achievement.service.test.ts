@@ -33,7 +33,7 @@ describe('AchievementService', () => {
         gender: 0,
         level: 80,
         achievement_description: 'Completed Something',
-        achievement_date: '2024-01-01',
+        achievement_date: 1704067200,
       },
     ];
     const repoInstance = (AchievementRepository as jest.Mock).mock.instances[0];

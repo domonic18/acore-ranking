@@ -6,5 +6,5 @@ export interface RecentAchievement {
   gender: number;
   level: number;
   achievement_description: string;
-  achievement_date: string;
+  achievement_date: number;
 }

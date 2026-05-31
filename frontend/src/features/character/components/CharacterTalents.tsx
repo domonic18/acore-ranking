@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
+import { ICON_BASE_URL } from '@/shared/constants/external';
 import type { CharacterTalents } from '../types';
-
-const WOWHEAD_ICON_BASE = 'https://wow.zamimg.com/images/wow/icons/medium';
 
 interface CharacterTalentsProps {
   data: CharacterTalents;
@@ -16,7 +15,7 @@ function TalentTreeView({ tree, learnedSpells }: { tree: CharacterTalents['trees
       <div className="mb-3 flex items-center gap-2">
         {tree.icon && (
           <img
-            src={`${WOWHEAD_ICON_BASE}/${tree.icon}.jpg`}
+            src={`${ICON_BASE_URL}/${tree.icon}.jpg`}
             alt={tree.name}
             className="h-8 w-8 rounded"
             loading="lazy"
@@ -48,8 +47,9 @@ function TalentTreeView({ tree, learnedSpells }: { tree: CharacterTalents['trees
                 {spell.icon && (
                   <>
                     <img
-                      src={`${WOWHEAD_ICON_BASE}/${spell.icon.toLowerCase()}.jpg`}
+                      src={`${ICON_BASE_URL}/${spell.icon.toLowerCase()}.jpg`}
                       alt=""
+                      title={`${tree.name}天赋 (${rank}/${ranks.length})`}
                       className={`h-11 w-11 rounded border-2 ${isLearned ? (isMax ? 'border-yellow-500' : 'border-green-500') : 'border-gray-600 grayscale'}`}
                       loading="lazy"
                     />

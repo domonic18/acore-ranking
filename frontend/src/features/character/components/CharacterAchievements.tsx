@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
+import { ICON_BASE_URL } from '@/shared/constants/external';
 import type { CharacterAchievements as CA } from '../types';
-
-const WOWHEAD_ICON_BASE = 'https://wow.zamimg.com/images/wow/icons/medium';
 
 interface CharacterAchievementsProps {
   data: CA;
@@ -96,7 +95,12 @@ export function CharacterAchievements({ data }: CharacterAchievementsProps) {
             <span className="font-semibold">
               {selectedCategory === null ? '最近获得' : data.categories.find((c) => c.id === selectedCategory)?.name}
             </span>
-            <span className="text-sm text-muted-foreground">成就点数: {data.totalPoints}</span>
+            <span className="inline-flex items-center gap-1.5 rounded-md bg-amber-500/10 px-3 py-1 text-sm font-semibold text-amber-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="shrink-0">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              成就点数: {data.totalPoints}
+            </span>
           </div>
 
           <div className="space-y-2">
@@ -106,21 +110,21 @@ export function CharacterAchievements({ data }: CharacterAchievementsProps) {
               return (
                 <div
                   key={ach.id}
-                  className={`flex items-center gap-3 rounded-lg border p-2 ${isEarned ? 'bg-card' : 'bg-secondary/30 opacity-60'}`}
+                  className={`flex items-center gap-3 rounded-lg border p-2 ${isEarned ? 'border-border bg-card' : 'border-dashed border-muted-foreground/20 bg-muted/30 opacity-50 grayscale'}`}
                 >
-                  <div className="h-10 w-10 shrink-0 overflow-hidden rounded">
+                  <div className={`h-10 w-10 shrink-0 overflow-hidden rounded ${isEarned ? '' : 'opacity-50'}`}>
                     {ach.icon ? (
-                      <img src={`${WOWHEAD_ICON_BASE}/${ach.icon.toLowerCase()}.jpg`} alt="" className="h-10 w-10" loading="lazy" />
+                      <img src={`${ICON_BASE_URL}/${ach.icon.toLowerCase()}.jpg`} alt="" className="h-10 w-10" loading="lazy" />
                     ) : (
                       <div className="h-10 w-10 bg-muted" />
                     )}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <div className="truncate text-sm font-medium">{ach.title}</div>
-                    <div className="truncate text-xs text-muted-foreground">{ach.description}</div>
+                    <div className={`truncate text-sm font-medium ${isEarned ? '' : 'text-muted-foreground/60'}`}>{ach.title}</div>
+                    <div className={`truncate text-xs ${isEarned ? 'text-muted-foreground' : 'text-muted-foreground/40'}`}>{ach.description}</div>
                   </div>
                   <div className="shrink-0 text-right">
-                    <div className="text-sm font-semibold">{ach.points}</div>
+                    <div className={`text-sm font-semibold ${isEarned ? '' : 'text-muted-foreground/50'}`}>{ach.points}</div>
                     {isEarned && (
                       <div className="text-xs text-muted-foreground">{formatDate(data.earned[ach.id])}</div>
                     )}

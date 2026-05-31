@@ -1,4 +1,5 @@
 import { QUALITY_COLORS } from '@/shared/constants/game';
+import { ICON_BASE_URL, AOWOW_BASE_URL } from '@/shared/constants/external';
 import type { CharacterItem } from '../types';
 
 const slotNames: Record<number, string> = {
@@ -8,19 +9,20 @@ const slotNames: Record<number, string> = {
   14: '背部', 15: '主手', 16: '副手', 17: '远程', 18: '战袍',
 };
 
-const WOWHEAD_ICON_BASE = 'https://wow.zamimg.com/images/wow/icons/medium';
-
 interface ItemSlotProps {
   slot: number;
   item?: CharacterItem;
+  reverse?: boolean;
 }
 
-export function ItemSlot({ slot, item }: ItemSlotProps) {
+export function ItemSlot({ slot, item, reverse }: ItemSlotProps) {
   const qualityColor = item ? (QUALITY_COLORS[item.quality] ?? '#fff') : undefined;
-  const iconUrl = item?.icon ? `${WOWHEAD_ICON_BASE}/${item.icon.toLowerCase()}.jpg` : null;
+  const iconUrl = item?.icon ? `${ICON_BASE_URL}/${item.icon.toLowerCase()}.jpg` : null;
+  const aowowUrl = item ? `${AOWOW_BASE_URL}?item=${item.item_entry}` : undefined;
+  const aowowRel = item ? `item=${item.item_entry}&amp;domain=4` : undefined;
 
-  return (
-    <div className="flex items-center gap-3">
+  const content = (
+    <>
       <div
         className={`flex h-12 w-12 shrink-0 items-center justify-center rounded border-2 bg-secondary/50 ${item ? '' : 'border-muted'}`}
         style={item ? { borderColor: qualityColor } : undefined}
@@ -38,7 +40,7 @@ export function ItemSlot({ slot, item }: ItemSlotProps) {
           <span className="text-[10px] text-muted-foreground">{slotNames[slot]}</span>
         )}
       </div>
-      <div className="min-w-0 flex-1">
+      <div className={`min-w-0 flex-1 ${reverse ? 'text-right' : 'text-left'}`}>
         {item ? (
           <>
             <div
@@ -55,6 +57,26 @@ export function ItemSlot({ slot, item }: ItemSlotProps) {
           <span className="text-sm text-muted-foreground">—</span>
         )}
       </div>
+    </>
+  );
+
+  if (aowowUrl) {
+    return (
+      <a
+        href={aowowUrl}
+        target="_blank"
+        rel={aowowRel}
+        className={`flex items-center gap-3 ${reverse ? 'flex-row-reverse' : ''}`}
+        title={`${slotNames[slot]}: ${item.name}`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className={`flex items-center gap-3 ${reverse ? 'flex-row-reverse' : ''}`}>
+      {content}
     </div>
   );
 }

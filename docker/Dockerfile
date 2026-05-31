@@ -7,6 +7,11 @@
 FROM node:20-alpine AS frontend-builder
 WORKDIR /app/frontend
 
+ARG VITE_ICON_BASE_URL
+ARG VITE_AOWOW_BASE_URL
+ENV VITE_ICON_BASE_URL=${VITE_ICON_BASE_URL}
+ENV VITE_AOWOW_BASE_URL=${VITE_AOWOW_BASE_URL}
+
 COPY frontend/package*.json ./
 RUN npm ci --legacy-peer-deps
 

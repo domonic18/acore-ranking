@@ -47,14 +47,6 @@ export const router = createBrowserRouter([
         ),
       },
       {
-        path: 'achievement',
-        element: (
-          <Suspense fallback={<LoadingState />}>
-            <AchievementPage />
-          </Suspense>
-        ),
-      },
-      {
         path: 'character/:name',
         element: (
           <Suspense fallback={<LoadingState />}>
@@ -63,6 +55,14 @@ export const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: '/achievement',
+    element: (
+      <Suspense fallback={<LoadingState />}>
+        <AchievementPage />
+      </Suspense>
+    ),
   },
   {
     path: '/banlist',

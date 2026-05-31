@@ -49,7 +49,7 @@ describe('AchievementService', () => {
       guid: 1,
       name: 'Achiever',
       achievement_description: 'Completed Something',
-      achievement_date: '2024-01-01',
+      achievement_date: 1704067200,
     });
     expect(cacheInstance.set).toHaveBeenCalledWith(CacheKeys.recentAchieve, expect.any(Array), CacheTTL.short);
   });

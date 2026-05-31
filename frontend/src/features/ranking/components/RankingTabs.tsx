@@ -20,7 +20,7 @@ interface RankingTabsProps {
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
   return (
-    <div className="mb-4 flex flex-wrap gap-2">
+    <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5">
       {tabs.map((t) => (
         <button
           key={t.key}

@@ -29,6 +29,9 @@ env:
   REGISTRY: ccr.ccs.tencentyun.com
   NAMESPACE: ${{ secrets.TCR_NAMESPACE }}
   IMAGE_NAME: acore-ranking
+  # 前端构建参数 —— Vite 在编译时内联到静态 JS 中
+  VITE_ICON_BASE_URL: ${{ vars.VITE_ICON_BASE_URL || 'https://wow.zamimg.com/images/wow/icons/medium' }}
+  VITE_AOWOW_BASE_URL: ${{ vars.VITE_AOWOW_BASE_URL || 'https://wowgaming.altervista.org/aowow' }}
 
 jobs:
   # ============================================================
@@ -60,6 +63,9 @@ jobs:
 
       - name: Build / 构建
         working-directory: frontend
+        env:
+          VITE_ICON_BASE_URL: ${{ env.VITE_ICON_BASE_URL }}
+          VITE_AOWOW_BASE_URL: ${{ env.VITE_AOWOW_BASE_URL }}
         run: npm run build
 
   # ============================================================
@@ -151,6 +157,9 @@ jobs:
           tags: |
             ${{ steps.vars.outputs.image_tag }}
             ${{ steps.vars.outputs.latest_tag }}
+          build-args: |
+            VITE_ICON_BASE_URL=${{ env.VITE_ICON_BASE_URL }}
+            VITE_AOWOW_BASE_URL=${{ env.VITE_AOWOW_BASE_URL }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 

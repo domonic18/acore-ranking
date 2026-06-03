@@ -4,8 +4,8 @@ export function OnlineWidget() {
   const { data: config } = useWidgetConfig();
   const { data: count, isLoading, error } = useOnlineCount();
 
-  const detailUrl = config?.detailUrl || 'http://lokta.cn/?page_id=135';
-  const onlineUrl = config?.onlineUrl || 'http://lokta.cn/?page_id=1897';
+  const detailUrl = config?.detailUrl || '';
+  const onlineUrl = config?.onlineUrl || '';
 
   if (isLoading) {
     return (

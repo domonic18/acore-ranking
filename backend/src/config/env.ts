@@ -100,8 +100,8 @@ export const env = {
   SERVER_NAME: getEnv('SERVER_NAME', ''),
 
   // Widget links
-  WIDGET_DETAIL_URL: getEnv('WIDGET_DETAIL_URL', 'http://lokta.cn/?page_id=135'),
-  WIDGET_ONLINE_URL: getEnv('WIDGET_ONLINE_URL', 'http://lokta.cn/?page_id=1897'),
+  WIDGET_DETAIL_URL: getEnv('WIDGET_DETAIL_URL', ''),
+  WIDGET_ONLINE_URL: getEnv('WIDGET_ONLINE_URL', ''),
 
   // Achievement
   RECENT_ACHIEVEMENT_LIMIT: getEnvInt('RECENT_ACHIEVEMENT_LIMIT', 50),

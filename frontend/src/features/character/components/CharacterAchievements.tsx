@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { ICON_BASE_URL } from '@/shared/constants/external';
+import { ICON_BASE_URL, ICON_FALLBACK_URL } from '@/shared/constants/external';
 import type { CharacterAchievements as CA } from '../types';
 
 interface CharacterAchievementsProps {
@@ -107,14 +107,15 @@ export function CharacterAchievements({ data }: CharacterAchievementsProps) {
             {displayedAchievements.map((ach) => {
               if (!ach) return null;
               const isEarned = !!data.earned[ach.id];
+              const achIcon = ach.icon ?? '';
               return (
                 <div
                   key={ach.id}
                   className={`flex items-center gap-3 rounded-lg border p-2 ${isEarned ? 'border-border bg-card' : 'border-dashed border-muted-foreground/20 bg-muted/30 opacity-50 grayscale'}`}
                 >
                   <div className={`h-10 w-10 shrink-0 overflow-hidden rounded ${isEarned ? '' : 'opacity-50'}`}>
-                    {ach.icon ? (
-                      <img src={`${ICON_BASE_URL}/${ach.icon.toLowerCase()}.jpg`} alt="" className="h-10 w-10" loading="lazy" />
+                    {achIcon ? (
+                      <img src={`${ICON_BASE_URL}/${achIcon.toLowerCase()}.jpg`} alt="" className="h-10 w-10" loading="lazy" onError={(e) => { const target = e.target as HTMLImageElement; if (!target.src.includes(ICON_FALLBACK_URL)) { target.src = `${ICON_FALLBACK_URL}/${achIcon.toLowerCase()}.jpg`; } }} />
                     ) : (
                       <div className="h-10 w-10 bg-muted" />
                     )}

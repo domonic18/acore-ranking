@@ -1,5 +1,5 @@
 import { QUALITY_COLORS } from '@/shared/constants/game';
-import { ICON_BASE_URL, AOWOW_BASE_URL } from '@/shared/constants/external';
+import { ICON_BASE_URL, ICON_FALLBACK_URL, AOWOW_BASE_URL } from '@/shared/constants/external';
 import type { CharacterItem } from '../types';
 
 const slotNames: Record<number, string> = {
@@ -17,7 +17,8 @@ interface ItemSlotProps {
 
 export function ItemSlot({ slot, item, reverse }: ItemSlotProps) {
   const qualityColor = item ? (QUALITY_COLORS[item.quality] ?? '#fff') : undefined;
-  const iconUrl = item?.icon ? `${ICON_BASE_URL}/${item.icon.toLowerCase()}.jpg` : null;
+  const iconName = item?.icon ?? '';
+  const iconUrl = iconName ? `${ICON_BASE_URL}/${iconName.toLowerCase()}.jpg` : null;
   const aowowUrl = item ? `${AOWOW_BASE_URL}?item=${item.item_entry}` : undefined;
   const aowowRel = item ? `item=${item.item_entry}&amp;domain=4` : undefined;
 
@@ -34,7 +35,14 @@ export function ItemSlot({ slot, item, reverse }: ItemSlotProps) {
             alt={item!.name}
             className="h-10 w-10 rounded"
             loading="lazy"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              if (!target.src.includes(ICON_FALLBACK_URL)) {
+                target.src = `${ICON_FALLBACK_URL}/${iconName.toLowerCase()}.jpg`;
+              } else {
+                target.style.display = 'none';
+              }
+            }}
           />
         ) : (
           <span className="text-[10px] text-muted-foreground">{slotNames[slot]}</span>

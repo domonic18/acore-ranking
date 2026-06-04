@@ -99,10 +99,6 @@ export const env = {
   ARMORY_BASE_URL: getEnv('ARMORY_BASE_URL', ''),
   SERVER_NAME: getEnv('SERVER_NAME', ''),
 
-  // Widget links
-  WIDGET_DETAIL_URL: getEnv('WIDGET_DETAIL_URL', ''),
-  WIDGET_ONLINE_URL: getEnv('WIDGET_ONLINE_URL', ''),
-
   // Achievement
   RECENT_ACHIEVEMENT_LIMIT: getEnvInt('RECENT_ACHIEVEMENT_LIMIT', 50),
 } as const;

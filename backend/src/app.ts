@@ -18,6 +18,7 @@ import characterRoutes from './routes/character.routes';
 import healthRoutes from './routes/health.routes';
 import configRoutes from './routes/config.routes';
 import iconRoutes from './routes/icon.routes';
+import playermapRoutes from './routes/playermap.routes';
 
 export function createApp(): Application {
   const app = express();
@@ -42,6 +43,7 @@ export function createApp(): Application {
   app.use('/api/health', healthRoutes);
   app.use('/api/config', configRoutes);
   app.use('/api/icons', iconRoutes);
+  app.use('/api/playermap', playermapRoutes);
 
   app.use(express.static(path.join(__dirname, 'public')));
 

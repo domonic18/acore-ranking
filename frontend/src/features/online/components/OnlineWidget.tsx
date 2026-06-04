@@ -1,11 +1,10 @@
-import { useOnlineCount, useWidgetConfig } from '@/features/online/api/queries';
+import { useOnlineCount } from '@/features/online/api/queries';
+
+const DETAIL_URL = import.meta.env.VITE_WIDGET_DETAIL_URL || '';
+const ONLINE_URL = import.meta.env.VITE_WIDGET_ONLINE_URL || '';
 
 export function OnlineWidget() {
-  const { data: config } = useWidgetConfig();
   const { data: count, isLoading, error } = useOnlineCount();
-
-  const detailUrl = config?.detailUrl || '';
-  const onlineUrl = config?.onlineUrl || '';
 
   if (isLoading) {
     return (
@@ -34,9 +33,9 @@ export function OnlineWidget() {
         <span className="text-base font-bold" style={{ color: '#F1B132' }}>
           阿拉希
         </span>
-        {detailUrl ? (
+        {DETAIL_URL ? (
           <a
-            href={detailUrl}
+            href={DETAIL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-blue-400 underline underline-offset-2 hover:text-blue-300"
@@ -89,9 +88,9 @@ export function OnlineWidget() {
       <div className="mt-2">
         <span className="text-white">
           共计{' '}
-          {onlineUrl ? (
+          {ONLINE_URL ? (
             <a
-              href={onlineUrl}
+              href={ONLINE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-yellow-400 underline underline-offset-2 hover:text-yellow-300"

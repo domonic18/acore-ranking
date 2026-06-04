@@ -40,7 +40,6 @@ export interface ServerStatusData {
 }
 
 const HORDE_RACES = new Set([2, 5, 6, 8, 10]);
-const ALLIANCE_RACES = new Set([1, 3, 4, 7, 11]);
 
 // 副本列表：外域
 const OUTLAND_INSTANCES = new Set([
@@ -119,7 +118,7 @@ function getMapExtension(map: number): number {
 }
 
 function getInstancePixel(map: number): { x: number; y: number } | null {
-  for (const [ext, coords] of Object.entries(INSTANCE_COORDS)) {
+  for (const coords of Object.values(INSTANCE_COORDS)) {
     if (coords[map]) {
       return coords[map];
     }

@@ -4,6 +4,7 @@ const navItems = [
   { to: '/online', label: '在线' },
   { to: '/ranking', label: '排行' },
   { to: '/hardcore', label: '硬核' },
+  { to: '/playermap', label: '地图' },
 ];
 
 export default function App() {

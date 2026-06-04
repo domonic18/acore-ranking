@@ -15,12 +15,17 @@ ENV VITE_ICON_BASE_URL=${VITE_ICON_BASE_URL}
 ENV VITE_AOWOW_BASE_URL=${VITE_AOWOW_BASE_URL}
 ENV VITE_WIDGET_DETAIL_URL=${VITE_WIDGET_DETAIL_URL}
 ENV VITE_WIDGET_ONLINE_URL=${VITE_WIDGET_ONLINE_URL}
+# 打印构建时环境变量，辅助排查
+RUN echo "[Docker Build] VITE_WIDGET_DETAIL_URL=${VITE_WIDGET_DETAIL_URL}" && \
+    echo "[Docker Build] VITE_WIDGET_ONLINE_URL=${VITE_WIDGET_ONLINE_URL}"
 
 COPY frontend/package*.json ./
 RUN npm ci --legacy-peer-deps
 
 COPY frontend/ ./
 RUN npm run build
+# 验证: 确认 Widget URL 已注入构建产物
+RUN grep -o 'http://[^"]*page_id=[^"]*' dist/assets/OnlineWidgetPage-*.js || echo "[WARN] Widget URL not found in build output"
 # 输出: /app/frontend/dist/
 
 # ============================================================

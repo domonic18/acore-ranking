@@ -158,6 +158,8 @@ export function PlayerMap() {
   const [selectedPlayer, setSelectedPlayer] = useState<MapPlayer | null>(null);
   const [isMobile, setIsMobile] = useState(false);
 
+  const isInIframe = typeof window !== 'undefined' && window.self !== window.top;
+
   const containerRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef({ isDragging: false, startX: 0, startY: 0, startPosX: 0, startPosY: 0 });
 
@@ -252,11 +254,11 @@ export function PlayerMap() {
   };
 
   return (
-    <div className="fixed inset-0 bg-black">
+    <div className={`bg-black ${isInIframe ? 'relative min-h-[800px] overflow-auto' : 'fixed inset-0'}`}>
       {/* 地图拖拽容器 */}
       <div
         ref={containerRef}
-        className="absolute inset-0 overflow-hidden"
+        className={`${isInIframe ? 'relative h-[732px] w-full overflow-auto' : 'absolute inset-0 overflow-hidden'}`}
         style={{ cursor: dragRef.current.isDragging ? 'grabbing' : 'grab' }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}

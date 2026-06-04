@@ -15,6 +15,7 @@ const AchievementPage = lazy(() => import('@/pages/AchievementPage'));
 const BanlistPage = lazy(() => import('@/pages/BanlistPage'));
 const CharacterPage = lazy(() => import('@/pages/CharacterPage'));
 const OnlineWidgetPage = lazy(() => import('@/pages/OnlineWidgetPage'));
+const PlayerMapPage = lazy(() => import('@/pages/PlayerMapPage'));
 
 export const router = createBrowserRouter([
   {
@@ -77,6 +78,14 @@ export const router = createBrowserRouter([
     element: (
       <Suspense fallback={<LoadingState />}>
         <OnlineWidgetPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/playermap',
+    element: (
+      <Suspense fallback={<LoadingState />}>
+        <PlayerMapPage />
       </Suspense>
     ),
   },

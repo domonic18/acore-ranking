@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
-import { ICON_BASE_URL } from '@/shared/constants/external';
+import { ICON_BASE_URL, ICON_FALLBACK_URL } from '@/shared/constants/external';
 import type { CharacterTalents as CharacterTalentsData } from '../types';
 
 interface CharacterTalentsProps {
@@ -8,17 +8,24 @@ interface CharacterTalentsProps {
 }
 
 function TalentTreeView({ tree, learnedSpells, points }: { tree: CharacterTalentsData['trees'][0]; learnedSpells: Set<number>; points: number }) {
+  const treeIcon = tree.icon ?? '';
   const maxTier = Math.max(...tree.spells.map((s) => s.tierId), 0);
 
   return (
     <div className="rounded-lg border bg-card p-3">
       <div className="mb-3 flex items-center justify-center gap-2">
-        {tree.icon && (
+        {treeIcon && (
           <img
-            src={`${ICON_BASE_URL}/${tree.icon}.jpg`}
+            src={`${ICON_BASE_URL}/${treeIcon}.jpg`}
             alt={tree.name}
             className="h-8 w-8 rounded"
             loading="lazy"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              if (!target.src.includes(ICON_FALLBACK_URL)) {
+                target.src = `${ICON_FALLBACK_URL}/${treeIcon}.jpg`;
+              }
+            }}
           />
         )}
         <span className="font-semibold">{tree.name}</span>
@@ -42,17 +49,24 @@ function TalentTreeView({ tree, learnedSpells, points }: { tree: CharacterTalent
             }
             const isLearned = rank > 0;
             const isMax = rank === ranks.length;
+            const spellIcon = spell.icon ?? '';
 
             return (
               <div key={spell.id} className="relative h-11 w-11">
-                {spell.icon && (
+                {spellIcon && (
                   <>
                     <img
-                      src={`${ICON_BASE_URL}/${spell.icon.toLowerCase()}.jpg`}
+                      src={`${ICON_BASE_URL}/${spellIcon.toLowerCase()}.jpg`}
                       alt=""
                       title={`${tree.name}天赋 (${rank}/${ranks.length})`}
                       className={`h-11 w-11 rounded border-2 ${isLearned ? (isMax ? 'border-yellow-500' : 'border-green-500') : 'border-gray-600 grayscale'}`}
                       loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        if (!target.src.includes(ICON_FALLBACK_URL)) {
+                          target.src = `${ICON_FALLBACK_URL}/${spellIcon.toLowerCase()}.jpg`;
+                        }
+                      }}
                     />
                     {isLearned && (
                       <span className="absolute -bottom-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded bg-black px-1 text-[10px] text-white">

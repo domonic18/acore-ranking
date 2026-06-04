@@ -13,6 +13,8 @@ export const CacheKeys = {
   hardcoreIncomplete: 'hardcore:incomplete',
   recentAchieve: 'achievement:recent',
   banlist: 'banlist:recent',
+  playermapData: 'playermap:data:v2',
+  playermapStatus: 'playermap:status',
 } as const;
 
 export const CacheTTL = {

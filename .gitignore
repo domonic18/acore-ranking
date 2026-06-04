@@ -45,6 +45,9 @@ coverage/
 data/spell.csv
 data/dbc/
 
+# Downloaded icons / 下载的图标缓存
+frontend/public/assets/icons/wow/
+
 # Docker
 .docker/
 

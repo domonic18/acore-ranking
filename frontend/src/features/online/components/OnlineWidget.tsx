@@ -34,14 +34,18 @@ export function OnlineWidget() {
         <span className="text-base font-bold" style={{ color: '#F1B132' }}>
           阿拉希
         </span>
-        <a
-          href={detailUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium text-blue-400 underline underline-offset-2 hover:text-blue-300"
-        >
-          设置详情
-        </a>
+        {detailUrl ? (
+          <a
+            href={detailUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-blue-400 underline underline-offset-2 hover:text-blue-300"
+          >
+            设置详情
+          </a>
+        ) : (
+          <span className="text-gray-500">设置详情</span>
+        )}
         <span className="text-green-500">● 运行中</span>
       </div>
 
@@ -85,14 +89,18 @@ export function OnlineWidget() {
       <div className="mt-2">
         <span className="text-white">
           共计{' '}
-          <a
-            href={onlineUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-bold text-yellow-400 underline underline-offset-2 hover:text-yellow-300"
-          >
-            {count.total_count}
-          </a>{' '}
+          {onlineUrl ? (
+            <a
+              href={onlineUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-yellow-400 underline underline-offset-2 hover:text-yellow-300"
+            >
+              {count.total_count}
+            </a>
+          ) : (
+            <span className="font-bold text-yellow-400">{count.total_count}</span>
+          )}{' '}
           人在线
         </span>
       </div>

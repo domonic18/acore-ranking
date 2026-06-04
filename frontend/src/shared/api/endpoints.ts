@@ -30,4 +30,8 @@ export const Endpoints = {
     talents: (name: string) => `/api/character/${encodeURIComponent(name)}/talents`,
     achievements: (name: string) => `/api/character/${encodeURIComponent(name)}/achievements`,
   },
+  playermap: {
+    players: '/api/playermap/players',
+    status: '/api/playermap/status',
+  },
 } as const;

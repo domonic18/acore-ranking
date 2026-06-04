@@ -1,5 +1,6 @@
 import { PlayerMapRepository } from '../repositories/playermap.repository';
 import { CacheService, CacheKeys, CacheTTL } from './cache.service';
+import { getZoneName } from '../data/zoneNames';
 
 export interface MapPlayer {
   name: string;
@@ -296,7 +297,7 @@ export class PlayerMapService {
         x: isInstance ? 0 : first.px,
         y: isInstance ? 0 : first.py,
         map: first.map,
-        zone: String(first.zone || ''),
+        zone: getZoneName(first.zone),
         isHardcore: Number(first.is_hardcore) === 1,
         groupGuid: first.groupGuid,
         groupSize: members.length,

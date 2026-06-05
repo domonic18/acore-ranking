@@ -9,8 +9,9 @@ services:
         VITE_AOWOW_BASE_URL: ${VITE_AOWOW_BASE_URL}
         VITE_WIDGET_DETAIL_URL: ${VITE_WIDGET_DETAIL_URL}
         VITE_WIDGET_ONLINE_URL: ${VITE_WIDGET_ONLINE_URL}
+        VITE_APPEAL_URL: ${VITE_APPEAL_URL}
     ports:
-      - "9000:9000"
+      - "9001:9000"
     env_file:
       - .env
     environment:

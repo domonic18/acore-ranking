@@ -34,4 +34,8 @@ export const Endpoints = {
     players: '/api/playermap/players',
     status: '/api/playermap/status',
   },
+  encounter: {
+    recent: '/api/encounter/recent',
+    bosses: '/api/encounter/bosses',
+  },
 } as const;

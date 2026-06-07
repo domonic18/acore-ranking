@@ -174,7 +174,7 @@ describe('RankingService', () => {
           { name: 'Sulfuras', display_id: 2, item_entry: 17193, icon: null },
         ],
       });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topLegendary, expect.any(Array), CacheTTL.short);
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topLegendary, expect.any(Array), CacheTTL.daily);
     });
   });
 

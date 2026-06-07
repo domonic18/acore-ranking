@@ -30,6 +30,7 @@ export const CacheTTL = {
   realtime: 60,
   short: 300,
   medium: 1800,
+  daily: 86400,
 } as const;
 
 export class CacheService {

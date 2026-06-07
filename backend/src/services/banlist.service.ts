@@ -22,6 +22,7 @@ export class BanlistService {
       username: r.username,
       last_ip: r.last_ip,
       bandate: formatBeijingTime(r.bandate),
+      unbandate: formatBeijingTime(r.unbandate),
       banreason: r.banreason,
     }));
 

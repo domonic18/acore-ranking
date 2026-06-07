@@ -46,6 +46,13 @@ const BanReasonCell = ({ value }: { value: string }) => {
   );
 };
 
+const UnbanDateCell = ({ row }: { row: BanRecord }) => {
+  if (row.bandate === row.unbandate) {
+    return <span className="text-red-500 font-medium">永久</span>;
+  }
+  return <span className="whitespace-nowrap">{row.unbandate}</span>;
+};
+
 const columns: ColumnDef<BanRecord>[] = [
   {
     accessorKey: 'character_names',
@@ -73,6 +80,12 @@ const columns: ColumnDef<BanRecord>[] = [
   {
     accessorKey: 'bandate',
     header: '封禁时间',
+    meta: { className: 'min-w-[150px] whitespace-nowrap' },
+  },
+  {
+    accessorKey: 'unbandate',
+    header: '解封时间',
+    cell: (info) => <UnbanDateCell row={info.row.original} />,
     meta: { className: 'min-w-[150px] whitespace-nowrap' },
   },
 ];

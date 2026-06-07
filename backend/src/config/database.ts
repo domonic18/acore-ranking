@@ -1,13 +1,13 @@
 import { DataSource } from 'typeorm';
 import { join } from 'path';
-import { env } from './env';
+import { env, dbConn } from './env';
 
 export const authDataSource = new DataSource({
   type: 'mysql',
-  host: env.DB_HOST,
-  port: env.DB_PORT,
-  username: env.DB_USER,
-  password: env.DB_PASS,
+  host: dbConn.host,
+  port: dbConn.port,
+  username: dbConn.user,
+  password: dbConn.pass,
   database: env.DB_AUTH,
   charset: 'utf8mb4',
   entities: [join(__dirname, '..', 'entities', 'auth', '*.entity.{js,ts}')],
@@ -17,10 +17,10 @@ export const authDataSource = new DataSource({
 
 export const charactersDataSource = new DataSource({
   type: 'mysql',
-  host: env.DB_HOST,
-  port: env.DB_PORT,
-  username: env.DB_USER,
-  password: env.DB_PASS,
+  host: dbConn.host,
+  port: dbConn.port,
+  username: dbConn.user,
+  password: dbConn.pass,
   database: env.DB_CHARACTERS,
   charset: 'utf8mb4',
   entities: [join(__dirname, '..', 'entities', 'characters', '*.entity.{js,ts}')],
@@ -30,10 +30,10 @@ export const charactersDataSource = new DataSource({
 
 export const worldDataSource = new DataSource({
   type: 'mysql',
-  host: env.DB_HOST,
-  port: env.DB_PORT,
-  username: env.DB_USER,
-  password: env.DB_PASS,
+  host: dbConn.host,
+  port: dbConn.port,
+  username: dbConn.user,
+  password: dbConn.pass,
   database: env.DB_WORLD,
   charset: 'utf8mb4',
   entities: [join(__dirname, '..', 'entities', 'world', '*.entity.{js,ts}')],

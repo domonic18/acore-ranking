@@ -66,8 +66,19 @@ function parseRedisUrl(url?: string): RedisConn | null {
   };
 }
 
-const dbUrl = parseMysqlUrl(process.env.DB_URL);
-const redisUrl = parseRedisUrl(process.env.REDIS_URL);
+export const dbConn = parseMysqlUrl(process.env.DB_URL) ?? {
+  host: '127.0.0.1',
+  port: 3306,
+  user: 'acore',
+  pass: 'acore',
+};
+
+export const redisConn = parseRedisUrl(process.env.REDIS_URL) ?? {
+  host: '127.0.0.1',
+  port: 6379,
+  password: '',
+  db: 0,
+};
 
 export const env = {
   // Application
@@ -75,29 +86,16 @@ export const env = {
   PORT: getEnvInt('PORT', 9000),
   LOG_LEVEL: getEnv('LOG_LEVEL', 'info'),
 
-  // Database
-  DB_HOST: dbUrl?.host ?? getEnv('DB_HOST', '127.0.0.1'),
-  DB_PORT: dbUrl?.port ?? getEnvInt('DB_PORT', 3306),
-  DB_USER: dbUrl?.user ?? getEnv('DB_USER', 'acore'),
-  DB_PASS: dbUrl?.pass ?? getEnv('DB_PASS', 'acore'),
+  // Database names only (connection via DB_URL)
   DB_AUTH: getEnv('DB_AUTH', 'acore_auth'),
   DB_CHARACTERS: getEnv('DB_CHARACTERS', 'acore_characters'),
   DB_WORLD: getEnv('DB_WORLD', 'acore_world'),
 
-  // Redis
-  REDIS_HOST: redisUrl?.host ?? getEnv('REDIS_HOST', '127.0.0.1'),
-  REDIS_PORT: redisUrl?.port ?? getEnvInt('REDIS_PORT', 6379),
-  REDIS_PASSWORD: redisUrl?.password ?? getEnv('REDIS_PASSWORD', ''),
-  REDIS_DB: redisUrl?.db ?? getEnvInt('REDIS_DB', 0),
+  // Redis (connection via REDIS_URL)
   REDIS_EXPIRE_TIME: getEnvInt('REDIS_EXPIRE_TIME', 300),
 
   // CORS / iframe
   ALLOWED_ORIGINS: getEnv('ALLOWED_ORIGINS', '*'),
-
-  // External links
-  SITE_URL: getEnv('SITE_URL', 'http://localhost/web-api/'),
-  ARMORY_BASE_URL: getEnv('ARMORY_BASE_URL', ''),
-  SERVER_NAME: getEnv('SERVER_NAME', ''),
 
   // Achievement
   RECENT_ACHIEVEMENT_LIMIT: getEnvInt('RECENT_ACHIEVEMENT_LIMIT', 50),

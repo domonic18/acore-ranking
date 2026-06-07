@@ -201,7 +201,7 @@ export class RankingService {
       };
     });
 
-    await this.cache.set(cacheKey, result, CacheTTL.short);
+    await this.cache.set(cacheKey, result, CacheTTL.daily);
     return result;
   }
 

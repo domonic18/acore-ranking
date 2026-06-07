@@ -22,6 +22,8 @@ export const CacheKeys = {
   banlist: 'banlist:recent',
   playermapData: 'playermap:data:v2',
   playermapStatus: 'playermap:status',
+  encounterRecent: 'encounter:recent',
+  encounterBosses: 'encounter:bosses',
 } as const;
 
 export const CacheTTL = {

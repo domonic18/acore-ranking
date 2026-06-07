@@ -69,7 +69,7 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
     getPaginationRowModel: getPaginationRowModel(),
     initialState: {
       pagination: {
-        pageSize: 50,
+        pageSize: 10,
       },
     },
   });

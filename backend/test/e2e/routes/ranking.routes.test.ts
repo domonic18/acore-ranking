@@ -20,6 +20,13 @@ describe('GET /api/ranking', () => {
     { path: '/api/ranking/gold', method: 'getGoldRanking' },
     { path: '/api/ranking/playtime', method: 'getPlaytimeRanking' },
     { path: '/api/ranking/honor', method: 'getHonorRanking' },
+    { path: '/api/ranking/kills', method: 'getKillsRanking' },
+    { path: '/api/ranking/deaths', method: 'getDeathRanking' },
+    { path: '/api/ranking/reputation', method: 'getReputationRanking' },
+    { path: '/api/ranking/quest', method: 'getQuestRanking' },
+    { path: '/api/ranking/legendary', method: 'getLegendaryRanking' },
+    { path: '/api/ranking/today-kills', method: 'getTodayKillsRanking' },
+    { path: '/api/ranking/yesterday-kills', method: 'getYesterdayKillsRanking' },
     { path: '/api/ranking/achievement', method: 'getAchievementRanking' },
     { path: '/api/ranking/mount', method: 'getMountRanking' },
   ];

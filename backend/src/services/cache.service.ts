@@ -7,6 +7,13 @@ export const CacheKeys = {
   topPlaytime: 'ranking:playtime',
   topMount: 'ranking:mount',
   topHonor: 'ranking:honor',
+  topKills: 'ranking:kills',
+  topDeaths: 'ranking:deaths',
+  topReputation: 'ranking:reputation',
+  topQuest: 'ranking:quest',
+  topLegendary: 'ranking:legendary',
+  topTodayKills: 'ranking:todayKills',
+  topYesterdayKills: 'ranking:yesterdayKills',
   topAchievement: 'ranking:achievement',
   hardcoreCompleted: (level: number) => `hardcore:completed:${level}`,
   hardcoreFail: 'hardcore:fail',
@@ -15,12 +22,15 @@ export const CacheKeys = {
   banlist: 'banlist:recent',
   playermapData: 'playermap:data:v2',
   playermapStatus: 'playermap:status',
+  encounterRecent: 'encounter:recent',
+  encounterBosses: 'encounter:bosses',
 } as const;
 
 export const CacheTTL = {
   realtime: 60,
   short: 300,
   medium: 1800,
+  daily: 86400,
 } as const;
 
 export class CacheService {

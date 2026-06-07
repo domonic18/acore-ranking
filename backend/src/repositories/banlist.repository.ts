@@ -1,4 +1,5 @@
 import { authDataSource } from '../config/database';
+import { env } from '../config/env';
 import { BaseRepository } from './base.repository';
 
 export class BanlistRepository extends BaseRepository {
@@ -7,18 +8,42 @@ export class BanlistRepository extends BaseRepository {
   }
 
   async findRecent(limit = 200): Promise<unknown[]> {
+    const hasHardcoreFailed = await this.checkHardcoreFailedTable();
+    const excludeHardcore = hasHardcoreFailed
+      ? `AND NOT EXISTS (SELECT 1 FROM ${env.DB_CHARACTERS}.hardcore_challenge_failed hcf WHERE hcf.character_guid = c.guid)`
+      : '';
+
     return this.rawQuery(`
       SELECT
-        account.username,
-        account.last_ip,
-        account_banned.bandate,
-        account_banned.unbandate,
-        account_banned.banreason
-      FROM account_banned
-      LEFT JOIN account ON account_banned.id = account.id
-      WHERE account_banned.active = 1
-      ORDER BY account_banned.bandate DESC
+        a.username,
+        a.last_ip,
+        ab.bandate,
+        ab.banreason,
+        GROUP_CONCAT(c.name ORDER BY c.name SEPARATOR ',') AS character_names
+      FROM account_banned ab
+      LEFT JOIN account a ON ab.id = a.id
+      LEFT JOIN ${env.DB_CHARACTERS}.characters c ON c.account = a.id
+        AND c.name IS NOT NULL
+        AND c.name != ''
+        ${excludeHardcore}
+      WHERE ab.active = 1
+      GROUP BY a.id, a.username, a.last_ip, ab.bandate, ab.banreason
+      ORDER BY ab.bandate DESC
       LIMIT ${limit}
     `);
+  }
+
+  private async checkHardcoreFailedTable(): Promise<boolean> {
+    try {
+      const result = await this.rawQuery(`
+        SELECT 1 FROM information_schema.tables
+        WHERE table_schema = '${env.DB_CHARACTERS}'
+          AND table_name = 'hardcore_challenge_failed'
+        LIMIT 1
+      `);
+      return result.length > 0;
+    } catch {
+      return false;
+    }
   }
 }

@@ -11,6 +11,13 @@ export const Endpoints = {
     playtime: '/api/ranking/playtime',
     mount: '/api/ranking/mount',
     honor: '/api/ranking/honor',
+    kills: '/api/ranking/kills',
+    deaths: '/api/ranking/deaths',
+    reputation: '/api/ranking/reputation',
+    quest: '/api/ranking/quest',
+    legendary: '/api/ranking/legendary',
+    todayKills: '/api/ranking/today-kills',
+    yesterdayKills: '/api/ranking/yesterday-kills',
     achievement: '/api/ranking/achievement',
   },
   hardcore: {
@@ -33,5 +40,9 @@ export const Endpoints = {
   playermap: {
     players: '/api/playermap/players',
     status: '/api/playermap/status',
+  },
+  encounter: {
+    recent: '/api/encounter/recent',
+    bosses: '/api/encounter/bosses',
   },
 } as const;

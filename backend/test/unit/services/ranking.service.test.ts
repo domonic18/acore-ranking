@@ -81,6 +81,137 @@ describe('RankingService', () => {
     });
   });
 
+  describe('getKillsRanking', () => {
+    it('includes kill fields', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopKillsPlayers.mockResolvedValue([
+        { guid: 1, name: 'Killer', race: 1, class: 1, gender: 0, level: 80, totaltime: 3600, totalKills: 9999 },
+      ]);
+
+      const result = await service.getKillsRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        total_kills: 9999,
+        total_time_str: '0 天 1 小时 0 分钟',
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topKills, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getDeathRanking', () => {
+    it('includes death count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopDeathPlayers.mockResolvedValue([
+        { guid: 1, name: 'Unlucky', race: 1, class: 1, gender: 0, level: 80, death_count: 42 },
+      ]);
+
+      const result = await service.getDeathRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        death_count: 42,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topDeaths, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getReputationRanking', () => {
+    it('includes reputation fields', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopReputationPlayers.mockResolvedValue([
+        { guid: 1, name: 'Loved', race: 1, class: 1, gender: 0, level: 80, total_reputation: 999999, exalted_count: 42 },
+      ]);
+
+      const result = await service.getReputationRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        total_reputation: 999999,
+        exalted_count: 42,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topReputation, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getQuestRanking', () => {
+    it('includes quest count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopQuestPlayers.mockResolvedValue([
+        { guid: 1, name: 'Questy', race: 1, class: 1, gender: 0, level: 80, quest_count: 3000 },
+      ]);
+
+      const result = await service.getQuestRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        quest_count: 3000,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topQuest, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getLegendaryRanking', () => {
+    it('parses legendary_items JSON and maps icons', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopLegendaryPlayers.mockResolvedValue([
+        {
+          guid: 1, name: 'Legend', race: 1, class: 1, gender: 0, level: 80, legendary_count: 2,
+          legendary_items: JSON.stringify([
+            { name: 'Ashbringer', display_id: 1, item_entry: 17182 },
+            { name: 'Sulfuras', display_id: 2, item_entry: 17193 },
+          ]),
+        },
+      ]);
+
+      const result = await service.getLegendaryRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        legendary_count: 2,
+        legendary_items: [
+          { name: 'Ashbringer', display_id: 1, item_entry: 17182, icon: null },
+          { name: 'Sulfuras', display_id: 2, item_entry: 17193, icon: null },
+        ],
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topLegendary, expect.any(Array), CacheTTL.daily);
+    });
+  });
+
+  describe('getTodayKillsRanking', () => {
+    it('includes today kills', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopTodayKillsPlayers.mockResolvedValue([
+        { guid: 1, name: 'Slayer', race: 1, class: 1, gender: 0, level: 80, todayKills: 50 },
+      ]);
+
+      const result = await service.getTodayKillsRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        today_kills: 50,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topTodayKills, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getYesterdayKillsRanking', () => {
+    it('includes yesterday kills', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopYesterdayKillsPlayers.mockResolvedValue([
+        { guid: 1, name: 'Slayer', race: 1, class: 1, gender: 0, level: 80, yesterdayKills: 45 },
+      ]);
+
+      const result = await service.getYesterdayKillsRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        yesterday_kills: 45,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topYesterdayKills, expect.any(Array), CacheTTL.short);
+    });
+  });
+
   describe('getAchievementRanking', () => {
     it('maps achievement points', async () => {
       const cache = mockCacheMiss();

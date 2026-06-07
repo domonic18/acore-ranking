@@ -9,6 +9,8 @@ const redis = new Redis({
   lazyConnect: true,
   enableOfflineQueue: false,
   maxRetriesPerRequest: 0,
+  connectTimeout: 2000,
+  commandTimeout: 2000,
 });
 
 redis.on('error', (err) => {

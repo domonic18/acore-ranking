@@ -18,6 +18,7 @@ export class BanlistRepository extends BaseRepository {
         a.username,
         a.last_ip,
         ab.bandate,
+        ab.unbandate,
         ab.banreason,
         GROUP_CONCAT(c.name ORDER BY c.name SEPARATOR ',') AS character_names
       FROM account_banned ab
@@ -27,7 +28,7 @@ export class BanlistRepository extends BaseRepository {
         AND c.name != ''
         ${excludeHardcore}
       WHERE ab.active = 1
-      GROUP BY a.id, a.username, a.last_ip, ab.bandate, ab.banreason
+      GROUP BY a.id, a.username, a.last_ip, ab.bandate, ab.unbandate, ab.banreason
       ORDER BY ab.bandate DESC
       LIMIT ${limit}
     `);

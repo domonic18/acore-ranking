@@ -35,7 +35,10 @@ export function createApp(): Application {
   app.use(requestLogger);
   app.use(responseFormatter);
 
-  // API 路由健康检查：数据库未就绪时返回 503，不影响静态资源
+  // 静态资源优先，不经过 API 路由层和数据库检查
+  app.use(express.static(path.join(__dirname, 'public')));
+
+  // API 路由健康检查：数据库未就绪时返回 503
   app.use('/api', (req, res, next) => {
     if (req.path === '/health' || areDataSourcesReady()) {
       next();
@@ -58,8 +61,7 @@ export function createApp(): Application {
   app.use('/api/playermap', playermapRoutes);
   app.use('/api/encounter', encounterRoutes);
 
-  app.use(express.static(path.join(__dirname, 'public')));
-
+  // SPA fallback：前端路由回退到 index.html
   app.get('*', (_req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });

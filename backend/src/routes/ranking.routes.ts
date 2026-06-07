@@ -24,6 +24,41 @@ router.get('/honor', async (_req, res) => {
   res.jsonSuccess(data);
 });
 
+router.get('/kills', async (_req, res) => {
+  const data = await service.getKillsRanking();
+  res.jsonSuccess(data);
+});
+
+router.get('/deaths', async (_req, res) => {
+  const data = await service.getDeathRanking();
+  res.jsonSuccess(data);
+});
+
+router.get('/reputation', async (_req, res) => {
+  const data = await service.getReputationRanking();
+  res.jsonSuccess(data);
+});
+
+router.get('/quest', async (_req, res) => {
+  const data = await service.getQuestRanking();
+  res.jsonSuccess(data);
+});
+
+router.get('/legendary', async (_req, res) => {
+  const data = await service.getLegendaryRanking();
+  res.jsonSuccess(data);
+});
+
+router.get('/today-kills', async (_req, res) => {
+  const data = await service.getTodayKillsRanking();
+  res.jsonSuccess(data);
+});
+
+router.get('/yesterday-kills', async (_req, res) => {
+  const data = await service.getYesterdayKillsRanking();
+  res.jsonSuccess(data);
+});
+
 router.get('/achievement', async (_req, res) => {
   const data = await service.getAchievementRanking();
   res.jsonSuccess(data);

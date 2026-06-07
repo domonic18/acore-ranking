@@ -24,6 +24,45 @@ export interface HonorRankPlayer extends RankPlayer {
   total_honor_points: number;
 }
 
+export interface KillsRankPlayer extends RankPlayer {
+  total_time: number;
+  total_time_str: string;
+  total_kills: number;
+}
+
+export interface DeathRankPlayer extends RankPlayer {
+  death_count: number;
+}
+
+export interface ReputationRankPlayer extends RankPlayer {
+  total_reputation: number;
+  exalted_count: number;
+}
+
+export interface QuestRankPlayer extends RankPlayer {
+  quest_count: number;
+}
+
+export interface LegendaryItem {
+  name: string;
+  display_id: number;
+  item_entry: number;
+  icon: string | null;
+}
+
+export interface LegendaryRankPlayer extends RankPlayer {
+  legendary_count: number;
+  legendary_items: LegendaryItem[];
+}
+
+export interface TodayKillsRankPlayer extends RankPlayer {
+  today_kills: number;
+}
+
+export interface YesterdayKillsRankPlayer extends RankPlayer {
+  yesterday_kills: number;
+}
+
 export interface AchievementRankPlayer extends RankPlayer {
   total_achieve_points: number;
 }

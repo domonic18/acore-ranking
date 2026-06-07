@@ -21,6 +21,7 @@ describe('BanlistService', () => {
         username: 'cheater',
         last_ip: '192.168.1.1',
         bandate: 1700000000,
+        unbandate: 1700000000,
         banreason: 'Speed hack',
       },
     ]);
@@ -38,6 +39,7 @@ describe('BanlistService', () => {
       banreason: 'Speed hack',
     });
     expect((result as any)[0].bandate).toMatch(/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/);
+    expect((result as any)[0].unbandate).toMatch(/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/);
     expect(cacheInstance.set).toHaveBeenCalledWith(CacheKeys.banlist, expect.any(Array), CacheTTL.medium);
   });
 });

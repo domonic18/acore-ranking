@@ -17,37 +17,42 @@ export class CharacterService {
     const cached = await this.cache.get<unknown>(cacheKey);
     if (cached) return cached;
 
-    const char = await this.repo.findByName(name) as any;
-    if (!char) return null;
+    try {
+      const char = await this.repo.findByName(name) as any;
+      if (!char) return null;
 
-    const questCount = await this.repo.countQuests(char.guid);
-    const achieveCount = await this.repo.countAchievements(char.guid);
+      const questCount = await this.repo.countQuests(char.guid);
+      const achieveCount = await this.repo.countAchievements(char.guid);
 
-    const result = {
-      guid: char.guid,
-      name: char.name,
-      level: char.level,
-      race: char.race,
-      class: char.class,
-      gender: char.gender,
-      health: char.health,
-      side: getFactionByRace(char.race),
-      total_time: char.totaltime,
-      total_time_str: formatTotalTime(char.totaltime),
-      total_honor_points: char.totalHonorPoints,
-      arena_points: char.arenaPoints,
-      total_kills: char.totalKills,
-      quest_count: questCount,
-      achievement_count: achieveCount,
-      guild: char.guild_name || null,
-      creation_date: char.creation_date,
-      last_login: char.logout_time
-        ? new Date(char.logout_time * 1000).toISOString()
-        : null,
-    };
+      const result = {
+        guid: char.guid,
+        name: char.name,
+        level: char.level,
+        race: char.race,
+        class: char.class,
+        gender: char.gender,
+        health: char.health,
+        side: getFactionByRace(char.race),
+        total_time: char.totaltime,
+        total_time_str: formatTotalTime(char.totaltime),
+        total_honor_points: char.totalHonorPoints,
+        arena_points: char.arenaPoints,
+        total_kills: char.totalKills,
+        quest_count: questCount,
+        achievement_count: achieveCount,
+        guild: char.guild_name || null,
+        creation_date: char.creation_date,
+        last_login: char.logout_time
+          ? new Date(char.logout_time * 1000).toISOString()
+          : null,
+      };
 
-    await this.cache.set(cacheKey, result, CacheTTL.short);
-    return result;
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error(`[CharacterService] getCharacterInfo(${name}) failed:`, err);
+      return null;
+    }
   }
 
   async getCharacterItems(name: string): Promise<unknown[]> {
@@ -55,19 +60,24 @@ export class CharacterService {
     const cached = await this.cache.get<unknown[]>(cacheKey);
     if (cached) return cached;
 
-    const items = await this.repo.findInventory(name) as any[];
-    const result = items.map((item) => ({
-      item_guid: item.item,
-      slot: item.slot,
-      item_entry: item.itemEntry,
-      display_id: item.displayid,
-      name: item.item_name,
-      quality: item.Quality,
-      icon: ITEM_DISPLAY_INFO[item.displayid] || null,
-    }));
+    try {
+      const items = await this.repo.findInventory(name) as any[];
+      const result = items.map((item) => ({
+        item_guid: item.item,
+        slot: item.slot,
+        item_entry: item.itemEntry,
+        display_id: item.displayid,
+        name: item.item_name,
+        quality: item.Quality,
+        icon: ITEM_DISPLAY_INFO[item.displayid] || null,
+      }));
 
-    await this.cache.set(cacheKey, result, CacheTTL.short);
-    return result;
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error(`[CharacterService] getCharacterItems(${name}) failed:`, err);
+      return [];
+    }
   }
 
   async getCharacterTalents(name: string): Promise<unknown | null> {
@@ -75,11 +85,12 @@ export class CharacterService {
     const cached = await this.cache.get<unknown>(cacheKey);
     if (cached) return cached;
 
-    const char = await this.repo.findByName(name) as any;
-    if (!char) return null;
+    try {
+      const char = await this.repo.findByName(name) as any;
+      if (!char) return null;
 
-    const dbTalents = await this.repo.findTalents(char.guid);
-    const dbGlyphs = await this.repo.findGlyphs(char.guid);
+      const dbTalents = await this.repo.findTalents(char.guid);
+      const dbGlyphs = await this.repo.findGlyphs(char.guid);
 
     const classMask = 1 << (char.class - 1);
     const tabs = TALENT_TABS.filter((t) => t.classMask === classMask);
@@ -130,8 +141,12 @@ export class CharacterService {
       glyphs,
     };
 
-    await this.cache.set(cacheKey, result, CacheTTL.short);
-    return result;
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error(`[CharacterService] getCharacterTalents(${name}) failed:`, err);
+      return null;
+    }
   }
 
   async getCharacterAchievements(name: string): Promise<unknown | null> {
@@ -139,66 +154,71 @@ export class CharacterService {
     const cached = await this.cache.get<unknown>(cacheKey);
     if (cached) return cached;
 
-    const char = await this.repo.findByName(name) as any;
-    if (!char) return null;
+    try {
+      const char = await this.repo.findByName(name) as any;
+      if (!char) return null;
 
-    const earnedRows = await this.repo.findAchievements(char.guid);
-    const earned: Record<number, number> = {};
-    for (const row of earnedRows) {
-      earned[row.achievement] = row.date;
-    }
-
-    const [achLocales, catLocales] = await Promise.all([
-      this.repo.findAchievementLocales().catch(() => [] as { id: number; titleZh: string | null; descriptionZh: string | null }[]),
-      this.repo.findAchievementCategoryLocales().catch(() => [] as { id: number; nameZh: string | null }[]),
-    ]);
-
-    const achLocaleMap = new Map<number, { titleZh: string | null; descriptionZh: string | null }>();
-    for (const loc of achLocales) {
-      achLocaleMap.set(loc.id, { titleZh: loc.titleZh, descriptionZh: loc.descriptionZh });
-    }
-
-    const catLocaleMap = new Map<number, string | null>();
-    for (const loc of catLocales) {
-      catLocaleMap.set(loc.id, loc.nameZh);
-    }
-
-    const faction = getFactionByRace(char.race);
-    const achievements = ACHIEVEMENTS
-      .filter((a) => a.faction === -1 || a.faction === faction)
-      .map((a) => {
-        const loc = achLocaleMap.get(a.id);
-        return {
-          id: a.id,
-          category: a.category,
-          title: loc?.titleZh || (a as any).titleZh || a.title,
-          description: loc?.descriptionZh || (a as any).descriptionZh || a.description,
-          points: a.points,
-          icon: SPELL_ICON[a.iconId] || null,
-        };
-      });
-
-    const categories = ACHIEVEMENT_CATEGORIES.map((c) => ({
-      id: c.id,
-      parent: c.parent,
-      name: catLocaleMap.get(c.id) || (c as any).nameZh || c.name,
-    }));
-
-    let totalPoints = 0;
-    for (const ach of achievements) {
-      if (earned[ach.id]) {
-        totalPoints += ach.points;
+      const earnedRows = await this.repo.findAchievements(char.guid);
+      const earned: Record<number, number> = {};
+      for (const row of earnedRows) {
+        earned[row.achievement] = row.date;
       }
+
+      const [achLocales, catLocales] = await Promise.all([
+        this.repo.findAchievementLocales().catch(() => [] as { id: number; titleZh: string | null; descriptionZh: string | null }[]),
+        this.repo.findAchievementCategoryLocales().catch(() => [] as { id: number; nameZh: string | null }[]),
+      ]);
+
+      const achLocaleMap = new Map<number, { titleZh: string | null; descriptionZh: string | null }>();
+      for (const loc of achLocales) {
+        achLocaleMap.set(loc.id, { titleZh: loc.titleZh, descriptionZh: loc.descriptionZh });
+      }
+
+      const catLocaleMap = new Map<number, string | null>();
+      for (const loc of catLocales) {
+        catLocaleMap.set(loc.id, loc.nameZh);
+      }
+
+      const faction = getFactionByRace(char.race);
+      const achievements = ACHIEVEMENTS
+        .filter((a) => a.faction === -1 || a.faction === faction)
+        .map((a) => {
+          const loc = achLocaleMap.get(a.id);
+          return {
+            id: a.id,
+            category: a.category,
+            title: loc?.titleZh || (a as any).titleZh || a.title,
+            description: loc?.descriptionZh || (a as any).descriptionZh || a.description,
+            points: a.points,
+            icon: SPELL_ICON[a.iconId] || null,
+          };
+        });
+
+      const categories = ACHIEVEMENT_CATEGORIES.map((c) => ({
+        id: c.id,
+        parent: c.parent,
+        name: catLocaleMap.get(c.id) || (c as any).nameZh || c.name,
+      }));
+
+      let totalPoints = 0;
+      for (const ach of achievements) {
+        if (earned[ach.id]) {
+          totalPoints += ach.points;
+        }
+      }
+
+      const result = {
+        achievements,
+        categories,
+        earned,
+        totalPoints,
+      };
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error(`[CharacterService] getCharacterAchievements(${name}) failed:`, err);
+      return null;
     }
-
-    const result = {
-      achievements,
-      categories,
-      earned,
-      totalPoints,
-    };
-
-    await this.cache.set(cacheKey, result, CacheTTL.short);
-    return result;
   }
 }

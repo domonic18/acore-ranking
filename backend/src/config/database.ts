@@ -3,43 +3,35 @@ import { join } from 'path';
 import { env, dbConn } from './env';
 import { logger } from '../middleware/request-logger';
 
-export const authDataSource = new DataSource({
-  type: 'mysql',
+const dataSourceCommonOptions = {
+  type: 'mysql' as const,
   host: dbConn.host,
   port: dbConn.port,
   username: dbConn.user,
   password: dbConn.pass,
-  database: env.DB_AUTH,
-  charset: 'utf8mb4',
-  entities: [join(__dirname, '..', 'entities', 'auth', '*.entity.{js,ts}')],
+  charset: 'utf8mb4' as const,
   synchronize: false,
   logging: env.NODE_ENV === 'development',
+  connectTimeout: 5000,
+  acquireTimeout: 5000,
+};
+
+export const authDataSource = new DataSource({
+  ...dataSourceCommonOptions,
+  database: env.DB_AUTH,
+  entities: [join(__dirname, '..', 'entities', 'auth', '*.entity.{js,ts}')],
 });
 
 export const charactersDataSource = new DataSource({
-  type: 'mysql',
-  host: dbConn.host,
-  port: dbConn.port,
-  username: dbConn.user,
-  password: dbConn.pass,
+  ...dataSourceCommonOptions,
   database: env.DB_CHARACTERS,
-  charset: 'utf8mb4',
   entities: [join(__dirname, '..', 'entities', 'characters', '*.entity.{js,ts}')],
-  synchronize: false,
-  logging: env.NODE_ENV === 'development',
 });
 
 export const worldDataSource = new DataSource({
-  type: 'mysql',
-  host: dbConn.host,
-  port: dbConn.port,
-  username: dbConn.user,
-  password: dbConn.pass,
+  ...dataSourceCommonOptions,
   database: env.DB_WORLD,
-  charset: 'utf8mb4',
   entities: [join(__dirname, '..', 'entities', 'world', '*.entity.{js,ts}')],
-  synchronize: false,
-  logging: env.NODE_ENV === 'development',
 });
 
 let dataSourcesInitialized = false;
@@ -57,8 +49,8 @@ export async function initializeDataSources(): Promise<void> {
   dataSourcesInitialized = true;
 }
 
-const MAX_RETRIES = 10;
-const RETRY_DELAY_MS = 3000;
+const MAX_RETRIES = 5;
+const RETRY_DELAY_MS = 2000;
 
 export async function initializeDataSourcesWithRetry(): Promise<void> {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {

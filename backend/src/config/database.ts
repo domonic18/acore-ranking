@@ -32,9 +32,29 @@ export const worldDataSource = new DataSource({
 });
 
 let dataSourcesInitialized = false;
+let isInitializing = false;
 
 export function areDataSourcesReady(): boolean {
   return dataSourcesInitialized;
+}
+
+async function resetDataSources(): Promise<void> {
+  dataSourcesInitialized = false;
+  try {
+    if (authDataSource.isInitialized) await authDataSource.destroy();
+  } catch {
+    // ignore
+  }
+  try {
+    if (charactersDataSource.isInitialized) await charactersDataSource.destroy();
+  } catch {
+    // ignore
+  }
+  try {
+    if (worldDataSource.isInitialized) await worldDataSource.destroy();
+  } catch {
+    // ignore
+  }
 }
 
 export async function initializeDataSources(): Promise<void> {
@@ -60,14 +80,23 @@ export function stopPeriodicRetry(): void {
 }
 
 async function tryInitializeOnce(): Promise<boolean> {
+  if (isInitializing) return false;
+  isInitializing = true;
   try {
+    await resetDataSources();
     await initializeDataSources();
     logger.info('Database connections established / 数据库连接已建立');
     stopPeriodicRetry();
     return true;
   } catch (err) {
-    logger.warn(err, 'Periodic database retry failed / 定时数据库重试失败');
+    // Use error level so it shows up in SCF logs regardless of LOG_LEVEL filter
+    logger.error(
+      err,
+      'Periodic database retry failed / 定时数据库重试失败',
+    );
     return false;
+  } finally {
+    isInitializing = false;
   }
 }
 
@@ -81,22 +110,35 @@ export function startPeriodicRetry(): void {
 }
 
 export async function initializeDataSourcesWithRetry(): Promise<void> {
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    try {
-      await initializeDataSources();
-      logger.info('Database connections established / 数据库连接已建立');
-      return;
-    } catch (err) {
-      logger.warn(
-        err,
-        `Database connection failed (attempt ${attempt}/${MAX_RETRIES}), retrying in ${RETRY_DELAY_MS}ms... / 数据库连接失败，${RETRY_DELAY_MS}毫秒后重试...`,
-      );
-      if (attempt === MAX_RETRIES) {
-        logger.error(err, 'Database connection exhausted all retries, starting periodic retry / 数据库连接已用尽所有重试次数，启动定时重试');
-        startPeriodicRetry();
+  if (isInitializing) return;
+  isInitializing = true;
+
+  try {
+    await resetDataSources();
+
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        await initializeDataSources();
+        logger.info('Database connections established / 数据库连接已建立');
+        stopPeriodicRetry();
         return;
+      } catch (err) {
+        logger.error(
+          err,
+          `Database connection failed (attempt ${attempt}/${MAX_RETRIES}) / 数据库连接失败（第${attempt}/${MAX_RETRIES}次尝试）`,
+        );
+        if (attempt === MAX_RETRIES) {
+          logger.error(
+            err,
+            'Database connection exhausted all retries, starting periodic retry / 数据库连接已用尽所有重试次数，启动定时重试',
+          );
+          startPeriodicRetry();
+          return;
+        }
+        await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
       }
-      await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));
     }
+  } finally {
+    isInitializing = false;
   }
 }

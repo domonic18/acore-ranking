@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import 'dotenv/config';
 import { createApp } from './app';
 import { initializeDataSourcesWithRetry } from './config/database';
@@ -7,7 +8,7 @@ import { logger } from './middleware/request-logger';
 const PORT = env.PORT;
 
 const app = createApp();
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   logger.info(`Server listening on port ${PORT} / 服务器监听端口 ${PORT}`);
 });
 

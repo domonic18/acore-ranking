@@ -3,33 +3,30 @@ import { join } from 'path';
 import { env, dbConn } from './env';
 import { logger } from '../middleware/request-logger';
 
-const dataSourceCommonOptions = {
+const commonConfig = {
   type: 'mysql' as const,
   host: dbConn.host,
   port: dbConn.port,
   username: dbConn.user,
   password: dbConn.pass,
-  charset: 'utf8mb4' as const,
   synchronize: false,
   logging: env.NODE_ENV === 'development',
-  connectTimeout: 5000,
-  acquireTimeout: 5000,
 };
 
 export const authDataSource = new DataSource({
-  ...dataSourceCommonOptions,
+  ...commonConfig,
   database: env.DB_AUTH,
   entities: [join(__dirname, '..', 'entities', 'auth', '*.entity.{js,ts}')],
 });
 
 export const charactersDataSource = new DataSource({
-  ...dataSourceCommonOptions,
+  ...commonConfig,
   database: env.DB_CHARACTERS,
   entities: [join(__dirname, '..', 'entities', 'characters', '*.entity.{js,ts}')],
 });
 
 export const worldDataSource = new DataSource({
-  ...dataSourceCommonOptions,
+  ...commonConfig,
   database: env.DB_WORLD,
   entities: [join(__dirname, '..', 'entities', 'world', '*.entity.{js,ts}')],
 });
@@ -49,8 +46,39 @@ export async function initializeDataSources(): Promise<void> {
   dataSourcesInitialized = true;
 }
 
-const MAX_RETRIES = 5;
-const RETRY_DELAY_MS = 2000;
+const MAX_RETRIES = 10;
+const RETRY_DELAY_MS = 3000;
+const PERIODIC_RETRY_MS = 30000;
+
+let periodicRetryTimer: ReturnType<typeof setInterval> | null = null;
+
+export function stopPeriodicRetry(): void {
+  if (periodicRetryTimer) {
+    clearInterval(periodicRetryTimer);
+    periodicRetryTimer = null;
+  }
+}
+
+async function tryInitializeOnce(): Promise<boolean> {
+  try {
+    await initializeDataSources();
+    logger.info('Database connections established / 数据库连接已建立');
+    stopPeriodicRetry();
+    return true;
+  } catch (err) {
+    logger.warn(err, 'Periodic database retry failed / 定时数据库重试失败');
+    return false;
+  }
+}
+
+export function startPeriodicRetry(): void {
+  if (periodicRetryTimer) return;
+  periodicRetryTimer = setInterval(() => {
+    if (!dataSourcesInitialized) {
+      tryInitializeOnce();
+    }
+  }, PERIODIC_RETRY_MS);
+}
 
 export async function initializeDataSourcesWithRetry(): Promise<void> {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
@@ -64,7 +92,8 @@ export async function initializeDataSourcesWithRetry(): Promise<void> {
         `Database connection failed (attempt ${attempt}/${MAX_RETRIES}), retrying in ${RETRY_DELAY_MS}ms... / 数据库连接失败，${RETRY_DELAY_MS}毫秒后重试...`,
       );
       if (attempt === MAX_RETRIES) {
-        logger.error(err, 'Database connection exhausted all retries / 数据库连接已用尽所有重试次数');
+        logger.error(err, 'Database connection exhausted all retries, starting periodic retry / 数据库连接已用尽所有重试次数，启动定时重试');
+        startPeriodicRetry();
         return;
       }
       await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY_MS));

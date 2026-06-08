@@ -19,7 +19,7 @@ import healthRoutes from './routes/health.routes';
 import iconRoutes from './routes/icon.routes';
 import playermapRoutes from './routes/playermap.routes';
 import encounterRoutes from './routes/encounter.routes';
-import { areDataSourcesReady } from './config/database';
+import { areDataSourcesReady, initializeDataSourcesWithRetry, startPeriodicRetry } from './config/database';
 
 export function createApp(): Application {
   const app = express();
@@ -38,12 +38,16 @@ export function createApp(): Application {
   // 静态资源优先，不经过 API 路由层和数据库检查
   app.use(express.static(path.join(__dirname, 'public')));
 
-  // API 路由健康检查：数据库未就绪时返回 503
+  // API 路由健康检查：数据库未就绪时返回 503，同时触发后台重试
   app.use('/api', (req, res, next) => {
     if (req.path === '/health' || areDataSourcesReady()) {
       next();
       return;
     }
+    // 触发一次后台重试，不阻塞当前请求
+    initializeDataSourcesWithRetry().catch(() => {
+      startPeriodicRetry();
+    });
     res.status(503).json({
       success: false,
       error: 'Database not available, please retry later / 数据库暂不可用，请稍后重试',

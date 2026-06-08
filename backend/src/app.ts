@@ -19,6 +19,7 @@ import healthRoutes from './routes/health.routes';
 import iconRoutes from './routes/icon.routes';
 import playermapRoutes from './routes/playermap.routes';
 import encounterRoutes from './routes/encounter.routes';
+import { areDataSourcesReady } from './config/database';
 
 export function createApp(): Application {
   const app = express();
@@ -34,6 +35,21 @@ export function createApp(): Application {
   app.use(requestLogger);
   app.use(responseFormatter);
 
+  // 静态资源优先，不经过 API 路由层和数据库检查
+  app.use(express.static(path.join(__dirname, 'public')));
+
+  // API 路由健康检查：数据库未就绪时返回 503
+  app.use('/api', (req, res, next) => {
+    if (req.path === '/health' || areDataSourcesReady()) {
+      next();
+      return;
+    }
+    res.status(503).json({
+      success: false,
+      error: 'Database not available, please retry later / 数据库暂不可用，请稍后重试',
+    });
+  });
+
   app.use('/api/online', onlineRoutes);
   app.use('/api/ranking', rankingRoutes);
   app.use('/api/hardcore', hardcoreRoutes);
@@ -45,8 +61,7 @@ export function createApp(): Application {
   app.use('/api/playermap', playermapRoutes);
   app.use('/api/encounter', encounterRoutes);
 
-  app.use(express.static(path.join(__dirname, 'public')));
-
+  // SPA fallback：前端路由回退到 index.html
   app.get('*', (_req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });

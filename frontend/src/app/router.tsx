@@ -17,6 +17,7 @@ const CharacterPage = lazy(() => import('@/pages/CharacterPage'));
 const OnlineWidgetPage = lazy(() => import('@/pages/OnlineWidgetPage'));
 const PlayerMapPage = lazy(() => import('@/pages/PlayerMapPage'));
 const EncounterPage = lazy(() => import('@/pages/EncounterPage'));
+const AuctionPage = lazy(() => import('@/pages/AuctionPage'));
 
 export const router = createBrowserRouter([
   {
@@ -61,6 +62,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<LoadingState />}>
             <EncounterPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'auction',
+        element: (
+          <Suspense fallback={<LoadingState />}>
+            <AuctionPage />
           </Suspense>
         ),
       },

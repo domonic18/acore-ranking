@@ -45,4 +45,7 @@ export const Endpoints = {
     recent: '/api/encounter/recent',
     bosses: '/api/encounter/bosses',
   },
+  auction: {
+    list: '/api/auction',
+  },
 } as const;

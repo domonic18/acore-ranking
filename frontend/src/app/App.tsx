@@ -5,6 +5,7 @@ const navItems = [
   { to: '/ranking', label: '排行' },
   { to: '/hardcore', label: '硬核' },
   { to: '/playermap', label: '地图' },
+  { to: '/auction', label: '拍卖行' },
 ];
 
 export default function App() {

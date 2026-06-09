@@ -4,8 +4,10 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   getFilteredRowModel,
+  getSortedRowModel,
   flexRender,
   type ColumnDef,
+  type SortingState,
 } from '@tanstack/react-table';
 import {
   Table,
@@ -56,16 +58,20 @@ function getPageNumbers(current: number, total: number): (number | 'ellipsis')[]
 
 export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
   const [globalFilter, setGlobalFilter] = useState('');
+  const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({
     data,
     columns,
     state: {
       globalFilter,
+      sorting,
     },
     onGlobalFilterChange: setGlobalFilter,
+    onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
+    getSortedRowModel: getSortedRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     initialState: {
       pagination: {
@@ -135,10 +141,23 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
                   <TableHead
                     key={header.id}
                     className={(header.column.columnDef.meta as { className?: string } | undefined)?.className}
+                    onClick={header.column.getToggleSortingHandler()}
+                    style={{ cursor: header.column.getCanSort() ? 'pointer' : 'default' }}
                   >
                     {header.isPlaceholder
                       ? null
-                      : flexRender(header.column.columnDef.header, header.getContext())}
+                      : (
+                        <div className="flex items-center gap-1">
+                          {flexRender(header.column.columnDef.header, header.getContext())}
+                          {header.column.getCanSort() && (
+                            <span className="text-xs text-muted-foreground select-none">
+                              {header.column.getIsSorted() === 'asc' && '▲'}
+                              {header.column.getIsSorted() === 'desc' && '▼'}
+                              {header.column.getIsSorted() === false && '⇅'}
+                            </span>
+                          )}
+                        </div>
+                      )}
                   </TableHead>
                 ))}
               </TableRow>

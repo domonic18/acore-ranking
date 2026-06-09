@@ -24,6 +24,7 @@ export const CacheKeys = {
   playermapStatus: 'playermap:status',
   encounterRecent: 'encounter:recent',
   encounterBosses: 'encounter:bosses',
+  auctionList: 'auction:list',
 } as const;
 
 export const CacheTTL = {

@@ -19,6 +19,7 @@ import healthRoutes from './routes/health.routes';
 import iconRoutes from './routes/icon.routes';
 import playermapRoutes from './routes/playermap.routes';
 import encounterRoutes from './routes/encounter.routes';
+import auctionRoutes from './routes/auction.routes';
 import { areDataSourcesReady, initializeDataSourcesWithRetry, startPeriodicRetry } from './config/database';
 
 export function createApp(): Application {
@@ -64,6 +65,7 @@ export function createApp(): Application {
   app.use('/api/icons', iconRoutes);
   app.use('/api/playermap', playermapRoutes);
   app.use('/api/encounter', encounterRoutes);
+  app.use('/api/auction', auctionRoutes);
 
   // SPA fallback：前端路由回退到 index.html
   app.get('*', (_req, res) => {

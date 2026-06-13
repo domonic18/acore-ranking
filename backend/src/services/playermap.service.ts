@@ -106,8 +106,9 @@ function getFactionByRace(race: number): 'alliance' | 'horde' {
   return 'alliance';
 }
 
-function getMapExtension(map: number): number {
-  if (map === 530 || OUTLAND_INSTANCES.has(map)) {
+function getMapExtension(map: number, positionY: number): number {
+  // 外域主大陆（含副本）；map=530 但 y <= -1000 的血精灵/德莱尼新手区属于艾泽拉斯图层
+  if ((map === 530 && positionY > -1000) || OUTLAND_INSTANCES.has(map)) {
     return 1;
   }
   if (map === 571 || NORTHREND_INSTANCES.has(map)) {
@@ -143,7 +144,10 @@ function convertWorldToPixel(x: number, y: number, map: number): { x: number; y:
 
   if (map === 530) {
     // 外域 - 需要区分血精灵/德莱尼新手区
-    if (y < -1000 && y > -10000 && x > 5000) {
+    if (y < -1000 && y > -10000 && x > 11000) {
+      // 奎尔丹纳斯岛（位于艾泽拉斯图层右上角）
+      return { x: 910, y: 45 };
+    } else if (y < -1000 && y > -10000 && x > 5000) {
       // 血精灵新手区
       x = x - 10349;
       y = y + 6357;
@@ -256,7 +260,7 @@ export class PlayerMapService {
 
     for (const row of rows) {
       const faction = getFactionByRace(row.race);
-      const ext = getMapExtension(row.map);
+      const ext = getMapExtension(row.map, row.position_y);
       const mapKey = ext === 0 ? 'azeroth' : ext === 1 ? 'outland' : 'northrend';
 
       result[mapKey][faction]++;
@@ -311,7 +315,7 @@ export class PlayerMapService {
         })) : undefined,
       };
 
-      const ext = getMapExtension(first.map);
+      const ext = getMapExtension(first.map, first.position_y);
       const mapKey = ext === 0 ? 'azeroth' : ext === 1 ? 'outland' : 'northrend';
       result[mapKey].players.push(player);
     }

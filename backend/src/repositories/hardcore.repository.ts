@@ -52,7 +52,7 @@ export class HardcoreRepository extends BaseRepository {
       FROM characters c
       INNER JOIN hardcore_challenge_progress p ON c.guid = p.character_guid
       WHERE c.name != ''
-        AND p.current_level < 60
+        AND p.current_level NOT IN (60, 70, 80)
       ORDER BY p.current_level DESC
       LIMIT 200
     `);

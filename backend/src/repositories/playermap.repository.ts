@@ -38,20 +38,12 @@ export class PlayerMapRepository extends BaseRepository {
           c.guid, c.name, c.class, c.race, c.level, c.gender,
           c.position_x, c.position_y, c.map, c.zone,
           c.extra_flags,
-          CASE
-            WHEN hc.max_level IS NOT NULL AND hc.max_level NOT IN (60, 70) THEN 1
-            ELSE 0
-          END as is_hardcore,
+          CASE WHEN p.character_guid IS NOT NULL THEN 1 ELSE 0 END as is_hardcore,
           g.guid as groupGuid
         FROM characters c
-        LEFT JOIN (
-          SELECT character_guid, MAX(character_level) as max_level
-          FROM hardcore_challenge_completed
-          GROUP BY character_guid
-        ) hc ON hc.character_guid = c.guid
+        LEFT JOIN hardcore_challenge_progress p ON p.character_guid = c.guid
         LEFT JOIN group_member g ON g.memberGuid = c.guid
         WHERE c.online = 1
-          AND NOT EXISTS(SELECT 1 FROM hardcore_challenge_failed hf WHERE hf.character_guid = c.guid LIMIT 1)
         ORDER BY c.name
       `);
     }
@@ -89,7 +81,7 @@ export class PlayerMapRepository extends BaseRepository {
       const result = await this.rawQuery(`
         SELECT 1 FROM information_schema.tables
         WHERE table_schema = DATABASE()
-          AND table_name = 'hardcore_challenge_completed'
+          AND table_name = 'hardcore_challenge_progress'
         LIMIT 1
       `);
       return result.length > 0;

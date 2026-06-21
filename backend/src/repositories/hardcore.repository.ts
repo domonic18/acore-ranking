@@ -51,8 +51,10 @@ export class HardcoreRepository extends BaseRepository {
         p.total_spent_time
       FROM characters c
       INNER JOIN hardcore_challenge_progress p ON c.guid = p.character_guid
+      LEFT JOIN hardcore_challenge_failure f ON f.character_guid = c.guid
       WHERE c.name != ''
         AND p.current_level NOT IN (60, 70, 80)
+        AND f.character_guid IS NULL
       ORDER BY p.current_level DESC
       LIMIT 200
     `);

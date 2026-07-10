@@ -48,7 +48,7 @@ export class RankingRepository extends BaseRepository {
         c.guid, c.name, c.race, c.class, c.level, c.gender,
         COUNT(hf.id) as death_count
       FROM characters c
-      INNER JOIN hardcore_challenge_failed hf ON c.guid = hf.character_guid
+      INNER JOIN hardcore_challenge_failure hf ON c.guid = hf.character_guid
       GROUP BY c.guid, c.name, c.race, c.class, c.level, c.gender
       ORDER BY death_count DESC
       LIMIT ${limit}

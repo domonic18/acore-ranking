@@ -1,4 +1,4 @@
-type TabKey = 'completed60' | 'completed70' | 'fail' | 'incomplete';
+type TabKey = 'completed60' | 'completed70' | 'completed80' | 'fail' | 'incomplete';
 
 interface Tab {
   key: TabKey;
@@ -8,6 +8,7 @@ interface Tab {
 const tabs: Tab[] = [
   { key: 'completed60', label: '60级达成' },
   { key: 'completed70', label: '70级达成' },
+  { key: 'completed80', label: '80级达成' },
   { key: 'fail', label: '阵亡榜' },
   { key: 'incomplete', label: '奋进榜' },
 ];

@@ -10,7 +10,7 @@ export class BanlistRepository extends BaseRepository {
   async findRecent(limit = 200): Promise<unknown[]> {
     const hasHardcoreFailed = await this.checkHardcoreFailedTable();
     const excludeHardcore = hasHardcoreFailed
-      ? `AND NOT EXISTS (SELECT 1 FROM ${env.DB_CHARACTERS}.hardcore_challenge_failed hcf WHERE hcf.character_guid = c.guid)`
+      ? `AND NOT EXISTS (SELECT 1 FROM ${env.DB_CHARACTERS}.hardcore_challenge_failure hcf WHERE hcf.character_guid = c.guid)`
       : '';
 
     return this.rawQuery(`
@@ -39,7 +39,7 @@ export class BanlistRepository extends BaseRepository {
       const result = await this.rawQuery(`
         SELECT 1 FROM information_schema.tables
         WHERE table_schema = '${env.DB_CHARACTERS}'
-          AND table_name = 'hardcore_challenge_failed'
+          AND table_name = 'hardcore_challenge_failure'
         LIMIT 1
       `);
       return result.length > 0;

@@ -31,7 +31,11 @@ export class HardcoreRepository extends BaseRepository {
         c.class,
         c.gender,
         f.character_level,
-        f.total_spent_time
+        f.total_spent_time,
+        f.death_reason,
+        f.death_location_zone_id,
+        f.death_location_area_id,
+        f.killer_info
       FROM characters AS c
       INNER JOIN hardcore_challenge_failure AS f ON c.guid = f.character_guid
       ORDER BY f.id DESC

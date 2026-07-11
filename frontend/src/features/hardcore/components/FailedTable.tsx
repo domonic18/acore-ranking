@@ -34,6 +34,16 @@ function getColumns(levelHeader: string): ColumnDef<HardcorePlayer>[] {
       ),
     },
     { accessorKey: 'total_spent_time_str', header: '游戏时间' },
+    {
+      accessorKey: 'death_reason',
+      header: '死亡原因',
+      cell: ({ row }) => row.original.death_reason || '-',
+    },
+    {
+      accessorKey: 'death_location',
+      header: '死亡地点',
+      cell: ({ row }) => row.original.death_location || '-',
+    },
   ];
 }
 

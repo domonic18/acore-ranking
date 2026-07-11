@@ -8,4 +8,6 @@ export interface HardcorePlayer {
   side: number;
   total_spent_time: number;
   total_spent_time_str: string;
+  death_reason?: string;
+  death_location?: string;
 }

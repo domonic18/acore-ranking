@@ -2,6 +2,7 @@ import { CacheService, CacheKeys, CacheTTL } from './cache.service';
 import { HardcoreRepository } from '../repositories/hardcore.repository';
 import { getFactionByRace } from '../shared/utils/faction.util';
 import { formatTotalTime } from '../shared/utils/time.util';
+import { formatDeathReason } from '../shared/utils/death-reason.util';
 import { getZoneName } from '../data/zoneNames';
 
 export class HardcoreService {
@@ -46,7 +47,7 @@ export class HardcoreService {
       side: getFactionByRace(p.race),
       total_spent_time: p.total_spent_time,
       total_spent_time_str: formatTotalTime(p.total_spent_time),
-      death_reason: p.death_reason === 'death' ? null : p.death_reason,
+      death_reason: formatDeathReason(p.death_reason, p.killer_info),
       death_location: p.death_location_area_id || p.death_location_zone_id
         ? getZoneName(p.death_location_area_id || p.death_location_zone_id)
         : null,

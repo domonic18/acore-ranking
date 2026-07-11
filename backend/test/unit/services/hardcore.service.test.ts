@@ -53,7 +53,7 @@ describe('HardcoreService', () => {
       const cache = mockCacheMiss();
       const repo = mockRepo();
       repo.findFailed.mockResolvedValue([
-        { guid: 1, name: 'Dead', race: 2, class: 2, gender: 1, character_level: 45, total_spent_time: 1800, death_reason: '被怪物杀死', death_location_zone_id: 12, death_location_area_id: 87, killer_info: null },
+        { guid: 1, name: 'Dead', race: 2, class: 2, gender: 1, character_level: 45, total_spent_time: 1800, death_reason: 'creature', death_location_zone_id: 12, death_location_area_id: 87, killer_info: 'creature:686:Lashtail Raptor:level35' },
       ]);
 
       const result = await service.getFail();
@@ -63,7 +63,7 @@ describe('HardcoreService', () => {
         name: 'Dead',
         side: 1,
         level: 45,
-        death_reason: '被怪物杀死',
+        death_reason: '被怪物 Lashtail Raptor (等级 35) 击杀',
         death_location: '闪金镇',
       });
     });

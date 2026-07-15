@@ -26,7 +26,6 @@ describe('GET /api/ranking', () => {
     { path: '/api/ranking/quest', method: 'getQuestRanking' },
     { path: '/api/ranking/legendary', method: 'getLegendaryRanking' },
     { path: '/api/ranking/today-kills', method: 'getTodayKillsRanking' },
-    { path: '/api/ranking/yesterday-kills', method: 'getYesterdayKillsRanking' },
     { path: '/api/ranking/achievement', method: 'getAchievementRanking' },
     { path: '/api/ranking/mount', method: 'getMountRanking' },
   ];

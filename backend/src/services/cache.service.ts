@@ -13,7 +13,6 @@ export const CacheKeys = {
   topQuest: 'ranking:quest',
   topLegendary: 'ranking:legendary',
   topTodayKills: 'ranking:todayKills',
-  topYesterdayKills: 'ranking:yesterdayKills',
   topAchievement: 'ranking:achievement',
   hardcoreCompleted: (level: number) => `hardcore:completed:${level}`,
   hardcoreFail: 'hardcore:fail',

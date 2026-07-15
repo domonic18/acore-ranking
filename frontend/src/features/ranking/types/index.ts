@@ -59,10 +59,6 @@ export interface TodayKillsRankPlayer extends RankPlayer {
   today_kills: number;
 }
 
-export interface YesterdayKillsRankPlayer extends RankPlayer {
-  yesterday_kills: number;
-}
-
 export interface AchievementRankPlayer extends RankPlayer {
   total_achieve_points: number;
 }

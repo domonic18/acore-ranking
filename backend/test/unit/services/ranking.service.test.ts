@@ -195,23 +195,6 @@ describe('RankingService', () => {
     });
   });
 
-  describe('getYesterdayKillsRanking', () => {
-    it('includes yesterday kills', async () => {
-      const cache = mockCacheMiss();
-      const repo = mockRepo();
-      repo.findTopYesterdayKillsPlayers.mockResolvedValue([
-        { guid: 1, name: 'Slayer', race: 1, class: 1, gender: 0, level: 80, yesterdayKills: 45 },
-      ]);
-
-      const result = await service.getYesterdayKillsRanking();
-
-      expect((result as any)[0]).toMatchObject({
-        yesterday_kills: 45,
-      });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topYesterdayKills, expect.any(Array), CacheTTL.short);
-    });
-  });
-
   describe('getAchievementRanking', () => {
     it('maps achievement points', async () => {
       const cache = mockCacheMiss();

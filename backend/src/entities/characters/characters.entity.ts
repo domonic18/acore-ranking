@@ -42,9 +42,6 @@ export class Characters {
   @Column({ type: 'smallint', unsigned: true, default: 0 })
   todayKills!: number;
 
-  @Column({ type: 'smallint', unsigned: true, default: 0 })
-  yesterdayKills!: number;
-
   @Column({ type: 'int', unsigned: true, default: 0 })
   totalHonorPoints!: number;
 

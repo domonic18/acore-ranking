@@ -271,32 +271,6 @@ export class RankingService {
     }
   }
 
-  async getYesterdayKillsRanking(): Promise<unknown[]> {
-    const cacheKey = CacheKeys.topYesterdayKills;
-    const cached = await this.cache.get<unknown[]>(cacheKey);
-    if (cached) return cached;
-
-    try {
-      const players = await this.repo.findTopYesterdayKillsPlayers() as any[];
-      const result = players.map((p) => ({
-        guid: p.guid,
-        name: p.name || '已删号',
-        race: p.race,
-        class: p.class,
-        gender: p.gender,
-        level: p.level,
-        side: getFactionByRace(p.race),
-        yesterday_kills: p.yesterdayKills,
-      }));
-
-      await this.cache.set(cacheKey, result, CacheTTL.short);
-      return result;
-    } catch (err) {
-      console.error('[RankingService] getYesterdayKillsRanking failed:', err);
-      return [];
-    }
-  }
-
   async getAchievementRanking(): Promise<unknown[]> {
     const cacheKey = CacheKeys.topAchievement;
     const cached = await this.cache.get<unknown[]>(cacheKey);

@@ -26,7 +26,7 @@ export class HardcoreRepository extends BaseRepository {
     return this.rawQuery(`
       SELECT
         f.character_guid AS guid,
-        COALESCE(c.name, f.character_name, '已删号') AS name,
+        CASE WHEN c.guid IS NULL THEN '已删号' ELSE COALESCE(c.name, '已删号') END AS name,
         CAST(COALESCE(c.race, 0) AS UNSIGNED) AS race,
         CAST(COALESCE(c.class, 0) AS UNSIGNED) AS class,
         CAST(COALESCE(c.gender, 0) AS UNSIGNED) AS gender,

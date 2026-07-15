@@ -81,18 +81,18 @@ describe('HardcoreService', () => {
       expect((result as any)[0].death_location).toBeNull();
     });
 
-    it('keeps deleted characters using stored failure name and defaults', async () => {
+    it('keeps deleted characters using fallback name and defaults', async () => {
       const cache = mockCacheMiss();
       const repo = mockRepo();
       repo.findFailed.mockResolvedValue([
-        { guid: '11211', name: '黎明神棍', race: '0', class: '0', gender: '0', character_level: 4, total_spent_time: 6872, death_reason: 'creature', death_location_zone_id: 215, death_location_area_id: 358, killer_info: 'creature:2952:刺背野猪人:level4' },
+        { guid: '11211', name: '已删号', race: '0', class: '0', gender: '0', character_level: 4, total_spent_time: 6872, death_reason: 'creature', death_location_zone_id: 215, death_location_area_id: 358, killer_info: 'creature:2952:刺背野猪人:level4' },
       ]);
 
       const result = await service.getFail();
 
       expect((result as any)[0]).toMatchObject({
         guid: '11211',
-        name: '黎明神棍',
+        name: '已删号',
         race: 0,
         class: 0,
         gender: 0,

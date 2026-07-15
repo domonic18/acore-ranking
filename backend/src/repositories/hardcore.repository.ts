@@ -25,19 +25,19 @@ export class HardcoreRepository extends BaseRepository {
   async findFailed(): Promise<unknown[]> {
     return this.rawQuery(`
       SELECT
-        c.guid,
-        c.name,
-        c.race,
-        c.class,
-        c.gender,
+        f.character_guid AS guid,
+        COALESCE(c.name, f.character_name, '已删号') AS name,
+        CAST(COALESCE(c.race, 0) AS UNSIGNED) AS race,
+        CAST(COALESCE(c.class, 0) AS UNSIGNED) AS class,
+        CAST(COALESCE(c.gender, 0) AS UNSIGNED) AS gender,
         f.character_level,
         f.total_spent_time,
         f.death_reason,
         f.death_location_zone_id,
         f.death_location_area_id,
         f.killer_info
-      FROM characters AS c
-      INNER JOIN hardcore_challenge_failure AS f ON c.guid = f.character_guid
+      FROM hardcore_challenge_failure AS f
+      LEFT JOIN characters AS c ON c.guid = f.character_guid
       ORDER BY f.id DESC
       LIMIT 500
     `);

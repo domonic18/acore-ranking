@@ -11,7 +11,6 @@ import type {
   QuestRankPlayer,
   LegendaryRankPlayer,
   TodayKillsRankPlayer,
-  YesterdayKillsRankPlayer,
   AchievementRankPlayer,
   MountRankPlayer,
 } from '../types';
@@ -76,13 +75,6 @@ export function useTodayKillsRanking() {
   return useQuery<TodayKillsRankPlayer[]>({
     queryKey: ['ranking', 'todayKills'],
     queryFn: () => apiClient.get(Endpoints.ranking.todayKills),
-  });
-}
-
-export function useYesterdayKillsRanking() {
-  return useQuery<YesterdayKillsRankPlayer[]>({
-    queryKey: ['ranking', 'yesterdayKills'],
-    queryFn: () => apiClient.get(Endpoints.ranking.yesterdayKills),
   });
 }
 

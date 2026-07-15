@@ -116,16 +116,6 @@ export class RankingRepository extends BaseRepository {
     `);
   }
 
-  async findTopYesterdayKillsPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT guid, name, race, class, level, gender, yesterdayKills
-      FROM characters
-      WHERE yesterdayKills > 0
-      ORDER BY yesterdayKills DESC
-      LIMIT ${limit}
-    `);
-  }
-
   async findTopAchievementPlayers(limit = 200): Promise<unknown[]> {
     return this.rawQuery(`
       SELECT

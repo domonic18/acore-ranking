@@ -17,7 +17,6 @@ export const Endpoints = {
     quest: '/api/ranking/quest',
     legendary: '/api/ranking/legendary',
     todayKills: '/api/ranking/today-kills',
-    yesterdayKills: '/api/ranking/yesterday-kills',
     achievement: '/api/ranking/achievement',
   },
   hardcore: {

@@ -37,21 +37,26 @@ export class HardcoreService {
     if (cached) return cached;
 
     const players = await this.repo.findFailed() as any[];
-    const result = players.map((p) => ({
-      guid: p.guid,
-      name: p.name || '已删号',
-      race: p.race,
-      class: p.class,
-      gender: p.gender,
-      level: p.character_level,
-      side: getFactionByRace(p.race),
-      total_spent_time: p.total_spent_time,
-      total_spent_time_str: formatTotalTime(p.total_spent_time),
-      death_reason: formatDeathReason(p.death_reason, p.killer_info),
-      death_location: p.death_location_area_id || p.death_location_zone_id
-        ? getZoneName(p.death_location_area_id || p.death_location_zone_id)
-        : null,
-    }));
+    const result = players.map((p) => {
+      const race = Number(p.race ?? 0);
+      const cls = Number(p.class ?? 0);
+      const gender = Number(p.gender ?? 0);
+      return {
+        guid: p.guid,
+        name: p.name || '已删号',
+        race,
+        class: cls,
+        gender,
+        level: p.character_level,
+        side: getFactionByRace(race),
+        total_spent_time: p.total_spent_time,
+        total_spent_time_str: formatTotalTime(p.total_spent_time),
+        death_reason: formatDeathReason(p.death_reason, p.killer_info),
+        death_location: p.death_location_area_id || p.death_location_zone_id
+          ? getZoneName(p.death_location_area_id || p.death_location_zone_id)
+          : null,
+      };
+    });
 
     await this.cache.set(cacheKey, result, CacheTTL.medium);
     return result;

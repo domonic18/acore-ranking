@@ -9,7 +9,6 @@ import {
   useQuestRanking,
   useLegendaryRanking,
   useTodayKillsRanking,
-  useYesterdayKillsRanking,
   useAchievementRanking,
   useMountRanking,
 } from '@/features/ranking/api/queries';
@@ -23,7 +22,6 @@ import { ReputationRankingTable } from '@/features/ranking/components/Reputation
 import { QuestRankingTable } from '@/features/ranking/components/QuestRankingTable';
 import { LegendaryRankingTable } from '@/features/ranking/components/LegendaryRankingTable';
 import { TodayKillsRankingTable } from '@/features/ranking/components/TodayKillsRankingTable';
-import { YesterdayKillsRankingTable } from '@/features/ranking/components/YesterdayKillsRankingTable';
 import { AchievementRankingTable } from '@/features/ranking/components/AchievementRankingTable';
 import { MountRankingTable } from '@/features/ranking/components/MountRankingTable';
 import { LoadingState } from '@/shared/components/LoadingState';
@@ -41,11 +39,10 @@ export default function RankingPage() {
   const quest = useQuestRanking();
   const legendary = useLegendaryRanking();
   const todayKills = useTodayKillsRanking();
-  const yesterdayKills = useYesterdayKillsRanking();
   const achievement = useAchievementRanking();
   const mount = useMountRanking();
 
-  const queries = { gold, playtime, honor, kills, deaths, reputation, quest, legendary, todayKills, yesterdayKills, achievement, mount };
+  const queries = { gold, playtime, honor, kills, deaths, reputation, quest, legendary, todayKills, achievement, mount };
   const current = queries[activeTab];
 
   return (
@@ -67,7 +64,6 @@ export default function RankingPage() {
           {activeTab === 'quest' && quest.data && <QuestRankingTable data={quest.data} />}
           {activeTab === 'legendary' && legendary.data && <LegendaryRankingTable data={legendary.data} />}
           {activeTab === 'todayKills' && todayKills.data && <TodayKillsRankingTable data={todayKills.data} />}
-          {activeTab === 'yesterdayKills' && yesterdayKills.data && <YesterdayKillsRankingTable data={yesterdayKills.data} />}
           {activeTab === 'achievement' && achievement.data && <AchievementRankingTable data={achievement.data} />}
           {activeTab === 'mount' && mount.data && <MountRankingTable data={mount.data} />}
         </>

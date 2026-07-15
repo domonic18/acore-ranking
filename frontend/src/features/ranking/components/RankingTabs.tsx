@@ -1,4 +1,4 @@
-type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'yesterdayKills' | 'achievement' | 'mount';
+type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
 
 interface Tab {
   key: TabKey;
@@ -15,7 +15,6 @@ const tabs: Tab[] = [
   { key: 'quest', label: '任务排行' },
   { key: 'legendary', label: '传说装备' },
   { key: 'todayKills', label: '今日击杀' },
-  { key: 'yesterdayKills', label: '昨日击杀' },
   { key: 'achievement', label: '成就排行' },
   { key: 'mount', label: '坐骑排行' },
 ];

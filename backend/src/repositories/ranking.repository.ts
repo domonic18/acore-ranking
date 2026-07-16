@@ -42,98 +42,18 @@ export class RankingRepository extends BaseRepository {
     `);
   }
 
-  async findTopDeathPlayers(limit = 200): Promise<unknown[]> {
+  async findTopByAchievementCriteria(
+    criteriaId: number,
+    alias: string,
+    limit = 200,
+  ): Promise<unknown[]> {
     return this.rawQuery(`
       SELECT
         c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as death_count
+        COALESCE(p.counter, 0) as ${alias}
       FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 111
-      ORDER BY death_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopMonsterKillPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as monster_kill_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4948
-      ORDER BY monster_kill_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopCritterKillPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as critter_kill_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4958
-      ORDER BY critter_kill_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopFlightPathPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as flight_path_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 5305
-      ORDER BY flight_path_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopHealingPotionPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as healing_potion_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4299
-      ORDER BY healing_potion_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopDungeon5Players(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as dungeon_5_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4987
-      ORDER BY dungeon_5_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopRaid10Players(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as raid_10_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4988
-      ORDER BY raid_10_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopRaid25Players(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as raid_25_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4989
-      ORDER BY raid_25_count DESC
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = ${criteriaId}
+      ORDER BY ${alias} DESC
       LIMIT ${limit}
     `);
   }

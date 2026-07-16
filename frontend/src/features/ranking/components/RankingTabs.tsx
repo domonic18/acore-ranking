@@ -1,3 +1,7 @@
+import { useEffect, useRef, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
+import { cn } from '@/shared/lib/utils';
+
 type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
 
 interface Tab {
@@ -29,21 +33,67 @@ interface RankingTabsProps {
 }
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const activeLabel = tabs.find((t) => t.key === activeTab)?.label ?? activeTab;
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [open]);
+
+  function handleSelect(key: TabKey) {
+    onTabChange(key);
+    setOpen(false);
+  }
+
   return (
-    <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-      {tabs.map((t) => (
-        <button
-          key={t.key}
-          onClick={() => onTabChange(t.key)}
-          className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
-            activeTab === t.key
-              ? 'bg-primary text-primary-foreground'
-              : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
-          }`}
-        >
-          {t.label}
-        </button>
-      ))}
+    <div ref={containerRef} className="relative mb-4">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className={cn(
+          'flex w-full items-center justify-between gap-2 rounded-lg bg-secondary px-4 py-3 text-left text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/80',
+          open && 'bg-secondary/80'
+        )}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+      >
+        <span>{activeLabel}</span>
+        <ChevronDown
+          className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-180')}
+          aria-hidden="true"
+        />
+      </button>
+
+      {open && (
+        <div className="absolute z-50 mt-2 max-h-[60vh] w-full overflow-auto rounded-lg border border-border bg-popover p-1 shadow-lg">
+          {tabs.map((t) => (
+            <button
+              key={t.key}
+              type="button"
+              role="option"
+              aria-selected={t.key === activeTab}
+              onClick={() => handleSelect(t.key)}
+              className={cn(
+                'w-full rounded-md px-3 py-2 text-left text-sm transition-colors',
+                t.key === activeTab
+                  ? 'bg-primary text-primary-foreground'
+                  : 'text-popover-foreground hover:bg-accent hover:text-accent-foreground'
+              )}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

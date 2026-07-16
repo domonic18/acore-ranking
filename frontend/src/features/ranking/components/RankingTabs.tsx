@@ -1,3 +1,6 @@
+import { useEffect, useRef } from 'react';
+import { cn } from '@/shared/lib/utils';
+
 type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
 
 interface Tab {
@@ -29,21 +32,47 @@ interface RankingTabsProps {
 }
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const activeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    const activeButton = activeRef.current;
+    if (!container || !activeButton) return;
+
+    const containerRect = container.getBoundingClientRect();
+    const activeRect = activeButton.getBoundingClientRect();
+    const scrollLeft = activeRect.left - containerRect.left + container.scrollLeft - 16;
+
+    container.scrollTo({
+      left: scrollLeft,
+      behavior: 'smooth',
+    });
+  }, [activeTab]);
+
   return (
-    <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-      {tabs.map((t) => (
-        <button
-          key={t.key}
-          onClick={() => onTabChange(t.key)}
-          className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
-            activeTab === t.key
-              ? 'bg-primary text-primary-foreground'
-              : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
-          }`}
-        >
-          {t.label}
-        </button>
-      ))}
+    <div className="relative mb-4">
+      <div
+        ref={scrollRef}
+        className="scrollbar-hide -mx-4 flex gap-2 overflow-x-auto px-4 pb-1"
+      >
+        {tabs.map((t) => (
+          <button
+            key={t.key}
+            ref={t.key === activeTab ? activeRef : null}
+            onClick={() => onTabChange(t.key)}
+            className={cn(
+              'shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors',
+              activeTab === t.key
+                ? 'bg-primary text-primary-foreground shadow-sm'
+                : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
+            )}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-background to-transparent" />
     </div>
   );
 }

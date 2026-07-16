@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
 
 type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
@@ -33,67 +33,111 @@ interface RankingTabsProps {
 }
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
-  const [open, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const activeLabel = tabs.find((t) => t.key === activeTab)?.label ?? activeTab;
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const activeRef = useRef<HTMLButtonElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  function updateScrollState() {
+    const container = scrollRef.current;
+    if (!container) return;
+    setCanScrollLeft(container.scrollLeft > 0);
+    setCanScrollRight(container.scrollLeft + container.clientWidth < container.scrollWidth - 1);
+  }
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    }
-    if (open) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [open]);
+    const container = scrollRef.current;
+    if (!container) return;
 
-  function handleSelect(key: TabKey) {
-    onTabChange(key);
-    setOpen(false);
+    updateScrollState();
+    container.addEventListener('scroll', updateScrollState, { passive: true });
+    window.addEventListener('resize', updateScrollState);
+
+    return () => {
+      container.removeEventListener('scroll', updateScrollState);
+      window.removeEventListener('resize', updateScrollState);
+    };
+  }, []);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    const activeButton = activeRef.current;
+    if (!container || !activeButton) return;
+
+    const containerRect = container.getBoundingClientRect();
+    const activeRect = activeButton.getBoundingClientRect();
+    const target = activeRect.left - containerRect.left + container.scrollLeft - 16;
+
+    container.scrollTo({ left: target, behavior: 'smooth' });
+  }, [activeTab]);
+
+  function scrollBy(direction: 'left' | 'right') {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const scrollAmount = container.clientWidth * 0.6;
+    container.scrollBy({
+      left: direction === 'left' ? -scrollAmount : scrollAmount,
+      behavior: 'smooth',
+    });
   }
 
   return (
-    <div ref={containerRef} className="relative mb-4">
+    <div className="relative mb-4 flex items-center gap-2">
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => scrollBy('left')}
         className={cn(
-          'flex w-full items-center justify-between gap-2 rounded-lg bg-secondary px-4 py-3 text-left text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/80',
-          open && 'bg-secondary/80'
+          'flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-opacity hover:bg-secondary/80',
+          canScrollLeft ? 'opacity-100' : 'pointer-events-none opacity-0'
         )}
-        aria-haspopup="listbox"
-        aria-expanded={open}
+        aria-label="向左滚动"
       >
-        <span>{activeLabel}</span>
-        <ChevronDown
-          className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-180')}
-          aria-hidden="true"
-        />
+        <ChevronLeft className="h-5 w-5" />
       </button>
 
-      {open && (
-        <div className="absolute z-50 mt-2 max-h-[60vh] w-full overflow-auto rounded-lg border border-border bg-popover p-1 shadow-lg">
+      <div className="relative flex-1 overflow-hidden">
+        <div
+          ref={scrollRef}
+          className="scrollbar-hide flex gap-2 overflow-x-auto py-1"
+        >
           {tabs.map((t) => (
             <button
               key={t.key}
+              ref={t.key === activeTab ? activeRef : null}
               type="button"
-              role="option"
-              aria-selected={t.key === activeTab}
-              onClick={() => handleSelect(t.key)}
+              onClick={() => onTabChange(t.key)}
               className={cn(
-                'w-full rounded-md px-3 py-2 text-left text-sm transition-colors',
-                t.key === activeTab
-                  ? 'bg-primary text-primary-foreground'
-                  : 'text-popover-foreground hover:bg-accent hover:text-accent-foreground'
+                'shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors',
+                activeTab === t.key
+                  ? 'bg-primary text-primary-foreground shadow-sm'
+                  : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
               )}
             >
               {t.label}
             </button>
           ))}
         </div>
-      )}
+
+        {canScrollLeft && (
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-6 bg-gradient-to-r from-background to-transparent" />
+        )}
+        {canScrollRight && (
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-background to-transparent" />
+        )}
+      </div>
+
+      <button
+        type="button"
+        onClick={() => scrollBy('right')}
+        className={cn(
+          'flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-opacity hover:bg-secondary/80',
+          canScrollRight ? 'opacity-100' : 'pointer-events-none opacity-0'
+        )}
+        aria-label="向右滚动"
+      >
+        <ChevronRight className="h-5 w-5" />
+      </button>
     </div>
   );
 }

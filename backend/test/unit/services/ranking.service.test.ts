@@ -116,6 +116,74 @@ describe('RankingService', () => {
     });
   });
 
+  describe('getMonsterKillRanking', () => {
+    it('includes monster kill count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopMonsterKillPlayers.mockResolvedValue([
+        { guid: 1, name: 'Hunter', race: 1, class: 1, gender: 0, level: 80, monster_kill_count: 12345 },
+      ]);
+
+      const result = await service.getMonsterKillRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        monster_kill_count: 12345,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topMonsterKills, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getCritterKillRanking', () => {
+    it('includes critter kill count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopCritterKillPlayers.mockResolvedValue([
+        { guid: 1, name: 'Cruel', race: 1, class: 1, gender: 0, level: 80, critter_kill_count: 999 },
+      ]);
+
+      const result = await service.getCritterKillRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        critter_kill_count: 999,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topCritterKills, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getFlightPathRanking', () => {
+    it('includes flight path count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopFlightPathPlayers.mockResolvedValue([
+        { guid: 1, name: 'Traveler', race: 1, class: 1, gender: 0, level: 80, flight_path_count: 888 },
+      ]);
+
+      const result = await service.getFlightPathRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        flight_path_count: 888,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topFlightPaths, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getHealingPotionRanking', () => {
+    it('includes healing potion count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopHealingPotionPlayers.mockResolvedValue([
+        { guid: 1, name: 'Healer', race: 1, class: 1, gender: 0, level: 80, healing_potion_count: 777 },
+      ]);
+
+      const result = await service.getHealingPotionRanking();
+
+      expect((result as any)[0]).toMatchObject({
+        healing_potion_count: 777,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topHealingPotions, expect.any(Array), CacheTTL.short);
+    });
+  });
+
   describe('getReputationRanking', () => {
     it('includes reputation fields', async () => {
       const cache = mockCacheMiss();

@@ -34,6 +34,22 @@ export interface DeathRankPlayer extends RankPlayer {
   death_count: number;
 }
 
+export interface MonsterKillRankPlayer extends RankPlayer {
+  monster_kill_count: number;
+}
+
+export interface CritterKillRankPlayer extends RankPlayer {
+  critter_kill_count: number;
+}
+
+export interface FlightPathRankPlayer extends RankPlayer {
+  flight_path_count: number;
+}
+
+export interface HealingPotionRankPlayer extends RankPlayer {
+  healing_potion_count: number;
+}
+
 export interface ReputationRankPlayer extends RankPlayer {
   total_reputation: number;
   exalted_count: number;

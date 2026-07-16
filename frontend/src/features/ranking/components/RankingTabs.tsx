@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
 
 type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
@@ -32,47 +33,67 @@ interface RankingTabsProps {
 }
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const activeRef = useRef<HTMLButtonElement>(null);
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const activeLabel = tabs.find((t) => t.key === activeTab)?.label ?? activeTab;
 
   useEffect(() => {
-    const container = scrollRef.current;
-    const activeButton = activeRef.current;
-    if (!container || !activeButton) return;
+    function handleClickOutside(event: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [open]);
 
-    const containerRect = container.getBoundingClientRect();
-    const activeRect = activeButton.getBoundingClientRect();
-    const scrollLeft = activeRect.left - containerRect.left + container.scrollLeft - 16;
-
-    container.scrollTo({
-      left: scrollLeft,
-      behavior: 'smooth',
-    });
-  }, [activeTab]);
+  function handleSelect(key: TabKey) {
+    onTabChange(key);
+    setOpen(false);
+  }
 
   return (
-    <div className="relative mb-4">
-      <div
-        ref={scrollRef}
-        className="scrollbar-hide -mx-4 flex gap-2 overflow-x-auto px-4 pb-1"
+    <div ref={containerRef} className="relative mb-4">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className={cn(
+          'flex w-full items-center justify-between gap-2 rounded-lg bg-secondary px-4 py-3 text-left text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/80',
+          open && 'bg-secondary/80'
+        )}
+        aria-haspopup="listbox"
+        aria-expanded={open}
       >
-        {tabs.map((t) => (
-          <button
-            key={t.key}
-            ref={t.key === activeTab ? activeRef : null}
-            onClick={() => onTabChange(t.key)}
-            className={cn(
-              'shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors',
-              activeTab === t.key
-                ? 'bg-primary text-primary-foreground shadow-sm'
-                : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
-            )}
-          >
-            {t.label}
-          </button>
-        ))}
-      </div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-background to-transparent" />
+        <span>{activeLabel}</span>
+        <ChevronDown
+          className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-180')}
+          aria-hidden="true"
+        />
+      </button>
+
+      {open && (
+        <div className="absolute z-50 mt-2 max-h-[60vh] w-full overflow-auto rounded-lg border border-border bg-popover p-1 shadow-lg">
+          {tabs.map((t) => (
+            <button
+              key={t.key}
+              type="button"
+              role="option"
+              aria-selected={t.key === activeTab}
+              onClick={() => handleSelect(t.key)}
+              className={cn(
+                'w-full rounded-md px-3 py-2 text-left text-sm transition-colors',
+                t.key === activeTab
+                  ? 'bg-primary text-primary-foreground'
+                  : 'text-popover-foreground hover:bg-accent hover:text-accent-foreground'
+              )}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -15,6 +15,9 @@ import {
   useTodayKillsRanking,
   useAchievementRanking,
   useMountRanking,
+  useDungeon5Ranking,
+  useRaid10Ranking,
+  useRaid25Ranking,
 } from '@/features/ranking/api/queries';
 import { RankingTabs, type TabKey } from '@/features/ranking/components/RankingTabs';
 import { GoldRankingTable } from '@/features/ranking/components/GoldRankingTable';
@@ -32,6 +35,9 @@ import { LegendaryRankingTable } from '@/features/ranking/components/LegendaryRa
 import { TodayKillsRankingTable } from '@/features/ranking/components/TodayKillsRankingTable';
 import { AchievementRankingTable } from '@/features/ranking/components/AchievementRankingTable';
 import { MountRankingTable } from '@/features/ranking/components/MountRankingTable';
+import { Dungeon5RankingTable } from '@/features/ranking/components/Dungeon5RankingTable';
+import { Raid10RankingTable } from '@/features/ranking/components/Raid10RankingTable';
+import { Raid25RankingTable } from '@/features/ranking/components/Raid25RankingTable';
 import { LoadingState } from '@/shared/components/LoadingState';
 import { ErrorState } from '@/shared/components/ErrorState';
 
@@ -53,8 +59,11 @@ export default function RankingPage() {
   const todayKills = useTodayKillsRanking();
   const achievement = useAchievementRanking();
   const mount = useMountRanking();
+  const dungeon5 = useDungeon5Ranking();
+  const raid10 = useRaid10Ranking();
+  const raid25 = useRaid25Ranking();
 
-  const queries = { gold, playtime, honor, kills, deaths, monsterKills, critterKills, flightPaths, healingPotions, reputation, quest, legendary, todayKills, achievement, mount };
+  const queries = { gold, playtime, honor, kills, deaths, monsterKills, critterKills, flightPaths, healingPotions, reputation, quest, legendary, todayKills, achievement, mount, dungeon5, raid10, raid25 };
   const current = queries[activeTab];
 
   return (
@@ -82,6 +91,9 @@ export default function RankingPage() {
           {activeTab === 'todayKills' && todayKills.data && <TodayKillsRankingTable data={todayKills.data} />}
           {activeTab === 'achievement' && achievement.data && <AchievementRankingTable data={achievement.data} />}
           {activeTab === 'mount' && mount.data && <MountRankingTable data={mount.data} />}
+          {activeTab === 'dungeon5' && dungeon5.data && <Dungeon5RankingTable data={dungeon5.data} />}
+          {activeTab === 'raid10' && raid10.data && <Raid10RankingTable data={raid10.data} />}
+          {activeTab === 'raid25' && raid25.data && <Raid25RankingTable data={raid25.data} />}
         </>
       ) : null}
     </main>

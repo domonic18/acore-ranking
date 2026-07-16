@@ -1,12 +1,20 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronDown, Check } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
 
-type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
+type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount' | 'dungeon5' | 'raid10' | 'raid25';
+
+type CategoryKey = 'character' | 'combat' | 'instance' | 'collection';
 
 interface Tab {
   key: TabKey;
   label: string;
+}
+
+interface Category {
+  key: CategoryKey;
+  label: string;
+  tabs: TabKey[];
 }
 
 const tabs: Tab[] = [
@@ -25,7 +33,35 @@ const tabs: Tab[] = [
   { key: 'todayKills', label: '今日击杀' },
   { key: 'achievement', label: '成就排行' },
   { key: 'mount', label: '坐骑排行' },
+  { key: 'dungeon5', label: '5人本' },
+  { key: 'raid10', label: '10人团本' },
+  { key: 'raid25', label: '25人团本' },
 ];
+
+const categories: Category[] = [
+  {
+    key: 'character',
+    label: '角色',
+    tabs: ['gold', 'playtime', 'kills', 'deaths', 'reputation', 'quest', 'achievement'],
+  },
+  {
+    key: 'combat',
+    label: '战斗统计',
+    tabs: ['monsterKills', 'critterKills', 'flightPaths', 'healingPotions', 'todayKills'],
+  },
+  {
+    key: 'instance',
+    label: '副本团本',
+    tabs: ['dungeon5', 'raid10', 'raid25'],
+  },
+  {
+    key: 'collection',
+    label: '收藏装备',
+    tabs: ['legendary', 'mount'],
+  },
+];
+
+const tabMap = new Map(tabs.map((t) => [t.key, t]));
 
 interface RankingTabsProps {
   activeTab: TabKey;
@@ -33,111 +69,106 @@ interface RankingTabsProps {
 }
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const activeRef = useRef<HTMLButtonElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
-
-  function updateScrollState() {
-    const container = scrollRef.current;
-    if (!container) return;
-    setCanScrollLeft(container.scrollLeft > 0);
-    setCanScrollRight(container.scrollLeft + container.clientWidth < container.scrollWidth - 1);
-  }
+  const [openCategory, setOpenCategory] = useState<CategoryKey | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const activeCategory = categories.find((c) => c.tabs.includes(activeTab)) ?? categories[0];
 
   useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
+    function handleClick(event: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setOpenCategory(null);
+      }
+    }
 
-    updateScrollState();
-    container.addEventListener('scroll', updateScrollState, { passive: true });
-    window.addEventListener('resize', updateScrollState);
+    function handleKeydown(event: KeyboardEvent) {
+      if (event.key === 'Escape') setOpenCategory(null);
+    }
+
+    if (openCategory) {
+      document.addEventListener('mousedown', handleClick);
+      document.addEventListener('keydown', handleKeydown);
+    }
 
     return () => {
-      container.removeEventListener('scroll', updateScrollState);
-      window.removeEventListener('resize', updateScrollState);
+      document.removeEventListener('mousedown', handleClick);
+      document.removeEventListener('keydown', handleKeydown);
     };
-  }, []);
+  }, [openCategory]);
 
-  useEffect(() => {
-    const container = scrollRef.current;
-    const activeButton = activeRef.current;
-    if (!container || !activeButton) return;
+  function handleCategoryClick(category: Category) {
+    setOpenCategory((prev) => (prev === category.key ? null : category.key));
+  }
 
-    const containerRect = container.getBoundingClientRect();
-    const activeRect = activeButton.getBoundingClientRect();
-    const target = activeRect.left - containerRect.left + container.scrollLeft - 16;
-
-    container.scrollTo({ left: target, behavior: 'smooth' });
-  }, [activeTab]);
-
-  function scrollBy(direction: 'left' | 'right') {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    const scrollAmount = container.clientWidth * 0.6;
-    container.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
-    });
+  function handleSelect(key: TabKey) {
+    onTabChange(key);
+    setOpenCategory(null);
   }
 
   return (
-    <div className="relative mb-4 flex items-center gap-2">
-      <button
-        type="button"
-        onClick={() => scrollBy('left')}
-        className={cn(
-          'flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-opacity hover:bg-secondary/80',
-          canScrollLeft ? 'opacity-100' : 'pointer-events-none opacity-0'
-        )}
-        aria-label="向左滚动"
-      >
-        <ChevronLeft className="h-5 w-5" />
-      </button>
+    <div className="relative mb-4" ref={containerRef}>
+      <div className="scrollbar-hide flex gap-2 overflow-x-auto py-1">
+        {categories.map((cat) => {
+          const isActive = activeCategory.key === cat.key;
+          const isOpen = openCategory === cat.key;
 
-      <div className="relative flex-1 overflow-hidden">
-        <div
-          ref={scrollRef}
-          className="scrollbar-hide flex gap-2 overflow-x-auto py-1"
-        >
-          {tabs.map((t) => (
+          return (
             <button
-              key={t.key}
-              ref={t.key === activeTab ? activeRef : null}
+              key={cat.key}
               type="button"
-              onClick={() => onTabChange(t.key)}
+              aria-haspopup="listbox"
+              aria-expanded={isOpen}
+              onClick={() => handleCategoryClick(cat)}
               className={cn(
-                'shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors',
-                activeTab === t.key
+                'flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors',
+                isActive
                   ? 'bg-primary text-primary-foreground shadow-sm'
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
               )}
             >
-              {t.label}
+              {cat.label}
+              <ChevronDown
+                className={cn(
+                  'h-4 w-4 transition-transform',
+                  isOpen && 'rotate-180'
+                )}
+              />
             </button>
-          ))}
-        </div>
-
-        {canScrollLeft && (
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-6 bg-gradient-to-r from-background to-transparent" />
-        )}
-        {canScrollRight && (
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-background to-transparent" />
-        )}
+          );
+        })}
       </div>
 
-      <button
-        type="button"
-        onClick={() => scrollBy('right')}
-        className={cn(
-          'flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-opacity hover:bg-secondary/80',
-          canScrollRight ? 'opacity-100' : 'pointer-events-none opacity-0'
-        )}
-        aria-label="向右滚动"
-      >
-        <ChevronRight className="h-5 w-5" />
-      </button>
+      {openCategory && (
+        <div
+          role="listbox"
+          className="absolute left-0 top-full z-50 mt-2 w-full rounded-md border border-border bg-card p-2 shadow-lg sm:min-w-[240px] sm:max-w-sm"
+        >
+          {categories
+            .find((c) => c.key === openCategory)!
+            .tabs.map((key) => {
+              const tab = tabMap.get(key)!;
+              const selected = activeTab === key;
+
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  role="option"
+                  aria-selected={selected}
+                  onClick={() => handleSelect(key)}
+                  className={cn(
+                    'flex w-full items-center justify-between rounded-sm px-3 py-2 text-left text-sm transition-colors',
+                    selected
+                      ? 'bg-primary/10 text-primary'
+                      : 'text-foreground hover:bg-secondary'
+                  )}
+                >
+                  {tab.label}
+                  {selected && <Check className="h-4 w-4" />}
+                </button>
+              );
+            })}
+        </div>
+      )}
     </div>
   );
 }

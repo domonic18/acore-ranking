@@ -83,3 +83,15 @@ export interface MountRankPlayer extends RankPlayer {
   total_mount_counts: number;
   mount_ids: string;
 }
+
+export interface Dungeon5RankPlayer extends RankPlayer {
+  dungeon_5_count: number;
+}
+
+export interface Raid10RankPlayer extends RankPlayer {
+  raid_10_count: number;
+}
+
+export interface Raid25RankPlayer extends RankPlayer {
+  raid_25_count: number;
+}

@@ -17,6 +17,9 @@ import type {
   TodayKillsRankPlayer,
   AchievementRankPlayer,
   MountRankPlayer,
+  Dungeon5RankPlayer,
+  Raid10RankPlayer,
+  Raid25RankPlayer,
 } from '../types';
 
 export function useGoldRanking() {
@@ -121,5 +124,26 @@ export function useMountRanking() {
   return useQuery<MountRankPlayer[]>({
     queryKey: ['ranking', 'mount'],
     queryFn: () => apiClient.get(Endpoints.ranking.mount),
+  });
+}
+
+export function useDungeon5Ranking() {
+  return useQuery<Dungeon5RankPlayer[]>({
+    queryKey: ['ranking', 'dungeon5'],
+    queryFn: () => apiClient.get(Endpoints.ranking.dungeon5),
+  });
+}
+
+export function useRaid10Ranking() {
+  return useQuery<Raid10RankPlayer[]>({
+    queryKey: ['ranking', 'raid10'],
+    queryFn: () => apiClient.get(Endpoints.ranking.raid10),
+  });
+}
+
+export function useRaid25Ranking() {
+  return useQuery<Raid25RankPlayer[]>({
+    queryKey: ['ranking', 'raid25'],
+    queryFn: () => apiClient.get(Endpoints.ranking.raid25),
   });
 }

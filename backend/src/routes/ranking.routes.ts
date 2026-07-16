@@ -35,6 +35,26 @@ router.get('/deaths', asyncHandler(async (_req, res) => {
   res.jsonSuccess(data);
 }));
 
+router.get('/monster-kills', asyncHandler(async (_req, res) => {
+  const data = await service.getMonsterKillRanking();
+  res.jsonSuccess(data);
+}));
+
+router.get('/critter-kills', asyncHandler(async (_req, res) => {
+  const data = await service.getCritterKillRanking();
+  res.jsonSuccess(data);
+}));
+
+router.get('/flight-paths', asyncHandler(async (_req, res) => {
+  const data = await service.getFlightPathRanking();
+  res.jsonSuccess(data);
+}));
+
+router.get('/healing-potions', asyncHandler(async (_req, res) => {
+  const data = await service.getHealingPotionRanking();
+  res.jsonSuccess(data);
+}));
+
 router.get('/reputation', asyncHandler(async (_req, res) => {
   const data = await service.getReputationRanking();
   res.jsonSuccess(data);

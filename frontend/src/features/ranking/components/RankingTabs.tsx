@@ -1,4 +1,4 @@
-type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
+type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
 
 interface Tab {
   key: TabKey;
@@ -10,7 +10,11 @@ const tabs: Tab[] = [
   { key: 'playtime', label: '时长排行' },
   // { key: 'honor', label: '荣誉排行' },
   { key: 'kills', label: '击杀排行' },
-  // { key: 'deaths', label: '死亡排行' },
+  { key: 'deaths', label: '死亡排行' },
+  { key: 'monsterKills', label: '杀怪排行' },
+  { key: 'critterKills', label: '小动物杀手' },
+  { key: 'flightPaths', label: '飞行点排行' },
+  { key: 'healingPotions', label: '治疗药水' },
   { key: 'reputation', label: '声望排行' },
   { key: 'quest', label: '任务排行' },
   { key: 'legendary', label: '传说装备' },

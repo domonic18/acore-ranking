@@ -5,6 +5,10 @@ import {
   useHonorRanking,
   useKillsRanking,
   useDeathRanking,
+  useMonsterKillRanking,
+  useCritterKillRanking,
+  useFlightPathRanking,
+  useHealingPotionRanking,
   useReputationRanking,
   useQuestRanking,
   useLegendaryRanking,
@@ -17,7 +21,11 @@ import { GoldRankingTable } from '@/features/ranking/components/GoldRankingTable
 import { PlaytimeRankingTable } from '@/features/ranking/components/PlaytimeRankingTable';
 // import { HonorRankingTable } from '@/features/ranking/components/HonorRankingTable';
 import { KillsRankingTable } from '@/features/ranking/components/KillsRankingTable';
-// import { DeathRankingTable } from '@/features/ranking/components/DeathRankingTable';
+import { DeathRankingTable } from '@/features/ranking/components/DeathRankingTable';
+import { MonsterKillRankingTable } from '@/features/ranking/components/MonsterKillRankingTable';
+import { CritterKillRankingTable } from '@/features/ranking/components/CritterKillRankingTable';
+import { FlightPathRankingTable } from '@/features/ranking/components/FlightPathRankingTable';
+import { HealingPotionRankingTable } from '@/features/ranking/components/HealingPotionRankingTable';
 import { ReputationRankingTable } from '@/features/ranking/components/ReputationRankingTable';
 import { QuestRankingTable } from '@/features/ranking/components/QuestRankingTable';
 import { LegendaryRankingTable } from '@/features/ranking/components/LegendaryRankingTable';
@@ -35,6 +43,10 @@ export default function RankingPage() {
   const honor = useHonorRanking();
   const kills = useKillsRanking();
   const deaths = useDeathRanking();
+  const monsterKills = useMonsterKillRanking();
+  const critterKills = useCritterKillRanking();
+  const flightPaths = useFlightPathRanking();
+  const healingPotions = useHealingPotionRanking();
   const reputation = useReputationRanking();
   const quest = useQuestRanking();
   const legendary = useLegendaryRanking();
@@ -42,7 +54,7 @@ export default function RankingPage() {
   const achievement = useAchievementRanking();
   const mount = useMountRanking();
 
-  const queries = { gold, playtime, honor, kills, deaths, reputation, quest, legendary, todayKills, achievement, mount };
+  const queries = { gold, playtime, honor, kills, deaths, monsterKills, critterKills, flightPaths, healingPotions, reputation, quest, legendary, todayKills, achievement, mount };
   const current = queries[activeTab];
 
   return (
@@ -59,7 +71,11 @@ export default function RankingPage() {
           {activeTab === 'playtime' && playtime.data && <PlaytimeRankingTable data={playtime.data} />}
           {/* {activeTab === 'honor' && honor.data && <HonorRankingTable data={honor.data} />} */}
           {activeTab === 'kills' && kills.data && <KillsRankingTable data={kills.data} />}
-          {/* {activeTab === 'deaths' && deaths.data && <DeathRankingTable data={deaths.data} />} */}
+          {activeTab === 'deaths' && deaths.data && <DeathRankingTable data={deaths.data} />}
+          {activeTab === 'monsterKills' && monsterKills.data && <MonsterKillRankingTable data={monsterKills.data} />}
+          {activeTab === 'critterKills' && critterKills.data && <CritterKillRankingTable data={critterKills.data} />}
+          {activeTab === 'flightPaths' && flightPaths.data && <FlightPathRankingTable data={flightPaths.data} />}
+          {activeTab === 'healingPotions' && healingPotions.data && <HealingPotionRankingTable data={healingPotions.data} />}
           {activeTab === 'reputation' && reputation.data && <ReputationRankingTable data={reputation.data} />}
           {activeTab === 'quest' && quest.data && <QuestRankingTable data={quest.data} />}
           {activeTab === 'legendary' && legendary.data && <LegendaryRankingTable data={legendary.data} />}

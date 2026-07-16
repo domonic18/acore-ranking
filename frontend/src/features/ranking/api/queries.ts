@@ -7,6 +7,10 @@ import type {
   HonorRankPlayer,
   KillsRankPlayer,
   DeathRankPlayer,
+  MonsterKillRankPlayer,
+  CritterKillRankPlayer,
+  FlightPathRankPlayer,
+  HealingPotionRankPlayer,
   ReputationRankPlayer,
   QuestRankPlayer,
   LegendaryRankPlayer,
@@ -47,6 +51,34 @@ export function useDeathRanking() {
   return useQuery<DeathRankPlayer[]>({
     queryKey: ['ranking', 'deaths'],
     queryFn: () => apiClient.get(Endpoints.ranking.deaths),
+  });
+}
+
+export function useMonsterKillRanking() {
+  return useQuery<MonsterKillRankPlayer[]>({
+    queryKey: ['ranking', 'monsterKills'],
+    queryFn: () => apiClient.get(Endpoints.ranking.monsterKills),
+  });
+}
+
+export function useCritterKillRanking() {
+  return useQuery<CritterKillRankPlayer[]>({
+    queryKey: ['ranking', 'critterKills'],
+    queryFn: () => apiClient.get(Endpoints.ranking.critterKills),
+  });
+}
+
+export function useFlightPathRanking() {
+  return useQuery<FlightPathRankPlayer[]>({
+    queryKey: ['ranking', 'flightPaths'],
+    queryFn: () => apiClient.get(Endpoints.ranking.flightPaths),
+  });
+}
+
+export function useHealingPotionRanking() {
+  return useQuery<HealingPotionRankPlayer[]>({
+    queryKey: ['ranking', 'healingPotions'],
+    queryFn: () => apiClient.get(Endpoints.ranking.healingPotions),
   });
 }
 

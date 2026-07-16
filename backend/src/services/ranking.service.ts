@@ -135,13 +135,117 @@ export class RankingService {
         gender: p.gender,
         level: p.level,
         side: getFactionByRace(p.race),
-        death_count: p.death_count,
+        death_count: Number(p.death_count) || 0,
       }));
 
       await this.cache.set(cacheKey, result, CacheTTL.short);
       return result;
     } catch (err) {
       console.error('[RankingService] getDeathRanking failed:', err);
+      return [];
+    }
+  }
+
+  async getMonsterKillRanking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topMonsterKills;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopMonsterKillPlayers() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        monster_kill_count: Number(p.monster_kill_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getMonsterKillRanking failed:', err);
+      return [];
+    }
+  }
+
+  async getCritterKillRanking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topCritterKills;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopCritterKillPlayers() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        critter_kill_count: Number(p.critter_kill_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getCritterKillRanking failed:', err);
+      return [];
+    }
+  }
+
+  async getFlightPathRanking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topFlightPaths;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopFlightPathPlayers() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        flight_path_count: Number(p.flight_path_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getFlightPathRanking failed:', err);
+      return [];
+    }
+  }
+
+  async getHealingPotionRanking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topHealingPotions;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopHealingPotionPlayers() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        healing_potion_count: Number(p.healing_potion_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getHealingPotionRanking failed:', err);
       return [];
     }
   }

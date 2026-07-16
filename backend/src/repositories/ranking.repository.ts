@@ -46,11 +46,58 @@ export class RankingRepository extends BaseRepository {
     return this.rawQuery(`
       SELECT
         c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COUNT(hf.id) as death_count
+        COALESCE(p.counter, 0) as death_count
       FROM characters c
-      INNER JOIN hardcore_challenge_failure hf ON c.guid = hf.character_guid
-      GROUP BY c.guid, c.name, c.race, c.class, c.level, c.gender
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 111
       ORDER BY death_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopMonsterKillPlayers(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as monster_kill_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4948
+      ORDER BY monster_kill_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopCritterKillPlayers(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as critter_kill_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4958
+      ORDER BY critter_kill_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopFlightPathPlayers(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as flight_path_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 5305
+      ORDER BY flight_path_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopHealingPotionPlayers(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as healing_potion_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4299
+      ORDER BY healing_potion_count DESC
       LIMIT ${limit}
     `);
   }

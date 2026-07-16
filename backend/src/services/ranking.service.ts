@@ -250,6 +250,84 @@ export class RankingService {
     }
   }
 
+  async getDungeon5Ranking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topDungeon5;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopDungeon5Players() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        dungeon_5_count: Number(p.dungeon_5_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getDungeon5Ranking failed:', err);
+      return [];
+    }
+  }
+
+  async getRaid10Ranking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topRaid10;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopRaid10Players() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        raid_10_count: Number(p.raid_10_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getRaid10Ranking failed:', err);
+      return [];
+    }
+  }
+
+  async getRaid25Ranking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topRaid25;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopRaid25Players() as any[];
+      const result = players.map((p) => ({
+        guid: p.guid,
+        name: p.name || '已删号',
+        race: p.race,
+        class: p.class,
+        gender: p.gender,
+        level: p.level,
+        side: getFactionByRace(p.race),
+        raid_25_count: Number(p.raid_25_count) || 0,
+      }));
+
+      await this.cache.set(cacheKey, result, CacheTTL.short);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getRaid25Ranking failed:', err);
+      return [];
+    }
+  }
+
   async getReputationRanking(): Promise<unknown[]> {
     const cacheKey = CacheKeys.topReputation;
     const cached = await this.cache.get<unknown[]>(cacheKey);

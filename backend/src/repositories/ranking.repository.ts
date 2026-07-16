@@ -102,6 +102,42 @@ export class RankingRepository extends BaseRepository {
     `);
   }
 
+  async findTopDungeon5Players(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as dungeon_5_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4987
+      ORDER BY dungeon_5_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopRaid10Players(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as raid_10_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4988
+      ORDER BY raid_10_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopRaid25Players(limit = 200): Promise<unknown[]> {
+    return this.rawQuery(`
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COALESCE(p.counter, 0) as raid_25_count
+      FROM characters c
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4989
+      ORDER BY raid_25_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
   async findTopReputationPlayers(limit = 200): Promise<unknown[]> {
     return this.rawQuery(`
       SELECT

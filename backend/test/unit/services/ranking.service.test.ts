@@ -184,6 +184,57 @@ describe('RankingService', () => {
     });
   });
 
+  describe('getDungeon5Ranking', () => {
+    it('includes 5-man dungeon count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopDungeon5Players.mockResolvedValue([
+        { guid: 1, name: 'Dungeoner', race: 1, class: 1, gender: 0, level: 80, dungeon_5_count: 1234 },
+      ]);
+
+      const result = await service.getDungeon5Ranking();
+
+      expect((result as any)[0]).toMatchObject({
+        dungeon_5_count: 1234,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topDungeon5, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getRaid10Ranking', () => {
+    it('includes 10-man raid count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopRaid10Players.mockResolvedValue([
+        { guid: 1, name: 'Raider10', race: 1, class: 1, gender: 0, level: 80, raid_10_count: 99 },
+      ]);
+
+      const result = await service.getRaid10Ranking();
+
+      expect((result as any)[0]).toMatchObject({
+        raid_10_count: 99,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topRaid10, expect.any(Array), CacheTTL.short);
+    });
+  });
+
+  describe('getRaid25Ranking', () => {
+    it('includes 25-man raid count', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopRaid25Players.mockResolvedValue([
+        { guid: 1, name: 'Raider25', race: 1, class: 1, gender: 0, level: 80, raid_25_count: 88 },
+      ]);
+
+      const result = await service.getRaid25Ranking();
+
+      expect((result as any)[0]).toMatchObject({
+        raid_25_count: 88,
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topRaid25, expect.any(Array), CacheTTL.short);
+    });
+  });
+
   describe('getReputationRanking', () => {
     it('includes reputation fields', async () => {
       const cache = mockCacheMiss();

@@ -55,6 +55,21 @@ router.get('/healing-potions', asyncHandler(async (_req, res) => {
   res.jsonSuccess(data);
 }));
 
+router.get('/dungeon-5', asyncHandler(async (_req, res) => {
+  const data = await service.getDungeon5Ranking();
+  res.jsonSuccess(data);
+}));
+
+router.get('/raid-10', asyncHandler(async (_req, res) => {
+  const data = await service.getRaid10Ranking();
+  res.jsonSuccess(data);
+}));
+
+router.get('/raid-25', asyncHandler(async (_req, res) => {
+  const data = await service.getRaid25Ranking();
+  res.jsonSuccess(data);
+}));
+
 router.get('/reputation', asyncHandler(async (_req, res) => {
   const data = await service.getReputationRanking();
   res.jsonSuccess(data);

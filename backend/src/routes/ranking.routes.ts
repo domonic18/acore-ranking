@@ -85,6 +85,11 @@ router.get('/legendary', asyncHandler(async (_req, res) => {
   res.jsonSuccess(data);
 }));
 
+router.get('/rare-items', asyncHandler(async (_req, res) => {
+  const data = await service.getRareItemRanking();
+  res.jsonSuccess(data);
+}));
+
 router.get('/today-kills', asyncHandler(async (_req, res) => {
   const data = await service.getTodayKillsRanking();
   res.jsonSuccess(data);

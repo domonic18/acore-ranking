@@ -4,6 +4,7 @@ import { getFactionByRace } from '../shared/utils/faction.util';
 import { formatTotalTime } from '../shared/utils/time.util';
 import { formatGold } from '../shared/utils/gold.util';
 import { MOUNT_SPELL_IDS } from '../shared/constants/mount-spell-ids';
+import { RARE_ITEM_ENTRIES } from '../shared/constants/rare-items';
 import { ITEM_DISPLAY_INFO } from '../generated/itemDisplayInfo';
 
 const ACHIEVEMENT_PROGRESS_RANKINGS = {
@@ -291,6 +292,54 @@ export class RankingService {
       return result;
     } catch (err) {
       console.error('[RankingService] getLegendaryRanking failed:', err);
+      return [];
+    }
+  }
+
+  async getRareItemRanking(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.topRareItems;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    try {
+      const players = await this.repo.findTopRareItemPlayers(
+        RARE_ITEM_ENTRIES.map((e) => e.itemEntry),
+      ) as any[];
+      const result = players.map((p) => {
+        let items: Array<{ name: string; display_id: number; item_entry: number }> = [];
+        if (Array.isArray(p.rare_items)) {
+          items = p.rare_items;
+        } else {
+          try {
+            items = JSON.parse(p.rare_items || '[]');
+          } catch {
+            items = [];
+          }
+        }
+        const rare_items = items.map((item) => ({
+          name: item.name,
+          display_id: item.display_id,
+          item_entry: item.item_entry,
+          icon: ITEM_DISPLAY_INFO[item.display_id] || null,
+        }));
+
+        return {
+          guid: p.guid,
+          name: p.name || '已删号',
+          race: p.race,
+          class: p.class,
+          gender: p.gender,
+          level: p.level,
+          side: getFactionByRace(p.race),
+          rare_item_count: Number(p.rare_item_count) || 0,
+          rare_items,
+        };
+      });
+
+      await this.cache.set(cacheKey, result, CacheTTL.daily);
+      return result;
+    } catch (err) {
+      console.error('[RankingService] getRareItemRanking failed:', err);
       return [];
     }
   }

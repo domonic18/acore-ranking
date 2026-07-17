@@ -49,16 +49,24 @@ export interface ReputationRankPlayer extends RankPlayer {
 
 export type QuestRankPlayer = CountedRankPlayer<'quest_count'>;
 
-export interface LegendaryItem {
+export interface RankedItem {
   name: string;
   display_id: number;
   item_entry: number;
   icon: string | null;
 }
 
+/** @deprecated Use RankedItem instead. */
+export type LegendaryItem = RankedItem;
+
 export interface LegendaryRankPlayer extends RankPlayer {
   legendary_count: number;
-  legendary_items: LegendaryItem[];
+  legendary_items: RankedItem[];
+}
+
+export interface RareItemRankPlayer extends RankPlayer {
+  rare_item_count: number;
+  rare_items: RankedItem[];
 }
 
 export type TodayKillsRankPlayer = CountedRankPlayer<'today_kills'>;

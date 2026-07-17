@@ -25,6 +25,7 @@ export const Endpoints = {
     dungeon5: '/api/ranking/dungeon-5',
     raid10: '/api/ranking/raid-10',
     raid25: '/api/ranking/raid-25',
+    rareItems: '/api/ranking/rare-items',
   },
   hardcore: {
     completed: (level: number) => `/api/hardcore/completed/${level}`,

@@ -21,6 +21,7 @@ export const CacheKeys = {
   topLegendary: 'ranking:legendary',
   topTodayKills: 'ranking:todayKills',
   topAchievement: 'ranking:achievement',
+  topRareItems: 'ranking:rareItems',
   hardcoreCompleted: (level: number) => `hardcore:completed:${level}`,
   hardcoreFail: 'hardcore:fail',
   hardcoreIncomplete: 'hardcore:incomplete',

@@ -2,6 +2,7 @@ import { RankingService } from '../../../src/services/ranking.service';
 import { RankingRepository } from '../../../src/repositories/ranking.repository';
 import { CacheService, CacheKeys, CacheTTL } from '../../../src/services/cache.service';
 import { MOUNT_SPELL_IDS } from '../../../src/shared/constants/mount-spell-ids';
+import { RARE_ITEM_ENTRIES } from '../../../src/shared/constants/rare-items';
 
 jest.mock('../../../src/repositories/ranking.repository');
 jest.mock('../../../src/services/cache.service');
@@ -185,6 +186,34 @@ describe('RankingService', () => {
         ],
       });
       expect(cache.set).toHaveBeenCalledWith(CacheKeys.topLegendary, expect.any(Array), CacheTTL.daily);
+    });
+  });
+
+  describe('getRareItemRanking', () => {
+    it('parses rare_items JSON and maps icons', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopRareItemPlayers.mockResolvedValue([
+        {
+          guid: 1, name: 'Collector', race: 1, class: 1, gender: 0, level: 80, rare_item_count: 1,
+          rare_items: JSON.stringify([
+            { name: 'Black Qiraji Resonating Crystal', display_id: 3, item_entry: 21176 },
+          ]),
+        },
+      ]);
+
+      const result = await service.getRareItemRanking();
+
+      expect(repo.findTopRareItemPlayers).toHaveBeenCalledWith(
+        RARE_ITEM_ENTRIES.map((e) => e.itemEntry),
+      );
+      expect((result as any)[0]).toMatchObject({
+        rare_item_count: 1,
+        rare_items: [
+          { name: 'Black Qiraji Resonating Crystal', display_id: 3, item_entry: 21176, icon: null },
+        ],
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topRareItems, expect.any(Array), CacheTTL.daily);
     });
   });
 

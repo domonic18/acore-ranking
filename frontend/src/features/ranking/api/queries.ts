@@ -20,6 +20,7 @@ import type {
   Dungeon5RankPlayer,
   Raid10RankPlayer,
   Raid25RankPlayer,
+  RareItemRankPlayer,
   RankPlayer,
 } from '../types';
 
@@ -50,3 +51,4 @@ export const useMountRanking = createRankingQuery<MountRankPlayer>('mount', Endp
 export const useDungeon5Ranking = createRankingQuery<Dungeon5RankPlayer>('dungeon5', Endpoints.ranking.dungeon5);
 export const useRaid10Ranking = createRankingQuery<Raid10RankPlayer>('raid10', Endpoints.ranking.raid10);
 export const useRaid25Ranking = createRankingQuery<Raid25RankPlayer>('raid25', Endpoints.ranking.raid25);
+export const useRareItemRanking = createRankingQuery<RareItemRankPlayer>('rareItems', Endpoints.ranking.rareItems);

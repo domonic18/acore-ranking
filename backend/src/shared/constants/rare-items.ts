@@ -5,5 +5,6 @@ export interface RareItemEntry {
 }
 
 export const RARE_ITEM_ENTRIES: RareItemEntry[] = [
-  { itemEntry: 21176, spellId: 26655 }, // 黑色其拉共鸣水晶
+  // 黑色其拉共鸣水晶：item_template.spellid_2 = 26656 为学习后的坐骑技能
+  { itemEntry: 21176, spellId: 26656 },
 ] as const;

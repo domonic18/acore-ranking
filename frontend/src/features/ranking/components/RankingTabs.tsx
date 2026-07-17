@@ -1,31 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronDown, Check } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
-
-type TabKey = 'gold' | 'playtime' | 'honor' | 'kills' | 'deaths' | 'monsterKills' | 'critterKills' | 'flightPaths' | 'healingPotions' | 'reputation' | 'quest' | 'legendary' | 'todayKills' | 'achievement' | 'mount';
-
-interface Tab {
-  key: TabKey;
-  label: string;
-}
-
-const tabs: Tab[] = [
-  { key: 'gold', label: '财富排行' },
-  { key: 'playtime', label: '时长排行' },
-  // { key: 'honor', label: '荣誉排行' },
-  { key: 'kills', label: '击杀排行' },
-  { key: 'deaths', label: '死亡排行' },
-  { key: 'monsterKills', label: '杀怪排行' },
-  { key: 'critterKills', label: '小动物杀手' },
-  { key: 'flightPaths', label: '飞行点排行' },
-  { key: 'healingPotions', label: '治疗药水' },
-  { key: 'reputation', label: '声望排行' },
-  { key: 'quest', label: '任务排行' },
-  { key: 'legendary', label: '传说装备' },
-  { key: 'todayKills', label: '今日击杀' },
-  { key: 'achievement', label: '成就排行' },
-  { key: 'mount', label: '坐骑排行' },
-];
+import {
+  rankingConfig,
+  rankingConfigMap,
+  rankingCategories,
+  type TabKey,
+  type CategoryKey,
+} from '../rankingConfig';
 
 interface RankingTabsProps {
   activeTab: TabKey;
@@ -33,113 +15,120 @@ interface RankingTabsProps {
 }
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const activeRef = useRef<HTMLButtonElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
-
-  function updateScrollState() {
-    const container = scrollRef.current;
-    if (!container) return;
-    setCanScrollLeft(container.scrollLeft > 0);
-    setCanScrollRight(container.scrollLeft + container.clientWidth < container.scrollWidth - 1);
-  }
+  const [openCategory, setOpenCategory] = useState<CategoryKey | null>(null);
+  const [dropdownLeft, setDropdownLeft] = useState<number | undefined>(undefined);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const activeCategory = rankingCategories.find((c) => c.tabs.includes(activeTab)) ?? rankingCategories[0];
 
   useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
+    function handleClick(event: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setOpenCategory(null);
+      }
+    }
 
-    updateScrollState();
-    container.addEventListener('scroll', updateScrollState, { passive: true });
-    window.addEventListener('resize', updateScrollState);
+    function handleKeydown(event: KeyboardEvent) {
+      if (event.key === 'Escape') setOpenCategory(null);
+    }
+
+    if (openCategory) {
+      document.addEventListener('mousedown', handleClick);
+      document.addEventListener('keydown', handleKeydown);
+    }
 
     return () => {
-      container.removeEventListener('scroll', updateScrollState);
-      window.removeEventListener('resize', updateScrollState);
+      document.removeEventListener('mousedown', handleClick);
+      document.removeEventListener('keydown', handleKeydown);
     };
-  }, []);
+  }, [openCategory]);
 
-  useEffect(() => {
-    const container = scrollRef.current;
-    const activeButton = activeRef.current;
-    if (!container || !activeButton) return;
+  function handleCategoryClick(categoryKey: CategoryKey, event: React.MouseEvent<HTMLButtonElement>) {
+    if (openCategory === categoryKey) {
+      setOpenCategory(null);
+      return;
+    }
 
-    const containerRect = container.getBoundingClientRect();
-    const activeRect = activeButton.getBoundingClientRect();
-    const target = activeRect.left - containerRect.left + container.scrollLeft - 16;
-
-    container.scrollTo({ left: target, behavior: 'smooth' });
-  }, [activeTab]);
-
-  function scrollBy(direction: 'left' | 'right') {
-    const container = scrollRef.current;
+    const button = event.currentTarget;
+    const container = containerRef.current;
     if (!container) return;
 
-    const scrollAmount = container.clientWidth * 0.6;
-    container.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
-    });
+    setDropdownLeft(button.offsetLeft - container.scrollLeft);
+    setOpenCategory(categoryKey);
+  }
+
+  function handleSelect(key: TabKey) {
+    onTabChange(key);
+    setOpenCategory(null);
   }
 
   return (
-    <div className="relative mb-4 flex items-center gap-2">
-      <button
-        type="button"
-        onClick={() => scrollBy('left')}
-        className={cn(
-          'flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-opacity hover:bg-secondary/80',
-          canScrollLeft ? 'opacity-100' : 'pointer-events-none opacity-0'
-        )}
-        aria-label="向左滚动"
-      >
-        <ChevronLeft className="h-5 w-5" />
-      </button>
+    <div className="relative mb-4" ref={containerRef}>
+      <div className="scrollbar-hide flex gap-2 overflow-x-auto py-1">
+        {rankingCategories.map((cat) => {
+          const isActive = activeCategory.key === cat.key;
+          const isOpen = openCategory === cat.key;
 
-      <div className="relative flex-1 overflow-hidden">
-        <div
-          ref={scrollRef}
-          className="scrollbar-hide flex gap-2 overflow-x-auto py-1"
-        >
-          {tabs.map((t) => (
+          return (
             <button
-              key={t.key}
-              ref={t.key === activeTab ? activeRef : null}
+              key={cat.key}
               type="button"
-              onClick={() => onTabChange(t.key)}
+              aria-haspopup="listbox"
+              aria-expanded={isOpen}
+              onClick={(e) => handleCategoryClick(cat.key, e)}
               className={cn(
-                'shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors',
-                activeTab === t.key
+                'flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors',
+                isActive
                   ? 'bg-primary text-primary-foreground shadow-sm'
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
               )}
             >
-              {t.label}
+              {cat.label}
+              <ChevronDown
+                className={cn(
+                  'h-4 w-4 transition-transform',
+                  isOpen && 'rotate-180'
+                )}
+              />
             </button>
-          ))}
-        </div>
-
-        {canScrollLeft && (
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-6 bg-gradient-to-r from-background to-transparent" />
-        )}
-        {canScrollRight && (
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-background to-transparent" />
-        )}
+          );
+        })}
       </div>
 
-      <button
-        type="button"
-        onClick={() => scrollBy('right')}
-        className={cn(
-          'flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-opacity hover:bg-secondary/80',
-          canScrollRight ? 'opacity-100' : 'pointer-events-none opacity-0'
-        )}
-        aria-label="向右滚动"
-      >
-        <ChevronRight className="h-5 w-5" />
-      </button>
+      {openCategory && dropdownLeft !== undefined && (
+        <div
+          role="listbox"
+          style={{ left: dropdownLeft }}
+          className="absolute top-full z-50 mt-2 min-w-[160px] rounded-md border border-border bg-card p-2 shadow-lg sm:min-w-[240px] sm:max-w-sm"
+        >
+          {rankingConfig
+            .filter((c) => c.category === openCategory)
+            .map((config) => {
+              const selected = activeTab === config.key;
+
+              return (
+                <button
+                  key={config.key}
+                  type="button"
+                  role="option"
+                  aria-selected={selected}
+                  onClick={() => handleSelect(config.key)}
+                  className={cn(
+                    'flex w-full items-center justify-between rounded-sm px-3 py-2 text-left text-sm transition-colors',
+                    selected
+                      ? 'bg-primary/10 text-primary'
+                      : 'text-foreground hover:bg-secondary'
+                  )}
+                >
+                  {config.label}
+                  {selected && <Check className="h-4 w-4" />}
+                </button>
+              );
+            })}
+        </div>
+      )}
     </div>
   );
 }
 
 export type { TabKey };
+export { rankingConfig, rankingConfigMap };

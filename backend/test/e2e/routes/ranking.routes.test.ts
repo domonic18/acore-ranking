@@ -32,6 +32,9 @@ describe('GET /api/ranking', () => {
     { path: '/api/ranking/today-kills', method: 'getTodayKillsRanking' },
     { path: '/api/ranking/achievement', method: 'getAchievementRanking' },
     { path: '/api/ranking/mount', method: 'getMountRanking' },
+    { path: '/api/ranking/dungeon-5', method: 'getDungeon5Ranking' },
+    { path: '/api/ranking/raid-10', method: 'getRaid10Ranking' },
+    { path: '/api/ranking/raid-25', method: 'getRaid25Ranking' },
   ];
 
   endpoints.forEach(({ path, method }) => {

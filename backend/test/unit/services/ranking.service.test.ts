@@ -2,6 +2,7 @@ import { RankingService } from '../../../src/services/ranking.service';
 import { RankingRepository } from '../../../src/repositories/ranking.repository';
 import { CacheService, CacheKeys, CacheTTL } from '../../../src/services/cache.service';
 import { MOUNT_SPELL_IDS } from '../../../src/shared/constants/mount-spell-ids';
+import { RARE_ITEM_ENTRIES } from '../../../src/shared/constants/rare-items';
 
 jest.mock('../../../src/repositories/ranking.repository');
 jest.mock('../../../src/services/cache.service');
@@ -99,88 +100,30 @@ describe('RankingService', () => {
     });
   });
 
-  describe('getDeathRanking', () => {
-    it('includes death count', async () => {
+  const achievementProgressRankings = [
+    { method: 'getDeathRanking', criteriaId: 111, countField: 'death_count', cacheKey: CacheKeys.topDeaths, value: 42 },
+    { method: 'getMonsterKillRanking', criteriaId: 4948, countField: 'monster_kill_count', cacheKey: CacheKeys.topMonsterKills, value: 12345 },
+    { method: 'getCritterKillRanking', criteriaId: 4958, countField: 'critter_kill_count', cacheKey: CacheKeys.topCritterKills, value: 999 },
+    { method: 'getFlightPathRanking', criteriaId: 5305, countField: 'flight_path_count', cacheKey: CacheKeys.topFlightPaths, value: 888 },
+    { method: 'getHealingPotionRanking', criteriaId: 4299, countField: 'healing_potion_count', cacheKey: CacheKeys.topHealingPotions, value: 777 },
+    { method: 'getDungeon5Ranking', criteriaId: 4987, countField: 'dungeon_5_count', cacheKey: CacheKeys.topDungeon5, value: 1234 },
+    { method: 'getRaid10Ranking', criteriaId: 4988, countField: 'raid_10_count', cacheKey: CacheKeys.topRaid10, value: 99 },
+    { method: 'getRaid25Ranking', criteriaId: 4989, countField: 'raid_25_count', cacheKey: CacheKeys.topRaid25, value: 88 },
+  ] as const;
+
+  describe.each(achievementProgressRankings)('$method', ({ method, criteriaId, countField, cacheKey, value }) => {
+    it(`maps ${countField} through generic criteria query`, async () => {
       const cache = mockCacheMiss();
       const repo = mockRepo();
-      repo.findTopDeathPlayers.mockResolvedValue([
-        { guid: 1, name: 'Unlucky', race: 1, class: 1, gender: 0, level: 80, death_count: 42 },
+      repo.findTopByAchievementCriteria.mockResolvedValue([
+        { guid: 1, name: 'Player', race: 1, class: 1, gender: 0, level: 80, [countField]: value },
       ]);
 
-      const result = await service.getDeathRanking();
+      const result = await (service as any)[method]();
 
-      expect((result as any)[0]).toMatchObject({
-        death_count: 42,
-      });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topDeaths, expect.any(Array), CacheTTL.short);
-    });
-  });
-
-  describe('getMonsterKillRanking', () => {
-    it('includes monster kill count', async () => {
-      const cache = mockCacheMiss();
-      const repo = mockRepo();
-      repo.findTopMonsterKillPlayers.mockResolvedValue([
-        { guid: 1, name: 'Hunter', race: 1, class: 1, gender: 0, level: 80, monster_kill_count: 12345 },
-      ]);
-
-      const result = await service.getMonsterKillRanking();
-
-      expect((result as any)[0]).toMatchObject({
-        monster_kill_count: 12345,
-      });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topMonsterKills, expect.any(Array), CacheTTL.short);
-    });
-  });
-
-  describe('getCritterKillRanking', () => {
-    it('includes critter kill count', async () => {
-      const cache = mockCacheMiss();
-      const repo = mockRepo();
-      repo.findTopCritterKillPlayers.mockResolvedValue([
-        { guid: 1, name: 'Cruel', race: 1, class: 1, gender: 0, level: 80, critter_kill_count: 999 },
-      ]);
-
-      const result = await service.getCritterKillRanking();
-
-      expect((result as any)[0]).toMatchObject({
-        critter_kill_count: 999,
-      });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topCritterKills, expect.any(Array), CacheTTL.short);
-    });
-  });
-
-  describe('getFlightPathRanking', () => {
-    it('includes flight path count', async () => {
-      const cache = mockCacheMiss();
-      const repo = mockRepo();
-      repo.findTopFlightPathPlayers.mockResolvedValue([
-        { guid: 1, name: 'Traveler', race: 1, class: 1, gender: 0, level: 80, flight_path_count: 888 },
-      ]);
-
-      const result = await service.getFlightPathRanking();
-
-      expect((result as any)[0]).toMatchObject({
-        flight_path_count: 888,
-      });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topFlightPaths, expect.any(Array), CacheTTL.short);
-    });
-  });
-
-  describe('getHealingPotionRanking', () => {
-    it('includes healing potion count', async () => {
-      const cache = mockCacheMiss();
-      const repo = mockRepo();
-      repo.findTopHealingPotionPlayers.mockResolvedValue([
-        { guid: 1, name: 'Healer', race: 1, class: 1, gender: 0, level: 80, healing_potion_count: 777 },
-      ]);
-
-      const result = await service.getHealingPotionRanking();
-
-      expect((result as any)[0]).toMatchObject({
-        healing_potion_count: 777,
-      });
-      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topHealingPotions, expect.any(Array), CacheTTL.short);
+      expect(repo.findTopByAchievementCriteria).toHaveBeenCalledWith(criteriaId, countField);
+      expect((result as any)[0]).toMatchObject({ [countField]: value });
+      expect(cache.set).toHaveBeenCalledWith(cacheKey, expect.any(Array), CacheTTL.short);
     });
   });
 
@@ -243,6 +186,32 @@ describe('RankingService', () => {
         ],
       });
       expect(cache.set).toHaveBeenCalledWith(CacheKeys.topLegendary, expect.any(Array), CacheTTL.daily);
+    });
+  });
+
+  describe('getRareItemRanking', () => {
+    it('parses rare_items JSON and maps icons', async () => {
+      const cache = mockCacheMiss();
+      const repo = mockRepo();
+      repo.findTopRareItemPlayers.mockResolvedValue([
+        {
+          guid: 1, name: 'Collector', race: 1, class: 1, gender: 0, level: 80, rare_item_count: 1,
+          rare_items: JSON.stringify([
+            { name: 'Black Qiraji Resonating Crystal', display_id: 3, item_entry: 21176 },
+          ]),
+        },
+      ]);
+
+      const result = await service.getRareItemRanking();
+
+      expect(repo.findTopRareItemPlayers).toHaveBeenCalledWith(RARE_ITEM_ENTRIES);
+      expect((result as any)[0]).toMatchObject({
+        rare_item_count: 1,
+        rare_items: [
+          { name: 'Black Qiraji Resonating Crystal', display_id: 3, item_entry: 21176, icon: null },
+        ],
+      });
+      expect(cache.set).toHaveBeenCalledWith(CacheKeys.topRareItems, expect.any(Array), CacheTTL.daily);
     });
   });
 

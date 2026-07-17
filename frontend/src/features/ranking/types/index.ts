@@ -8,6 +8,8 @@ export interface RankPlayer {
   side: number;
 }
 
+export type CountedRankPlayer<K extends string> = RankPlayer & Record<K, number>;
+
 export interface GoldRankPlayer extends RankPlayer {
   total_gold: number;
   total_gold_str: string;
@@ -30,56 +32,54 @@ export interface KillsRankPlayer extends RankPlayer {
   total_kills: number;
 }
 
-export interface DeathRankPlayer extends RankPlayer {
-  death_count: number;
-}
+export type DeathRankPlayer = CountedRankPlayer<'death_count'>;
 
-export interface MonsterKillRankPlayer extends RankPlayer {
-  monster_kill_count: number;
-}
+export type MonsterKillRankPlayer = CountedRankPlayer<'monster_kill_count'>;
 
-export interface CritterKillRankPlayer extends RankPlayer {
-  critter_kill_count: number;
-}
+export type CritterKillRankPlayer = CountedRankPlayer<'critter_kill_count'>;
 
-export interface FlightPathRankPlayer extends RankPlayer {
-  flight_path_count: number;
-}
+export type FlightPathRankPlayer = CountedRankPlayer<'flight_path_count'>;
 
-export interface HealingPotionRankPlayer extends RankPlayer {
-  healing_potion_count: number;
-}
+export type HealingPotionRankPlayer = CountedRankPlayer<'healing_potion_count'>;
 
 export interface ReputationRankPlayer extends RankPlayer {
   total_reputation: number;
   exalted_count: number;
 }
 
-export interface QuestRankPlayer extends RankPlayer {
-  quest_count: number;
-}
+export type QuestRankPlayer = CountedRankPlayer<'quest_count'>;
 
-export interface LegendaryItem {
+export interface RankedItem {
   name: string;
   display_id: number;
   item_entry: number;
   icon: string | null;
 }
 
+/** @deprecated Use RankedItem instead. */
+export type LegendaryItem = RankedItem;
+
 export interface LegendaryRankPlayer extends RankPlayer {
   legendary_count: number;
-  legendary_items: LegendaryItem[];
+  legendary_items: RankedItem[];
 }
 
-export interface TodayKillsRankPlayer extends RankPlayer {
-  today_kills: number;
+export interface RareItemRankPlayer extends RankPlayer {
+  rare_item_count: number;
+  rare_items: RankedItem[];
 }
 
-export interface AchievementRankPlayer extends RankPlayer {
-  total_achieve_points: number;
-}
+export type TodayKillsRankPlayer = CountedRankPlayer<'today_kills'>;
+
+export type AchievementRankPlayer = CountedRankPlayer<'total_achieve_points'>;
 
 export interface MountRankPlayer extends RankPlayer {
   total_mount_counts: number;
   mount_ids: string;
 }
+
+export type Dungeon5RankPlayer = CountedRankPlayer<'dungeon_5_count'>;
+
+export type Raid10RankPlayer = CountedRankPlayer<'raid_10_count'>;
+
+export type Raid25RankPlayer = CountedRankPlayer<'raid_25_count'>;

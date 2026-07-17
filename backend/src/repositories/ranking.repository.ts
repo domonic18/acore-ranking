@@ -42,62 +42,18 @@ export class RankingRepository extends BaseRepository {
     `);
   }
 
-  async findTopDeathPlayers(limit = 200): Promise<unknown[]> {
+  async findTopByAchievementCriteria(
+    criteriaId: number,
+    alias: string,
+    limit = 200,
+  ): Promise<unknown[]> {
     return this.rawQuery(`
       SELECT
         c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as death_count
+        COALESCE(p.counter, 0) as ${alias}
       FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 111
-      ORDER BY death_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopMonsterKillPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as monster_kill_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4948
-      ORDER BY monster_kill_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopCritterKillPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as critter_kill_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4958
-      ORDER BY critter_kill_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopFlightPathPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as flight_path_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 5305
-      ORDER BY flight_path_count DESC
-      LIMIT ${limit}
-    `);
-  }
-
-  async findTopHealingPotionPlayers(limit = 200): Promise<unknown[]> {
-    return this.rawQuery(`
-      SELECT
-        c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COALESCE(p.counter, 0) as healing_potion_count
-      FROM characters c
-      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = 4299
-      ORDER BY healing_potion_count DESC
+      LEFT JOIN character_achievement_progress p ON c.guid = p.guid AND p.criteria = ${criteriaId}
+      ORDER BY ${alias} DESC
       LIMIT ${limit}
     `);
   }
@@ -202,6 +158,57 @@ export class RankingRepository extends BaseRepository {
       WHERE cs.spell IN (${ids})
       GROUP BY c.guid, c.name, c.race, c.class, c.level, c.gender
       ORDER BY mount_count DESC
+      LIMIT ${limit}
+    `);
+  }
+
+  async findTopRareItemPlayers(
+    entries: { itemEntry: number; spellId?: number }[],
+    limit = 200,
+  ): Promise<unknown[]> {
+    if (entries.length === 0) {
+      return [];
+    }
+
+    const cteRows = entries
+      .map((e, i) => {
+        const spell = e.spellId ?? 'NULL';
+        if (i === 0) {
+          return `SELECT ${e.itemEntry} as item_entry, ${spell} as spell`;
+        }
+        return `UNION ALL SELECT ${e.itemEntry}, ${spell}`;
+      })
+      .join(' ');
+
+    return this.rawQuery(`
+      WITH rare_entries AS (${cteRows})
+      SELECT
+        c.guid, c.name, c.race, c.class, c.level, c.gender,
+        COUNT(DISTINCT re.item_entry) as rare_item_count,
+        JSON_ARRAYAGG(
+          JSON_OBJECT(
+            'name', COALESCE(loc.Name, it.name),
+            'display_id', it.displayid,
+            'item_entry', re.item_entry
+          )
+        ) as rare_items
+      FROM characters c
+      INNER JOIN rare_entries re ON (
+        EXISTS (
+          -- character_inventory covers equipped gear, backpack, equipped bags, and bank slots.
+          SELECT 1 FROM character_inventory ci
+          INNER JOIN item_instance ii ON ci.item = ii.guid
+          WHERE ci.guid = c.guid AND ii.itemEntry = re.item_entry
+        )
+        OR (re.spell IS NOT NULL AND EXISTS (
+          SELECT 1 FROM character_spell cs
+          WHERE cs.guid = c.guid AND cs.spell = re.spell
+        ))
+      )
+      INNER JOIN acore_world.item_template it ON it.entry = re.item_entry
+      LEFT JOIN acore_world.item_template_locale loc ON it.entry = loc.ID AND loc.locale = 'zhCN'
+      GROUP BY c.guid, c.name, c.race, c.class, c.level, c.gender
+      ORDER BY rare_item_count DESC
       LIMIT ${limit}
     `);
   }

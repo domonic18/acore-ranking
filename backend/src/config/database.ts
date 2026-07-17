@@ -38,6 +38,31 @@ export function areDataSourcesReady(): boolean {
   return dataSourcesInitialized;
 }
 
+// 等待数据库就绪（有界等待）：SCF 冷启动期间请求挂起等待初始化完成，避免直接 503
+export function waitForDataSourcesReady(timeoutMs: number): Promise<boolean> {
+  if (dataSourcesInitialized) return Promise.resolve(true);
+
+  if (!isInitializing) {
+    initializeDataSourcesWithRetry().catch(() => {
+      startPeriodicRetry();
+    });
+  }
+
+  return new Promise((resolve) => {
+    const deadline = Date.now() + timeoutMs;
+    const timer = setInterval(() => {
+      if (dataSourcesInitialized) {
+        clearInterval(timer);
+        resolve(true);
+      } else if (Date.now() >= deadline) {
+        clearInterval(timer);
+        resolve(false);
+      }
+    }, 200);
+    timer.unref();
+  });
+}
+
 async function resetDataSources(): Promise<void> {
   dataSourcesInitialized = false;
   try {

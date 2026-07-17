@@ -204,9 +204,7 @@ describe('RankingService', () => {
 
       const result = await service.getRareItemRanking();
 
-      expect(repo.findTopRareItemPlayers).toHaveBeenCalledWith(
-        RARE_ITEM_ENTRIES.map((e) => e.itemEntry),
-      );
+      expect(repo.findTopRareItemPlayers).toHaveBeenCalledWith(RARE_ITEM_ENTRIES);
       expect((result as any)[0]).toMatchObject({
         rare_item_count: 1,
         rare_items: [

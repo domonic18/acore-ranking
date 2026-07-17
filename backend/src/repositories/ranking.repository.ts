@@ -162,28 +162,50 @@ export class RankingRepository extends BaseRepository {
     `);
   }
 
-  async findTopRareItemPlayers(itemEntries: number[], limit = 200): Promise<unknown[]> {
-    if (itemEntries.length === 0) {
+  async findTopRareItemPlayers(
+    entries: { itemEntry: number; spellId?: number }[],
+    limit = 200,
+  ): Promise<unknown[]> {
+    if (entries.length === 0) {
       return [];
     }
-    const ids = itemEntries.join(',');
+
+    const cteRows = entries
+      .map((e, i) => {
+        const spell = e.spellId ?? 'NULL';
+        if (i === 0) {
+          return `SELECT ${e.itemEntry} as item_entry, ${spell} as spell`;
+        }
+        return `UNION ALL SELECT ${e.itemEntry}, ${spell}`;
+      })
+      .join(' ');
+
     return this.rawQuery(`
+      WITH rare_entries AS (${cteRows})
       SELECT
         c.guid, c.name, c.race, c.class, c.level, c.gender,
-        COUNT(ii.itemEntry) as rare_item_count,
+        COUNT(DISTINCT re.item_entry) as rare_item_count,
         JSON_ARRAYAGG(
           JSON_OBJECT(
             'name', COALESCE(loc.Name, it.name),
             'display_id', it.displayid,
-            'item_entry', ii.itemEntry
+            'item_entry', re.item_entry
           )
         ) as rare_items
       FROM characters c
-      INNER JOIN character_inventory ci ON c.guid = ci.guid
-      INNER JOIN item_instance ii ON ci.item = ii.guid
-      INNER JOIN acore_world.item_template it ON ii.itemEntry = it.entry
+      INNER JOIN rare_entries re ON (
+        EXISTS (
+          SELECT 1 FROM character_inventory ci
+          INNER JOIN item_instance ii ON ci.item = ii.guid
+          WHERE ci.guid = c.guid AND ii.itemEntry = re.item_entry
+        )
+        OR (re.spell IS NOT NULL AND EXISTS (
+          SELECT 1 FROM character_spell cs
+          WHERE cs.guid = c.guid AND cs.spell = re.spell
+        ))
+      )
+      INNER JOIN acore_world.item_template it ON it.entry = re.item_entry
       LEFT JOIN acore_world.item_template_locale loc ON it.entry = loc.ID AND loc.locale = 'zhCN'
-      WHERE ii.itemEntry IN (${ids})
       GROUP BY c.guid, c.name, c.race, c.class, c.level, c.gender
       ORDER BY rare_item_count DESC
       LIMIT ${limit}

@@ -24,6 +24,7 @@ import { CountRankingTable } from './components/CountRankingTable';
 import { GoldRankingTable } from './components/GoldRankingTable';
 import { PlaytimeRankingTable } from './components/PlaytimeRankingTable';
 import { KillsRankingTable } from './components/KillsRankingTable';
+import { HonorRankingTable } from './components/HonorRankingTable';
 import { ReputationRankingTable } from './components/ReputationRankingTable';
 import { LegendaryRankingTable } from './components/LegendaryRankingTable';
 import { RareItemRankingTable } from './components/RareItemRankingTable';
@@ -98,7 +99,7 @@ export const rankingConfig: RankingConfigEntry[] = [
     category: 'character',
     endpoint: Endpoints.ranking.honor,
     useQuery: useHonorRanking,
-    component: () => null,
+    component: asRankingComponent(HonorRankingTable),
   },
   {
     key: 'kills',

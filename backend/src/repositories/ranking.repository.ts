@@ -195,6 +195,7 @@ export class RankingRepository extends BaseRepository {
       FROM characters c
       INNER JOIN rare_entries re ON (
         EXISTS (
+          -- character_inventory covers equipped gear, backpack, equipped bags, and bank slots.
           SELECT 1 FROM character_inventory ci
           INNER JOIN item_instance ii ON ci.item = ii.guid
           WHERE ci.guid = c.guid AND ii.itemEntry = re.item_entry

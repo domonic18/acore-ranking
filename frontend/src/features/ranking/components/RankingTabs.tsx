@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { ChevronDown, Check } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
 import {
@@ -16,8 +16,9 @@ interface RankingTabsProps {
 
 export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
   const [openCategory, setOpenCategory] = useState<CategoryKey | null>(null);
-  const [dropdownLeft, setDropdownLeft] = useState<number | undefined>(undefined);
+  const [dropdownLeft, setDropdownLeft] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const activeCategory = rankingCategories.find((c) => c.tabs.includes(activeTab)) ?? rankingCategories[0];
 
   useEffect(() => {
@@ -42,17 +43,32 @@ export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
     };
   }, [openCategory]);
 
+  // Keep the dropdown inside the container so it never renders off-screen
+  // to the right for the last tabs.
+  useLayoutEffect(() => {
+    const dropdown = dropdownRef.current;
+    const container = containerRef.current;
+    if (!openCategory || !dropdown || !container) return;
+
+    const maxLeft = Math.max(0, container.clientWidth - dropdown.offsetWidth);
+    setDropdownLeft((left) => Math.min(left, maxLeft));
+  }, [openCategory]);
+
   function handleCategoryClick(categoryKey: CategoryKey, event: React.MouseEvent<HTMLButtonElement>) {
     if (openCategory === categoryKey) {
       setOpenCategory(null);
       return;
     }
 
-    const button = event.currentTarget;
     const container = containerRef.current;
     if (!container) return;
 
-    setDropdownLeft(button.offsetLeft - container.scrollLeft);
+    // getBoundingClientRect is viewport-relative, so the offset is correct
+    // regardless of the tab bar's scroll position (offsetLeft is not reliable
+    // across engines when an intermediate container is scrolled).
+    const containerRect = container.getBoundingClientRect();
+    const buttonRect = event.currentTarget.getBoundingClientRect();
+    setDropdownLeft(Math.max(0, buttonRect.left - containerRect.left));
     setOpenCategory(categoryKey);
   }
 
@@ -63,7 +79,10 @@ export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
 
   return (
     <div className="relative mb-4" ref={containerRef}>
-      <div className="scrollbar-hide flex gap-2 overflow-x-auto py-1">
+      <div
+        className="scrollbar-hide flex gap-2 overflow-x-auto py-1"
+        onScroll={() => setOpenCategory(null)}
+      >
         {rankingCategories.map((cat) => {
           const isActive = activeCategory.key === cat.key;
           const isOpen = openCategory === cat.key;
@@ -94,8 +113,9 @@ export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
         })}
       </div>
 
-      {openCategory && dropdownLeft !== undefined && (
+      {openCategory && (
         <div
+          ref={dropdownRef}
           role="listbox"
           style={{ left: dropdownLeft }}
           className="absolute top-full z-50 mt-2 min-w-[160px] rounded-md border border-border bg-card p-2 shadow-lg sm:min-w-[240px] sm:max-w-sm"

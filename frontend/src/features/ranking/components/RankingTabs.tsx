@@ -51,69 +51,70 @@ export function RankingTabs({ activeTab, onTabChange }: RankingTabsProps) {
   }
 
   return (
-    <div className="relative mb-4" ref={containerRef}>
+    <div className="mb-4" ref={containerRef}>
       <div className="scrollbar-hide flex gap-2 overflow-x-auto py-1">
         {rankingCategories.map((cat) => {
           const isActive = activeCategory.key === cat.key;
           const isOpen = openCategory === cat.key;
 
           return (
-            <button
-              key={cat.key}
-              type="button"
-              aria-haspopup="listbox"
-              aria-expanded={isOpen}
-              onClick={() => handleCategoryClick(cat.key)}
-              className={cn(
-                'flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors',
-                isActive
-                  ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
-              )}
-            >
-              {cat.label}
-              <ChevronDown
+            <div key={cat.key} className="relative">
+              <button
+                type="button"
+                aria-haspopup="listbox"
+                aria-expanded={isOpen}
+                onClick={() => handleCategoryClick(cat.key)}
                 className={cn(
-                  'h-4 w-4 transition-transform',
-                  isOpen && 'rotate-180'
+                  'flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors',
+                  isActive
+                    ? 'bg-primary text-primary-foreground shadow-sm'
+                    : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                 )}
-              />
-            </button>
+              >
+                {cat.label}
+                <ChevronDown
+                  className={cn(
+                    'h-4 w-4 transition-transform',
+                    isOpen && 'rotate-180'
+                  )}
+                />
+              </button>
+
+              {isOpen && (
+                <div
+                  role="listbox"
+                  className="absolute left-0 top-full z-50 mt-2 min-w-full rounded-md border border-border bg-card p-2 shadow-lg sm:min-w-[240px] sm:max-w-sm"
+                >
+                  {rankingConfig
+                    .filter((c) => c.category === openCategory)
+                    .map((config) => {
+                      const selected = activeTab === config.key;
+
+                      return (
+                        <button
+                          key={config.key}
+                          type="button"
+                          role="option"
+                          aria-selected={selected}
+                          onClick={() => handleSelect(config.key)}
+                          className={cn(
+                            'flex w-full items-center justify-between rounded-sm px-3 py-2 text-left text-sm transition-colors',
+                            selected
+                              ? 'bg-primary/10 text-primary'
+                              : 'text-foreground hover:bg-secondary'
+                          )}
+                        >
+                          {config.label}
+                          {selected && <Check className="h-4 w-4" />}
+                        </button>
+                      );
+                    })}
+                </div>
+              )}
+            </div>
           );
         })}
       </div>
-
-      {openCategory && (
-        <div
-          role="listbox"
-          className="absolute left-0 top-full z-50 mt-2 w-full rounded-md border border-border bg-card p-2 shadow-lg sm:min-w-[240px] sm:max-w-sm"
-        >
-          {rankingConfig
-            .filter((c) => c.category === openCategory)
-            .map((config) => {
-              const selected = activeTab === config.key;
-
-              return (
-                <button
-                  key={config.key}
-                  type="button"
-                  role="option"
-                  aria-selected={selected}
-                  onClick={() => handleSelect(config.key)}
-                  className={cn(
-                    'flex w-full items-center justify-between rounded-sm px-3 py-2 text-left text-sm transition-colors',
-                    selected
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-foreground hover:bg-secondary'
-                  )}
-                >
-                  {config.label}
-                  {selected && <Check className="h-4 w-4" />}
-                </button>
-              );
-            })}
-        </div>
-      )}
     </div>
   );
 }

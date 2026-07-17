@@ -303,7 +303,7 @@ export class RankingService {
 
     try {
       const players = await this.repo.findTopRareItemPlayers(
-        RARE_ITEM_ENTRIES.map((e) => e.itemEntry),
+        RARE_ITEM_ENTRIES,
       ) as any[];
       const result = players.map((p) => {
         let items: Array<{ name: string; display_id: number; item_entry: number }> = [];

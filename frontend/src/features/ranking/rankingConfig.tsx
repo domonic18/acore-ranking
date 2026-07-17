@@ -18,6 +18,7 @@ import {
   useDungeon5Ranking,
   useRaid10Ranking,
   useRaid25Ranking,
+  useRareItemRanking,
 } from './api/queries';
 import { CountRankingTable } from './components/CountRankingTable';
 import { GoldRankingTable } from './components/GoldRankingTable';
@@ -25,6 +26,7 @@ import { PlaytimeRankingTable } from './components/PlaytimeRankingTable';
 import { KillsRankingTable } from './components/KillsRankingTable';
 import { ReputationRankingTable } from './components/ReputationRankingTable';
 import { LegendaryRankingTable } from './components/LegendaryRankingTable';
+import { RareItemRankingTable } from './components/RareItemRankingTable';
 import { MountRankingTable } from './components/MountRankingTable';
 import type { UseQueryResult } from '@tanstack/react-query';
 import type { RankPlayer } from './types';
@@ -47,9 +49,10 @@ export type TabKey =
   | 'mount'
   | 'dungeon5'
   | 'raid10'
-  | 'raid25';
+  | 'raid25'
+  | 'rareItems';
 
-export type CategoryKey = 'character' | 'combat' | 'instance' | 'collection';
+export type CategoryKey = 'wealth' | 'character' | 'combat' | 'exploration' | 'instance' | 'collection';
 
 export interface RankingConfigEntry<T extends RankPlayer = RankPlayer> {
   key: TabKey;
@@ -76,7 +79,7 @@ export const rankingConfig: RankingConfigEntry[] = [
   {
     key: 'gold',
     label: '财富排行',
-    category: 'character',
+    category: 'wealth',
     endpoint: Endpoints.ranking.gold,
     useQuery: useGoldRanking,
     component: asRankingComponent(GoldRankingTable),
@@ -100,7 +103,7 @@ export const rankingConfig: RankingConfigEntry[] = [
   {
     key: 'kills',
     label: '击杀排行',
-    category: 'character',
+    category: 'combat',
     endpoint: Endpoints.ranking.kills,
     useQuery: useKillsRanking,
     component: asRankingComponent(KillsRankingTable),
@@ -108,7 +111,7 @@ export const rankingConfig: RankingConfigEntry[] = [
   {
     key: 'deaths',
     label: '死亡排行',
-    category: 'character',
+    category: 'combat',
     endpoint: Endpoints.ranking.deaths,
     useQuery: useDeathRanking,
     component: createCountComponent('death_count', '死亡次数'),
@@ -132,7 +135,7 @@ export const rankingConfig: RankingConfigEntry[] = [
   {
     key: 'flightPaths',
     label: '飞行点排行',
-    category: 'combat',
+    category: 'exploration',
     endpoint: Endpoints.ranking.flightPaths,
     useQuery: useFlightPathRanking,
     component: createCountComponent('flight_path_count', '飞行点数量'),
@@ -194,6 +197,14 @@ export const rankingConfig: RankingConfigEntry[] = [
     component: asRankingComponent(MountRankingTable),
   },
   {
+    key: 'rareItems',
+    label: '稀有物品',
+    category: 'collection',
+    endpoint: Endpoints.ranking.rareItems,
+    useQuery: useRareItemRanking,
+    component: asRankingComponent(RareItemRankingTable),
+  },
+  {
     key: 'dungeon5',
     label: '5人本',
     category: 'instance',
@@ -238,8 +249,10 @@ export function deriveCategories(config: RankingConfigEntry[]) {
 
 function getCategoryLabel(key: CategoryKey): string {
   const labels: Record<CategoryKey, string> = {
+    wealth: '财富',
     character: '角色',
     combat: '战斗统计',
+    exploration: '探索',
     instance: '副本团本',
     collection: '收藏装备',
   };

@@ -17,7 +17,7 @@ export default function App() {
     <div className="min-h-screen bg-background text-foreground">
       <nav className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-4 py-2">
-          <Link to="/" className="flex items-center gap-2 mr-4">
+          <Link to="/" className="hidden md:flex items-center gap-2 mr-4">
             <div className="flex h-8 w-8 items-center justify-center">
               <LogoIcon className="h-8 w-8" />
             </div>

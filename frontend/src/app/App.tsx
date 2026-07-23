@@ -1,4 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
+import { LogoIcon } from '@/shared/components/ui/LogoIcon';
+import { SHORT_VERSION } from '@/shared/config/version';
 
 const navItems = [
   { to: '/online', label: '在线' },
@@ -15,6 +17,15 @@ export default function App() {
     <div className="min-h-screen bg-background text-foreground">
       <nav className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-4 py-2">
+          <Link to="/" className="hidden md:flex items-center gap-2 mr-4">
+            <div className="flex h-8 w-8 items-center justify-center">
+              <LogoIcon className="h-8 w-8" />
+            </div>
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-base font-bold">泰坦之眼</span>
+              <span className="text-[10px] text-muted-foreground">{SHORT_VERSION}</span>
+            </div>
+          </Link>
           {navItems.map((item) => {
             const active = location.pathname.startsWith(item.to);
             return (

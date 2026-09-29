@@ -22,6 +22,8 @@ interface DataTableProps<T> {
   data: T[];
   columns: ColumnDef<T, unknown>[];
   loading?: boolean;
+  /** 传入后整行可点击（行内 a/button 点击不触发），并显示 pointer 光标 */
+  onRowClick?: (row: T, event: React.MouseEvent<HTMLTableRowElement>) => void;
 }
 
 const pageSizeOptions = [10, 25, 50, 100];
@@ -56,7 +58,7 @@ function getPageNumbers(current: number, total: number): (number | 'ellipsis')[]
   return pages;
 }
 
-export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
+export function DataTable<T>({ data, columns, loading, onRowClick }: DataTableProps<T>) {
   const [globalFilter, setGlobalFilter] = useState('');
   const [sorting, setSorting] = useState<SortingState>([]);
 
@@ -178,7 +180,11 @@ export function DataTable<T>({ data, columns, loading }: DataTableProps<T>) {
               </TableRow>
             ) : (
               table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id}>
+                <TableRow
+                  key={row.id}
+                  onClick={onRowClick ? (event) => onRowClick(row.original, event) : undefined}
+                  className={onRowClick ? 'cursor-pointer' : undefined}
+                >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell
                       key={cell.id}

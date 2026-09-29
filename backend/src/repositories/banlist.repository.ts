@@ -8,10 +8,7 @@ export class BanlistRepository extends BaseRepository {
   }
 
   async findRecent(limit = 200): Promise<unknown[]> {
-    const hasHardcoreFailed = await this.checkHardcoreFailedTable();
-    const excludeHardcore = hasHardcoreFailed
-      ? `AND NOT EXISTS (SELECT 1 FROM ${env.DB_CHARACTERS}.hardcore_challenge_failure hcf WHERE hcf.character_guid = c.guid)`
-      : '';
+    const excludeHardcore = await this.hardcoreFailureNotExists('c');
 
     return this.rawQuery(`
       SELECT
@@ -36,6 +33,8 @@ export class BanlistRepository extends BaseRepository {
 
   /** 角色级封禁（characters.character_banned，ACM .ban character 落此表），跨库关联账号信息 */
   async findRecentCharacterBans(limit = 200): Promise<unknown[]> {
+    const excludeHardcore = await this.hardcoreFailureNotExists('cb');
+
     return this.rawQuery(`
       SELECT
         c.name AS character_name,
@@ -49,9 +48,16 @@ export class BanlistRepository extends BaseRepository {
       LEFT JOIN ${env.DB_CHARACTERS}.characters c ON c.guid = cb.guid
       LEFT JOIN account a ON a.id = c.account
       WHERE cb.active = 1
+        ${excludeHardcore}
       ORDER BY cb.bandate DESC
       LIMIT ${limit}
     `);
+  }
+
+  /** 硬核阵亡角色不进封禁列表；表不存在（旧库）时跳过过滤 */
+  private async hardcoreFailureNotExists(alias: string): Promise<string> {
+    if (!(await this.checkHardcoreFailedTable())) return '';
+    return `AND NOT EXISTS (SELECT 1 FROM ${env.DB_CHARACTERS}.hardcore_challenge_failure hcf WHERE hcf.character_guid = ${alias}.guid)`;
   }
 
   private async checkHardcoreFailedTable(): Promise<boolean> {

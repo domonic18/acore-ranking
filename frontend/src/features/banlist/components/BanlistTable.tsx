@@ -3,6 +3,21 @@ import { DataTable } from '@/shared/components/DataTable';
 import type { ColumnDef } from '@tanstack/react-table';
 import type { BanRecord } from '../types';
 
+const BanTypeCell = ({ value }: { value: string }) => {
+  const isAccount = value === 'account';
+  return (
+    <span
+      className={`inline-flex whitespace-nowrap rounded-md px-2 py-0.5 text-xs font-medium ${
+        isAccount
+          ? 'bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300'
+          : 'bg-sky-100 text-sky-700 dark:bg-sky-900/30 dark:text-sky-300'
+      }`}
+    >
+      {isAccount ? '账号' : '角色'}
+    </span>
+  );
+};
+
 const CharacterNamesCell = ({ value }: { value: string }) => {
   if (!value) return <span className="text-muted-foreground text-xs">—</span>;
   const names = value.split(',').filter(Boolean);
@@ -54,6 +69,12 @@ const UnbanDateCell = ({ row }: { row: BanRecord }) => {
 };
 
 const columns: ColumnDef<BanRecord>[] = [
+  {
+    accessorKey: 'banType',
+    header: '类型',
+    cell: (info) => <BanTypeCell value={String(info.getValue() || 'account')} />,
+    meta: { className: 'min-w-[70px]' },
+  },
   {
     accessorKey: 'character_names',
     header: '角色名',

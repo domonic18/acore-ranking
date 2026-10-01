@@ -1,3 +1,5 @@
+export type BanType = 'account' | 'character';
+
 export interface BanRecord {
   character_names: string;
   username: string;
@@ -5,4 +7,5 @@ export interface BanRecord {
   bandate: string;
   unbandate: string;
   banreason: string;
+  banType: BanType;
 }

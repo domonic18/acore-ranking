@@ -17,7 +17,7 @@ interface BanlistTabsProps {
 
 export function BanlistTabs({ activeTab, onTabChange }: BanlistTabsProps) {
   return (
-    <div className="mb-4 flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-2">
       {tabs.map((t) => (
         <button
           key={t.key}

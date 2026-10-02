@@ -24,6 +24,8 @@ interface DataTableProps<T> {
   loading?: boolean;
   /** 传入后整行可点击（行内 a/button 点击不触发），并显示 pointer 光标 */
   onRowClick?: (row: T, event: React.MouseEvent<HTMLTableRowElement>) => void;
+  /** 底部刷新提示文案，传 null 隐藏 */
+  refreshHint?: React.ReactNode;
 }
 
 const pageSizeOptions = [10, 25, 50, 100];
@@ -58,7 +60,7 @@ function getPageNumbers(current: number, total: number): (number | 'ellipsis')[]
   return pages;
 }
 
-export function DataTable<T>({ data, columns, loading, onRowClick }: DataTableProps<T>) {
+export function DataTable<T>({ data, columns, loading, onRowClick, refreshHint = '排行榜数据每5分钟刷新一次' }: DataTableProps<T>) {
   const [globalFilter, setGlobalFilter] = useState('');
   const [sorting, setSorting] = useState<SortingState>([]);
 
@@ -271,9 +273,11 @@ export function DataTable<T>({ data, columns, loading, onRowClick }: DataTablePr
         </div>
 
         {/* 刷新提示 */}
-        <div className="text-center text-sm text-muted-foreground">
-          排行榜数据每5分钟刷新一次
-        </div>
+        {refreshHint && (
+          <div className="text-center text-sm text-muted-foreground">
+            {refreshHint}
+          </div>
+        )}
       </div>
     </div>
   );

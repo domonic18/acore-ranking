@@ -130,8 +130,7 @@ export function BanlistTable({ data }: BanlistTableProps) {
 
   return (
     <div className="space-y-1.5">
-      <DataTable data={data} columns={columns} onRowClick={handleRowClick} />
-      <div className="text-center text-xs text-muted-foreground">点击任意行可查看封禁详情（原因支持 Markdown 渲染）</div>
+      <DataTable data={data} columns={columns} onRowClick={handleRowClick} refreshHint={null} />
       <BanlistDetailDialog record={selected} onClose={() => setSelected(null)} />
     </div>
   );

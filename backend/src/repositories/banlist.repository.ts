@@ -54,6 +54,31 @@ export class BanlistRepository extends BaseRepository {
     `);
   }
 
+  /** 生效中的禁言（auth.account_muted，账号级；guid 即账号 id）。旧版表无 unmutetime 列，按 mutetime（分钟）折算 */
+  async findRecentMutes(limit = 200): Promise<unknown[]> {
+    const excludeHardcore = await this.hardcoreFailureNotExists('c');
+
+    return this.rawQuery(`
+      SELECT
+        a.username,
+        a.last_ip,
+        am.mutedate,
+        am.mutedate + am.mutetime * 60 AS unmutetime,
+        am.mutereason AS reason,
+        GROUP_CONCAT(c.name ORDER BY c.name SEPARATOR ',') AS character_names
+      FROM account_muted am
+      LEFT JOIN account a ON am.guid = a.id
+      LEFT JOIN ${env.DB_CHARACTERS}.characters c ON c.account = a.id
+        AND c.name IS NOT NULL
+        AND c.name != ''
+        ${excludeHardcore}
+      WHERE am.mutedate + am.mutetime * 60 > UNIX_TIMESTAMP()
+      GROUP BY am.guid, a.username, a.last_ip, am.mutedate, am.mutetime, am.mutereason
+      ORDER BY am.mutedate DESC
+      LIMIT ${limit}
+    `);
+  }
+
   /** 硬核阵亡角色不进封禁列表；表不存在（旧库）时跳过过滤 */
   private async hardcoreFailureNotExists(alias: string): Promise<string> {
     if (!(await this.checkHardcoreFailedTable())) return '';

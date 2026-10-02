@@ -9,3 +9,12 @@ export interface BanRecord {
   banreason: string;
   banType: BanType;
 }
+
+export interface MuteRecord {
+  character_names: string;
+  username: string;
+  last_ip: string;
+  mutedate: string;
+  unmutetime: string;
+  reason: string;
+}

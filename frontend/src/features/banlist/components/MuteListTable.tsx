@@ -43,5 +43,5 @@ interface MuteListTableProps {
 }
 
 export function MuteListTable({ data }: MuteListTableProps) {
-  return <DataTable data={data} columns={columns} />;
+  return <DataTable data={data} columns={columns} refreshHint={null} />;
 }

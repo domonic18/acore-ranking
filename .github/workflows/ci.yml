@@ -112,6 +112,13 @@ jobs:
         working-directory: backend
         run: npx tsc --noEmit
 
+      # Dockerfile 静态检查放美国 runner（hadolint 无 darwin-arm64 原生版，构建机为 macOS）
+      - name: Dockerfile Lint / Dockerfile 检查
+        uses: hadolint/hadolint-action@v3.1.0
+        with:
+          dockerfile: docker/Dockerfile
+          failure-threshold: error
+
       - name: Test / 运行测试
         if: github.event.inputs.skip_test != 'true'
         working-directory: backend
@@ -134,12 +141,6 @@ jobs:
     steps:
       - name: Checkout / 检出代码
         uses: actions/checkout@v4.2.2
-
-      - name: Dockerfile Lint / Dockerfile 检查
-        uses: hadolint/hadolint-action@v3.1.0
-        with:
-          dockerfile: docker/Dockerfile
-          failure-threshold: error
 
       - name: Set up Docker Buildx / 配置 Docker Buildx
         uses: docker/setup-buildx-action@v3.10.0

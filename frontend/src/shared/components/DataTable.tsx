@@ -24,6 +24,8 @@ interface DataTableProps<T> {
   loading?: boolean;
   /** 传入后整行可点击（行内 a/button 点击不触发），并显示 pointer 光标 */
   onRowClick?: (row: T, event: React.MouseEvent<HTMLTableRowElement>) => void;
+  /** 按行返回额外 className，用于高亮特定行 */
+  rowClassName?: (row: T) => string;
   /** 底部刷新提示文案，传 null 隐藏 */
   refreshHint?: React.ReactNode;
 }
@@ -60,7 +62,7 @@ function getPageNumbers(current: number, total: number): (number | 'ellipsis')[]
   return pages;
 }
 
-export function DataTable<T>({ data, columns, loading, onRowClick, refreshHint = '排行榜数据每5分钟刷新一次' }: DataTableProps<T>) {
+export function DataTable<T>({ data, columns, loading, onRowClick, rowClassName, refreshHint = '排行榜数据每5分钟刷新一次' }: DataTableProps<T>) {
   const [globalFilter, setGlobalFilter] = useState('');
   const [sorting, setSorting] = useState<SortingState>([]);
 
@@ -185,7 +187,7 @@ export function DataTable<T>({ data, columns, loading, onRowClick, refreshHint =
                 <TableRow
                   key={row.id}
                   onClick={onRowClick ? (event) => onRowClick(row.original, event) : undefined}
-                  className={onRowClick ? 'cursor-pointer' : undefined}
+                  className={[onRowClick ? 'cursor-pointer' : '', rowClassName?.(row.original) || ''].join(' ').trim() || undefined}
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell

@@ -166,7 +166,7 @@ jobs:
           echo "app_version=${APP_VERSION}.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
 
       - name: Build and Push / 构建并推送
-        uses: docker/build-push-action@v6.16.0
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: docker/Dockerfile

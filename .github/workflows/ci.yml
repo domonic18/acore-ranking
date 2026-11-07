@@ -143,8 +143,9 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main')
     timeout-minutes: 15
     outputs:
-      # 供 deploy-scf job 使用:带摘要的镜像地址(SCF 按摘要拉取,避免标签指向漂移)
-      image_uri: ${{ steps.image_info.outputs.image_uri }}
+      # 只传不含密钥的片段:TCR 命名空间是 secret,整条镜像地址会被 GitHub 判为含密而丢弃输出
+      image_tag: ${{ steps.image_info.outputs.image_tag }}
+      image_digest: ${{ steps.image_info.outputs.image_digest }}
 
     steps:
       - name: Checkout / 检出代码
@@ -195,12 +196,13 @@ jobs:
       - name: Output image info / 输出镜像信息
         id: image_info
         run: |
-          # 带摘要的镜像地址:SCF 拉取镜像时按摘要定位,不受同名标签漂移影响
-          IMAGE_URI="${{ steps.vars.outputs.image_tag }}@${{ steps.build.outputs.digest }}"
-          echo "image_uri=${IMAGE_URI}" >> "$GITHUB_OUTPUT"
+          # 只输出不含密钥的片段:TCR 命名空间是 secret,含它的完整地址不能跨 job 传递
+          # (GitHub 会以「可能含密」为由丢弃该输出,deploy job 拿到的会是空串)
+          echo "image_tag=${{ steps.vars.outputs.branch }}-${{ steps.vars.outputs.sha_short }}" >> "$GITHUB_OUTPUT"
+          echo "image_digest=${{ steps.build.outputs.digest }}" >> "$GITHUB_OUTPUT"
           echo "Image pushed: ${{ steps.vars.outputs.image_tag }}"
           echo "Latest tag: ${{ steps.vars.outputs.latest_tag }}"
-          echo "SCF image uri: ${IMAGE_URI}"
+          echo "Image digest: ${{ steps.build.outputs.digest }}"
 
   # ============================================================
   # Stage 4: 部署到腾讯云 SCF(develop → staging 命名空间)
@@ -216,7 +218,6 @@ jobs:
       SCF_REGION: ${{ vars.SCF_REGION || 'ap-beijing' }}
       SCF_NAMESPACE: ${{ vars.SCF_NAMESPACE || 'staging' }}
       SCF_FUNCTION_NAME: ${{ vars.SCF_FUNCTION_NAME || 'acore-ranking' }}
-      SCF_IMAGE_URI: ${{ needs.docker.outputs.image_uri }}
       TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
       TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
 
@@ -224,17 +225,26 @@ jobs:
       - name: Checkout / 检出代码
         uses: actions/checkout@v4.2.2
 
-      - name: Setup Node.js / 安装 Node.js
-        uses: actions/setup-node@v4.3.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-          cache-dependency-path: scripts/deploy/package-lock.json
-
+      # 不用 actions/setup-node:它从 github.com/actions/node-versions 下载 node,
+      # 该域名在国内基本拉不动(实测卡到作业超时)。self-hosted runner 自带 node,直接用。
       - name: Install Dependencies / 安装依赖
         working-directory: scripts/deploy
-        run: npm ci
+        run: |
+          node -v
+          npm -v
+          npm ci
 
       - name: Deploy / 部署(更新函数镜像)
         working-directory: scripts/deploy
-        run: npm run deploy:scf
+        env:
+          REGISTRY: ${{ env.REGISTRY }}
+          TCR_NAMESPACE: ${{ secrets.TCR_NAMESPACE }}
+          IMAGE_NAME: ${{ env.IMAGE_NAME }}
+          IMAGE_TAG: ${{ needs.docker.outputs.image_tag }}
+          IMAGE_DIGEST: ${{ needs.docker.outputs.image_digest }}
+        run: |
+          set -euo pipefail
+          # 镜像地址在此组装:TCR 命名空间是 secret,无法作为 job 输出跨 job 传递
+          export SCF_IMAGE_URI="${REGISTRY}/${TCR_NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}@${IMAGE_DIGEST}"
+          echo "目标镜像: ${SCF_IMAGE_URI}"
+          npm run deploy:scf

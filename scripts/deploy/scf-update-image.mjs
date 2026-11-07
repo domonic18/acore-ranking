@@ -20,6 +20,13 @@ import tencentcloud from "tencentcloud-sdk-nodejs-scf";
 
 const { Client } = tencentcloud.scf.v20180416;
 
+// self-hosted runner 的 node 未锁版本(actions/setup-node 在国内拉不动),这里兜一道
+const nodeMajor = Number(process.versions.node.split(".")[0]);
+if (!Number.isInteger(nodeMajor) || nodeMajor < 18) {
+  console.error(`[scf-deploy] 需要 Node.js ≥ 18,当前 ${process.versions.node}`);
+  process.exit(1);
+}
+
 function required(name) {
   const value = process.env[name];
   if (!value) {

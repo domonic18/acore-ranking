@@ -34,7 +34,7 @@ export default function AchievementPage() {
       className={
         clipped
           ? 'overflow-hidden bg-background text-foreground'
-          : 'min-h-screen bg-background text-foreground'
+          : 'bg-background text-foreground'
       }
       style={clipped ? { height: effectiveHeight ?? undefined } : undefined}
     >

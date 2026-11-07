@@ -49,3 +49,19 @@ export interface EmbedHeightAvailableMessage {
   type: typeof EMBED_AVAILABLE_HEIGHT_TYPE;
   height: number;
 }
+
+/**
+ * 内容锚点属性名:高度上报的量测对象。
+ * 锚点在 app/main.tsx 包住 RouterProvider,跨全部路由稳定存在;
+ * 父页不感知该属性(纯子站内部约定)。
+ */
+export const EMBED_CONTENT_ATTRIBUTE = 'data-embed-content';
+
+/**
+ * 上报静默期(ms):内容变化后等这么久再上报。
+ * 切路由/翻页会先渲染 loading 态(内容骤缩),立即上报会让父页框高先塌后弹。
+ */
+export const EMBED_REPORT_SETTLE_MS = 200;
+
+/** 上报下限(px):量到更小的值视为未渲染/异常,不上报(避免把父页框高打塌) */
+export const EMBED_MIN_REPORT_PX = 80;

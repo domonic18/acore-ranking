@@ -16,7 +16,7 @@ export default function BanlistPage() {
   const current = activeTab === 'bans' ? banQuery : muteQuery;
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="bg-background text-foreground">
       <main className="mx-auto w-full min-w-[320px] max-w-6xl p-4">
         <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
           <Link to="/" className="hidden md:flex items-center gap-2">

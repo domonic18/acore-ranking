@@ -14,7 +14,7 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="bg-background text-foreground">
       <nav className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-4 py-2">
           <Link to="/" className="hidden md:flex items-center gap-2 mr-4">

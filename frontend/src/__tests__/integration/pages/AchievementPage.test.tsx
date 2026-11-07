@@ -102,7 +102,8 @@ describe('AchievementPage 嵌入模式', () => {
     const { container } = render(<AchievementPage />);
 
     const root = container.firstElementChild as HTMLElement;
-    expect(root.className).toContain('min-h-screen');
+    // 顶层不裁剪;视口地板在 body 上,内容容器不再自带 min-h-screen
+    expect(root.className).not.toContain('min-h-screen');
     expect(root.style.height).toBe('');
     expect(screen.queryByTestId('achievement-view-all')).not.toBeInTheDocument();
   });

@@ -3,7 +3,7 @@ import { Suspense, lazy } from 'react';
 import App from './App';
 
 const LoadingState = () => (
-  <div className="flex h-screen items-center justify-center">
+  <div className="flex min-h-[160px] items-center justify-center py-12">
     <div className="text-muted-foreground">Loading...</div>
   </div>
 );

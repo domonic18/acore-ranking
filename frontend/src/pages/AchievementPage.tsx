@@ -25,7 +25,7 @@ export default function AchievementPage() {
     return () => observer.disconnect();
   }, [data]);
 
-  // 嵌入模式:内容裁剪到框高(不产生 iframe 内层滚动条),超出部分由渐隐 + 「查看全部」承接
+  // 嵌入模式:内容裁剪到框高(不产生 iframe 内层滚动条),超出部分由渐隐示意
   const clipped = isEmbedded && effectiveHeight !== null;
   const overflowing = clipped && contentHeight > (effectiveHeight ?? 0);
 
@@ -49,22 +49,12 @@ export default function AchievementPage() {
       </main>
 
       {overflowing && (
-        <>
-          <div
-            aria-hidden
-            className="pointer-events-none fixed inset-x-0 bottom-0 bg-gradient-to-t from-background to-transparent"
-            style={{ height: FADE_HEIGHT_PX }}
-          />
-          <a
-            href={window.location.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid="achievement-view-all"
-            className="fixed bottom-3 right-4 z-10 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            查看全部最近成就 ↗
-          </a>
-        </>
+        <div
+          aria-hidden
+          data-testid="achievement-fade"
+          className="pointer-events-none fixed inset-x-0 bottom-0 bg-gradient-to-t from-background to-transparent"
+          style={{ height: FADE_HEIGHT_PX }}
+        />
       )}
     </div>
   );

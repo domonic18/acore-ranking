@@ -4,7 +4,7 @@ import type { RecentAchievement } from '@/features/achievement/types';
 
 /**
  * 成就页的嵌入(peek)模式:
- * 被门户 iframe 嵌入时,内容裁剪到父页给的框高,超出部分渐隐并给出「查看全部」出口;
+ * 被门户 iframe 嵌入时,内容裁剪到父页给的框高,超出部分渐隐示意;
  * 顶层打开时行为与嵌入前完全一致。
  */
 
@@ -73,7 +73,7 @@ afterEach(() => {
 });
 
 describe('AchievementPage 嵌入模式', () => {
-  it('内容超出可用高度时裁剪并给出「查看全部」出口', () => {
+  it('内容超出可用高度时裁剪到框高,不给出新窗口出口', () => {
     scrollHeight = 2000;
 
     const { container } = render(<AchievementPage />);
@@ -81,20 +81,22 @@ describe('AchievementPage 嵌入模式', () => {
     const root = container.firstElementChild as HTMLElement;
     expect(root.style.height).toBe('600px');
     expect(root.className).toContain('overflow-hidden');
-    expect(screen.getByTestId('achievement-view-all')).toBeInTheDocument();
+    expect(screen.getByTestId('achievement-fade')).toBeInTheDocument();
+    // 出口由门户页头的「新窗口打开」承担,子页不再叠浮层按钮压住内容
+    expect(screen.queryByTestId('achievement-view-all')).not.toBeInTheDocument();
   });
 
-  it('内容未超出可用高度时不显示渐隐与出口', () => {
+  it('内容未超出可用高度时不显示渐隐', () => {
     scrollHeight = 300;
 
     const { container } = render(<AchievementPage />);
 
     const root = container.firstElementChild as HTMLElement;
     expect(root.className).toContain('overflow-hidden');
-    expect(screen.queryByTestId('achievement-view-all')).not.toBeInTheDocument();
+    expect(screen.queryByTestId('achievement-fade')).not.toBeInTheDocument();
   });
 
-  it('顶层打开(非嵌入)时保持原样:无裁剪、无出口', () => {
+  it('顶层打开(非嵌入)时保持原样:无裁剪', () => {
     mockEmbedState.isEmbedded = false;
     mockEmbedState.effectiveHeight = null;
     scrollHeight = 2000;
@@ -105,6 +107,5 @@ describe('AchievementPage 嵌入模式', () => {
     // 顶层不裁剪;视口地板在 body 上,内容容器不再自带 min-h-screen
     expect(root.className).not.toContain('min-h-screen');
     expect(root.style.height).toBe('');
-    expect(screen.queryByTestId('achievement-view-all')).not.toBeInTheDocument();
   });
 });

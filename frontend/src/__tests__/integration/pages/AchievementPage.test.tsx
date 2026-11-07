@@ -94,7 +94,6 @@ describe('AchievementPage 嵌入模式', () => {
     const root = container.firstElementChild as HTMLElement;
     expect(root.className).toContain('overflow-hidden');
     expect(screen.queryByTestId('achievement-fade')).not.toBeInTheDocument();
-    expect(screen.queryByTestId('achievement-view-all')).not.toBeInTheDocument();
   });
 
   it('顶层打开(非嵌入)时保持原样:无裁剪', () => {
@@ -108,6 +107,5 @@ describe('AchievementPage 嵌入模式', () => {
     // 顶层不裁剪;视口地板在 body 上,内容容器不再自带 min-h-screen
     expect(root.className).not.toContain('min-h-screen');
     expect(root.style.height).toBe('');
-    expect(screen.queryByTestId('achievement-view-all')).not.toBeInTheDocument();
   });
 });

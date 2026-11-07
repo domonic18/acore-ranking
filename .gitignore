@@ -58,3 +58,6 @@ tmp/
 
 # Claude Code / AI 助手配置
 .claude/
+
+# cc-connect 消息桥本地状态(会话附件缓存)
+.cc-connect/

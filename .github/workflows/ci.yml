@@ -205,18 +205,19 @@ jobs:
           echo "Image digest: ${{ steps.build.outputs.digest }}"
 
   # ============================================================
-  # Stage 4: 部署到腾讯云 SCF(develop → staging 命名空间)
+  # Stage 4: 部署到腾讯云 SCF
+  #   develop → staging 命名空间(测试环境)
+  #   main    → production 命名空间(生产环境)
   # 只换函数镜像,不动环境变量/端口/超时等其余配置(线上这些值是人工在控制台调过的)
   # ============================================================
   deploy-scf:
     name: Deploy to SCF / 部署腾讯云函数
     runs-on: [self-hosted]
     needs: [docker]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main')
     timeout-minutes: 15
     env:
       SCF_REGION: ${{ vars.SCF_REGION || 'ap-beijing' }}
-      SCF_NAMESPACE: ${{ vars.SCF_NAMESPACE || 'staging' }}
       SCF_FUNCTION_NAME: ${{ vars.SCF_FUNCTION_NAME || 'acore-ranking' }}
       TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
       TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
@@ -224,6 +225,30 @@ jobs:
     steps:
       - name: Checkout / 检出代码
         uses: actions/checkout@v4.2.2
+
+      # 分支 → 命名空间映射。两个环境各留一个 repo variable 覆盖口,
+      # 但默认值必须是 staging/production,改错默认值等于把测试包发到生产。
+      - name: Resolve target / 解析目标环境
+        id: target
+        run: |
+          set -euo pipefail
+          case "$GITHUB_REF_NAME" in
+            develop)
+              namespace="${{ vars.SCF_STAGING_NAMESPACE || 'staging' }}"
+              label="测试(staging)"
+              ;;
+            main)
+              namespace="${{ vars.SCF_PRODUCTION_NAMESPACE || 'production' }}"
+              label="生产(production)"
+              ;;
+            *)
+              echo "::error::不支持的分支 $GITHUB_REF_NAME,拒绝部署"
+              exit 1
+              ;;
+          esac
+          echo "namespace=${namespace}" >> "$GITHUB_OUTPUT"
+          echo "label=${label}" >> "$GITHUB_OUTPUT"
+          echo "目标环境: ${label}(命名空间 ${namespace})"
 
       # 不用 actions/setup-node:它从 github.com/actions/node-versions 下载 node,
       # 该域名在国内基本拉不动(实测卡到作业超时)。self-hosted runner 自带 node,直接用。
@@ -242,6 +267,7 @@ jobs:
           IMAGE_NAME: ${{ env.IMAGE_NAME }}
           IMAGE_TAG: ${{ needs.docker.outputs.image_tag }}
           IMAGE_DIGEST: ${{ needs.docker.outputs.image_digest }}
+          SCF_NAMESPACE: ${{ steps.target.outputs.namespace }}
         run: |
           set -euo pipefail
           # 镜像地址在此组装:TCR 命名空间是 secret,无法作为 job 输出跨 job 传递

@@ -1,10 +1,14 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   EMBED_AVAILABLE_HEIGHT_REQUEST_TYPE,
   EMBED_AVAILABLE_HEIGHT_TYPE,
   EMBED_HEIGHT_REQUEST_SOURCE,
   EMBED_HEIGHT_SOURCE,
 } from '@/shared/constants/embed';
+
+/** 索要重试间隔(ms)与上限:父页可能尚未 hydration,监听器未就绪 */
+const REQUEST_RETRY_INTERVAL_MS = 500;
+const REQUEST_RETRY_LIMIT = 20;
 
 export interface EmbedAvailableHeightState {
   /** 父页下发的可用高度(px);未收到时为 null */
@@ -25,12 +29,15 @@ export interface EmbedAvailableHeightState {
  *   下发的值可以小于 iframe 视口高,子页按它裁剪);
  * - 父页未下发时退到 iframe 视口高(window.innerHeight)——iframe 视口高就是父页给的框高,
  *   对未实现本协议的旧父页同样正确;
- * - 挂载后主动索要一次,补上「父页监听器晚于本页挂载」的竞态。
+ * - 挂载后主动索要,并在收到高度前定时重试(父页可能尚未 hydration,
+ *   监听器未就绪时首次索要会丢;父页侧另有 ResizeObserver 首帧下发兜底,
+ *   但重试能让「父页已就绪、子页先问」这一路径也必达)。
  */
 export function useEmbedAvailableHeight(): EmbedAvailableHeightState {
   const [availableHeight, setAvailableHeight] = useState<number | null>(null);
   const [viewportHeight, setViewportHeight] = useState<number | null>(null);
   const isEmbedded = typeof window !== 'undefined' && window.parent !== window;
+  const receivedRef = useRef(false);
 
   const requestAvailableHeight = useCallback(() => {
     if (!isEmbedded) return;
@@ -51,6 +58,7 @@ export function useEmbedAvailableHeight(): EmbedAvailableHeightState {
       if (typeof data.height !== 'number' || !Number.isFinite(data.height) || data.height <= 0) {
         return;
       }
+      receivedRef.current = true;
       setAvailableHeight(Math.round(data.height));
     };
 
@@ -61,7 +69,19 @@ export function useEmbedAvailableHeight(): EmbedAvailableHeightState {
     onResize();
     requestAvailableHeight();
 
+    // 收到高度即停:父页不回时靠 window.innerHeight 兜底,不必无限重试
+    let attempts = 0;
+    const timer = window.setInterval(() => {
+      if (receivedRef.current || attempts >= REQUEST_RETRY_LIMIT) {
+        window.clearInterval(timer);
+        return;
+      }
+      attempts += 1;
+      requestAvailableHeight();
+    }, REQUEST_RETRY_INTERVAL_MS);
+
     return () => {
+      window.clearInterval(timer);
       window.removeEventListener('message', onMessage);
       window.removeEventListener('resize', onResize);
     };

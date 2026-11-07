@@ -150,4 +150,63 @@ describe('useEmbedAvailableHeight', () => {
 
     expect(result.current.availableHeight).toBeNull();
   });
+
+  it('父页未回时定时重试索要(父页监听器晚于子页挂载)', () => {
+    vi.useFakeTimers();
+    try {
+      renderHook(() => useEmbedAvailableHeight());
+      expect(postMessage).toHaveBeenCalledTimes(1);
+
+      act(() => {
+        vi.advanceTimersByTime(500);
+      });
+      expect(postMessage).toHaveBeenCalledTimes(2);
+
+      act(() => {
+        vi.advanceTimersByTime(500);
+      });
+      expect(postMessage).toHaveBeenCalledTimes(3);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('收到高度后停止重试', () => {
+    vi.useFakeTimers();
+    try {
+      const { result } = renderHook(() => useEmbedAvailableHeight());
+
+      act(() => {
+        window.dispatchEvent(
+          new MessageEvent('message', {
+            data: { source: 'acore-portal', type: 'height-available', height: 612 },
+            source: window.parent,
+          }),
+        );
+      });
+      expect(result.current.availableHeight).toBe(612);
+      const callsAfterReceipt = postMessage.mock.calls.length;
+
+      act(() => {
+        vi.advanceTimersByTime(2000);
+      });
+      expect(postMessage).toHaveBeenCalledTimes(callsAfterReceipt);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('重试有上限:父页始终不回则停止索要(靠 iframe 视口高兜底)', () => {
+    vi.useFakeTimers();
+    try {
+      renderHook(() => useEmbedAvailableHeight());
+      act(() => {
+        vi.advanceTimersByTime(500 * 30);
+      });
+      // 首次 + 20 次重试后停
+      expect(postMessage).toHaveBeenCalledTimes(21);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
 });

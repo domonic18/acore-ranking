@@ -17,6 +17,7 @@ AzerothCore private server ranking service. Replaces legacy PHP `wow_wrapper` wi
 3. **Mount spell IDs inlined**: `spell.csv` (48MB) processed at build time to ~3KB TypeScript constant
 4. **iframe-first**: All pages designed for embedding, no fixed widths, responsive tables
 5. **Height reporting**: When embedded, pages report content height to the parent via `postMessage` so the parent can size the iframe to fit (protocol in `frontend/src/shared/constants/embed.ts`)
+6. **Available height**: The parent may push the iframe's usable height down to the child (`height-available`); the child then crops its content to that height with a bottom fade and a "view all" link instead of scrolling inside the iframe (used by the portal homepage's achievement embed, which must stay equal-height with the sidebar)
 
 ## Directory Structure
 

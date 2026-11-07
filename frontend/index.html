@@ -8,7 +8,10 @@
     <script type="text/javascript">
       var aowow_tooltips = { "colorlinks": true, "iconizelinks": false, "renamelinks": false };
     </script>
-    <script type="text/javascript" src="https://wowgaming.altervista.org/aowow/static/widgets/power.js"></script>
+    <!-- aowow 浮窗脚本放在第三方 CDN 上,实测加载 ~185ms。不加 defer 会阻塞 HTML 解析,
+         把首屏(app bundle 的发现时机)一起拖住;defer 后执行顺序不变(仍在主 bundle 之前),
+         但解析不再等待它。浮窗走 document 级 mouseover 委托,后渲染的链接同样生效。 -->
+    <script type="text/javascript" defer src="https://wowgaming.altervista.org/aowow/static/widgets/power.js"></script>
   </head>
   <body>
     <div id="root"></div>

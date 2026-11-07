@@ -2,6 +2,19 @@ import { CacheService, CacheKeys, CacheTTL } from './cache.service';
 import { OnlineRepository } from '../repositories/online.repository';
 import { getFactionByRace } from '../shared/utils/faction.util';
 
+function maskIp(ip: unknown): string {
+  if (typeof ip !== 'string' || !ip) return '';
+  const parts = ip.split('.');
+  if (parts.length === 4 && parts.every((p) => /^\d{1,3}$/.test(p))) {
+    return `${parts[0]}.${parts[1]}.${parts[2]}.*`;
+  }
+  if (ip.includes(':')) {
+    const groups = ip.split(':').filter(Boolean);
+    return `${groups.slice(0, 4).join(':')}:*`;
+  }
+  return '';
+}
+
 export class OnlineService {
   private cache = new CacheService();
   private repo = new OnlineRepository();
@@ -42,6 +55,7 @@ export class OnlineService {
         gender: p.gender,
         level: p.level,
         side: getFactionByRace(p.race),
+        ip: maskIp(p.last_ip),
       }));
 
       await this.cache.set(cacheKey, result, CacheTTL.realtime);

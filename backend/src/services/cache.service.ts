@@ -27,6 +27,7 @@ export const CacheKeys = {
   hardcoreIncomplete: 'hardcore:incomplete',
   recentAchieve: 'achievement:recent',
   banlist: 'banlist:recent',
+  banlistMutes: 'banlist:mutes',
   playermapData: 'playermap:data:v2',
   playermapStatus: 'playermap:status',
   encounterRecent: 'encounter:recent',

@@ -7,7 +7,7 @@ export default function EncounterPage() {
   const { data, isLoading, error } = useFirstKills();
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="bg-background text-foreground">
       <main className="mx-auto w-full min-w-[320px] max-w-6xl p-4">
         <h1 className="mb-4 text-2xl font-bold">纳克萨玛斯首杀记录</h1>
 

@@ -61,4 +61,32 @@ export class BanlistService {
     await this.cache.set(cacheKey, result, CacheTTL.medium);
     return result;
   }
+
+  async getRecentMutes(): Promise<unknown[]> {
+    const cacheKey = CacheKeys.banlistMutes;
+    const cached = await this.cache.get<unknown[]>(cacheKey);
+    if (cached) return cached;
+
+    const rows = (await this.repo.findRecentMutes()) as {
+      character_names: string | null;
+      username: string | null;
+      last_ip: string | null;
+      mutedate: number;
+      unmutetime: number | string;
+      reason: string | null;
+    }[];
+
+    const result = rows.map((r) => ({
+      character_names: r.character_names,
+      username: r.username,
+      last_ip: r.last_ip,
+      mutedate: formatBeijingTime(r.mutedate),
+      // mutetime 折算列为 BIGINT，mysql2 可能以字符串返回
+      unmutetime: formatBeijingTime(Number(r.unmutetime)),
+      reason: r.reason,
+    }));
+
+    await this.cache.set(cacheKey, result, CacheTTL.medium);
+    return result;
+  }
 }

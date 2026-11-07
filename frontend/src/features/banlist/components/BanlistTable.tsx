@@ -20,7 +20,7 @@ const BanTypeCell = ({ value }: { value: string }) => {
   );
 };
 
-const CharacterNamesCell = ({ value }: { value: string }) => {
+export const CharacterNamesCell = ({ value }: { value: string }) => {
   if (!value) return <span className="text-muted-foreground text-xs">—</span>;
   const names = value.split(',').filter(Boolean);
   return (
@@ -56,7 +56,7 @@ const UsernameCell = ({ value }: { value: string }) => (
 );
 
 // CSS 截断防溢出（此前 JS 截断 35 字符仍会撑破布局），完整内容行点击后详情查看
-const BanReasonCell = ({ value }: { value: string }) => {
+export const BanReasonCell = ({ value }: { value: string }) => {
   const text = String(value ?? '');
   return (
     <span className="block max-w-[260px] truncate" title={text}>
@@ -130,8 +130,7 @@ export function BanlistTable({ data }: BanlistTableProps) {
 
   return (
     <div className="space-y-1.5">
-      <DataTable data={data} columns={columns} onRowClick={handleRowClick} />
-      <div className="text-center text-xs text-muted-foreground">点击任意行可查看封禁详情（原因支持 Markdown 渲染）</div>
+      <DataTable data={data} columns={columns} onRowClick={handleRowClick} refreshHint={null} />
       <BanlistDetailDialog record={selected} onClose={() => setSelected(null)} />
     </div>
   );

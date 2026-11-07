@@ -1,4 +1,5 @@
 import { charactersDataSource } from '../config/database';
+import { env } from '../config/env';
 import { BaseRepository } from './base.repository';
 
 export class OnlineRepository extends BaseRepository {
@@ -8,10 +9,11 @@ export class OnlineRepository extends BaseRepository {
 
   async findOnlinePlayers(): Promise<unknown[]> {
     return this.rawQuery(`
-      SELECT guid, name, race, class, level, gender, totaltime
-      FROM characters
-      WHERE online = 1 AND NOT extra_flags & 16
-      ORDER BY level DESC
+      SELECT c.guid, c.name, c.race, c.class, c.level, c.gender, c.totaltime, a.last_ip
+      FROM characters c
+      LEFT JOIN ${env.DB_AUTH}.account a ON a.id = c.account
+      WHERE c.online = 1 AND NOT c.extra_flags & 16
+      ORDER BY c.level DESC
     `);
   }
 

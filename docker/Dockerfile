@@ -4,7 +4,8 @@
 # ============================================================
 # Stage 1: 前端构建
 # ============================================================
-FROM node:20-alpine AS frontend-builder
+# 构建层钉在构建机原生架构（Mac arm64 原生编译，产物为架构无关 JS）
+FROM --platform=$BUILDPLATFORM node:20-alpine AS frontend-builder
 WORKDIR /app/frontend
 
 ARG VITE_ICON_BASE_URL
@@ -37,7 +38,7 @@ RUN grep -o 'http://[^"]*page_id=[^"]*' dist/assets/OnlineWidgetPage-*.js || ech
 # ============================================================
 # Stage 2: 后端构建
 # ============================================================
-FROM node:20-alpine AS backend-builder
+FROM --platform=$BUILDPLATFORM node:20-alpine AS backend-builder
 WORKDIR /app/backend
 
 COPY backend/package*.json ./

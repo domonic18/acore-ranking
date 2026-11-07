@@ -10,4 +10,9 @@ router.get('/recent', asyncHandler(async (_req, res) => {
   res.jsonSuccess(data);
 }));
 
+router.get('/mutes', asyncHandler(async (_req, res) => {
+  const data = await service.getRecentMutes();
+  res.jsonSuccess(data);
+}));
+
 export default router;

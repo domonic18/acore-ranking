@@ -55,6 +55,9 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
+    /* 视口地板:短页面仍铺满视口。地板必须在 body 而非内容锚点内——
+       锚点内留地板会让上报高度被视口高托底(嵌在 iframe 里时永不低于当前框高) */
+    min-height: 100vh;
   }
 }
 

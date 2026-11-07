@@ -37,6 +37,7 @@ export const Endpoints = {
   },
   banlist: {
     recent: '/api/banlist/recent',
+    mutes: '/api/banlist/mutes',
   },
   character: {
     info: (name: string) => `/api/character/${encodeURIComponent(name)}`,

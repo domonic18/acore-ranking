@@ -16,6 +16,7 @@ AzerothCore private server ranking service. Replaces legacy PHP `wow_wrapper` wi
 2. **API format compatibility**: Response uses `{success, count, data}` to match legacy PHP frontend expectations
 3. **Mount spell IDs inlined**: `spell.csv` (48MB) processed at build time to ~3KB TypeScript constant
 4. **iframe-first**: All pages designed for embedding, no fixed widths, responsive tables
+5. **Height reporting**: When embedded, pages report content height to the parent via `postMessage` so the parent can size the iframe to fit (protocol in `frontend/src/shared/constants/embed.ts`)
 
 ## Directory Structure
 

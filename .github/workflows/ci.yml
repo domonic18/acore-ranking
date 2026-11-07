@@ -142,6 +142,9 @@ jobs:
     needs: [frontend, backend]
     if: github.event_name == 'push' && (github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main')
     timeout-minutes: 15
+    outputs:
+      # 供 deploy-scf job 使用:带摘要的镜像地址(SCF 按摘要拉取,避免标签指向漂移)
+      image_uri: ${{ steps.image_info.outputs.image_uri }}
 
     steps:
       - name: Checkout / 检出代码
@@ -171,6 +174,7 @@ jobs:
           echo "app_version=${APP_VERSION}.${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
 
       - name: Build and Push / 构建并推送
+        id: build
         uses: docker/build-push-action@v7
         with:
           context: .
@@ -189,6 +193,48 @@ jobs:
             VITE_APP_VERSION=${{ steps.vars.outputs.app_version }}
 
       - name: Output image info / 输出镜像信息
+        id: image_info
         run: |
+          # 带摘要的镜像地址:SCF 拉取镜像时按摘要定位,不受同名标签漂移影响
+          IMAGE_URI="${{ steps.vars.outputs.image_tag }}@${{ steps.build.outputs.digest }}"
+          echo "image_uri=${IMAGE_URI}" >> "$GITHUB_OUTPUT"
           echo "Image pushed: ${{ steps.vars.outputs.image_tag }}"
           echo "Latest tag: ${{ steps.vars.outputs.latest_tag }}"
+          echo "SCF image uri: ${IMAGE_URI}"
+
+  # ============================================================
+  # Stage 4: 部署到腾讯云 SCF(develop → staging 命名空间)
+  # 只换函数镜像,不动环境变量/端口/超时等其余配置(线上这些值是人工在控制台调过的)
+  # ============================================================
+  deploy-scf:
+    name: Deploy to SCF / 部署腾讯云函数
+    runs-on: [self-hosted]
+    needs: [docker]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    timeout-minutes: 15
+    env:
+      SCF_REGION: ${{ vars.SCF_REGION || 'ap-beijing' }}
+      SCF_NAMESPACE: ${{ vars.SCF_NAMESPACE || 'staging' }}
+      SCF_FUNCTION_NAME: ${{ vars.SCF_FUNCTION_NAME || 'acore-ranking' }}
+      SCF_IMAGE_URI: ${{ needs.docker.outputs.image_uri }}
+      TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+      TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+
+    steps:
+      - name: Checkout / 检出代码
+        uses: actions/checkout@v4.2.2
+
+      - name: Setup Node.js / 安装 Node.js
+        uses: actions/setup-node@v4.3.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: scripts/deploy/package-lock.json
+
+      - name: Install Dependencies / 安装依赖
+        working-directory: scripts/deploy
+        run: npm ci
+
+      - name: Deploy / 部署(更新函数镜像)
+        working-directory: scripts/deploy
+        run: npm run deploy:scf

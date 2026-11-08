@@ -218,7 +218,6 @@ jobs:
     timeout-minutes: 15
     env:
       SCF_REGION: ${{ vars.SCF_REGION || 'ap-beijing' }}
-      SCF_FUNCTION_NAME: ${{ vars.SCF_FUNCTION_NAME || 'acore-ranking' }}
       TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
       TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
 
@@ -226,8 +225,10 @@ jobs:
       - name: Checkout / 检出代码
         uses: actions/checkout@v4.2.2
 
-      # 分支 → 命名空间映射。两个环境各留一个 repo variable 覆盖口,
-      # 但默认值必须是 staging/production,改错默认值等于把测试包发到生产。
+      # 分支 → 命名空间/函数名映射。环境差异化配置各留一个 repo variable 覆盖口,
+      # 但默认值必须是 staging/production 与 acore-ranking,改错默认值等于把测试包发到生产。
+      # 函数名按环境命名(SCF_{STAGING,PRODUCTION}_FUNCTION),与 acore-manager 的
+      # SCF_{STAGING,PRODUCTION}_{WEB,JOB}_FUNCTION 命名规则一致(本仓单函数,无角色段)。
       - name: Resolve target / 解析目标环境
         id: target
         run: |
@@ -235,10 +236,12 @@ jobs:
           case "$GITHUB_REF_NAME" in
             develop)
               namespace="${{ vars.SCF_STAGING_NAMESPACE || 'staging' }}"
+              function="${{ vars.SCF_STAGING_FUNCTION || 'acore-ranking' }}"
               label="测试(staging)"
               ;;
             main)
               namespace="${{ vars.SCF_PRODUCTION_NAMESPACE || 'production' }}"
+              function="${{ vars.SCF_PRODUCTION_FUNCTION || 'acore-ranking' }}"
               label="生产(production)"
               ;;
             *)
@@ -247,8 +250,9 @@ jobs:
               ;;
           esac
           echo "namespace=${namespace}" >> "$GITHUB_OUTPUT"
+          echo "function=${function}" >> "$GITHUB_OUTPUT"
           echo "label=${label}" >> "$GITHUB_OUTPUT"
-          echo "目标环境: ${label}(命名空间 ${namespace})"
+          echo "目标环境: ${label}(命名空间 ${namespace},函数 ${function})"
 
       # 不用 actions/setup-node:它从 github.com/actions/node-versions 下载 node,
       # 该域名在国内基本拉不动(实测卡到作业超时)。self-hosted runner 自带 node,直接用。
@@ -268,6 +272,7 @@ jobs:
           IMAGE_TAG: ${{ needs.docker.outputs.image_tag }}
           IMAGE_DIGEST: ${{ needs.docker.outputs.image_digest }}
           SCF_NAMESPACE: ${{ steps.target.outputs.namespace }}
+          SCF_FUNCTION_NAME: ${{ steps.target.outputs.function }}
         run: |
           set -euo pipefail
           # 镜像地址在此组装:TCR 命名空间是 secret,无法作为 job 输出跨 job 传递
